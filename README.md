@@ -54,3 +54,19 @@ Most open-source projects are not financially supported. Yet they form the found
 The Fula Network’s incentive layer enables a monetization mechanism for open-source application development. Including compensation for any upstream dependencies in any project.
 
 In addition to monetary support, we provide secure, open-source primitives that enable application developers to rapidly build peer-to-peer, open-source, decentralized applications using any programming language, such as JavaScript.
+
+## The Fula Network
+
+By default, a user engages with the Fula Network as both a resource consumer (apps, storage, content, etc.) and a resource provider. A user can use services on the network without owning a connected device. However, interacting with the network this way will be costly since our primary goal is incentivizing a robust network comprised of user-owned hardware.
+
+### Layer designations on the Fula Network
+
+![Fula Layers](images/FulaLayers.svg)
+
+*DIAGRAM 1a illustrates individual L3 Pool transactions rolled up to their respective L2 Chains. L2s then register to L1*
+
+**Fula L1:** The Global Ledger of the FULA Token on Ethereum. FULA tokens can be bridged from Ethereum to any chain or rollup via a 1:1 mapping of ERC-20 tokens.
+
+**Fula L2:** The Fula L2 is multichain and includes individual chains such as Polkadot, Cosmos, Algorand, and rollups such as Arbitrum, Polygon, etc. 
+
+**Fula L3 PoolChain:** This uses Proof of Resources to verify all transactions on a given Pool. Proofs are rolled up and submitted to the Pool’s L2 to maintain an account of Fula tokens across all pools on a given L2.
