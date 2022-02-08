@@ -6,6 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  deploymentBranch: "main",
   title: "Functionland",
   tagline: "",
   url: "https://functionland.github.io",
@@ -43,12 +44,6 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Documentation",
-          },
-          {
             href: "https://github.com/functionland",
             label: "GitHub",
             position: "right",
@@ -58,15 +53,6 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Introduction",
-                to: "/docs/intro",
-              },
-            ],
-          },
           {
             title: "Community",
             items: [
