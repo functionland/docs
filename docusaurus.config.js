@@ -10,12 +10,12 @@ const config = {
   title: "Functionland",
   tagline: "",
   url: "https://functionland.github.io",
-  baseUrl: "/",
+  baseUrl: "/docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.webp",
   organizationName: "functionland",
-  projectName: "functionland.github.io",
+  projectName: "docs",
   presets: [
     [
       "classic",
