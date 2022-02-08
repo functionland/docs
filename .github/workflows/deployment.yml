@@ -7,5 +7,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: yarn
-      - run: USE_SSH=true yarn deploy 
+      - run: npm install
+      - run: USE_SSH=true npm run deploy 
