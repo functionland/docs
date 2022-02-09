@@ -1,5 +1,6 @@
 ---
-slug: /
+id: whitepaper
+title: Whitepaper
 ---
 
 # Ending the Rental Web
