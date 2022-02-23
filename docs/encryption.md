@@ -34,3 +34,5 @@ Current Process:
 1- size of jwe does not depend on the size of the file
 
 2- one encrypted file can be shared with multiple people
+
+3- jwe file can be shared on public ipfs without any security problem
