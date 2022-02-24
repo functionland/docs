@@ -9,7 +9,7 @@ const config = {
   deploymentBranch: "gh-pages",
   title: "Functionland",
   tagline: "",
-  url: "https://functionland.github.io",
+  url: "https://docs.fx.land",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
