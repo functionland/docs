@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  deploymentBranch: "main",
+  deploymentBranch: "gh-pages",
   title: "Functionland",
   tagline: "",
   url: "https://functionland.github.io",
