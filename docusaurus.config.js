@@ -9,7 +9,7 @@ const config = {
   deploymentBranch: "main",
   title: "Functionland",
   tagline: "",
-  url: "https://functionland.github.io",
+  url: "https://docs.fx.land",
   baseUrl: "/docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
