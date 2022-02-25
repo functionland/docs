@@ -16,6 +16,7 @@ const config = {
   favicon: "img/favicon.webp",
   organizationName: "functionland",
   projectName: "functionland.github.io",
+  trailingSlash: false,
   presets: [
     [
       "classic",
