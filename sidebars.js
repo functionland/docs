@@ -18,8 +18,8 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
-      label: 'Introduction',
-      id: 'intro',
+      label: 'Welcome',
+      id: 'welcome',
     },
     {
       type: 'doc',
