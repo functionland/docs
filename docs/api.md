@@ -8,10 +8,6 @@ The BOX API was designed by us for us with the intention that you (a third party
 
 It comprises of the following.
 
-## [Graph](./api/graph.md)
+  * a [data api](./api/data.md) for querying file metadata
 
-A rich graphql based data API you can use to query for any file metadata based on various query parameters.
-
-## [File](./api/file.md)
-
-An interface for you to upload files (eg/ photos, videos or any type of document) and efficiently retreive them for use in your web/mobile Dapp.
+  * a [file api](./api/file.md) for uploading and retrieving files

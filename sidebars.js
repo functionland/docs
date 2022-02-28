@@ -17,21 +17,37 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     {
-      type: 'doc',
+      type: 'category',
       label: 'Welcome',
-      id: 'welcome',
+      link: {
+        type: 'doc',
+        id:'welcome',
+      },
+      items: [
+        {
+          type:'category',
+          label:'BOX Api',
+          link: {
+            type: 'doc',
+            id:'api',
+          },
+          items:[
+            'api/data-api',
+            'api/file-api'
+          ]
+        },
+        {
+          type: 'doc',
+          label: 'DIY Setup',
+          id: 'diy-setup',
+        },
+      ]
     },
     {
       type: 'doc',
       label: 'Whitepaper',
       id: 'whitepaper/whitepaper',
     },
-
-    { 
-      type: 'category',
-      label: 'Design',
-      items: ['design/encryption'],
-    }
   ],
 };
 

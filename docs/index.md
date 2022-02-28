@@ -4,7 +4,7 @@ id: welcome
 ---
 # Welcome To Functionland
 
-We are an alternative to big tech personal cloud storage by focusing on a simple premise : you should own your own data.
+We are an alternative to big tech personal cloud storage by focusing on a simple premise: <b>you should own your own data</b>.
 
 We plan to do that by providing a plug and play BOX based on open source hardware that you can customize to suit your own personal requirements.
 
@@ -12,7 +12,7 @@ Because the hardware is open source, you can also choose to [DIY](./diy_setup.md
 
 The BOX includes all of the necessary software for you to enjoy your home photos/video from the comfort of your living room.
 
-We will also utilize the decentralized web to provide you with additional services that you can optionally use to provide additional functionality not possible solely with an individual BOX such as (but not limited to) :
+We will also utilize the decentralized web to provide you with additional services.  You can optionally enable these services to obtain additional functionality not possible solely with an individual BOX such as (but not limited to) :
 
   * geographic replication
 
