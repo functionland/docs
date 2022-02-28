@@ -1,15 +1,17 @@
 ---
-title: Introduction
-id: intro
+title: Welcome
+id: welcome
 ---
-# Introduction To Functionland
-## Moving Web3/Blockchain into the Mainstream
+# Welcome To Functionland
 
-Functionland's projects on github:
-* [Fula](https://github.com/functionland/Fula): Client-server stack for Web3! Turn your Raspberry Pi to a BAS server in minutes and enjoy the freedom of decentralized Web with a superior user experience!
-* [photos](https://github.com/functionland/photos): A react-native(expo)+typescript application to replace Google Photos/Apple Photos, and give freedom in hosting your photos on any platform, either centralized servers like Amazon or Microsoft, or decentralized solutions such as Dfinity or IPFS-based "box".
-* [box-design-blender](https://github.com/functionland/box-design-blender): 3D renders and specifications of the box hardware
-* [box-app](https://github.com/functionland/Box-app): This is the application that controls the backend (on users' Box)
-* [box-pcb](https://github.com/functionland/box-pcb): PCB Design Files
-* [docs](https://github.com/functionland/docs): Source repository for this documentation.
+We are an alternative to big tech personal cloud storage by focusing on a simple premise : you should own your own data.
 
+We plan to do that by providing a plug and play BOX based on open source hardware that you can customize to your own personal requirements.
+
+Because the hardware is open source, you can also choose to [DIY](./diy_setup.md) your own hardware setup and still utilize the BOX platform.
+
+The BOX all of the necessary software for you to enjoy your home photos/video from the comfort of your living room.
+
+We will also utilize the decentralized web to provide you with additional services that you can optionally consume.  This decentralized web will provide a free and open market for service providers.
+
+The BOX will also have an open [API](./api.md) that third party developers can leverage to build rich user experiences on top of your data.
