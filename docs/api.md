@@ -8,6 +8,6 @@ The BOX API was designed by us for us with the intention that you (a third party
 
 It comprises of the following.
 
-  * a [data api](./api/data.md) for querying file metadata
+  * a [data api](./api/data.md) for storing and querying structured data (JSON)
 
   * a [file api](./api/file.md) for uploading and retrieving files
