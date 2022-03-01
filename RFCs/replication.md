@@ -13,7 +13,7 @@ in every pool user will pin their data for High availability and replication. an
 [motivation]: #motivation
 
 - user can mine fula and use app's and other futuers.
-- user can have HA data.
+- user can have HA on his/her data.
 
 # Guide-level explanation
 [guide-level-explanation]: #guide-level-explanation
@@ -32,12 +32,12 @@ in every pool user will pin their data for High availability and replication. an
 
 # Rationale and alternatives
 [rationale-and-alternatives]: #rationale-and-alternatives
-- ipfs-cluster
-- file-coin
+
 
 # Prior art
 [prior-art]: #prior-art
-
+- [ipfs-cluster](https://cluster.ipfs.io/documentation/deployment/architecture/)
+- [file-coin](https://spec.filecoin.io/)
 
 # Unresolved questions
 [unresolved-questions]: #unresolved-questions
