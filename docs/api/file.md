@@ -7,6 +7,6 @@ import WorkInProgress from '../components/WorkInProgress.mdx'
 
 # File API
 
-An interface for you to upload files (eg/ photos, videos or any type of document) and efficiently retreive them for use in your web/mobile Dapp.
+An interface for you to upload files (eg/ photos, videos or any type of document) and efficiently retreive them for use in your web/mobile DApp.
 
 <WorkInProgress />
