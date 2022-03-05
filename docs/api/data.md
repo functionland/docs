@@ -21,7 +21,7 @@ Fetches a previously stored document based on a filter object.
 
 The `input` argument should contain:
 - `collection:String` (required): name of the collection.
-- `filter: JSON`: a [Filter](#Filter Objects) object that determines each document's existence in the output.
+- `filter: JSON`: a [Filter object](#filter-objects) that determines each document's existence in the output.
 
 #### Example
 This query operation finds all `profile` documents that has an `age` field greater than `20` and then returns their `id, name, age`.  
