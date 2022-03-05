@@ -228,7 +228,7 @@ __*Note*__: Value Operator names are reserved by the `graphql-engine` and you ca
 - `lt` (Lower than)
 - `lte` (Lower than or equal)
 - `in` (Be in [array])
-- `nin` (Not ne in [array])
+- `nin` (Not be in [array])
 
 ### Logical Operators
 To make more complex filter objects you can combine ATOs with logical operators `or`, `and`. Each of these operators takes an array of filters.
