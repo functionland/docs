@@ -30,6 +30,6 @@ You can do that by :
 
   * [subscribing](https://fx.land) for updates to get notified when we launch on Kickstarter
 
-  * providing feedback/input on our [RFCs](https://github.com/functionland/rfcs)
+  * providing feedback/input on our [RFCs](https://github.com/functionland/docs/tree/main/RFCs)
 
-  * join us on one of our [socials](https://community.fx.land)
+  * join us on one of our [socials](https://linktr.ee/fxland)
