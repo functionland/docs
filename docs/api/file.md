@@ -29,7 +29,7 @@ const id = await fulaClient.sendFile(selectedFile);
 
 ### `sendStreamFile(source, meta) => Promise<FileId>` 
 sendStreamFile will take a source and meta  as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
-representing the CID of uploaded content. 
+representing the CID of uploaded content. useful when you work with stream or outside of browser.
 - source:  `AsyncIterable<Uint8Array>`
 - meta: `{name,type,lastModified,size}`
 
