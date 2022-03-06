@@ -42,6 +42,13 @@ const sidebars = {
           ]
         },
         {
+          type: 'category',
+          label: 'Tutorials',
+          items: [
+              'tutorials/todo-tutorial'
+          ]
+        },
+        {
           type: 'doc',
           label: 'DIY Setup',
           id: 'diy-setup',
