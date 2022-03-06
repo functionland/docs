@@ -13,7 +13,7 @@ if you upload something you have to store the cid to access is. (use data-protoc
 ## Upload
 
 ### `sendFile(File) => Promise<FileId>` 
-sendFile will take a File/Blob as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
+sendFile will take a [File](https://developer.mozilla.org/en-US/docs/Web/API/File) as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
 representing the CID of uploaded content. 
 
 #### example
@@ -25,6 +25,39 @@ await fulaClient.connect(serverId);
 ...
 const selectedFile = document.getElementById('input').files[0];
 const id = await fulaClient.sendFile(selectedFile);
+```
+
+### `sendStreamFile(source, meta) => Promise<FileId>` 
+sendStreamFile will take a source and meta  as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
+representing the CID of uploaded content. 
+- source:  `AsyncIterable<Uint8Array>`
+- meta: `{name,type,lastModified,size}`
+
+#### example
+```js
+import {Borg, createClient} from '@functionland/fula';
+
+const fulaClient = await createClient();
+await fulaClient.connect(serverId);
+...
+export async function* fileToAsyncItrable(file:File) {
+    const reader = (file.stream()).getReader();
+    while (true) {
+        const {value, done} = await reader.read();
+        if (done) {
+            break;
+        }
+        yield value;
+    }
+}
+const selectedFile = document.getElementById('input').files[0];
+const id = await fulaClient.sendStreamFile(fileToAsyncItrable(selectedFile),
+    {
+        name: selectedFile.name,
+        type: selectedFile.type,
+        size: selectedFile.size,
+        lastModified: selectedFile.lastModified
+    });
 ```
 
 
