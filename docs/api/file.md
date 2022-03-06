@@ -28,5 +28,4 @@ const id = await fulaClient.sendFile(selectedFile);
 ```
 
 
-
 <WorkInProgress />

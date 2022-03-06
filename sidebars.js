@@ -25,8 +25,13 @@ const sidebars = {
       },
       items: [
         {
+          type:'doc',
+          label:'Getting Started',
+          id:'getting-started',
+        },
+        {
           type:'category',
-          label:'BOX Api',
+          label:'BOX Reference Api',
           link: {
             type: 'doc',
             id:'api',
