@@ -20,7 +20,7 @@ in every pool user will pin their data for High availability and replication. an
 - there is node call validator that run's on the box and try to keep the pinset alive.
 - the validator use fula-file-protocol to stream pinned data to functionland/box container which keeping the pools data.
 - the validator can get the proof that the data stored and get to consensus of cluster pinset state.
-
+- joining to the pool most be base on geolocation.
 # Reference-level explanation
 [reference-level-explanation]: #reference-level-explanation
 

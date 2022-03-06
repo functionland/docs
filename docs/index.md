@@ -28,6 +28,8 @@ Like what you hear?  Become a pioneer and join us on our journey in bringing Web
 
 You can do that by :
 
+  * heading over to [getting started](./getting-started) and learning all about developing your own DApps on top of the BOX platform
+
   * [subscribing](https://fx.land) for updates to get notified when we launch on Kickstarter
 
   * providing feedback/input on our [RFCs](https://github.com/functionland/docs/tree/main/RFCs)
