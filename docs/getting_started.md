@@ -48,12 +48,12 @@ Where QmT9wgbwG93G8HgbqQ9mMDRMGXT5N9oGEviLMdutmWZxms is your BOX's ```PeerID```
 
 Click connect and ...
 
-<WorkInProgress />
 
-The app should redirect to the TODOs app.  For now you can look at the console logs and see you connected succesfully.
+The app should redirect you to the TODOs app.
+
+![Todo App](/img/Todo-Connected.png)
 
 Congrats!  You now have the BOX server up and running and verified you can connect to it from a sample app.
-
 
 ## Step 2: Write your own front-end
 
@@ -63,18 +63,18 @@ We'll cover both.
 
 ### Using the samples
 
-Open `/path/to/fula/examples/react-todo-app/src/App.tsx` in your favourite editor.
+Open `/path/to/fula/examples/react-todo-app/src/components/TodoList.tsx` in your favourite editor.
 
 Change the headline from -
 
 ```
-<h1>Connect to BOX</h1>
+<h1>Functionland Todo App</h1>
 ```
 
 to -
 
 ```
-<h1>Connect to MY BOX</h1>
+<h1>My Todo App</h1>
 ```
 
 You should now see the change reflected in your browser.
