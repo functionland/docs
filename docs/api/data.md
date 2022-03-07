@@ -7,7 +7,7 @@ import WorkInProgress from '../components/WorkInProgress.mdx'
 
 # Data API
 
-Data API provides a graphql based interface for storing and querying structured data. Decentralized application developers for Box can use this API to create, update and delete JSON documents using a standard graphql interface directly on their Box. The Data API is a part of [Borg Client](https://github.com/functionland/fula/tree/main/libraries/borg-client) and you can use it using the `graphql` interface.
+Data API provides a graphql based interface for storing and querying structured data. Decentralized application developers for Box can use this API to create, update and delete JSON documents using a standard graphql interface directly on their Box. The Data API is a part of [Fula Client](https://github.com/functionland/fula/tree/main/libraries/fula-client) and you can use it using the `graphql` interface.
 
 Currently, there are 4 types of mutation and a single query type that you can use. In this document you can find the definition and a simple example for each operation, if you are familiar with graphql schemas, you may find the current [graphql schema](https://github.com/functionland/fula/blob/main/apps/box/src/graph/gql-engine/schema.ts)  for the Data API useful.
 
@@ -28,7 +28,7 @@ This query operation finds all `profile` documents that has an `age` field great
 
 ```javascript
 import * as grapgql from 'graphql';
-import { useLazyQuery } from '@functionland/borg-client-react';
+import { useLazyQuery } from '@functionland/fula-client-react';
 
 const readQuery = grapgql.parse(`
   query {
@@ -76,7 +76,7 @@ This mutation creates a new document in the `profile` collection.
 __*Note*__: You can use variable values in the query or mutation operation. `variables` argument does it for you:
 ```javascript
 import * as grapgql from 'graphql';
-import { useLazyQuery } from '@functionland/borg-client-react';
+import { useLazyQuery } from '@functionland/fula-client-react';
 
 export const createMutation = grapgql.parse(`
   mutation addProfile($values:JSON){
@@ -125,7 +125,7 @@ This mutation finds a document with the `id` field and updates its `name`.
 
 ```javascript
 import * as grapgql from 'graphql';
-import { useLazyQuery } from '@functionland/borg-client-react';
+import { useLazyQuery } from '@functionland/fula-client-react';
 
 export const updateMutation = grapgql.parse(`
   mutation updateTodo($values:JSON){
@@ -174,7 +174,7 @@ The `input` argument contains:
 #### Example
 ```javascript
 import * as grapgql from 'graphql';
-import { useLazyQuery } from '@functionland/borg-client-react';
+import { useLazyQuery } from '@functionland/fula-client-react';
 
 export const deleteMutation = grapgql.parse(`
   mutation deleteTodo($values:JSON){
