@@ -49,11 +49,6 @@ const sidebars = {
             'api/file-api'
           ]
         },
-        {
-          type: 'doc',
-          label: 'DIY Setup',
-          id: 'diy-setup',
-        },
       ]
     },
     {
