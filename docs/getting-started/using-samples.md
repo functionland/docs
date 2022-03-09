@@ -7,7 +7,7 @@ id: using-samples
 
 All of the FULA samples can be found in the FULA GitHub repo under [examples](https://github.com/functionland/fula/tree/main/examples).
 
-To get things started and give you an idea of how to work with the [DATA Api](/api/data) we will set up the [TODO Sample App](https://github.com/functionland/fula/tree/main/examples/react-todo-app)
+To get things started and give you an idea of how to work with the [DATA Api](/api/data-api) we will set up the [TODO Sample App](https://github.com/functionland/fula/tree/main/examples/react-todo-app)
 
 ## Running the TODO Sample
 

@@ -13,7 +13,7 @@ if you upload something you have to store the cid to access is. (use data-protoc
 ## Upload
 
 ### SendFile 
-`sendFile(File) => Promise<FileId>` </br>
+`sendFile(File) => Promise<FileId>` <br/>
 
 sendFile will take a [File](https://developer.mozilla.org/en-US/docs/Web/API/File) as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
 representing the CID of uploaded content. 
@@ -30,7 +30,7 @@ const id = await fulaClient.sendFile(selectedFile);
 ```
 
 ### sendStreamFile
-`sendStreamFile(source, meta) => Promise<FileId>` </br>
+`sendStreamFile(source, meta) => Promise<FileId>` <br/>
 
 sendStreamFile will take a source and meta  as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
 representing the CID of uploaded content. useful when you work with stream or outside of browser.
@@ -66,7 +66,7 @@ const id = await fulaClient.sendStreamFile(fileToAsyncItrable(selectedFile),
 
 ## Download 
 ### receiveFile
-`(fileId: FileId) => Promise<File>`</br>
+`(fileId: FileId) => Promise<File>`<br/>
 
 receiveFile will take FileId and return Promise. if file retrieved  successfully Promise return a [File](https://developer.mozilla.org/en-US/docs/Web/API/File)
 - fileId:  `FileId`
@@ -84,7 +84,7 @@ const data = await fulaClient.receiveFile(fileId);
 
 ```
 ### receiveMeta
-`(fileId: FileId) => Promise<Meta>`</br>
+`(fileId: FileId) => Promise<Meta>`<br/>
 
 receiveMeta will take FileId and return Promise. if meta for the file retrieved successfully Promise return a `Meta`
 - fileId:  `FileId`
@@ -102,9 +102,9 @@ const {name, type, size, lastModified} = await fulaClient.receiveMeta(fileId);
 
 ```
 ### receiveStreamFile 
-`(fileId: FileId) => Promise<{ source: AsyncIterable<Uint8Array>, meta: Meta }>` </br>
+`(fileId: FileId) => Promise<{ source: AsyncIterable<Uint8Array>, meta: Meta }>` <br/>
 
-receiveStreamFile will take FileId and return Promise. if fileId exist successfully Promise return a </br> 
+receiveStreamFile will take FileId and return Promise. if fileId exist successfully Promise return a <br/> 
 `{ source: AsyncIterable<Uint8Array>, meta: Meta }`
 that source is stream of content of the file and Meta is the `Meta`.useful when you work with stream or outside of browser.
 - fileId:  `FileId`
