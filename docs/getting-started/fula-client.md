@@ -18,4 +18,4 @@ We currently support:
 
 ## What Next?
 
-Now that you are up and running, head on over to the [BOX Reference Api](./api) to see everything you can do with BOX.
+Now that you are up and running, head on over to the [BOX Reference Api](/api) to see everything you can do with BOX.
