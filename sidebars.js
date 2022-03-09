@@ -25,9 +25,17 @@ const sidebars = {
       },
       items: [
         {
-          type:'doc',
+          type:'category',
           label:'Getting Started',
-          id:'getting-started',
+          link: {
+            type:'doc',
+            id:'getting-started',
+          },
+          items:[
+            'getting-started/box-setup',
+            'getting-started/using-samples',
+            'getting-started/fula-client',
+          ]
         },
         {
           type:'category',
@@ -40,11 +48,6 @@ const sidebars = {
             'api/data-api',
             'api/file-api'
           ]
-        },
-        {
-          type: 'doc',
-          label: 'DIY Setup',
-          id: 'diy-setup',
         },
       ]
     },
