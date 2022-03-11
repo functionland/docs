@@ -20,7 +20,7 @@ We will also utilize the decentralized web to provide you with additional servic
 
 This decentralized web will enable a free and open market for service providers.  This means you can become not just a consumer but also a producer in this new ecosystem we call the FULA network.
 
-The BOX will have an open [API](./api.md) specification that you can leverage to build rich user experiences on top of anyone's data.
+The BOX will have an open [API](./api_broken_link.md) specification that you can leverage to build rich user experiences on top of anyone's data.
 
 Like what you hear?  Become a pioneer and join us on our journey in bringing Web3 to the mainstream today!
 
