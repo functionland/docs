@@ -1,9 +1,9 @@
 ---
-title: BOX Server Setup
+title: Running a BOX locally
 id: box-setup
 ---
 
-# BOX Server Setup
+# Running a BOX locally
 
 The easiest way to get the BOX server running locally is to clone our repo and use docker.
 
