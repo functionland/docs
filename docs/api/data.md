@@ -21,7 +21,7 @@ Fetches a previously stored document based on a filter object.
 
 The `input` argument should contain:
 - `collection:String` (required): name of the collection.
-- `filter: JSON`: a [Filter](#Filter Objects) object that determines each document's existence in the output.
+- `filter: JSON`: a [Filter object](#filter-objects) that determines each document's existence in the output.
 
 #### Example
 This query operation finds all `profile` documents that has an `age` field greater than `20` and then returns their `id, name, age`.  
@@ -46,10 +46,10 @@ const readQuery = grapgql.parse(`
 `);
 
 function ProfileList () {
-    const [readTodos, {data: readData}] = useLazyQuery(readQuery);
+    const [readProfiles, {data: readData}] = useLazyQuery(readQuery);
 
     useEffect(() => {
-        readTodos();
+        readProfiles();
     }, []);
     
     return (
@@ -128,14 +128,14 @@ import * as grapgql from 'graphql';
 import { useLazyQuery } from '@functionland/fula-client-react';
 
 export const updateMutation = grapgql.parse(`
-  mutation updateTodo($values:JSON){
+  mutation updateProfile($values:JSON){
     update(input:{
-      collection:"todo",
+      collection:"profile",
       values: $values
     }){
       id
-      text
-      isComplete
+      name
+      age
     }
   }
 `);
@@ -144,7 +144,7 @@ function ProfileForm () {
     const [updateProfileMutation, { data: updateData }] = useLazyQuery(updateMutation);
 
     useEffect(() => {
-        updateTodoMutation({
+        updateProfileMutation({
             variables: {
                 values: [{ 
                     id: 1,
@@ -177,9 +177,9 @@ import * as grapgql from 'graphql';
 import { useLazyQuery } from '@functionland/fula-client-react';
 
 export const deleteMutation = grapgql.parse(`
-  mutation deleteTodo($values:JSON){
+  mutation deleteProfile($values:JSON){
     delete(input:{
-      collection:"todo",
+      collection:"profile",
       ids: $values
     })
   }
@@ -228,7 +228,7 @@ __*Note*__: Value Operator names are reserved by the `graphql-engine` and you ca
 - `lt` (Lower than)
 - `lte` (Lower than or equal)
 - `in` (Be in [array])
-- `nin` (Not ne in [array])
+- `nin` (Not be in [array])
 
 ### Logical Operators
 To make more complex filter objects you can combine ATOs with logical operators `or`, `and`. Each of these operators takes an array of filters.
@@ -246,5 +246,8 @@ filter: {
         }
     ]
 }
+
+const [data, loading, error, close] = useSubscription(graphqlQuery)
 ```
+
 <WorkInProgress />
