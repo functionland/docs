@@ -64,7 +64,6 @@ const sidebars = {
         id:'RFCs/rfc-process'
       },
       items:[
-        'RFCs/fula-sec',
         'RFCs/pnet',
         'RFCs/replication'
       ]
