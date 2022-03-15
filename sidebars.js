@@ -39,12 +39,13 @@ const sidebars = {
         },
         {
           type:'category',
-          label:'BOX Reference Api',
+          label:'FULA Reference Api',
           link: {
             type: 'doc',
             id:'api',
           },
           items:[
+              'api/client-instance',
             'api/data-api',
             'api/file-api'
           ]
