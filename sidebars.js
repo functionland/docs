@@ -56,6 +56,18 @@ const sidebars = {
       label: 'Whitepaper',
       id: 'whitepaper/whitepaper',
     },
+    {
+      type: 'category',
+      label: 'RFCs',
+      link: {
+        type:'doc',
+        id:'RFCs/rfc-process'
+      },
+      items:[
+        'RFCs/pnet',
+        'RFCs/replication'
+      ]
+    }
   ],
 };
 

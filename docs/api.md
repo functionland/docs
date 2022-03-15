@@ -1,10 +1,10 @@
 ---
-title: BOX API
+title: FULA API
 id: api
 ---
-# BOX API
+# FULA API
 
-The BOX API was designed by us for us with the intention that you (a third party open source developer) will be able to leverage in order to build other compelling/rich user experiences for BOX customers.
+The FULA API was designed by us for us with the intention that you (a third party open source developer) will be able to leverage in order to build other compelling/rich user experiences for BOX customers.
 
 It comprises of the following.
 
