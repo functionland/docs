@@ -1,0 +1,5 @@
+sequenceDiagram
+    Client->>BOX: connect(serverId)
+    Client->>BOX: read({collection:'gallery'})
+    BOX->>Client: List[...FileID]
+    Client->>BOX: close
