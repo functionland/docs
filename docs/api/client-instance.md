@@ -31,7 +31,7 @@ const client = await createClient()
 ```
 
 ## Connect to BOX
-In order to use different APIs provided by the FULA client, you must connect a client instance to a BOX app. For that you can use `connect` method.
+In order to use different APIs provided by the FULA client, you must connect a client instance to a BOX app. For that you can use the `connect` method.
 
 `async connect(serverId)`
 

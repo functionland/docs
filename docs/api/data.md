@@ -9,7 +9,7 @@ import WorkInProgress from '../components/WorkInProgress.mdx'
 Data API provides a graphql based interface for storing and querying structured data. Decentralized application
 developers for Box can use this API to create, update and delete JSON documents using a standard graphql interface
 directly on their Box. The Data API is a part
-of [Fula Client](https://github.com/functionland/fula/tree/main/libraries/fula-client) and you can use it using
+of [Fula Client](https://github.com/functionland/fula/tree/main/libraries/fula-client) and you can invoke it using
 the `graphql` interface.
 
 `async graphql(query: string, variableValues?: never, operationName?: string)`
@@ -19,7 +19,7 @@ Arguments are:
 - `query`: The graphql query string, see below for more information
 - `variableValues?`: A JSON object specifying values for variable you used in the query string. You can specify
   variables in the query string using `$` and then provide values for them in `variableValues` when you want to execute
-  the query or mutation. You van find an example on this page.
+  the query or mutation. You can find an example on this page.
 - `operationName?`: An optional name for your operation. _This argument is unused right now_
 
 The method resolves to the result of the operation.
@@ -251,10 +251,10 @@ Arguments are:
 - `query`: The graphql query string, see below for more information
 - `variableValues?`: A JSON object specifying values for variable you used in the query string. You can specify
   variables in the query string using `$` and then provide values for them in `variableValues` when you want to execute
-  the query or mutation. You van find an example on this page.
+  the query or mutation. You can find an example on this page.
 - `operationName?`: An optional name for your operation. _This argument is unused right now_
 
-The method returns an `AsyncIterable` that generates a new result based on query filters every time the collection is changed.
+The method returns an [`AsyncIterable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) that generates a new result based on query filters every time the collection is changed.
 
 #### Example
 ```javascript
