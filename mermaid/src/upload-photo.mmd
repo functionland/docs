@@ -1,0 +1,7 @@
+sequenceDiagram
+    Client->>BOX: connect(serverId)
+    Client->>BOX: sendFile(File)
+    BOX->>Client: Promise(FileID)
+    Client->>BOX: create({collection:'gallery', values:[...FileID]})
+    BOX->>Client: OK
+    Client->>BOX: close
