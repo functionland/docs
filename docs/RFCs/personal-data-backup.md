@@ -1,0 +1,246 @@
+- Feature Name: personal-data-backup
+- Start Date: 2022-03-18
+- RFC PR: [functionland/docs/pull/61](https://github.com/functionland/docs/pull/61)
+- Functionland Issue: [functionland/docs/issues/58](https://github.com/functionland/docs/issues/58)
+- Status: Draft
+- Authors: [Aaron Surty](https://github.com/gitaaron), [Farhoud](https://github.com/farhoud)
+- Reviewers: @TODO
+
+# Summary
+[summary]: #summary
+
+This RFC covers how a pool of BOXes can work collaboratively together to improve data reliability.
+
+# Motivation
+[motivation]: #motivation
+
+A person owns several BOXes and wants a portion of their data replicated across each BOX so that if one of the BOXes malfunctions they should not lose any of their data.
+
+The following scenarios are handled:
+
+  * adding a new BOX to the pool
+
+  * removing a BOX from the pool
+
+  * adding a hard drive to a BOX
+
+  * removing a hard drive from a BOX
+
+  * a severe network outage occurs severing a region of BOXes from another region
+
+  * data becomes corrupted on a BOX
+
+  * updating the same data set in real time
+
+
+# Guide-level explanation
+[guide-level-explanation]: #guide-level-explanation
+
+## Terminology
+[terminology]: #terminology
+
+| Name                 | Definition                                                                                                                                                    |
+|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| snapshot             | the entire collection of data that might be stored in chunks across several keepers but can be rebuilt to represent the entire file system being backed up    |
+| keeper               | a BOX process responsible for storing a portion of a snapshot and sharing the burden of recreating an entire snapshot                                         |
+| BOX                  | an OS that each keeper runs on                                                                                                                                |
+| author               | a BOX where the data set was created or written to last                                                                                                       |
+| replication factor   | how many keepers a chunk of data is stored on; a greater replication factor means greater reliability                                                         |
+| pool                 | a group of keepers collaboratively working together to store a snapshot                                                                                       |
+| region               | a subgroup of BOXes within a pool by grouped by geographic proximity to each other                                                                            |
+| data set             | a file, directory, or a discrete piece of data sitting in a database                                                                                          |
+
+
+## Pre-conditions
+[pre-conditions]: #pre-conditions
+
+* each BOX is already provisioned with the necessary configuration info in order for the keeper to fully operate
+* each keeper in a pool can be trusted to not operate maliciously
+* the type of file system that each BOX is backing up is the same
+
+## Limitations
+[limitations]: #limitations
+
+The following limitations may be encountered while operating a pool:
+* file size
+* number of files in a directory
+* snapshot size
+* number of keepers in a pool
+
+## Configuration
+
+Configuration data for each node can be split into local and shared.
+
+### Local
+
+  * local BOX address
+  * local public/private key
+
+###  Shared
+
+  * remote BOX addresses of participants in the pool
+  * shared secret
+  * minimum acceptable replication factor
+  * normal event frequency
+  * warning time
+    * how much time should be given for a warning to be sent out before a imminent limitation is encountered and a system failure occurs
+    * has a global default as well as an override for each custom limitation
+
+## Conflict Resolution
+[conflict-resolution]: #conflict-resolution
+A conflict may arise between keepers when a snapshat goes out of sync.  This could occur either due to [real time updates](#real-time-updates) or [disk corruption](#disk-corruption).
+
+### Real-time Updates
+[real-time-updates]: #real-time-updates
+  * more than one person is editing the same data set on several BOXes in a pool at the same time
+
+### Disk Corruption
+[disk-corruption]: #disk-corruption
+  * a disk becomes corrupt on a BOX
+
+In either case, the disputing keepers will take the appropriate steps to resolve the conflict.  If an appropriate back-out strategy can not be achieved, an event is raised.
+
+## Events
+The following events should be dispatched for an administrative UI.
+
+  * limitation imminent
+
+  * limitation encountered
+
+  * keeper health
+    * memory
+    * disk I/O
+    * CPU usage
+    * disk corruption
+
+  * unresolved conflict
+
+  * unacceptable replication factor
+
+  * keeper added / removed
+
+  * network disruption
+
+
+### Event Types
+  * normal
+  * warning
+  * failure
+
+### Warnings
+
+Events dispatched before a failure occurs based on a forecasting heuristic to determine how quickly a limit will be reached.
+
+### Event Frequency
+Normal events are dispatched periodically (based on a config param) for historical reporting and warnings|failures are dispatched immediately.
+
+## Regions
+
+If multiple regions are set up, each region contains the entire contents of a snapshot.  If a region is severed from the pool, it will still be able to recover the entire snapshot.
+
+# Reference-level Explanation
+[reference-level-explanation]: #reference-level-explanation
+
+## Network Architecture
+
+A peer-peer architecture is used over master/slave so that if a single keeper goes down the rest of the pool will still be able to operate normally.
+
+  * any shared config data is stored on each BOX
+
+  * any shared state required for the retrieval of a data set is stored on each BOX
+
+  * no central servers are used for routing
+
+
+## Heuristics
+
+Some heuristics can be used to achieve greater availability / load times and minimize bandwidth.
+
+### Local File System First
+
+If space permits, the entire contents of a snapshot may be stored on an author's local file system.  If the author runs out of space then contents must be sharded across several BOXes.
+
+@TODO - fill out other heuristics
+
+
+### Conflict Resolution
+
+For detecting / handling conflicts due to data sets going out of sync from real-time updates
+
+There are different conflict resolution strategies available.
+
+Both strategies might be used by a single keeper depending on the type of data set or an override.
+
+### File Integrity Monitoring
+
+For detecting / handling data set corruption.
+
+Comparing the contents of chunks on disk with a source of truth.
+
+The source of truth is only updated from change events.
+
+## Event Dispatcher
+
+@TODO
+
+## Data Set Retrieval
+
+@TODO
+
+
+## Network Stack
+
+@TODO
+
+# Drawbacks
+[drawbacks]: #drawbacks
+Putting the responsibility of data reliability on BOX owners means there is potential for a BOX owner to make a mistake and permanently lose their data.
+
+# Rationale and alternatives
+[rationale-and-alternatives]: #rationale-and-alternatives
+An alternative could be to use paid services (cloud storage providers) with their own SLAs to take on the responsibility of data reliability.
+
+If participating in a decentralized storage network (DSN), the BOX owner could also purchase a mining component to offset their cost.
+
+There are currently a few drawbacks with this:
+
+  * becoming a storage miner requires a significant upfront investment to cover hardware and staking costs
+
+  * a private pool will always be more efficient since keepers will not have to worry about the overhead of trusting each other
+
+These options are not mutually exclusive.  Offering both options (free and paid) could provide the greatest freedom/flexibility for BOX owners.
+
+# Prior art
+[prior-art]: #prior-art
+
+  * [IPFS cluster](https://cluster.ipfs.io/)
+
+# Unresolved questions
+[unresolved-questions]: #unresolved-questions
+
+How is a data set reconstructed from chunks?
+
+How are chunks found on the network? (content discovery)
+
+What is an ideal replication factor?
+
+How can contents of an entire filesystem be efficiently compared with snapshot (aka source of truth)?
+
+How can reliability be measured? Markov models?
+
+How can system limits be calculated?
+
+How can NAT hole punching work in a pnet without any relays?
+
+Should we consider using a VPN or other alternatives such as Tor over libp2p?
+
+How will bootstrapping work for BOXes not on same LAN?
+
+Which components can be re-used for data sharing?
+
+Does data compression need to be taken into account?
+
+# Future possibilities
+[future-possibilities]: #future-possibilities
+
+Storing a history of the snapshot so an owner can go back in time and recover a data set from a previous state.
