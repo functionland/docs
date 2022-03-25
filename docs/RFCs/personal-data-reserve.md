@@ -208,15 +208,15 @@ These options are not mutually exclusive.  Offering both options (free and paid)
 
   * [IPFS cluster](https://cluster.ipfs.io/)
 
-  * [private connections](./pnet)
+  * private connections
 
-  * [authentication](./auth)
+  * authentication
 
-  * [retriever](./retriever)
+  * retriever
 
-  * [keeper](./keeper)
+  * keeper
 
-@TODO - verify links
+@TODO - provide links to relevant docs
 
 ## Unresolved questions
 [unresolved-questions]: #unresolved-questions
