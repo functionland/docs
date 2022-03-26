@@ -14,7 +14,7 @@ We need to protect user and their data from harms and risk of public network.
 Isolating users from public network can help us reduce the scope of work while maintaining the usefulness of our product, and testing our security layer without putting users in harm's way. 
 
 ## Proposal
-using IPFS build-in private network. base on [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
+Using IPFS built-in private network. base on [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
 Its uses a pre-shared key (PSK) to create a private network with encrypted communication.
 
 For box setup user provide an environment variable SECRET which is password he should remember.
