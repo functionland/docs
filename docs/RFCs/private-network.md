@@ -5,7 +5,7 @@
 
 ## Background
 We are using IPFS as our file system. But IPFS is built to use for public data, and it does not support ACL, 
-so we need to find a way to keep user safe until our security layer become mature.
+so we need to find a way to keep users safe until our security layer becomes mature.
 
 ## Problem Statement
 We need to protect user and their data from harms and risk of public network.  
