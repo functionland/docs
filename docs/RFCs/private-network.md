@@ -15,7 +15,7 @@ Isolating users from public network can help us reduce the scope of work while m
 
 ## Proposal
 Using IPFS built-in private network. base on [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
-Its uses a pre-shared key (PSK) to create a private network with encrypted communication.
+It uses a pre-shared key (PSK) to create a private network with encrypted communication.
 
 For box setup user provide an environment variable SECRET which is password he should remember.
 the secret then convert to a hash of 256 bit by algorithm like sha256 and generate the swarm.key for ipfs and libp2p node's.
