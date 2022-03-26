@@ -8,7 +8,7 @@ we are using IPFS as our file system. but IPFS is build to use for public data, 
 so we need to find a way to keep user safe until our security layer become mature.
 
 ## Problem Statement
-We need to protect user and his/her data from harms and risk of public network.  
+We need to protect user and their data from harms and risk of public network.  
 
 ## Motivation
 Isolating User from public network can help us relax the problem and build useful product and testing our security layer without putting user in harms way. 
