@@ -11,7 +11,7 @@ so we need to find a way to keep users safe until our security layer becomes mat
 We need to protect user and their data from harms and risk of public network.  
 
 ## Motivation
-Isolating User from public network can help us relax the problem and build useful product and testing our security layer without putting user in harms way. 
+Isolating users from public network can help us reduce the scope of work while maintaining the usefulness of our product, and testing our security layer without putting users in harm's way. 
 
 ## Proposal
 using IPFS build-in private network. base on [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
