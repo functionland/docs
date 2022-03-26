@@ -4,7 +4,7 @@
 - Functionland Issue:
 
 ## Background
-we are using IPFS as our file system. but IPFS is build to use for public data, and it does not support ACL, 
+We are using IPFS as our file system. But IPFS is built to use for public data, and it does not support ACL, 
 so we need to find a way to keep user safe until our security layer become mature.
 
 ## Problem Statement
