@@ -20,7 +20,7 @@ Its uses a pre-shared key (PSK) to create a private network with encrypted commu
 For box setup user provide an environment variable SECRET which is password he should remember.
 the secret then convert to a hash of 256 bit by algorithm like sha256 and generate the swarm.key for ipfs and libp2p node's.
 
-For Fula client when user call createClient he should also provide the password he used for setting the box's.
+For Fula client when user calls `createClient` they should also provide the password used for setting up the boxes.
 
 For network discovery its manual process that user should provide all box peer id's in config.
 
