@@ -1,62 +1,106 @@
 - Feature Name: private-network
 - Start Date: 2022-02-01
-- RFC PR:
-- Functionland Issue:
+- RFC PR: https://github.com/functionland/docs/pull/67
+- Functionland Issue: https://github.com/functionland/docs/issues/63
 
 ## Background
-We are using IPFS as our file system. But IPFS is built to use for public data, and it does not support ACL, 
-so we need to find a way to keep users safe until our security layer becomes mature.
+We are using IPFS as our file system. But IPFS is built to use for public data, and it does not support ACL,
+So we need to find a way to keep users safe until our security layer becomes mature. And also ipfs-cluster [docs](https://cluster.ipfs.io/documentation/guides/security/#ports-overview) recommended to have a secret.
+
+###Current Network
+Our current network topology is too simple, its only base on webrtc-start and peer discovery is disabled.
+#### Server
+Node with roll of server is a js-libp2p node with our protocol's and server side implementations (use js-ipfs as fs) that listen on [webrtc-start](https://github.com/functionland/fula/blob/main/libraries/fula-client/src/config.ts).
+
+#### Client
+Node with the roll of [client](https://github.com/functionland/fula/tree/main/libraries/fula-client) (phone,webapp) are listening on [webrtc-start](https://github.com/functionland/fula/blob/main/libraries/fula-client/src/config.ts) and when user provide the string peer id (`B58String`) of the box with [connect](https://docs.fx.land/api/client-instance#connect-to-box) API, the api create multiAddress based on webrtc signaling server add it to libp2p peer store and keep the connection alive with the box.
+also have to mention inbound connections are blocked.
+
 
 ## Problem Statement
-We need to protect user and their data from harms and risk of public network.  
+We need to protect users and their data from harms and risks of public networks and also cover the [multi box scenario](https://github.com/functionland/docs/issues/58).
+The public network risks are:
+- Anyone on the internet can connect to the box.
+- Anyone on the internet that is connected to the box can use bitswap to get data from the box.
+- Peer routing and Content discovery can leak what you are doing to the public.
+- deficiency in our encryption algorithm or key management can leak all user data to the public.
+- clusters running without a secret may discover and connect to the main IPFS network, which is mostly useless for the cluster peers (and for the IPFS network).
 
 ## Motivation
-Isolating users from public network can help us reduce the scope of work while maintaining the usefulness of our product, and testing our security layer without putting users in harm's way. 
+Isolating users from public networks can help us reduce the scope of work while maintaining the usefulness of our product, and testing our security layer without putting users in harm's way.
 
 ## Proposal
-Using IPFS built-in private network. base on [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
-It uses a pre-shared key (PSK) to create a private network with encrypted communication.
+We can use built-in libp2p components to create a private network with encrypted communication.
+The components are:
+- Libp2p built-in private network. It uses a [private shared key](https://github.com/libp2p/js-libp2p/tree/master/src/pnet#private-shared-keys) for creating an isolated network with encrypted communication.
+  - [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
+  - [js-doc](https://github.com/libp2p/js-libp2p/tree/master/src/pnet)
+- Libp2p bootstrap for bootstrapping the network of boxes:
+  - [js-doc](https://github.com/libp2p/js-libp2p-bootstrap)
 
-For box setup user provide an environment variable SECRET which is password he should remember.
-the secret then convert to a hash of 256 bit by algorithm like sha256 and generate the swarm.key for ipfs and libp2p node's.
-
-For Fula client when user calls `createClient` they should also provide the password used for setting up the boxes.
-
-For network discovery its manual process that user should provide all box peer id's in config.
+In this way when a node comes online, Libp2p uses the key and the list of other node's to join the network.
 
 ## Scope of work
-- human friendly password to swarm.key 
-- box should look for SECRET env variable and if it exit set the connProtector for libp2p config
-- fula-client constructor should get another parameter call secret and if exist set connProtector for libp2p
-- create an example for the describing functionality
+### Box
+For box setup users provide an environment variable `FULA_NET_SECRET` which they should remember. and provide a list of node as `config.json`
 
-## Implementation 
-### human-readable password
-Convert a human-readable password to swarm.key
-simplest way is to use ['libp2p-crypto'](https://github.com/libp2p/js-libp2p-crypto#cryptopbkdf2password-salt-iterations-keysize-hash) (it works both on browser and node)
-```js
-import crypto from 'libp2p-crypto'
-const salt = '';
-const passwordToPKey = (password) => {
-  // it should be somthing like this
-  const key = crypto.pbkdf2(password, salt, 5, 256, 'sha2-256')
-  pkey = `/key/swarm/psk/1.0.0/
-  /base16/
-  ${key}`
-  return new TextEncoder().encode(key)
+### FULA-Client
+user calls `createClient` they should also provide the secret they used for setting up the boxes. and when he calls `connect` it should pass the list of string peerId's
+
+
+## Implementation
+The box and client already support private-key but need to add test and fixes namings.
+### Box
+In the [Config](https://github.com/functionland/fula/blob/main/apps/box/src/config.ts) we should change the name `PKEY` to `FULA_NET_SECRET` 
+
+In the [Config](https://github.com/functionland/fula/blob/main/apps/box/src/config.ts) we should add to support to load `config.json` in this format:
+
+```json
+{
+  "nodes": [
+    "/ip4/104.131.131.82/tcp/4001/ipfs/QmaCpDMGvV2BGHeYERUEnRQAwe3N8SzbUtfsmvsqQLuvuJ",
+    "/dnsaddr/bootstrap.libp2p.io/ipfs/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN",
+    "/dnsaddr/bootstrap.libp2p.io/ipfs/QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa"
+  ]
 }
-
 ```
-the box and client already support pkey input, but we should add the above function to them
-and after that we should change existing pkey on both fula and box to use the above function.
+Which will be used for creating `js-libp2p-bootstrap` [config](https://github.com/libp2p/js-libp2p-bootstrap).
 
-for creating an example we can create copy of react-gallery and add the password field in config.<br/>
+
+### FULA-client
+In [fula-client](https://github.com/functionland/fula/blob/main/libraries/fula-client/src/index.ts) We have to change pkey to fulaSecret so:
+```ts
+createClient(config?: Partial<Libp2pOptions & constructorOptions>, pKey = undefined): Promise<Fula>
+```
+to
+```ts
+createClient(config?: Partial<Libp2pOptions & constructorOptions>, fulaSecret = undefined): Promise<Fula>
+```
+and change connect interface to get a list of peerId`s from:
+```
+ connect: (peerId: string) => Connection
+```
+to
+```
+  connect: (peerId: [string]) => Connection
+```
+And change the logic to connect to all the boxes and keep connection alive.
+
+## Case Study
+For dogfooding of new changes we can copy of [react-gallery](https://github.com/functionland/fula/tree/main/examples/react-gallery). and change
+the [`BoxConfig`](https://github.com/functionland/fula/blob/main/examples/react-gallery/src/components/BoxConfig.jsx)
+to get list of comma seperated peerIds.
+
 note: if example repo would be outside mono-repo we can just use branch for describing every functionality.
 
 
 ## Alternative approaches
-- Using VPN for creating the private network
+### VPN
+Using VPN for creating the private network.
+
+Disadvantage:
   - It adds another point of failure to the system.
+  - It is also not that decentralized.
 
 ## Risks
 ### Work prioritization
@@ -64,3 +108,5 @@ note: if example repo would be outside mono-repo we can just use branch for desc
 ### what could impact delivery of this RFC?
 ## dependencies
 ## Impact
+
+
