@@ -33,10 +33,10 @@ Isolating users from public networks can help us reduce the scope of work while 
 We can use built-in libp2p components to create a private network with encrypted communication.
 The components are:
 - Libp2p built-in private network. It uses a [private shared key](https://github.com/libp2p/js-libp2p/tree/master/src/pnet#private-shared-keys) for creating an isolated network with encrypted communication.
-  - [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
-  - [js-doc](https://github.com/libp2p/js-libp2p/tree/master/src/pnet)
+- [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
+- [js-doc](https://github.com/libp2p/js-libp2p/tree/master/src/pnet)
 - Libp2p bootstrap for bootstrapping the network of boxes:
-  - [js-doc](https://github.com/libp2p/js-libp2p-bootstrap)
+- [js-doc](https://github.com/libp2p/js-libp2p-bootstrap)
 
 In this way when a node comes online, Libp2p uses the key and the list of other node's to join the network.
 
@@ -51,17 +51,18 @@ user calls `createClient` they should also provide the secret they used for sett
 ## Implementation
 The box and client already support private-key but need to add test and fixes namings.
 ### Box
-In the [Config](https://github.com/functionland/fula/blob/main/apps/box/src/config.ts) we should change the name `PKEY` to `FULA_NET_SECRET` 
+In the [Config](https://github.com/functionland/fula/blob/main/apps/box/src/config.ts) we should change the name `PKEY` to `FULA_NET_SECRET`
 
+We need to add [`js-libp2p-bootstrap`](https://github.com/libp2p/js-libp2p-bootstrap)  and
 In the [Config](https://github.com/functionland/fula/blob/main/apps/box/src/config.ts) we should add to support to load `config.json` in this format:
 
 ```json
 {
-  "nodes": [
-    "/ip4/104.131.131.82/tcp/4001/ipfs/QmaCpDMGvV2BGHeYERUEnRQAwe3N8SzbUtfsmvsqQLuvuJ",
-    "/dnsaddr/bootstrap.libp2p.io/ipfs/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN",
-    "/dnsaddr/bootstrap.libp2p.io/ipfs/QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa"
-  ]
+ "nodes": [
+   "/ip4/104.131.131.82/tcp/4001/ipfs/QmaCpDMGvV2BGHeYERUEnRQAwe3N8SzbUtfsmvsqQLuvuJ",
+   "/dnsaddr/bootstrap.libp2p.io/ipfs/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN",
+   "/dnsaddr/bootstrap.libp2p.io/ipfs/QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa"
+ ]
 }
 ```
 Which will be used for creating `js-libp2p-bootstrap` [config](https://github.com/libp2p/js-libp2p-bootstrap).
@@ -78,20 +79,29 @@ createClient(config?: Partial<Libp2pOptions & constructorOptions>, fulaSecret = 
 ```
 and change connect interface to get a list of peerId`s from:
 ```
- connect: (peerId: string) => Connection
+connect: (peerId: string) => Connection
 ```
 to
 ```
-  connect: (peerId: [string]) => Connection
+ connect: (peerId: [string]) => Connection
 ```
-And change the logic to connect to all the boxes and keep connection alive.
+
+We need to change [`Connection`](https://github.com/functionland/fula/blob/main/libraries/fula-client/src/connection.ts) in the way that:
+- Connection `Status`
+- If we connect to at least one box we are `Online`.
+- When we are not connected to any box and try to connect we are at `Connecting`.
+- When connection fails to all the serverPeerIds we Are `Offline`.
+- Connection should have a list of `serverPeerId`.
+- Connect to all the `serverPeerId` and keep the connection alive.
+
+
 
 ## Case Study
-For dogfooding of new changes we can copy of [react-gallery](https://github.com/functionland/fula/tree/main/examples/react-gallery). and change
+For dogfooding of new changes we can use a copy of [react-gallery](https://github.com/functionland/fula/tree/main/examples/react-gallery) and change
 the [`BoxConfig`](https://github.com/functionland/fula/blob/main/examples/react-gallery/src/components/BoxConfig.jsx)
-to get list of comma seperated peerIds.
+to get list of comma seperated peerIds and [`App`](https://github.com/functionland/fula/blob/main/examples/react-gallery/src/App.js) should change to pass the list of peerId's to fula-client.
 
-note: if example repo would be outside mono-repo we can just use branch for describing every functionality.
+Note: if example repo would be outside mono-repo we can just use branch for describing every functionality.
 
 
 ## Alternative approaches
@@ -99,14 +109,16 @@ note: if example repo would be outside mono-repo we can just use branch for desc
 Using VPN for creating the private network.
 
 Disadvantage:
-  - It adds another point of failure to the system.
-  - It is also not that decentralized.
+- It adds another point of failure to the system.
+- It is also not that decentralized.
 
 ## Risks
 ### Work prioritization
 ### Anything that impacts the value of RFC
-### what could impact delivery of this RFC?
-## dependencies
+### What could impact delivery of this RFC?
+## Dependencies
 ## Impact
+
+
 
 
