@@ -24,8 +24,24 @@ We aim not only to encrypt the data, but also to verify its valid data and use a
 |JWE         |`An encrypted JWE object for one or multiple DIDs.`|JSON Web Encryption (JWE) is an IETF standard providing a standardised syntax for the exchange of encrypted data, based on JSON and Base64.|
 |RSA         |`RSA involves a public key and a private key. The public key can be known by everyone and is used for encrypting messages. The intention is that messages encrypted with the public key can only be decrypted by using the private key.`|Rivest–Shamir–Adleman.|
 
-
-# Contents:
+<!-- CONTENT -->
+## Contents:
 
 - [Decentralized Identity (DID)](./did.md)
 - [Enryption](./encryption.md)
+- Box Authentication
+
+
+<!-- ROADMAP -->
+## Roadmap
+- [X] Identity (DIDs)
+- [X] Encryption
+- [ ] Box Authentication
+
+
+## Unresolved questions
+- Content Access Revoke
+- Storing DID document in L3 blockchain
+
+## Future possibilities
+- A box owner can associate multiple peer addresses with a DID.
