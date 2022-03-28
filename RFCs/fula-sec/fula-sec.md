@@ -22,3 +22,10 @@ We aim not only to encrypt the data, but also to verify its valid data and use a
 |AES          |`Used by the client side to encrypt each content. The keys are shared only by authorized audience. The keys are not given to audience in a straightforward manner, of course.`            |Advanced Encryption Standard Algorithm (AES)           |
 |JWS         |`JWS includes the Signing option. It has two method sign the payload and verify a signed data. `|A JSON Web Signature (abbreviated JWS) is an IETF-proposed standard (RFC 7515) for signing arbitrary data.|
 |JWE         |`An encrypted JWE object for one or multiple DIDs.`|JSON Web Encryption (JWE) is an IETF standard providing a standardised syntax for the exchange of encrypted data, based on JSON and Base64.|
+|RSA         |`RSA involves a public key and a private key. The public key can be known by everyone and is used for encrypting messages. The intention is that messages encrypted with the public key can only be decrypted by using the private key.`|Rivest–Shamir–Adleman.|
+
+
+# Contents:
+
+- [Decentralized Identity (DID)](./did.md)
+- [Enryption](./encryption.md)
