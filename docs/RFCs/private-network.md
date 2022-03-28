@@ -33,10 +33,10 @@ Isolating users from public networks can help us reduce the scope of work while 
 We can use built-in libp2p components to create a private network with encrypted communication.
 The components are:
 - Libp2p built-in private network. It uses a [private shared key](https://github.com/libp2p/js-libp2p/tree/master/src/pnet#private-shared-keys) for creating an isolated network with encrypted communication.
-- [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
-- [js-doc](https://github.com/libp2p/js-libp2p/tree/master/src/pnet)
+  - [spec](https://github.com/libp2p/specs/blob/master/pnet/Private-Networks-PSK-V1.md)
+  - [js-doc](https://github.com/libp2p/js-libp2p/tree/master/src/pnet)
 - Libp2p bootstrap for bootstrapping the network of boxes:
-- [js-doc](https://github.com/libp2p/js-libp2p-bootstrap)
+  - [js-doc](https://github.com/libp2p/js-libp2p-bootstrap)
 
 In this way when a node comes online, Libp2p uses the key and the list of other node's to join the network.
 
@@ -88,9 +88,9 @@ to
 
 We need to change [`Connection`](https://github.com/functionland/fula/blob/main/libraries/fula-client/src/connection.ts) in the way that:
 - Connection `Status`
-- If we connect to at least one box we are `Online`.
-- When we are not connected to any box and try to connect we are at `Connecting`.
-- When connection fails to all the serverPeerIds we Are `Offline`.
+  - If we connect to at least one box we are `Online`.
+  - When we are not connected to any box and try to connect we are at `Connecting`.
+  - When connection fails to all the serverPeerIds we Are `Offline`.
 - Connection should have a list of `serverPeerId`.
 - Connect to all the `serverPeerId` and keep the connection alive.
 
