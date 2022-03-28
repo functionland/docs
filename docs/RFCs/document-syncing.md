@@ -1,4 +1,4 @@
-# Document Syncing over IPFS-Cluster with a Correspondant and Newsroom
+# Document Syncing
 - Start Date: 2022-03-24
 - RFC PR: [functionland/docs/pull/61](https://github.com/functionland/docs/pull/61)
 - Functionland Issue: [functionland/docs/issues/58](https://github.com/functionland/docs/issues/58)
@@ -8,21 +8,15 @@
 
 ## Summary
 
-This RFC proposes usage of IPFS-Cluster in conjunction with two separate components on a BOX to sync files and folders across several different BOXes.
+This RFC proposes usage of `IPFS-Cluster` in conjunction with a `Correspondant` and `Newsroom` component to sync files and folders across several devices.
 
 ## Use Case
 
-A person owns several BOXes and they add a document to one of them.
+A BOX owner would like to sync the meeting notes on their desktop with other meeting participants in real time.
 
-The document immediately gets transferred over to the other BOX so that they can make use of it (ie/ perform CRUD operations on it) from either BOX.
+They run a command and provide instructions for other participants to download the document.
 
-The 'documents' being synced (for now) are:
-
-    * plaintext (eg/ UTF-8 encoded) files
-
-    * photos
-
-    * video
+Each participant is able to download and edit the meeting notes and see updates from others in real time.
 
 
 ## Out of Scope
@@ -34,9 +28,15 @@ The 'documents' being synced (for now) are:
 ## Pre-conditions
 [pre-conditions]: #pre-conditions
 
-* the owner has already authenticated themselves with each BOX
+* each participant's device in the meeting is accessible from the others
 
-* the fula-api is persisting data to a disk accessible by the correspondant and newsroom processes
+      EITHER
+
+      * they have a public static IP 
+
+      OR
+
+      * NAT hole punching works AND there are relays available to help establish connectivity
 
 ## Design Considerations
 
@@ -68,7 +68,7 @@ CRDT will be used because:
 
   * 'trusted peers' might be used in the future to provide access control
 
-  * peers will probably come and go frequently in the future when data is synced with external devices (ie/ owner's computer or phone)
+  * peers will probably come and go frequently (ie/ someone needs to drop from the meeting)
 
   * since we have full control over the document store, we can ensure the DAG is shallow (based on limitations of number of files in a directory)
 
@@ -119,8 +119,6 @@ In order to access ipfs-cluster-ctl and ipfs from the command line, the correspo
 
 A separate service will be defined for:
 
-  * fula-api
-
   * newsroom
 
   * correspondant
@@ -135,15 +133,9 @@ The docker setup for the IPFS components can be followed from the  [IPFS-Cluster
 
 The IPFS components should be listed as a dependency of the correspondant and newsroom.
 
-The correspondant and newsroom components should be listed as a dependency of the fula-api.
+## Future 
 
-## Drawbacks / Future Improvements
-
-The main drawback of this design is it will require redundant storage with IPFS and a flat file system.  A future improvement might be just to interact with IPFS and IPFS-Cluster for pinning directly from the fula-api.
-
-In that case there would be no need for both the `correspondent` or `newsroom` components on each BOX, however, they could still be utilized for desktop file/folder syncing.
-
-## Future Performance Optimizations
+### Performance Optimizations
 
 * a scheduler might be used to prioritize fula-api latency over syncing
 
@@ -155,13 +147,28 @@ In that case there would be no need for both the `correspondent` or `newsroom` c
 
   * this may be necessary for handling removal of files anyway
 
+### Connectivity Research
 
-## Future Possibilities
+The main goal is to remove the connectivity pre-condition from this use case so it will work from any device over the vast majority of network topologies.
+
+The following issues are related to this:
+
+  * [research: fula-client overcoming NAT to reach fula-api](https://github.com/functionland/docs/issues/28)
+
+  * [research: public/private relays availability](https://github.com/functionland/docs/issues/72)
+
+### Possibilities
 [future-possibilities]: #future-possibilities
 
-### Person-person Collaboration
+#### Data types
+
+Although this use case is focused on syncing plaintext (eg/ UTF-8 encoded) files it [could also](https://github.com/functionland/docs/issues/71) cover other documents that `IPFS` and `IPFS-Cluster` handles well out of the box such as photos and video.
+
+#### Person-person Collaboration
 
 With the addition of an authentication and ACL layer: 
   * two different BOX owners could share a document with each other and perform real-time edits on it.  They might add a third person as reviewer with read-only access
 
   * a group of people might create a shared album where certain members have the ability to upload photos and others are only allowed to view them (or vice versa)
+
+
