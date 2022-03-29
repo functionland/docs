@@ -67,7 +67,8 @@ const sidebars = {
       items:[
         'RFCs/fula-sec',
         'RFCs/private-network',
-        'RFCs/document-syncing'
+        'RFCs/document-syncing',
+        'RFCs/personal-data-reserve'
       ]
     }
   ],
