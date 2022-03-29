@@ -7,7 +7,7 @@
 We are using IPFS as our file system. But IPFS is built to use for public data, and it does not support ACL,
 So we need to find a way to keep users safe until our security layer becomes mature. And also ipfs-cluster [docs](https://cluster.ipfs.io/documentation/guides/security/#ports-overview) recommended to have a secret.
 
-###Current Network
+### Current Network
 Our current network topology is too simple, its only base on webrtc-start and peer discovery is disabled.
 #### Server
 Node with roll of server is a js-libp2p node with our protocol's and server side implementations (use js-ipfs as fs) that listen on [webrtc-start](https://github.com/functionland/fula/blob/main/libraries/fula-client/src/config.ts).
@@ -112,12 +112,7 @@ Disadvantage:
 - It adds another point of failure to the system.
 - It is also not that decentralized.
 
-## Risks
-### Work prioritization
-### Anything that impacts the value of RFC
-### What could impact delivery of this RFC?
-## Dependencies
-## Impact
+
 
 
 
