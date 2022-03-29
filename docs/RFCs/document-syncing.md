@@ -85,7 +85,11 @@ There are two new components introduced:
 
   * newsroom
 
-![Box System Architecture](/diagrams/BOX-data-sync-architecture.png)
+<p align="center">
+  <img alt="Box System Architecture" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/BOX-data-sync-architecture.png"/>
+  <p align="center">Box System Architecture</p>
+</p>
+
 
 ### System Properties
 
@@ -106,11 +110,17 @@ A watch (with debounce) of the filesystem is used instead of an interval timer f
 
 #### Correspondant Flow State
 
-![Correspondant Flow Chart Implementation](/diagrams/data-sync-correspondant.png)
+<p align="center">
+  <img alt="Correspondant Flow Chart Implementation" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/data-sync-correspondant.png"/>
+  <p align="center">Correspondant Flow Chart Implementation</p>
+</p>
 
 #### Newsroom Flow State
 
-![Newsroom FLow Chart Implementation](/diagrams/data-sync-newsroom.png)
+<p align="center">
+  <img alt="Newsroom FLow Chart Implementation" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/data-sync-newsroom.png"/>
+  <p align="center">Newsroom FLow Chart Implementation</p>
+</p>
 
 
 ### Docker-Compose

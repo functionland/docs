@@ -23,8 +23,16 @@ At a high level you will write a client that enables the user to upload a bunch 
 In order to do this you need to tell the `DATA` API where to store the collection of photos.  The name of the collection can be anything you choose.
 
 ### Photo Upload
-![Photo-Upload](/diagrams/upload-photo.svg)
+
+<p align="center">
+  <img alt="Photo-Upload" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/upload-photo.svg"/>
+  <p align="center">Photo-Upload</p>
+</p>
 
 ### Retrieve Photos for Gallery
-![Gallery-Retrieve](/diagrams/retrieve-photo.svg)
+
+<p align="center">
+  <img alt="Gallery-Retrieve" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/retrieve-photo.svg"/>
+  <p align="center">Gallery-Retrieve</p>
+</p>
 
