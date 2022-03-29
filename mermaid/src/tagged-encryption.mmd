@@ -1,0 +1,28 @@
+sequenceDiagram
+
+participant Alice
+
+participant Box
+
+participant Bob
+
+Note left of Alice: - Create DID <br/> 
+Note right of Bob: - Create DID <br/>
+
+Alice->>Box: Chunked stream Cip = Encryption(m,sK1)
+
+Note right of Box: Save Encrypted Content into IPFS
+
+Box->>Alice: return CID
+
+Bob->>Alice: Send Public Addresses (B^DID)
+
+Alice->>Bob: JWE(DIDs, Doc={CID,sK1}
+
+Note right of Bob: - Save JWE <br/>
+
+Bob->>Bob: Doc={CID,sK1} = JWE Decrypt(B^DID)
+
+Bob->>Box: Send CID
+
+Box->>Bob: Encrypted stream -> Decryption(Cip,sK1)

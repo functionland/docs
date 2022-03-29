@@ -1,15 +1,22 @@
-Feature Name: fula-sec
+# FULA Security Layer
+- Start Date: 2022-02-27
+- RFC PR: [functionland/docs/pull/74](https://github.com/functionland/docs/pull/74)
+- Functionland Issue: [functionland/docs/issues/65](https://github.com/functionland/docs/issues/65)
+- Status: Draft
+- Authors: [Jamshid](https://github.com/ruffiano89)
+- Reviewers: [Masih](https://github.com/orgs/functionland/people/masih), [Aaron](https://github.com/gitaaron)
 
-Start Date: 27.02.2022
 
-# FULA SECURITY LAYER
+<!-- OVERVIEW -->
+## Overview
 
-## Summary
-**Authentication and encrypted data storage are the main structural elements for Decentralized network and Web3 applications. IPFS keeps the data open state, which means that if someone has a CID, they can have the data without the author's permission. Therefore, we aim to develop fula-sec in this project from a security point of view, not to have access to data without the permission of the author.**
+Authentication and encrypted data storage are the main structural elements for decentralized networks and Web3 applications. By default, IPFS does not encrypt the data persisted to it.  This means that if someone has a [CID](https://docs.ipfs.io/concepts/content-addressing/), they can access the data without the author's permission.  The fula-sec layer aims to solve this, so that data owners can have full control over how their data is accessed.
 
-## Motivation
+The fula-sec layer is broken down into the following fundamental building blocks:
 
-By implementing security layer into the Fula protocol, the owner can decide with whom to share data, give access, and store encrypted data. The data owner stores the following structure in the metadata (for example: owner, grant, access time) to share data with multiple users, and the Fula security model checks if other users have access to the data which is published by the data owner.
+- [X] [Decentralized Identity (DID)](./fula-sec/did.md)
+- [X] [Encryption](./fula-sec/encryption.md)
+- [ ] Box Authentication
 
 
 ## What Security Protocols Implemented
@@ -23,20 +30,6 @@ We aim not only to encrypt the data, but also to verify its valid data and use a
 |JWS         |`JWS includes the Signing option. It has two method sign the payload and verify a signed data. `|A JSON Web Signature (abbreviated JWS) is an IETF-proposed standard (RFC 7515) for signing arbitrary data.|
 |JWE         |`An encrypted JWE object for one or multiple DIDs.`|JSON Web Encryption (JWE) is an IETF standard providing a standardised syntax for the exchange of encrypted data, based on JSON and Base64.|
 |RSA         |`RSA involves a public key and a private key. The public key can be known by everyone and is used for encrypting messages. The intention is that messages encrypted with the public key can only be decrypted by using the private key.`|Rivest–Shamir–Adleman.|
-
-<!-- CONTENT -->
-## Contents:
-
-- [Decentralized Identity (DID)](./did.md)
-- [Enryption](./encryption.md)
-- Box Authentication
-
-
-<!-- ROADMAP -->
-## Roadmap
-- [X] Identity (DIDs)
-- [X] Encryption
-- [ ] Box Authentication
 
 
 ## Unresolved questions
