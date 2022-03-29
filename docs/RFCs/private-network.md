@@ -1,4 +1,4 @@
-- Feature Name: private-network
+# Private Network
 - Start Date: 2022-02-01
 - RFC PR: https://github.com/functionland/docs/pull/67
 - Functionland Issue: https://github.com/functionland/docs/issues/63
