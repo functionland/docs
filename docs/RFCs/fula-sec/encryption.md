@@ -16,7 +16,7 @@ There are two scenarios that require encryption
 
 ## Tagged Encryption
 
- * encrypt data by adding a DID
+ **Encrypt data by adding a DID.**
 
 Tagged encryption works according to the following steps:
 
@@ -32,13 +32,18 @@ Tagged encryption works according to the following steps:
 
 6. Bob decrypts the data with sK1 while streaming it from the BOX.
 
-![Tagged Encryption Sequence Diagram](/diagrams/tagged-encryption.svg)
+<p align="center">
+  <img alt="tagged-encryption" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/tagged-encryption.svg"/>
+  <p align="center">Tagged Encryption Sequence Diagram</p>
+</p>
 
 See [here](https://github.com/functionland/fula/blob/fula-sec/libraries/fula-sec/readme.md#tagged-encryption-tagged-did) for tagged encryption sample code.
 
+#
+
 ## Asymmetric Encryption
 
-With assymetric encryption, no one needs to share DID identity with others, they just need to know a PubKey.
+**With assymetric encryption, no one needs to share DID identity with others, they just need to know a PubKey.**
 
 Asymmetric Encryption works according to the following steps:
 
@@ -54,9 +59,15 @@ Asymmetric Encryption works according to the following steps:
 
 6. Bob decrypts data with sK1 while streaming it from the BOX.
 
-![Assymetric Encryption Sequence Diagram](/diagrams/assymetric-encryption.svg)
+<p align="center">
+  <img alt="Assymetric Encryption Sequence Diagram" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/assymetric-encryption.svg"/>
+  <p align="center">Tagged Encryption Sequence Diagram</p>
+</p>
+
 
 See [here](https://github.com/functionland/fula/blob/fula-sec/libraries/fula-sec/readme.md#asymmetric-encryption) for assymetric encryption sample code.
+
+#
 
 ## References
 

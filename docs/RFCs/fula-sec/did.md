@@ -29,10 +29,19 @@ Setting up decentralized identity with providers(blockchain/distributed ledger) 
 1. Create DID identity -
 With Create DID, we will have a DID identity and two secret keys options for backup.
 
-![create DID flowchart diagram](/diagrams/create-did.svg)
+<p align="center">
+  <img alt="create-did" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/create-did.svg"/>
+  <p align="center">Create DID identity flow</p>
+</p>
+
+<br></br>
 
 2. Recover DID identity - We need a mnemonic or private key to restore identity.
 
-![recover DID flowchart diagram](/diagrams/recover-did.svg)
+<p align="center">
+  <img alt="recover-did" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/recover-did.svg"/>
+  <p align="center">Recover DID identity flow</p>
+</p>
 
 See [here](https://github.com/functionland/fula/tree/fula-sec/libraries/fula-sec#decentralized-identity-did) for DID reference implementation.
+
