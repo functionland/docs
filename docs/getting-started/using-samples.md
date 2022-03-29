@@ -15,7 +15,10 @@ If you followed the previous step, it should already be running and all you have
 
 You should see the following dialog:
 
-![Todo Connect Prompt](/img/Todo-Connect.png)
+<p align="center">
+  <img alt="Todo Connect Prompt" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/img/Todo-Connect.png"/>
+  <p align="center">Todo Connect Prompt</p>
+</p>
 
 ## Connect to the BOX
 
@@ -25,7 +28,11 @@ After clicking 'Connect'...
 
 The app should redirect you to the TODOs app.
 
-![Todo App](/img/Todo-Connected.png)
+<p align="center">
+  <img alt="Todo App" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/img/Todo-Connected.png"/>
+  <p align="center">Todo App</p>
+</p>
+
 
 ## Editing the Sample
 
