@@ -3,7 +3,7 @@
 - RFC PR: [functionland/docs/pull/61](https://github.com/functionland/docs/pull/61)
 - Functionland Issue: [functionland/docs/issues/58](https://github.com/functionland/docs/issues/58)
 - Status: Draft
-- Authors: [Aaron Surty](https://github.com/gitaaron),
+- Authors: [Aaron](https://github.com/gitaaron),
 - Reviewers: [Farhoud](https://github.com/farhoud), [Ehsan](https://github.com/ehsan6sha), [Masih](https://github.com/orgs/functionland/people/masih)
 
 ## Summary
