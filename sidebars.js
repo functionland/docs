@@ -65,7 +65,18 @@ const sidebars = {
         id:'RFCs/rfc-process'
       },
       items:[
-        'RFCs/fula-sec',
+        {
+          type:'category',
+          label:'Security',
+          link:  {
+            type:'doc',
+            id:'RFCs/fula-sec'
+          },
+          items:[
+            'RFCs/fula-sec/did',
+            'RFCs/fula-sec/encryption',
+          ]
+        },
         'RFCs/private-network',
         'RFCs/document-syncing',
         'RFCs/personal-data-reserve'
