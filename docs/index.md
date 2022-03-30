@@ -16,7 +16,7 @@ There is currently no single chain agnostic token we can use to pay for any dece
 
 There is currently no easy way for us to take advantage of the convenience of the cloud while resting assured that we won't lose our data if we stop paying our bills: enter BAS
 
-There is currently no open source modular datacenter grade server hardware that is fully customizable with the aesthetic appeal required to sit as a center piece in our home: enter BOX
+There is currently no open source modular datacenter grade server hardware that is fully customizable with the aesthetic appeal required to sit as a center piece in our home: enter Box
 
 There are currently no freemium options for consumers to compute on and store larger sets of data: enter FULA local pools
 
@@ -42,9 +42,9 @@ By developing on top of the FULA platform, you not only are able to make a livin
 
 By decoupling the data from the application, DApp developers can focus on providing a rich user experience without having to worry about how their customer's data is persisted.
 
-It also means BOX customers will not be locked in to using any single DApp.
+It also means Box customers will not be locked in to using any single DApp.
 
-The FULA network will enable a free and open market for service providers.  This means BOX customers can become not just a consumer but also a producer in this new ecosystem.
+The FULA network will enable a free and open market for service providers.  This means Box customers can become not just a consumer but also a producer in this new ecosystem.
 
 It's a positive sum protocol for everyone.
 
@@ -52,7 +52,7 @@ Like what you hear?  Become a pioneer and join us on our journey in bringing Web
 
 You can do that by :
 
-  * heading over to [getting started](./getting-started) and learning all about developing your own DApps on top of the BOX platform
+  * heading over to [getting started](./getting-started) and learning all about developing your own DApps on top of the Box platform
 
   * [subscribing](https://fx.land) for updates to get notified when we launch on Kickstarter
 

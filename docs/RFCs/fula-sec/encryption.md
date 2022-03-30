@@ -22,7 +22,7 @@ Tagged encryption works according to the following steps:
 
 1. Each agent must have a generated DID address.
 
-2. Alice uses a unique symmetric key (sKn) for encrypting each piece of content and each file while streaming to the BOX.
+2. Alice uses a unique symmetric key (sKn) for encrypting each piece of content and each file while streaming to the Box.
 
 3. After the file has been successfully stored to the IPFS node, it returns the CID for each encrypted file to Alice.
 
@@ -30,7 +30,7 @@ Tagged encryption works according to the following steps:
 
 5. Bob decrypts the document using his own DID address and then obtains the symmetric key (sK1) to get the file that belongs to Alice. As a result, BOB gets the CID and sends a request to the Box.
 
-6. Bob decrypts the data with sK1 while streaming it from the BOX.
+6. Bob decrypts the data with sK1 while streaming it from the Box.
 
 <p align="center">
   <img alt="tagged-encryption" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/tagged-encryption.svg"/>
@@ -49,15 +49,15 @@ Asymmetric Encryption works according to the following steps:
 
 1. First, each application must have a generated DID address and PublicKey.
 
-2. Alice uses a unique symmetric key (sKn) for encrypting each piece of content and each file while streaming to the BOX.
+2. Alice uses a unique symmetric key (sKn) for encrypting each piece of content and each file while streaming to the Box.
 
 3. After the file has been successfully stored to the IPFS node, it returns the CID for each encrypted file to Alice.
 
 4. Alice now gives Bob access to the file by issuing him a `JWE Doc` with BOB`s PubKey, symmetric key (sK1) and CID.
 
-5. Bob decrypts the document using his own PrivateKey and then obtains the symmetric key (sK1) to get the file that belongs to Alice. As a result, BOB gets the CID and sends a request to the BOX.
+5. Bob decrypts the document using his own PrivateKey and then obtains the symmetric key (sK1) to get the file that belongs to Alice. As a result, BOB gets the CID and sends a request to the Box.
 
-6. Bob decrypts data with sK1 while streaming it from the BOX.
+6. Bob decrypts data with sK1 while streaming it from the Box.
 
 <p align="center">
   <img alt="Assymetric Encryption Sequence Diagram" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/assymetric-encryption.svg"/>

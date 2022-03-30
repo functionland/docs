@@ -20,9 +20,9 @@ You should see the following dialog:
   <p align="center">Todo Connect Prompt</p>
 </p>
 
-## Connect to the BOX
+## Connect to the Box
 
-Copy the `PeerId` from the BOX server logs in in the [previous step](./box-setup) and paste it into the text input.
+Copy the `PeerId` from the Box server logs in in the [previous step](./box-setup) and paste it into the text input.
 
 After clicking 'Connect'...
 
@@ -54,7 +54,7 @@ You should now see the change reflected in your browser.
 
 Congrats!  You now:
 
-   * have the BOX server up and running and verified you can connect to it
+   * have the Box server up and running and verified you can connect to it
 
    *  learned how to update one of the samples so that you can use it as a starting point for your own DApp
 
