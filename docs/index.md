@@ -44,9 +44,9 @@ By decoupling the data from the application, DApp developers can focus on provid
 
 It also means BOX customers will not be locked in to using any single DApp.
 
-Its a positive sum protocol for everyone.
+The FULA network will enable a free and open market for service providers.  This means BOX customers can become not just a consumer but also a producer in this new ecosystem.
 
-The FULA network will enable a free and open market for service providers.  This means BOX customer can become not just a consumer but also a producer in this new ecosystem.
+Its a positive sum protocol for everyone.
 
 Like what you hear?  Become a pioneer and join us on our journey in bringing Web3 to the mainstream today!
 
