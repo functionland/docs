@@ -2,11 +2,11 @@
 title: Welcome
 id: welcome
 ---
-# Welcome To Functionland
+# Welcome to Functionland
 
 Functionland was founded on a core set of ideals we call Web3 principles.  At the heart of those principles is a simple premise: <b>you should own your own data</b>
 
-So we set out trying to build a better future by developing an app that focuses on liberating a set of data we think is particularly valuable to each person: our home photos and video.
+So we set out trying to build a better future by developing an app that focuses on liberating a set of data we think is particularly important to each person: our home photos and video.
 
 The Fotos app seeks to be a decentralized alternative to the current photo and video sharing and backup applications out there today.
 
