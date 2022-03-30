@@ -32,9 +32,9 @@ There are certain properties necessary to be a trully viable alternative to Big 
 
   * security
 
-To achieve these properties we are building on top of and utilizing an already existent decentralized web.
+To achieve these properties, we designed a system to utilize an already existent decentralized web.
 
-The FULA network is a peer-peer network architecture designed with open protocols and specifications such as [libp2p](https://libp2p.io/), [IPFS](https://ipfs.io/) and [decentralized identity](https://www.w3.org/TR/did-core/).
+The FULA network is a peer-peer architecture designed with open protocols and specifications such as [libp2p](https://libp2p.io/), [IPFS](https://ipfs.io/) and [decentralized identity](https://www.w3.org/TR/did-core/).
 
 This means we can achieve an unprecendented level of interoperabiltiy that will make every participant in the eco system future proof including DApp developers.
 
@@ -46,7 +46,7 @@ It also means BOX customers will not be locked in to using any single DApp.
 
 The FULA network will enable a free and open market for service providers.  This means BOX customers can become not just a consumer but also a producer in this new ecosystem.
 
-Its a positive sum protocol for everyone.
+It's a positive sum protocol for everyone.
 
 Like what you hear?  Become a pioneer and join us on our journey in bringing Web3 to the mainstream today!
 
