@@ -9,7 +9,7 @@ FULA client package provides a method `createClient` that returns client instanc
 
 The client instance is basically a wrapper around a libp2p node. It abstracts away the protocol layer and makes it easier to communicate over libp2p with FULA's [File](https://github.com/functionland/fula/tree/0766d2e4ab56b423a00f2c28a132ea1a8f871164/protocols/file) and [Graph](https://github.com/functionland/fula/tree/0766d2e4ab56b423a00f2c28a132ea1a8f871164/protocols/graph) protocols.
 
-In addition to File and Data APIs, the client instance provides access to the underlying libp2p node. It also maintains the connection between client and the BOX and provides a reconnecting mechanism.
+In addition to File and Data APIs, the client instance provides access to the underlying libp2p node. It also maintains the connection between client and the Box and provides a reconnecting mechanism.
 
 You can find basic methods for working with the client instance here on this page.
 
@@ -30,13 +30,13 @@ import {createClient} from '@functionland/fula'
 const client = await createClient()
 ```
 
-## Connect to BOX
-In order to use different APIs provided by the FULA client, you must connect a client instance to a BOX app. For that you can use the `connect` method.
+## Connect to Box
+In order to use different APIs provided by the FULA client, you must connect a client instance to a Box app. For that you can use the `connect` method.
 
 `async connect(serverId)`
 
 Arguments are:
-- `serverId`: The base58 PeerID string provided by BOX app or any other libp2p node supporting File and Graph protocols.
+- `serverId`: The base58 PeerID string provided by Box app or any other libp2p node supporting File and Graph protocols.
 
 Example:
 ```javascript

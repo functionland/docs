@@ -2,25 +2,27 @@
 title: Welcome
 id: welcome
 ---
-# Welcome To Functionland
+# Welcome to Functionland
 
 Functionland was founded on a core set of ideals we call Web3 principles.  At the heart of those principles is a simple premise: <b>you should own your own data</b>
 
-So we set out trying to build a better future by developing an app that focuses on liberating a set of data we think is particularly valuable to each person: our home photos and video.
+So we set out trying to build a better future by developing an app that focuses on liberating a set of data we think is particularly important to each person: our home photos and video.
 
-The Fotos app seeks to be a decentralized alternative to the current photo and video sharing and backup applications out there today.
+We developed the [Fotos app](https://github.com/functionland/fotos) to be a Web3 alternative to the current photo and video sharing and backup applications out there today.
 
-However, while developing Fotos, we realized there are currently a lot of missing pieces in the Web3 stack that are required in order for us to not sacrifice on our ideals.
+However, while developing Fotos, we quickly realized there are currently a lot of missing pieces in the Web3 stack that are required in order for us to not sacrifice on our ideals.
 
-There is currently no single chain agnostic token we can use to pay for any decentralized infrastructure or software service: enter $FULA token
+There is currently no single chain agnostic token we can use to pay for any decentralized infrastructure or software services: enter $FULA token
 
 There is currently no easy way for us to take advantage of the convenience of the cloud while resting assured that we won't lose our data if we stop paying our bills: enter BAS
 
-There is currently no open source modular datacenter grade server hardware that is fully customizable with the aesthetic appeal required to sit as a center piece in our home: enter BOX
+There is currently no open source modular datacenter grade server hardware that is fully customizable with the aesthetic appeal required to sit as a center piece in our home: enter Box
 
 There are currently no freemium options for consumers to compute on and store larger sets of data: enter FULA local pools
 
-There is currently no platform based on open interoperable specifications that enables developers to write permissionless decentralized apps for consumers and get paid for it: enter the [FULA API](./api)
+There is currently no platform based on open interoperable specifications that enables developers to write permissionless decentralized apps for consumers and get paid for it: enter the [FULA API](./api-intro)
+
+So we decided to build them.
 
 ## How will it work?
 
@@ -42,19 +44,17 @@ By developing on top of the FULA platform, you not only are able to make a livin
 
 By decoupling the data from the application, DApp developers can focus on providing a rich user experience without having to worry about how their customer's data is persisted.
 
-It also means BOX customers will not be locked in to using any single DApp.
+It also means Box customers will not be locked in to using any single DApp.
 
-The FULA network will enable a free and open market for service providers.  This means BOX customers can become not just a consumer but also a producer in this new ecosystem.
+The FULA network will enable a free and open market for service providers.  This means Box customers can become not just a consumer but also a producer in this new ecosystem.
 
 It's a positive sum protocol for everyone.
 
 Like what you hear?  Become a pioneer and join us on our journey in bringing Web3 to the mainstream today!
 
-You can do that by :
+You can do that by:
 
-  * heading over to [getting started](./getting-started) and learning all about developing your own DApps on top of the BOX platform
-
-  * [subscribing](https://fx.land) for updates to get notified when we launch on Kickstarter
+  * heading over to the [FULA API](./api-intro) docs and learning all about developing your own DApps on top of the Box platform
 
   * providing feedback/input on our [RFCs](https://github.com/functionland/docs/tree/main/RFCs)
 

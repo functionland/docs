@@ -17,11 +17,16 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     {
-      type: 'category',
+      type: 'doc',
       label: 'Welcome',
+      id: 'welcome',
+    },
+    {
+      type: 'category',
+      label: 'FULA API',
       link: {
         type: 'doc',
-        id:'welcome',
+        id:'api-intro',
       },
       items: [
         {
@@ -39,14 +44,14 @@ const sidebars = {
         },
         {
           type:'category',
-          label:'FULA Reference Api',
+          label:'Reference',
           link: {
             type: 'doc',
-            id:'api',
+            id:'reference-api',
           },
           items:[
               'api/client-instance',
-            'api/data-api',
+            'api/graph-api',
             'api/file-api'
           ]
         },

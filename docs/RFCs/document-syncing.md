@@ -12,7 +12,7 @@ This RFC proposes usage of `IPFS-Cluster` in conjunction with a `Correspondant` 
 
 ## Use Case
 
-A BOX owner would like to sync the meeting notes on their desktop with other meeting participants in real time.
+A Box owner would like to sync the meeting notes on their desktop with other meeting participants in real time.
 
 They run a command and provide instructions for other participants to download the document.
 
@@ -75,9 +75,9 @@ CRDT will be used because:
   * less stable / tested conflict resolution can be tolerated for this use case
 
 ## Design
-### BOX System Architecture
+### Box System Architecture
 
-The following diagram illustrates how  various components on the BOX will work together to implement data syncing.
+The following diagram illustrates how  various components on the Box will work together to implement data syncing.
 
 There are two new components introduced:
 
@@ -176,8 +176,8 @@ Although this use case is focused on syncing plaintext (eg/ UTF-8 encoded) files
 
 #### Person-person Collaboration
 
-With the addition of an authentication and ACL layer: 
-  * two different BOX owners could share a document with each other and perform real-time edits on it.  They might add a third person as reviewer with read-only access
+With the addition of an authentication and ACL layer:
+  * two different Box owners could share a document with each other and perform real-time edits on it.  They might add a third person as reviewer with read-only access
 
   * a group of people might create a shared album where certain members have the ability to upload photos and others are only allowed to view them (or vice versa)
 
