@@ -20,7 +20,7 @@ There is currently no open source modular datacenter grade server hardware that 
 
 There are currently no freemium options for consumers to compute on and store larger sets of data: enter FULA local pools
 
-There is currently no platform based on open interoperable specifications that enables developers to write permissionless decentralized apps for consumers and get paid for it: enter the [FULA API](./api)
+There is currently no platform based on open interoperable specifications that enables developers to write permissionless decentralized apps for consumers and get paid for it: enter the [FULA API](./api-intro)
 
 ## How will it work?
 
@@ -52,7 +52,7 @@ Like what you hear?  Become a pioneer and join us on our journey in bringing Web
 
 You can do that by :
 
-  * heading over to [getting started](./getting-started) and learning all about developing your own DApps on top of the Box platform
+  * heading over to the [FULA API](./api-intro) docs and learning all about developing your own DApps on top of the Box platform
 
   * [subscribing](https://fx.land) for updates to get notified when we launch on Kickstarter
 

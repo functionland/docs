@@ -42,6 +42,6 @@ We currently support:
 
 ## What Next?
 
-Now that you are up and running, head on over to the [FULA Reference Api](/api) to see everything you can do with Box.
+Now that you are up and running, head on over to the [FULA Reference API](/reference-api) to see everything you can do with Box.
 
 <WorkInProgress />

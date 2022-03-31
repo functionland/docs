@@ -1,10 +1,8 @@
 ---
-title: FULA API
-id: api
+title: Reference
+id: reference-api
 ---
-# FULA API
-
-The FULA API was designed by us for us with the intention that you (a third party open source developer) will be able to leverage it in order to build other compelling/rich user experiences.
+# FULA API Reference
 
 It comprises of the following.
 

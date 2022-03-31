@@ -18,7 +18,6 @@ To find that have a look at your docker-compose logs for the following -
 
 ```
 box_1             | Swarm listening on /dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star/p2p/12D3KooWPeEhynWyG7dHytppDP6ZG6jhEv7LcDLWsExGq1YD784E
-box_1             | Swarm listening on /dns4/wrtc-star2.sjc.dwebops.pub/tcp/443/wss/p2p-webrtc-star/p2p/12D3KooWPeEhynWyG7dHytppDP6ZG6jhEv7LcDLWsExGq1YD784E
 ```
 
 Now head over to [using the samples](./using-samples) to verify the Box server is running properly and that you are able to connect to it.
