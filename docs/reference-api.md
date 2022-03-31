@@ -4,7 +4,7 @@ id: reference-api
 ---
 # FULA API Reference
 
-It comprises of the following.
+The FULA API comprises of the following.
 
   * a [Graph API](./api/graph.md) for storing and querying structured data (JSON) over a graphql interface
 
@@ -33,4 +33,14 @@ In order to do this you need to tell the `Graph` API where to store the collecti
   <img alt="Gallery-Retrieve" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/diagrams/retrieve-photo.svg"/>
   <p align="center">Gallery-Retrieve</p>
 </p>
+
+
+## Under the Covers
+
+To understand how the FULA client connects to a Box, it may help to understand what is going on under the covers.
+
+The following Box  <->  Client class diagram shows the relationship and responsibility of each component.
+
+![Client Box architecture](/diagrams/box-client-arch.png)
+
 
