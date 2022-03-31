@@ -1,14 +1,14 @@
 ---
-title: Data API
-id: data-api
+title: Graph API
+id: graph-api
 ---
 import WorkInProgress from '../components/WorkInProgress.mdx'
 
-# Data API
+# Graph API
 
-Data API provides a graphql based interface for storing and querying structured data. Decentralized application
+Graph API provides a graphql based interface for storing and querying structured graph. Decentralized application
 developers for Box can use this API to create, update and delete JSON documents using a standard graphql interface
-directly on their Box. The Data API is a part
+directly on their Box. The Graph API is a part
 of [Fula Client](https://github.com/functionland/fula/tree/main/libraries/fula-client) and you can invoke it using
 the `graphql` interface.
 
@@ -27,7 +27,7 @@ The method resolves to the result of the operation.
 Currently, there are 4 types of mutation and a single query type that you can use. In this document you can find the
 definition and a simple example for each operation, if you are familiar with graphql schemas, you may find the
 current [graphql schema](https://github.com/functionland/fula/blob/main/apps/box/src/graph/gql-engine/schema.ts)  for
-the Data API useful.
+the Graph API useful.
 
 ## Queries
 
@@ -154,7 +154,7 @@ const res = await graphql(updateMutation, {
 
 Deletes a document based on `id` field.
 
-__*Note*__: Since the box uses orbitdb as the underlying database, the `id` field is reserved by the db, if you don't
+__*Note*__: Since the box uses orbitdb as the underlying graphbase, the `id` field is reserved by the db, if you don't
 specify an `id` argument in the creation time of a document, an auto-generated one will be used.
 
 `delete (input:DeleteInput!):[ID!]`
@@ -241,7 +241,7 @@ filter: {
 ```
 
 ## Subscription
-FULA client's Data API provides subscription for queries. You can subscribe to a query's result and get the new result on each change. To do so you can use `graphqlSubscription` method.
+FULA client's Graph API provides subscription for queries. You can subscribe to a query's result and get the new result on each change. To do so you can use `graphqlSubscription` method.
 
 `async function* graphqlSubscribe(query: string, variableValues?: never, operationName?: string)`
 

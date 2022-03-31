@@ -46,7 +46,7 @@ const sidebars = {
           },
           items:[
               'api/client-instance',
-            'api/data-api',
+            'api/graph-api',
             'api/file-api'
           ]
         },

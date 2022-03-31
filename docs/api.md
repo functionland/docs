@@ -4,23 +4,23 @@ id: api
 ---
 # FULA API
 
-The FULA API was designed by us for us with the intention that you (a third party open source developer) will be able to leverage in order to build other compelling/rich user experiences for Box customers.
+The FULA API was designed by us for us with the intention that you (a third party open source developer) will be able to leverage it in order to build other compelling/rich user experiences.
 
 It comprises of the following.
 
-  * a [data api](./api/data.md) for storing and querying structured data (JSON)
+  * a [Graph API](./api/graph.md) for storing and querying structured data (JSON) over a graphql interface
 
-  * a [file api](./api/file.md) for uploading and retrieving files
+  * a [File API](./api/file.md) for uploading and retrieving files
 
 ## Typical API Usage
 
-The `FILE` and `DATA` APIs can be used together to build many different types of DApps.
+The `File` and `Graph` APIs can be used together to build many different types of DApps.
 
-To better understand how they work together, here is an illustration of the basic flow you would use if you wanted to build your own Photos DApp.
+To better understand how they work together, here is an illustration of the basic flow you would use if you wanted to build your own photos DApp.
 
 At a high level you will write a client that enables the user to upload a bunch of files and retrieve a list of the files so that they can be displayed in your DApp.
 
-In order to do this you need to tell the `DATA` API where to store the collection of photos.  The name of the collection can be anything you choose.
+In order to do this you need to tell the `Graph` API where to store the collection of photos.  The name of the collection can be anything you choose.
 
 ### Photo Upload
 
