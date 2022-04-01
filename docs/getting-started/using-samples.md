@@ -7,7 +7,7 @@ id: using-samples
 
 All of the FULA samples can be found in the FULA GitHub repo under [examples](https://github.com/functionland/fula/tree/main/examples).
 
-To get things started and give you an idea of how to work with the [Graph Api](/api/graph-api) we will set up the [TODO Sample App](https://github.com/functionland/fula/tree/main/examples/react-todo-app)
+To get things started and give you an idea of how to work with the [Graph API](/api/graph-api) we will set up the [TODO Sample App](https://github.com/functionland/fula/tree/main/examples/react-todo-app)
 
 ## Running the TODO Sample
 
@@ -58,4 +58,4 @@ Congrats!  You now:
 
    *  learned how to update one of the samples so that you can use it as a starting point for your own DApp
 
-You can now head over to [Using the FULA Client Library](./fula-client) to learn how to include the FULA client in your own project that you are starting from scratch.
+Now that you are up and running, head on over to the [FULA Reference API](/reference-api) to see everything you can do with Box.

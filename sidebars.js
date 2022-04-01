@@ -39,7 +39,6 @@ const sidebars = {
           items:[
             'getting-started/box-setup',
             'getting-started/using-samples',
-            'getting-started/fula-client',
           ]
         },
         {
