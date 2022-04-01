@@ -58,4 +58,4 @@ Congrats!  You now:
 
    *  learned how to update one of the samples so that you can use it as a starting point for your own DApp
 
-You can now head over to [Using the FULA Client Library](./fula-client) to learn how to include the FULA client in your own project that you are starting from scratch.
+Now that you are up and running, head on over to the [FULA Reference API](/reference-api) to see everything you can do with Box.
