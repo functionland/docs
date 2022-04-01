@@ -9,7 +9,7 @@ The easiest way to get the Box server running locally is to clone our repo and u
 
 ```
   > git clone https://github.com/functionland/fula
-  > docker-compose -f docker-compose-dev.yml up
+  > docker-compose -f docker-compose.dev.yaml up
 ```
 
 Next, take note of the [PeerID](https://docs.libp2p.io/concepts/peer-id/) that the Box server created on startup.
