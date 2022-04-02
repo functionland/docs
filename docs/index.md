@@ -50,7 +50,7 @@ To achieve these properties, we designed a system to utilize an already existent
 
 The FULA network is a peer-peer architecture designed with open protocols and specifications such as [libp2p](https://libp2p.io/), [IPFS](https://ipfs.io/) and [decentralized identity](https://www.w3.org/TR/did-core/).
 
-This means we can achieve an unprecendented level of interoperabiltiy that will make every participant in the eco system future proof including DApp developers.
+This means we can achieve an unprecendented level of interoperability that will make every participant in the eco system future proof including DApp developers.
 
 By developing on top of the FULA platform, you not only are able to make a living from your open source contributions with $FULA, you are also not locking yourself in to a single platform with proprietary APIs and archaic approval processes.
 
