@@ -77,7 +77,7 @@ CRDT will be used because:
 The following diagram illustrates how  various components on the BOX will work together to implement data syncing.
 
 
-![Box System Architecture](/diagrams/BOX-data-sync-architecture.png)
+![Box System Architecture](/diagrams/fula-data-sync-architecture.png)
 
 
 ### Integrate IPFS-cluster with @functionland/box
