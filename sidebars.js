@@ -17,11 +17,16 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     {
-      type: 'category',
+      type: 'doc',
       label: 'Welcome',
+      id: 'welcome',
+    },
+    {
+      type: 'category',
+      label: 'FULA API',
       link: {
         type: 'doc',
-        id:'welcome',
+        id:'api-intro',
       },
       items: [
         {
@@ -34,19 +39,18 @@ const sidebars = {
           items:[
             'getting-started/box-setup',
             'getting-started/using-samples',
-            'getting-started/fula-client',
           ]
         },
         {
           type:'category',
-          label:'FULA Reference Api',
+          label:'Reference',
           link: {
             type: 'doc',
-            id:'api',
+            id:'reference-api',
           },
           items:[
               'api/client-instance',
-            'api/data-api',
+            'api/graph-api',
             'api/file-api'
           ]
         },
@@ -65,8 +69,21 @@ const sidebars = {
         id:'RFCs/rfc-process'
       },
       items:[
-        'RFCs/pnet',
-        'RFCs/replication'
+        {
+          type:'category',
+          label:'Security',
+          link:  {
+            type:'doc',
+            id:'RFCs/fula-sec'
+          },
+          items:[
+            'RFCs/fula-sec/did',
+            'RFCs/fula-sec/encryption',
+          ]
+        },
+        'RFCs/private-network',
+        'RFCs/document-syncing',
+        'RFCs/personal-data-reserve'
       ]
     }
   ],

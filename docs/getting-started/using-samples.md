@@ -7,7 +7,7 @@ id: using-samples
 
 All of the FULA samples can be found in the FULA GitHub repo under [examples](https://github.com/functionland/fula/tree/main/examples).
 
-To get things started and give you an idea of how to work with the [DATA Api](/api/data-api) we will set up the [TODO Sample App](https://github.com/functionland/fula/tree/main/examples/react-todo-app)
+To get things started and give you an idea of how to work with the [Graph API](/api/graph-api) we will set up the [TODO Sample App](https://github.com/functionland/fula/tree/main/examples/react-todo-app)
 
 ## Running the TODO Sample
 
@@ -15,17 +15,24 @@ If you followed the previous step, it should already be running and all you have
 
 You should see the following dialog:
 
-![Todo Connect Prompt](/img/Todo-Connect.png)
+<p align="center">
+  <img alt="Todo Connect Prompt" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/img/Todo-Connect.png"/>
+  <p align="center">Todo Connect Prompt</p>
+</p>
 
-## Connect to the BOX
+## Connect to the Box
 
-Copy the `PeerId` from the BOX server logs in in the [previous step](./box-setup) and paste it into the text input.
+Copy the `PeerId` from the Box server logs in in the [previous step](./box-setup) and paste it into the text input.
 
 After clicking 'Connect'...
 
 The app should redirect you to the TODOs app.
 
-![Todo App](/img/Todo-Connected.png)
+<p align="center">
+  <img alt="Todo App" src="https://raw.githubusercontent.com/functionland/docs/246391d247fb301351e483594037135d2b3e03d3/static/img/Todo-Connected.png"/>
+  <p align="center">Todo App</p>
+</p>
+
 
 ## Editing the Sample
 
@@ -47,8 +54,8 @@ You should now see the change reflected in your browser.
 
 Congrats!  You now:
 
-   * have the BOX server up and running and verified you can connect to it
+   * have the Box server up and running and verified you can connect to it
 
    *  learned how to update one of the samples so that you can use it as a starting point for your own DApp
 
-You can now head over to [Using the FULA Client Library](./fula-client) to learn how to include the FULA client in your own project that you are starting from scratch.
+Now that you are up and running, head on over to the [FULA Reference API](/reference-api) to see everything you can do with Box.
