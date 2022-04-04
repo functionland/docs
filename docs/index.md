@@ -4,15 +4,15 @@ id: welcome
 ---
 # Welcome to Functionland
 
-Functionland was founded on a core set of Web3 principles.  At the heart of these principles is a simple premise: <b>Every human being has the right to own his or her own.</b>
+Functionland was founded on a core set of Web3 principles.  At the heart of these principles is a simple premise: <b>Every human being has the right to own his or her own data.</b>
 
-We set out to build a better future around this simple premis.  We started by developing an app that liberates a set of "own data" we think is particularly important to people: personal home photos and video.
+We set out to build a better future around this simple premise.  We started by developing an app that liberates a set of "own data" we think is particularly important to people: personal home photos and video.
 
 We developed [Fotos](https://github.com/functionland/fotos) as a Web3 alternative to available photo and video sharing and backup applications.
 
 But while developing Fotos, we realized there are still many pieces missing from the Web3 stack; pieces that are necessary to achieving the better future we envision.
 
-## What we realized:
+What we realized:
 
 There is currently no single chain agnostic token we can use to pay for decentralized infrastructure or software services.
 
@@ -22,7 +22,7 @@ There is currently no easy way for us to take advantage of cloud convenience wit
 
 **Enter BAS**
 
-There is currently no modular, open-source, datacenter-grade server hardware option available.  Hardware that is fully customizable with aesthetically appealing enough to sit comfortably in your home.
+There is currently no modular, open-source, datacenter-grade server hardware option available.  Hardware that is fully customizable and aesthetically appealing enough to sit comfortably in your home.
 
 **Enter Box**
 
@@ -74,4 +74,4 @@ You can do that by:
 
   * providing feedback/input on our [RFCs](https://github.com/functionland/docs/tree/main/RFCs)
 
-  * sign into one of our [socials](https://linktr.ee/fxland) and join the conversation
+  * sign into one of our [socials](https://linktr.ee/fxland) and join the conversation!
