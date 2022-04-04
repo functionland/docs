@@ -4,7 +4,7 @@ id: welcome
 ---
 # Welcome to Functionland
 
-Functionland was founded on a core set of Web3 principles.  At the heart of these principles is a simple premise: <b>Every human being has the right to own his or her own data.</b>
+Functionland was founded on a core set of Web3 principles.  At the heart of these principles is a simple premise: <b>We each have an inalienable right to own our own data.</b>
 
 We set out to build a better future around this simple premise.  We started by developing an app that liberates a set of "own data" we think is particularly important to people: personal home photos and video.
 
@@ -32,7 +32,7 @@ There are currently no freemium options for consumers to compute on and store la
 
 There is currently no platform based on open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and get paid for doing so.
 
-**Enter the [FULA API](./api-intro)**
+**Enter the [Fula API](./api-intro)**
 
 We decided to build them.  We call it the **Fula network**.
 
@@ -70,7 +70,7 @@ You can do that by:
 
   * backing us on [indiegogo](https://www.indiegogo.com/projects/box-secure-subscription-free-cloud-alternative#/)
 
-  * heading over to [FULA API](./api-intro) docs to learn how to develop your own DApps on the Box
+  * heading over to [Fula API](./api-intro) docs to learn how to develop your own DApps on the Box
 
   * providing feedback/input on our [RFCs](https://github.com/functionland/docs/tree/main/RFCs)
 

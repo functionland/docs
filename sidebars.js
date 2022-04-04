@@ -23,7 +23,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'FULA API',
+      label: 'Fula API',
       link: {
         type: 'doc',
         id:'api-intro',

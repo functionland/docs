@@ -1,9 +1,11 @@
 ---
-title: FULA API
+title: Fula API
 id: api-intro
 ---
-# FULA API
+# Fula API
 
-The FULA API was designed by us for us with the intention that you (a third party open source developer) will be able to leverage it in order to build other compelling/rich user experiences.
+We designed Fula API to help you (a third-party, open-source developer) build other rich and compelling user experiences.
 
-Head over to [getting started](./getting-started) if you want to get your hands dirty right away or skip straight to the [reference](./reference-api) if you are the type of person that reads the entire car manual before operation.
+Want to get your hands dirty right away?   Head over to [getting started](./getting-started).
+
+If you're the kind of person who likes to read the entire manual before starting the engine, then visit the [Fula Reference API](./reference-api).
