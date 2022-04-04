@@ -6,19 +6,20 @@ import WorkInProgress from '../components/WorkInProgress.mdx'
 
 
 # File API (Object Store)
-File API provides An interface like object store for you to upload files and streams (eg/ photos, videos or any type of 
-document) and efficiently retrieve them for use in your web/mobile Dapp. file protocol is base on object store's so we don's support ls.
-if you upload something you have to store the cid to access is. (use graph-protocol to keep track of what you uploaded).
+
+File API provides an interface-like object store for you to upload files and streams (eg. photos, videos or any type of document) and efficiently retrieve them for use in your web/mobile DApp.
+
+File protocol is based on object stores.  When you upload something, a [CID](https://docs.ipfs.io/concepts/content-addressing/) is created and returned to you and the file gets stored in an IPFS compatible datastore.
 
 ## Upload
 
 ### SendFile 
 `sendFile(File) => Promise<FileId>` <br/>
 
-sendFile will take a [File](https://developer.mozilla.org/en-US/docs/Web/API/File) as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
+sendFile will take a [File](https://developer.mozilla.org/en-US/docs/Web/API/File) as an argument and return a Promise.  If the upload completes successfully, a Promise will return a `FileId` that is a string
 representing the CID of uploaded content. 
 
-#### example
+#### Example
 ```js
 import {Fula, createClient} from '@functionland/fula';
 
@@ -32,12 +33,13 @@ const id = await fulaClient.sendFile(selectedFile);
 ### sendStreamFile
 `sendStreamFile(source, meta) => Promise<FileId>` <br/>
 
-sendStreamFile will take a source and meta  as argument and return Promise. if upload done successfully Promise return a `FileId` that is a string
-representing the CID of uploaded content. useful when you work with stream or outside of browser.
+sendStreamFile will take a source and meta  as argument and return a Promise.  If upload is done successfully, a Promise will return a `FileId` that is a string
+representing the CID of uploaded content.  (This is useful when you're working with stream or outside the browser.)
+
 - source:  `AsyncIterable<Uint8Array>`
 - meta: `{name,type,lastModified,size}`
 
-#### example
+#### Example
 ```js
 import {Fula, createClient} from '@functionland/fula';
 
@@ -73,7 +75,7 @@ receiveFile will take FileId and return Promise. if file retrieved  successfully
 
 
 
-#### example
+#### Example
 ```js
 import {Fula, createClient} from '@functionland/fula';
 
@@ -91,7 +93,7 @@ receiveMeta will take FileId and return Promise. if meta for the file retrieved 
 
 
 
-#### example
+#### Example
 ```js
 import {Fula, createClient} from '@functionland/fula';
 
@@ -104,14 +106,14 @@ const {name, type, size, lastModified} = await fulaClient.receiveMeta(fileId);
 ### receiveStreamFile 
 `(fileId: FileId) => Promise<{ source: AsyncIterable<Uint8Array>, meta: Meta }>` <br/>
 
-receiveStreamFile will take FileId and return Promise. if fileId exist successfully Promise return a <br/> 
-`{ source: AsyncIterable<Uint8Array>, meta: Meta }`
-that source is stream of content of the file and Meta is the `Meta`.useful when you work with stream or outside of browser.
+receiveStreamFile will take FileId and return a Promise.  If the FileId exists, a Promise will return a `{ source: AsyncIterable<Uint8Array>, meta: Meta }`
+
+That source is a stream of content of the file and Meta is the `Meta`.  (This is useful when you're working with a stream or outside of the browser.)
+
 - fileId:  `FileId`
 
 
-
-#### example
+#### Example
 ```js
 import {Fula, createClient} from '@functionland/fula';
 

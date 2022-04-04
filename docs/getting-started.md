@@ -4,6 +4,8 @@ id: getting-started
 ---
 # Getting Started
 
-To get started developing your own DApps on top of Fula there are two steps.
+In order to start developing your own DApps on Fula, complete these two steps:
 
-First you will [get the Box server up and running](/getting-started/box-setup) and then you will develop your own front-end that leverages the Fula API.
+1. [Get the Box server up and running](/getting-started/box-setup).
+
+2. Develop your own front-end, leveraging the Fula API.

@@ -16,22 +16,25 @@ the `graphql` interface.
 
 Arguments are:
 
-- `query`: The graphql query string, see below for more information
+- `query`: The graphql query string.
 - `variableValues?`: A JSON object specifying values for variable you used in the query string. You can specify
-  variables in the query string using `$` and then provide values for them in `variableValues` when you want to execute
-  the query or mutation. You can find an example on this page.
-- `operationName?`: An optional name for your operation. _This argument is unused right now_
+  variables in the query string using `$`, then provide values for them in `variableValues` when you want to execute
+  the query or mutation.  
+
+- `operationName?`: An optional name for your operation. _This argument is currently unused._
+
 
 The method resolves to the result of the operation.
 
-Currently, there are 4 types of mutation and a single query type that you can use. In this document you can find the
-definition and a simple example for each operation, if you are familiar with graphql schemas, you may find the
-current [graphql schema](https://github.com/functionland/fula/blob/main/apps/box/src/graph/gql-engine/schema.ts)  for
-the Graph API useful.
+See [below](#example) for an example.
+
+Currently, you can use four(4) mutation types and a single query type. These instructions provide a definition and a simple example for each operation.  
+
+If you are familiar with graphql schemas, you may find the current [graphql schema](https://github.com/functionland/fula/blob/main/apps/box/src/graph/gql-engine/schema.ts) for the Graph API useful.
 
 ## Queries
 
-Every query operation takes a `collection` argument that refers to the name for collection you want to query. If a
+Every query operation takes a `collection` argument that refers to the name for the collection you want to query. If a
 collection with this name does not exist, the operation simply returns an empty output.
 
 ### read
@@ -43,11 +46,11 @@ Fetches a previously stored document based on a filter object.
 The `input` argument should contain:
 
 - `collection:String` (required): name of the collection.
-- `filter: JSON`: a [Filter object](#filter-objects) that determines each document's existence in the output.
+- `filter: JSON`: a [filter object](#filter-objects) that determines each document's existence in the output.
 
 #### Example
 
-This query operation finds all `profile` documents that has an `age` field greater than `20` and then returns
+This query operation finds all `profile` documents that have an `age` field greater than `20` and then returns
 their `id, name, age`.
 
 ```javascript
@@ -71,8 +74,9 @@ const res = await client.graphql(readQuery)
 
 ## Mutations
 
-Every mutation operation takes a `collection` argument that refers to the name for collection you want to mutate. A new
-collection will get created if the collection name does not exist.
+Every mutation operation takes a `collection` argument that refers to the name for the collection you want to mutate. 
+
+If the collection name doesn't exist, a new collection is created.
 
 ### create
 
@@ -154,8 +158,8 @@ const res = await graphql(updateMutation, {
 
 Deletes a document based on `id` field.
 
-__*Note*__: Since the box uses orbitdb as the underlying graphbase, the `id` field is reserved by the db, if you don't
-specify an `id` argument in the creation time of a document, an auto-generated one will be used.
+__*Note*__: Since Box uses orbitdb as its underlying graphbase, the `id` field is reserved by the db, if you don't
+specify an `id` argument in the creation time of a document, it will use an auto-generated `id` argument.
 
 `delete (input:DeleteInput!):[ID!]`
 
@@ -180,16 +184,15 @@ const res = await client.graphql(deleteMutation, {values: ['1', '2']}, 'DeletePr
 
 ## Filter Objects
 
-Filter objects are used to choose a subset of the documents in a collection depending on their attributes. They are
-intended to be like [MongoDB Queries](https://docs.mongodb.com/manual/tutorial/query-documents/).
+Filter objects are used to choose a subset of the documents in a collection, selected according to specific attributes. (They are
+intended to be like [MongoDB Queries](https://docs.mongodb.com/manual/tutorial/query-documents/.)
 
-The graphql engine traverses the filter object recursively until it reaches an Atomic Filter Object. In addition, ATOs
-can get combined and make a more complex filter object by Logical Operators.
+The graphql engine traverses the filter object recursively until it reaches an ATO (Atomic Filter Object). Additionally, Logical Operators can combine ATOs to make a more complex filter.
 
 ### Atomic Filter Object
 
-The simplest form of a filter object that describes an expected value for an attribute. This expectation can be
-expressed by an Operator. For example this ATO expects the `age` attribute for a document to be greater than `15`
+The simplest form of a filter object describing an expected value for an attribute. This expectation can be
+expressed by an Operator. For example this ATO expects the `age` attribute for a document to be greater than `15`:
 
 ```javascript
 {
@@ -199,32 +202,32 @@ expressed by an Operator. For example this ATO expects the `age` attribute for a
 }
 ```
 
-Every key in an ATO refers to an attribute name and the value for that key is the expectation expression. In the
+Every key in an ATO refers to an attribute name.  The value for that key is the expectation expression. In the
 expression you can use value operators (listed below) to define the criteria.
 
 ### Value Operators
 
-Value Operators can be used to define a criteria for an attribute.
+Value Operators can be used to define criteria for an attribute.
 
-__*Note*__: Value Operator names are reserved by the `graphql-engine` and you can't use them as attribute names.
+__*Note*__: Value Operator names are reserved by the `graphql-engine`.  You cannot use them as attribute names.
 
 - `eq` (Equal to)
 - `ne` (Not equal to)
 - `gt` (Greater than)
-- `gte` (Greater than or equal)
+- `gte` (Greater than or equal to)
 - `lt` (Lower than)
-- `lte` (Lower than or equal)
+- `lte` (Lower than or equal to)
 - `in` (Be in [array])
 - `nin` (Not be in [array])
 
 ### Logical Operators
 
-To make more complex filter objects you can combine ATOs with logical operators `or`, `and`. Each of these operators
+To make more complex filter objects, you can combine ATOs with logical operators `or`, `and`. Each of these operators
 takes an array of filters.
 
 #### Example
 
-This example demonstrate the usage of filters.
+This example demonstrates the filter use:
 
 ```javascript
 filter: {
@@ -241,18 +244,18 @@ filter: {
 ```
 
 ## Subscription
-Fula client's Graph API provides subscription for queries. You can subscribe to a query's result and get the new result on each change. To do so you can use `graphqlSubscription` method.
+Fula client's Graph API provides subscription for queries. You can subscribe to a query's result and get the new result on each change using the `graphqlSubscription` method.
 
 `async function* graphqlSubscribe(query: string, variableValues?: never, operationName?: string)`
 
-The interface is almost identical to `graphql` method except that `graphqlSubscribe` returns an `AsyncIterable`
+The interface is almost identical to the `graphql` method, except that `graphqlSubscribe` returns an `AsyncIterable`.
 
 Arguments are:
-- `query`: The graphql query string, see below for more information
-- `variableValues?`: A JSON object specifying values for variable you used in the query string. You can specify
+- `query`: The graphql query string.
+- `variableValues?`: A JSON object specifying values for the variable you used in the query string. You can specify
   variables in the query string using `$` and then provide values for them in `variableValues` when you want to execute
-  the query or mutation. You can find an example on this page.
-- `operationName?`: An optional name for your operation. _This argument is unused right now_
+  the query or mutation. 
+- `operationName?`: An optional name for your operation. _This argument is currently unused._
 
 The method returns an [`AsyncIterable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) that generates a new result based on query filters every time the collection is changed.
 
