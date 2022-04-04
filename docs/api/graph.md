@@ -241,7 +241,7 @@ filter: {
 ```
 
 ## Subscription
-FULA client's Graph API provides subscription for queries. You can subscribe to a query's result and get the new result on each change. To do so you can use `graphqlSubscription` method.
+Fula client's Graph API provides subscription for queries. You can subscribe to a query's result and get the new result on each change. To do so you can use `graphqlSubscription` method.
 
 `async function* graphqlSubscribe(query: string, variableValues?: never, operationName?: string)`
 
