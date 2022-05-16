@@ -57,6 +57,37 @@ const sidebars = {
       ]
     },
     {
+      type: 'category',
+      label: 'Concepts',
+      items: [
+        {
+          type: 'doc',
+          label: 'Fula Network',
+          id: 'concepts/fula-network'
+        },
+        {
+          type: 'category',
+          label: 'Protocol Suite',
+          link: {
+            type: 'doc',
+            id: 'concepts/protocol-suite'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: 'File Protocol',
+              id: 'concepts/file-protocol'
+            },
+            {
+              type: 'doc',
+              label: 'Graph Protocol',
+              id: 'concepts/graph-protocol'
+            }
+          ]
+        }
+      ]
+    },
+    {
       type: 'doc',
       label: 'Whitepaper',
       id: 'whitepaper/whitepaper',
