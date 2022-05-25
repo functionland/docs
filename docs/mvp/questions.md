@@ -4,6 +4,13 @@ id: questions
 ---
 # Questions about the MVP
 
+## New Questions
+
+* who has control over my pinset?
+  * only I can delete them?
+
+* what should happen if someone gets access to my phone?
+
 
 ## Local Pools
 
