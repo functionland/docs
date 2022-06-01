@@ -51,13 +51,25 @@ we need another mechanism for box to check if its offline or online. (libp2p bre
 Try to use MDNS if its offline and if the environment let it.
 
 
-### Fula client (go and js)
+### Fula client
 Use libp2p peer routing for resolving peer address and routing.
+
+#### js
 In js we should change `fula-client/src/connection.ts`.
-For go we should change `go-fula/fula.go`.
-connect api in js should change to accept multi address so if no automatic peer discovery available user can do it manually:
+- Use peerstore instead of local array
+- Use peer routing api for finding address of peer.
+- connect api in js should change to accept multi address so if no automatic peer discovery available user can do it manually:
 - `/fula/[peerId]`
 - `/ip4/127.0.0.1/tcp/4002/p2p/12D3KooWGrkcHUBzAAuYhMRxBreCgofKKDhLgR84FbawknJZHwK1`
+
+
+#### Fula client go
+- For go we should change `go-fula/fula.go` peer routing api `find-peer` and add api can accept `/fula/[peerId]`
+
+
+### Fula Infrastructure
+- Bootstrap nodes with public address
+- Signalling server for WebRtc
 
 
 
