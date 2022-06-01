@@ -36,11 +36,29 @@ Our initial design was to stick to `JS-Libp2p` and use `WebRTC-star` as our tran
 
 ## Action Items
 We will enable all that libp2p has to overcome above use cases.
-- Go-IPFS in box should be Mandatory and Delegate Box DHT to go-ipfs.
+- Go-IPFS in Box should be Mandatory and Delegate Box DHT to go-ipfs.
 - Enable all the available transport both on JS and go.
 - Enable all the NAT Traversal tooling in libp2p [NAT traversal tracking issue](https://github.com/libp2p/specs/issues/312).
 - Use DHT in client for resolving address.
 - Having our own bootstrap node.
+
+## Implementing
+Most of our work is configuration. and using peer routing api in our client.
+
+### Box 
+For box usage of go-ipfs should be mandatory and for optimizing performance we delegate peer-routing to go-ipfs ([ref](https://github.com/libp2p/js-libp2p-delegated-peer-routing)). also enable the relay and nat.We have encounter some error's in some environments when enabling NAT so it should be smart and if error happens disable it.
+we need another mechanism for box to check if its offline or online. (libp2p break if you listen on inaccessible signalling server)
+Try to use MDNS if its offline and if the environment let it.
+
+
+### Fula client (go and js)
+Use libp2p peer routing for resolving peer address and routing.
+In js we should change `fula-client/src/connection.ts`.
+For go we should change `go-fula/fula.go`.
+connect api in js should change to accept multi address so if no automatic peer discovery available user can do it manually:
+- `/fula/[peerId]`
+- `/ip4/127.0.0.1/tcp/4002/p2p/12D3KooWGrkcHUBzAAuYhMRxBreCgofKKDhLgR84FbawknJZHwK1`
+
 
 
 ## Related Issue
