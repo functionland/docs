@@ -20,9 +20,9 @@ This RFC Will Cover Peer Discovery and Peer Routing,In simple explanation how we
 
 ## Motivation
 Our initial design was to stick to `JS-Libp2p` and use `WebRTC-star` as our transport which has internal peer discovery and peer routing. But things changed:
-- For using `IPFS-cluster` we added `go-IPFS`.
-- Success Rate of webrtc is not above 80%.
-- go-libp2 which does not have `WebRTC-star` transport
+- For using `IPFS-cluster` we added `go-IPFS` as FS layer of `Box`.
+- Success Rate of webrtc is not above 80%. [ref](https://github.com/functionland/docs/issues/28)
+- `fula-react-native` uses `go-libp2p`.
 - Box should work in offline environment. (`WebRTC-star` need a signaling server)
 
 
