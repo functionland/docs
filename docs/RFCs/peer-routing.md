@@ -49,21 +49,25 @@ Most of our work is configuration. and using peer routing api in our client.
 For box usage of go-ipfs should be mandatory and for optimizing performance we delegate peer-routing to go-ipfs ([ref](https://github.com/libp2p/js-libp2p-delegated-peer-routing)). also enable the relay and nat.We have encounter some error's in some environments when enabling NAT so it should be smart and if error happens disable it.
 we need another mechanism for box to check if its offline or online. (libp2p break if you listen on inaccessible signalling server)
 Try to use MDNS if its offline and if the environment let it.
+also enable the relay.
+
+### go-ipfs
+Enable auto relay.
 
 
 ### Fula client
 Use libp2p peer routing for resolving peer address and routing.
 
-#### js
+#### JS
 In js we should change `fula-client/src/connection.ts`.
-- Use peerstore instead of local array
+- Use PeerStore instead of local array
 - Use peer routing api for finding address of peer.
 - connect api in js should change to accept multi address so if no automatic peer discovery available user can do it manually:
 - `/fula/[peerId]`
 - `/ip4/127.0.0.1/tcp/4002/p2p/12D3KooWGrkcHUBzAAuYhMRxBreCgofKKDhLgR84FbawknJZHwK1`
 
 
-#### Fula client go
+#### go
 - For go we should change `go-fula/fula.go` peer routing api `find-peer` and add api can accept `/fula/[peerId]`
 
 
