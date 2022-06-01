@@ -75,7 +75,10 @@ In js we should change `fula-client/src/connection.ts`.
 - Bootstrap nodes with public address
 - Signalling server for WebRtc
 
-
+## Future Possibilities
+- Delegate client dht to some node in Fula Infrastructure. (Reduce resource consumption)
+- Create a HA proxy for dht delegation so we can also add box
+as dht if they are available
 
 ## Related Issue
 - [functionland/fula/issues/129](https://github.com/functionland/fula/issues/129)
