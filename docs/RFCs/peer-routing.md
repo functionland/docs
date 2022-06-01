@@ -80,6 +80,7 @@ In js we should change `fula-client/src/connection.ts`.
 - Delegate client dht to some node in Fula Infrastructure. (Reduce resource consumption)
 - Create a HA proxy for dht delegation so we can also add box
 as dht if they are available
+- Add rendezvous 
 
 ## Related Issue
 - [functionland/fula/issues/129](https://github.com/functionland/fula/issues/129)
