@@ -61,14 +61,15 @@ Use libp2p peer routing for resolving peer address and routing.
 #### JS
 In js we should change `fula-client/src/connection.ts`.
 - Use PeerStore instead of local array
-- Use peer routing api for finding address of peer.
+- Use peer routing API.
 - connect api in js should change to accept multi address so if no automatic peer discovery available user can do it manually:
 - `/fula/[peerId]`
 - `/ip4/127.0.0.1/tcp/4002/p2p/12D3KooWGrkcHUBzAAuYhMRxBreCgofKKDhLgR84FbawknJZHwK1`
 
 
 #### go
-- For go we should change `go-fula/fula.go` peer routing api `find-peer` and add api can accept `/fula/[peerId]`
+- add peer routing 
+- addBox api should accept `/fula/[peerId]`
 
 
 ### Fula Infrastructure
