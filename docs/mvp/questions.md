@@ -4,6 +4,13 @@ id: questions
 ---
 # Questions about the MVP
 
+## New Questions
+
+* who has control over my pinset?
+  * only I can delete them?
+
+* what should happen if someone gets access to my phone?
+
 
 ## Local Pools
 
@@ -11,40 +18,49 @@ id: questions
   * public pools = anyone can join?
   * private pools = you must have invite or approval from a pool admin?
 
+* global pools = ?
+
+* is there a name for a pool of Boxes that I own?
+  * is the availability story for pools of Boxes that I own only or for local pools (private + public)?
+
+* what happens if everyone in my pool pulls the plug all of a sudden?
+
 * can I choose to join as either a consumer or a producer or do I have to join as both a consumer and a producer?
 
 * what happens when I run out of $FULA tokens to:
   * the data stored by peers in my local pool?
 
-* what is purpose of the swarm key in a public pool?
-
 * does any member of a pool have administrator privileges?
 
-* for our PoR algo to work on the rPi we are going to have to consume a lot less resources
-  * so what are the tradeoffs we are making that Fielcoin is not making?
+* what are the tradeoffs we are making that Filecoin is not making?
+
 
 ### Storage
 
-* is there a name for a pool of Boxes that I own?
-  * is the availability story for pools of Boxes that I own or for local pools (private + public)?
-
-
 * when I join a pool should I be able to tell it how much storage I want to allocate to the pool?
-  * what happens if I offer 1 Tb and there is no demand?
 
-* should we offer the ability to share a photo and join a private pool?
+* what happens if I offer 1 Tb and there is no demand?
 
-* where will I whitelist photos and other files/data to be included in a pool?
+* whitelisting
 
-* is there a separate whitelist for each pool I am a member of?
+  * where will I whitelist photos and other files/data to be included in a pool?
+
+  * is there a separate whitelist for each pool I am a member of?
+
+* member of multiple pools?
+  * should I select what photos to back up in each pool I join?
 
 * if I am the only member of my local pool, will I have to pay myself?
 
-* should I select what photos to back up in each pool I join or should 
-
-* how does proof of resource work and what is difference between this and proof of space-time?
+* how does proof of resource work and what is difference between this and proof of space-time / proof of replication?
 
 * how will I know that my data is safely stored and that I won't have to worry about data loss?
+
+* confirmation = if database is replicated then only protection is encryption (no gatekeeping process)?
+
+* sharing
+  * in order to share a photo with someone I need to give them access - does that mean they need to be a member of my pool or are the concepts decoupled?
+
 
 ### Computation
 

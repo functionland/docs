@@ -19,5 +19,4 @@ I am presented with a dashboard where I can:
   * view installed DApps
   * manage private pool
   * manage public pools
-  * manage their ACL
   * manage other members of their Box
