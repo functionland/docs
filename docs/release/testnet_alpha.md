@@ -1,8 +1,12 @@
 # Testnet Alpha Pre-release
 
-Last updated:  June 20, 2022
+Last updated:  June 27, 2022
 
 ## What is it?
+
+The software we are delivering to you today can give you an idea of how Fotos will backup and store your photos and video to the Box.
+
+You can also get an idea of how a decentralized identity might be generated from yours and your friends wallets in order to enable sharing of photos with each other.
 
 The testnet alpha pre-release includes the Fotos mobile application and some of the Box components that will be pre-installed on Box customer's raspberry Pis when they are shipped.
 
