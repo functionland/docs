@@ -15,7 +15,7 @@ I can share a photo with a friend.
 
 2. You have already [setup](./setup) Fotos with your own wallet account and connected it to your box.
 
-3. You already [backed up](./photo_backup) a photo that you would like to share.
+3. You already [backed up](./backup) a photo that you would like to share.
 
 4. You have already [setup](./setup) Fotos on a second device you would like to share the photo with (same Box different wallet).
 
