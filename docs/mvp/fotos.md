@@ -3,6 +3,12 @@ title: Fotos
 id: fotos
 ---
 
-# Fotos
+# Fotos Stories
 
-Place holder for some Fotos use cases
+  * [setup](./fotos/setup)
+
+  * [backup](./fotos/backup)
+
+  * [availability](./fotos/availability)
+
+  * [sharing](./fotos/setup)
