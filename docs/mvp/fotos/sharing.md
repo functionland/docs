@@ -41,8 +41,8 @@ You can share a photo with a friend.
 
 4.  You should see a 'shared' message stating the asset was added to a shared collection.  Tap 'yes' to get the sharing link and send it over a secure/private channel.
 
-### You friend can view the shared photo
+### Your friend views the shared photo
 
 TODO : create video for this step
 
-1.  When your friend taps on the link it should open Fotos on their phone and display the image you shared with them.
+1.  Have your friend tap on the link and it should open Fotos on their phone and display the image you shared with them.
