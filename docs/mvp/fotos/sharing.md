@@ -31,7 +31,7 @@ You can share a photo with a friend.
 
 ### Send the share link to your friend
 
-[See here](https://drive.google.com/file/d/1Btz-8EMqNHZW3OiEl3ioMDidcuIvztAa/view?usp=sharing) for a video demonstrating the following steps.
+[See here](https://drive.google.com/file/d/1o-ElCW2Xo6tEpsHhxpvLEBorUva-nkSk/view?usp=sharing) for a video demonstrating the following steps.
 
 1.  Tap on the photo to share.
 
@@ -43,6 +43,6 @@ You can share a photo with a friend.
 
 ### Your friend views the shared photo
 
-TODO : create video for this step
+[See here](https://drive.google.com/file/d/1DwC3pLtyx8-e91h7FU9GBF4uizeobesz/view?usp=sharing) for a video demonstrating the following steps.
 
 1.  Have your friend tap on the link and it should open Fotos on their phone and display the image you shared with them.
