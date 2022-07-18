@@ -95,7 +95,7 @@ Make sure you read through all steps carefully to ensure your Box environment is
 
 ### Fotos Installation
 
-Download the latest release of Fotos from the [app center](https://install.appcenter.ms/orgs/fx.-land/apps/photos/releases) and install it.
+Download the latest release of Fotos from the [google play store](https://play.google.com/store/apps/details?id=land.fx.fotos) and install it.
 
 ### Testing Steps
 
