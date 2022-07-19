@@ -35,6 +35,7 @@ You can also get an idea of how a decentralized identity might be generated from
 
   * each phone must be on the same network as the computer where the Box app is running
 
+  * a mobile ethereum compatible wallet (eg/ Metamask or Trust Wallet)
 
 ## Submitting feedback
 
