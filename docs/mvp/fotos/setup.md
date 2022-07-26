@@ -7,9 +7,9 @@ id: setup
 
 ## Acceptance Criteria
 
-You setup Fotos with your wallet account and connect it to your Box.
+You set up Fotos with your wallet account and connect it to your Box.
 
-Once setup correctly you are able to perform all other [Fotos stories](/mvp/fotos).
+Once set up correctly you are able to perform all other [Fotos stories](/mvp/fotos).
 
 ## Preconditions
 
@@ -21,7 +21,7 @@ Once setup correctly you are able to perform all other [Fotos stories](/mvp/foto
 
 ### Connect Fotos to your wallet
 
-[See here](https://drive.google.com/file/d/1B1TJxssjRfQfpbDeMliPQj-g6ONmv1zY/view?usp=sharing) for a video demonstrating the following steps.
+[Here](https://drive.google.com/file/d/1B1TJxssjRfQfpbDeMliPQj-g6ONmv1zY/view?usp=sharing) is a video demonstrating the following steps.
 
 1.  Go to Account -> Connect your wallet
 
@@ -33,7 +33,7 @@ Once setup correctly you are able to perform all other [Fotos stories](/mvp/foto
 
 ### Connect Fotos to your Box
 
-[See here](https://drive.google.com/file/d/1BeIia_QthpVlhq9x_fYXaZdpp6QPdCVq/view?usp=sharing) for a video demonstrating the following steps.
+[Here](https://drive.google.com/file/d/1BeIia_QthpVlhq9x_fYXaZdpp6QPdCVq/view?usp=sharing) is a video demonstrating the following steps.
 
 
 1.  Copy the Box's multiaddress to your clipboard.
