@@ -13,11 +13,11 @@ You can backup a photo to your Box and retrieve it from the Box at a later date.
 
 1. You already have a Box running.
 
-2. You have already [setup Fotos](./setup) with your own wallet account and connected it to your Box.
+2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Box.
 
 ## Steps
 
-[See here](https://drive.google.com/file/d/1BfwDusYmMmLQ7ksmMcXTMUSQv7dUmwN4/view?usp=sharing) for a video demonstrating the following steps.
+[Here](https://drive.google.com/file/d/1BfwDusYmMmLQ7ksmMcXTMUSQv7dUmwN4/view?usp=sharing) is a video demonstrating the following steps.
 
 1.  Tap on a photo to enter browse mode and tap the 'upload to cloud' icon in the top right.
 

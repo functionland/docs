@@ -1,15 +1,15 @@
 ---
-title: Protocol Testnet Alpha Prerelease
+title: Protocol Testnet Alpha Pre-release
 id: testnet-alpha
 ---
 
-# Protocol Testnet Alpha Prerelease
+# Protocol Testnet Alpha Pre-release
 
 Last updated:  July 11, 2022
 
 ## What is it?
 
-The protocol testnet alpha prerelease includes the Fotos mobile application and some of the Box components that will be pre-installed on Box customer's raspberry Pis when they are shipped.
+The protocol testnet alpha pre-release includes the Fotos mobile application and some of the Box components that will be pre-installed on Box customer's raspberry Pis when they are shipped.
 
 ## What to expect
 
@@ -21,7 +21,7 @@ You should be able to upload your media using Fotos from your mobile phone to on
 
 You can verify that the photos are in fact synced to both Boxes and that you are able to view them on a different device.
 
-You can also get an idea of how a decentralized identity might be generated from yours and your friends wallets in order to enable sharing of photos with each other.
+You can also get an idea of how a decentralized identity might be generated from your and your friend' wallets in order to enable sharing of photos with each other.
 
 ## Requirements
 
@@ -41,7 +41,7 @@ You can also get an idea of how a decentralized identity might be generated from
 
 We woud love to know how it went for you!
 
-Especially if you can not complete any of the steps due to a bug you encountered or because you can not satisfy the above requirements.
+Especially if you cannot complete any of the steps due to a bug you encountered or because you cannot satisfy the above requirements.
 
 You can send us feedback via Github or as an [email](mailto:testnet@fx.land).
 
@@ -80,7 +80,7 @@ Open a terminal and enter the following in the same directory that you ran docke
 
 ## Beware of Risks
 
-The Functionland protocol testnet alpha prerelease includes client side encryption as a first layer of security to help prevent others from gaining access to your photos and video.
+The Functionland protocol testnet alpha pre-release includes client side encryption as a first layer of security to help prevent others from gaining access to your photos and video.
 
 However, because the software we are delivering is fresh off the press and still not properly audited, PLEASE USE WITH CAUTION.
 
