@@ -35,12 +35,13 @@ Once set up correctly you are able to perform all other [Fotos stories](/mvp/fot
 
 [Here](https://drive.google.com/file/d/1BeIia_QthpVlhq9x_fYXaZdpp6QPdCVq/view?usp=sharing) is a video demonstrating the following steps.
 
+1.  [Acquire](https://github.com/functionland/fula-testnet#getting-box-multiaddress--peer-id) the Box multiaddress from it's server logs.
 
-1.  Copy the Box's multiaddress to your clipboard.
+2.  Copy the Box's multiaddress to your clipboard.
 
-2.  Go to Account -> Boxes.
+3.  Go to Account -> Boxes.
 
-3.  Add a new Box.
+4.  Add a new Box.
 
   a ) Give the Box a name for identification purposes (can be anything).
 

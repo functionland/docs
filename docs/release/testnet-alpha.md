@@ -5,7 +5,7 @@ id: testnet-alpha
 
 # Protocol Testnet Alpha Pre-release
 
-Last updated:  July 11, 2022
+Last updated:  July 29, 2022
 
 ## What is it?
 
@@ -13,15 +13,17 @@ The protocol testnet alpha pre-release includes the Fotos mobile application and
 
 ## What to expect
 
-The software we are delivering to you today can give you an idea of how the Fotos mobile app will backup and store your photos to the Box.
+The software we are delivering to you today can give you an idea of how the Fotos mobile app will back up and store your photos to the Box.
 
-Once you have everything setup you should have two Boxes talking to each other running on your host machine.
+Once you have everything set up, you should have two Boxes talking to each other running on your host machine.
 
 You should be able to upload your media using Fotos from your mobile phone to one of the Boxes encrypted with a key from your own wallet.
 
 You can verify that the photos are in fact synced to both Boxes and that you are able to view them on a different device.
 
 You can also get an idea of how a decentralized identity might be generated from your and your friend' wallets in order to enable sharing of photos with each other.
+
+Lastly, you can get a first glimpse of how backing up files (that you uploaded with Fotos) will cause rewards to be generated for you on the Fula testnet blockchain.
 
 ## Requirements
 
@@ -31,7 +33,9 @@ You can also get an idea of how a decentralized identity might be generated from
 
   * your own computer that can run [Docker](https://docs.docker.com/get-docker/)
 
-    * Linux is recommended ( macOS also works with a few additional steps)
+    * Linux is required for the last step
+
+    * macOS works for all other steps (works with a few additional instructions)
 
   * each phone must be on the same network as the computer where the Box app is running
 
@@ -66,6 +70,8 @@ OR
 
 If you believe the issue is happening in the backend then you can create an issue on the [Fula](https://github.com/functionland/fula/issues) repo and include the docker-compose server logs.
 
+If you believe the issue has something to do with the testnet you  can create an issue on the [testnet](https://github.com/functionland/fula-testnet/issues) repo and include the docker-compose server logs.
+
 If you believe the issue is happening in the Fotos mobile client then you can create an issue on the [Fotos](https://github.com/functionland/fotos/issues) repo and describe what is going wrong.
 
 If you don't know where the problem exists or don't have a Github account then please send us an [email](mailto:testnet@fx.land) and attach the server logs if you are reporting a bug.
@@ -90,9 +96,7 @@ At this point, we recommend you not upload any highly sensitive media to the Box
 
 ### Box Setup
 
-First, you can follow the instructions [over here](https://github.com/functionland/fula/blob/main/apps/cluster/README.md) for setting up a local pool on your host machine with Docker.
-
-Make sure you read through all steps carefully to ensure your Box environment is up and running properly.  In particular, pay close attention to the instructions on [getting the Box multiaddress / Peer ID](https://github.com/functionland/fula/blob/main/apps/cluster/README.md#getting-box-multiaddress--peer-id) as you will need that for setting up Fotos.
+First, you can follow the instructions [over here](https://github.com/functionland/fula-testnet) for setting up a Fula testnet node on your host machine with Docker.
 
 ### Fotos Installation
 
@@ -106,6 +110,6 @@ Once you have Fotos and the Box environment properly installed you can proceed w
 
 2.  See [here](/mvp/fotos/backup) for instructions on backing up an image from your device to a Box using Fotos.
 
-3.  See [here](/mvp/fotos/availability) for instructions on verifying that your photos are still available even if one of the Boxes goes does.
+3.  See [here](/mvp/fotos/sharing) for instructions on sharing the image with a friend.
 
-4.  See [here](/mvp/fotos/sharing) for instructions on sharing the image with a friend.
+4.  See [here](/mvp/pools/storage-provide) for instructions on how to give yourself $FULA rewards for storing a file uploaded from your Fotos application.
