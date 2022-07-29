@@ -90,7 +90,7 @@ The Functionland protocol testnet alpha pre-release includes client side encrypt
 
 However, because the software we are delivering is fresh off the press and still not properly audited, PLEASE USE WITH CAUTION.
 
-At this point, we recommend you not upload any highly sensitive media to the Box or use it as a primary backup facility.
+At this point, we recommend you not upload any highly sensitive media to the Box, use it as a primary backup facility or expose any of the services over untrusted networks.
 
 ## How to get started
 
@@ -104,7 +104,7 @@ Download the latest release of Fotos from the [google play store](https://play.g
 
 ### Testing Steps
 
-Once you have Fotos and the Box environment properly installed you can proceed with the following steps:
+Once you have Fotos and the Fula testnet environment properly installed you can proceed with the following steps:
 
 1.  See [here](/mvp/fotos/setup) for instructions on setting up Fotos before moving on to anything else.
 
