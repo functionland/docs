@@ -17,7 +17,7 @@ You see your balance increase on the [chain explorer](https://explorer.testnet.f
 
 ## Steps
 
-[Here](#TODO) is a video demonstrating the following steps.
+[Here](https://drive.google.com/file/d/1lPKGDUPHGW7EstXCsd4duhHYXbnqVlLF/view?usp=sharing) is a video demonstrating the following steps.
 
 1.  In the Fotos app, tap on a photo to enter browse mode and tap the 'upload to cloud' icon in the top right.
 
