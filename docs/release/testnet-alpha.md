@@ -15,11 +15,9 @@ The protocol testnet alpha pre-release includes the Fotos mobile application and
 
 The software we are delivering to you today can give you an idea of how the Fotos mobile app will back up and store your photos to the Box.
 
-Once you have everything set up, you should have two Boxes talking to each other running on your host machine.
+Once you have everything set up, you should have Box talking, IPFS and Fula funge components all talking to each other running on your host machine.
 
-You should be able to upload your media using Fotos from your mobile phone to one of the Boxes encrypted with a key from your own wallet.
-
-You can verify that the photos are in fact synced to both Boxes and that you are able to view them on a different device.
+You should be able to upload your media using Fotos from your mobile phone to the Box encrypted with a key from your own wallet.
 
 You can also get an idea of how a decentralized identity might be generated from your and your friend' wallets in order to enable sharing of photos with each other.
 
@@ -68,9 +66,9 @@ OR
 ```
 
 
-If you believe the issue is happening in the backend then you can create an issue on the [Fula](https://github.com/functionland/fula/issues) repo and include the docker-compose server logs.
+If you believe the issue is happening in the Fula API then you can create an issue on the [Fula](https://github.com/functionland/fula/issues) repo and include the docker-compose server logs.
 
-If you believe the issue has something to do with the testnet you  can create an issue on the [testnet](https://github.com/functionland/fula-testnet/issues) repo and include the docker-compose server logs.
+If you believe the issue has something to do with the testnet setup you can create an issue on the [testnet](https://github.com/functionland/fula-testnet/issues) repo and include the docker-compose server logs.
 
 If you believe the issue is happening in the Fotos mobile client then you can create an issue on the [Fotos](https://github.com/functionland/fotos/issues) repo and describe what is going wrong.
 
