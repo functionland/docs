@@ -1,19 +1,19 @@
 ---
-title: Fotos Backup to Box
+title: Fotos Backup to Fula environment
 id: backup
 ---
 
-# Fotos Backup to Box
+# Fotos Backup to Fula  environment
 
 ## Acceptance Criteria
 
-You can backup a photo to your Box and retrieve it from the Box at a later date.
+You can backup a photo to your Fula environment and retrieve it from the Fula environment at a later date.
 
 ## Preconditions
 
-1. You already have a Box running.
+1. You already have a Fula environment running.
 
-2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Box.
+2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Fula environment.
 
 ## Steps
 
@@ -23,4 +23,4 @@ You can backup a photo to your Box and retrieve it from the Box at a later date.
 
 2.  After the image has uploaded succesfully you should see a 'cloud with a checkbox' icon and a 'share' icon in browse mode for the image.
 
-3.  You can verify that the Box is in fact storing the image for you and that you are able to retrieve it by deleting the image from your device and tapping on the placeholder thumbnail that appears in its place to download it.
+3.  You can verify that the Fula environment is in fact storing the image for you and that you are able to retrieve it by deleting the image from your device and tapping on the placeholder thumbnail that appears in its place to download it.

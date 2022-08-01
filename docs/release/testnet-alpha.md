@@ -9,15 +9,15 @@ Last updated:  July 29, 2022
 
 ## What is it?
 
-The protocol testnet alpha pre-release includes the Fotos mobile application and some of the Box components that will be pre-installed on Box customer's raspberry Pis when they are shipped.
+The protocol testnet alpha pre-release includes the Fotos mobile application and some of the Fula components that will be pre-installed on FxBlox customer's raspberry Pis when they are shipped.
 
 ## What to expect
 
-The software we are delivering to you today can give you an idea of how the Fotos mobile app will back up and store your photos to the Box.
+The software we are delivering to you today can give you an idea of how the Fotos mobile app will back up and store your photos to the Fula testnet environment.
 
-Once you have everything set up, you should have Box talking, IPFS and Fula funge components all talking to each other running on your host machine.
+Once you have everything set up, you should have a libp2p API server, IPFS and Fula funge components all talking to each other running on your host machine.
 
-You should be able to upload your media using Fotos from your mobile phone to the Box encrypted with a key from your own wallet.
+You should be able to upload your media using Fotos from your mobile phone to the Fula testnet environment encrypted with a key from your own wallet.
 
 You can also get an idea of how a decentralized identity might be generated from your and your friend' wallets in order to enable sharing of photos with each other.
 
@@ -33,15 +33,13 @@ Lastly, you can get a first glimpse of how backing up files (that you uploaded w
 
     * Linux is required for the last step
 
-    * macOS works for all other steps (works with a few additional instructions)
-
-  * each phone must be on the same network as the computer where the Box app is running
+  * each phone must be on the same network as the computer where the Fula testnet environment is running
 
   * a mobile ethereum compatible wallet (eg/ Metamask or Trust Wallet)
 
 ## Submitting feedback
 
-We woud love to know how it went for you!
+We would love to know how it went for you!
 
 Especially if you cannot complete any of the steps due to a bug you encountered or because you cannot satisfy the above requirements.
 
@@ -88,25 +86,25 @@ The Functionland protocol testnet alpha pre-release includes client side encrypt
 
 However, because the software we are delivering is fresh off the press and still not properly audited, PLEASE USE WITH CAUTION.
 
-At this point, we recommend you not upload any highly sensitive media to the Box, use it as a primary backup facility or expose any of the services over untrusted networks.
+At this point, we recommend you not upload any highly sensitive media to the Fula testnet environment, use it as a primary backup facility or expose any of the services over untrusted networks.
 
 ## How to get started
 
-### Box Setup
+### Fula testnet environment setup
 
-First, you can follow the instructions [over here](https://github.com/functionland/fula-testnet) for setting up a Fula testnet node on your host machine with Docker.
+First, you can follow the instructions [over here](https://github.com/functionland/fula-testnet) for setting up a Fula testnet environment on your host machine with Docker.
 
-### Fotos Installation
+### Fotos installation
 
 Download the latest release of Fotos from the [google play store](https://play.google.com/store/apps/details?id=land.fx.fotos) and install it.
 
-### Testing Steps
+### Testing steps
 
 Once you have Fotos and the Fula testnet environment properly installed you can proceed with the following steps:
 
 1.  See [here](/mvp/fotos/setup) for instructions on setting up Fotos before moving on to anything else.
 
-2.  See [here](/mvp/fotos/backup) for instructions on backing up an image from your device to a Box using Fotos.
+2.  See [here](/mvp/fotos/backup) for instructions on backing up an image from your device to the Fula API server using Fotos.
 
 3.  See [here](/mvp/fotos/sharing) for instructions on sharing the image with a friend.
 

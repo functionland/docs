@@ -7,7 +7,7 @@ id: setup
 
 ## Acceptance Criteria
 
-You set up Fotos with your wallet account and connect it to your Box.
+You set up Fotos with your wallet account and connect it to the Fula API server.
 
 Once set up correctly you are able to perform all other [Fotos stories](/mvp/fotos).
 
@@ -15,7 +15,7 @@ Once set up correctly you are able to perform all other [Fotos stories](/mvp/fot
 
 1.  You have already downloaded and installed Fotos.
 
-2.  You already have a Box running and have acquired the Box's multiaddress from the server logs that is reachable from your phone.
+2.  You already have a Fula environment running and have acquired the Fula API server's multiaddress from the server logs that is reachable from your phone.
 
 ## Steps
 
@@ -31,13 +31,13 @@ Once set up correctly you are able to perform all other [Fotos stories](/mvp/fot
 
 4.  Perform the signing request from the wallet.
 
-### Connect Fotos to your Box
+### Connect Fotos to your Fula API server
 
 [Here](https://drive.google.com/file/d/1BeIia_QthpVlhq9x_fYXaZdpp6QPdCVq/view?usp=sharing) is a video demonstrating the following steps.
 
-1.  [Acquire](https://github.com/functionland/fula-testnet#getting-box-multiaddress--peer-id) the Box multiaddress from it's server logs.
+1.  [Acquire](https://github.com/functionland/fula-testnet#getting-box-multiaddress--peer-id) the Fula API server multiaddress from it's server logs.
 
-2.  Copy the Box's multiaddress to your clipboard.
+2.  Copy the Fula API server's multiaddress to your clipboard.
 
 3.  Go to Account -> Boxes.
 
