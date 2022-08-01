@@ -15,7 +15,7 @@ The protocol testnet alpha pre-release includes the Fotos mobile application and
 
 The software we are delivering to you today can give you an idea of how the Fotos mobile app will back up and store your photos to the Fula testnet environment.
 
-Once you have everything set up, you should have a libp2p API server, IPFS and Fula funge components all talking to each other running on your host machine.
+Once you have everything set up, you should have a Fula API server, IPFS and Fula funge components all talking to each other running on your host machine.
 
 You should be able to upload your media using Fotos from your mobile phone to the Fula testnet environment encrypted with a key from your own wallet.
 
