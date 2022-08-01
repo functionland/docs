@@ -11,13 +11,13 @@ You can share a photo with a friend.
 
 ## Preconditions
 
-1. You already have a running Box.
+1. You already have a running Fula environment.
 
-2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Box.
+2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Fula environment.
 
 3. You already [backed up](./backup) a photo that you would like to share.
 
-4. You have already [set up](./setup) Fotos on a second device you would like to share the photo with (same Box different wallet).  It must be connected to a Box that is a member of the pool where the photo was uploaded.
+4. You have already [set up](./setup) Fotos on a second device you would like to share the photo with (connected to the same Fula environment with a different wallet).
 
 ## Steps
 

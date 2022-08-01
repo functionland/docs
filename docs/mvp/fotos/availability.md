@@ -7,15 +7,15 @@ id: availability
 
 ## Acceptance Criteria
 
-You uploaded a photo to your Box.
+You uploaded a photo to your Fula API server.
 
-Your Box goes offline and you are still able to retrieve the photo from a second Box in your pool.
+Your Fula environment goes offline and you are still able to retrieve the photo from a second Fula environment in your pool.
 
 ## Preconditions
 
 1. You have already [set up a cluster](https://github.com/functionland/fula/tree/main/apps/cluster).
 
-2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Box.
+2. You have already [set up Fotos](./setup) with your own wallet account and connected it to your Fula API server.
 
 3. You already [backed up](./backup) a photo that you would like to share.
 
