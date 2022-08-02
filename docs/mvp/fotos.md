@@ -9,6 +9,4 @@ id: fotos
 
   * [backup](./fotos/backup)
 
-  * [availability](./fotos/availability)
-
-  * [sharing](./fotos/setup)
+  * [sharing](./fotos/sharing)
