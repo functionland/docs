@@ -85,8 +85,63 @@ const sidebars = {
         'RFCs/document-syncing',
         'RFCs/personal-data-reserve'
       ]
-    }
+    },
   ],
+  mvpSidebar: [
+    {
+      type: 'category',
+      label: 'MVP',
+      link: {
+        type:'doc',
+        id:'mvp'
+      },
+      items:[
+        {
+          type:'category',
+          label:'Fotos',
+          link: {
+            type:'doc',
+            id:'mvp/fotos'
+          },
+          items:[
+            {
+              type:'doc',
+              label:'setup',
+              id:'mvp/fotos/setup'
+            },
+            {
+              type:'doc',
+              label:'backup',
+              id:'mvp/fotos/backup'
+            },
+            {
+              type:'doc',
+              label:'sharing',
+              id:'mvp/fotos/sharing'
+            }
+
+
+          ]
+        },
+        {
+          type:'category',
+          label:'Pools',
+          link: {
+            type:'doc',
+            id:'mvp/pools'
+          },
+          items:[
+            {
+              type:'doc',
+              label:'provide storage',
+              id:'mvp/pools/storage-provide'
+            }
+          ]
+        }
+      ]
+    },
+
+  ]
 };
 
 module.exports = sidebars;
