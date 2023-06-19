@@ -12,7 +12,7 @@ git clone https://github.com/functionland/sugarfunge-api.git
 
 ## Run the Node API
 
-Requires a [Node](Node%2044a83cae5a8d453b8f346a35660056b6.md) running.
+Requires a [Node](Node.md) running.
 
 ```bash
 cargo run --release
@@ -30,7 +30,7 @@ docker build -t sugarfunge-api:local -f docker/Dockerfile .
 
 ## Run the Node API
 
-Requires a [Node](Node%2044a83cae5a8d453b8f346a35660056b6.md) running.
+Requires a [Node](Node.md) running.
 
 ```bash
 docker run --rm -d --network host sugarfunge-api:local

@@ -14,7 +14,7 @@ git clone https://github.com/functionland/functionland-status.git
 
 ## Run the Status
 
-Requires a [Node](Node%2044a83cae5a8d453b8f346a35660056b6.md) running.
+Requires a [Node](Node.md) running.
 
 ```bash
 yarn
@@ -33,7 +33,7 @@ docker build -t sugarfunge-status:local -f docker/Dockerfile .
 
 ## Run the Status
 
-Requires a [Node](Node%2044a83cae5a8d453b8f346a35660056b6.md) running.
+Requires a [Node](Node.md) running.
 
 ```bash
 docker run --rm -d --network host --env PORT=8000 --env REACT_APP_PROVIDER_SOCKET=ws://127.0.0.1:9944 sugarfunge-status:local

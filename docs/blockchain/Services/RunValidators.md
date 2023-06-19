@@ -1,6 +1,6 @@
 A minimum of tw ovalidator nodes is required for hte network to run.
 
-- Build
+- Requires a [Build](buildNode.md) .
 - Run step 1 below to create accounts
 - Run step 2
 - Run step 5
