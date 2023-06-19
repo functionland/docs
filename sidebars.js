@@ -105,6 +105,8 @@ const sidebars = {
           items:[
             'blockchain/Services/Explorer',
 			'blockchain/Services/Node',
+			'blockchain/Services/BuildNode',
+			'blockchain/Services/RunValidators',
 			'blockchain/Services/NodeAPI',
 			'blockchain/Services/ProofEngine',
 			'blockchain/Services/Status',
