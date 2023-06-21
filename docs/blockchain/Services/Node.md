@@ -1,4 +1,6 @@
-# Node
+# Test Node
+
+This document explains how to run sample nodes. However, for an actual node with custom keys please refer to [Run Node](RunNode)
 
 # Compile from Source
 

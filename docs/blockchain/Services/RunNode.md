@@ -1,3 +1,5 @@
+# Run Node
+
 This docuemnt explains how to run Fula nodes
 
 - Requires a [Build](BuildNode) .
