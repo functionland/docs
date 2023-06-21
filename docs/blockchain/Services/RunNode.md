@@ -1,9 +1,13 @@
-A minimum of two validator nodes is required for the network to run.
+This docuemnt explains how to run Fula nodes
 
 - Requires a [Build](BuildNode) .
 
+At the moment two validator nodes are run and managed by Fula Governance Association and others cannot run validator nodes. You can still run non-validator nodes (instructions after the validator node)
+
 ------------------------------------------------------------------------------------------------------------------------------------
-RUN TESNET VALIDATORS
+<h1>Run Validator Nodes</h1>
+
+A minimum of two validator nodes is required for the network to run.
 
 1) CREATION OF THE KEYS OF EACH VALIDATOR ACCOUNT (You need to do this steap twice at least):
 
@@ -82,11 +86,17 @@ c) Make the necessary changes if desired:
 Change the default account of Alice and Bob for Custom Accounts (At the end of hte file under session>keys find Aura and grandpa for both accounts and change all occurances of those)
 
 ![Changing default accounts](/img/validatorNode2.png)
-	
+
+Here is the official Fula customSpec.json file:
+[![Fula official specs]](/documents/customSpec.json)
+
 
 d) Once the changes to the CustomSpec.json have been made, generate the CustomSpecRaw.json
 
 	./target/release/sugarfunge-node build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json
+	
+Here is the official Fula customSpecRaw.json file:
+[![Fula official generated raw specs]](/documents/customSpecRaw.json)
 
  
 4) ADD THE KEYS TO THE KEYSTORE FOR EACH VALIDATOR: This is made so the Accounts can import and finished blocks if not added the accounts won't produce them
@@ -125,9 +135,10 @@ Note: For each of the commands the following fields should be change accordingly
 
 
 
-<h1>Non-Validator nodes</h1>
+<h1>Run Non-Validator Nodes</h1>
 
 To add new nodes to the network that are not authorized:
+
 1) GENERATE THE NODE-KEY AND PEER-ID FOR THE USER-THREE
 
 a) Generate a random node key and peer-id 
@@ -150,7 +161,7 @@ c) Verify that the peer-id is correct using the node-key stored
 2) START NODE COMMAND FOR THE NOT AUTHORIZE NODE
 
 	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --name MyNode03 --node-key=239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168 --offchain-worker always
-	
+
 Note: For each of the commands the following fields should be change accordingly:
 
 	--base-path = .temp/node02 or .temp/node03
@@ -158,3 +169,6 @@ Note: For each of the commands the following fields should be change accordingly
 	--ws-port = To a port not used in other commands
 	--name = to the given name
 	--node-key with the node key values obtained in step 2 for each account
+	
+Here is the official Fula customSpecRaw.json file:
+[![Fula official raw specs]](/documents/customSpecRaw.json)
