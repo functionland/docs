@@ -86,6 +86,53 @@ const sidebars = {
         'RFCs/personal-data-reserve'
       ]
     },
+	,
+    {
+      type: 'category',
+      label: 'Blockchain',
+      link: {
+        type:'doc',
+        id:'blockchain/blockchain-intro'
+      },
+      items:[
+        {
+          type:'category',
+          label:'Services',
+          link:  {
+            type:'doc',
+            id:'blockchain/services'
+          },
+          items:[
+            'blockchain/Services/Explorer',
+			'blockchain/Services/Node',
+			'blockchain/Services/BuildNode',
+			'blockchain/Services/RunValidators',
+			'blockchain/Services/NodeAPI',
+			'blockchain/Services/ProofEngine',
+			'blockchain/Services/Status',
+          ]
+        },
+        {
+          type:'category',
+          label:'Recipes',
+          link:  {
+            type:'doc',
+            id:'blockchain/recipes'
+          },
+          items:[
+            'blockchain/Recipes/Account',
+			'blockchain/Recipes/Asset',
+			'blockchain/Recipes/Bag',
+			'blockchain/Recipes/Bundle',
+			'blockchain/Recipes/Challenges',
+			'blockchain/Recipes/Claims',
+			'blockchain/Recipes/Manifest',
+			'blockchain/Recipes/Market',
+			'blockchain/Recipes/Pool',
+          ]
+        },
+      ]
+    },
   ],
   mvpSidebar: [
     {
