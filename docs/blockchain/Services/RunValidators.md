@@ -114,15 +114,47 @@ b) For the rest of validator nodes execute (replacing node-key with second peer 
 
 	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/12D3KooWC9nU1QzG8m3dZKSNqssmasdupLPhgu9adYe1h4ToBW7r --validator --name MyNode02 --password-interactive --node-key=5ed89682d5d0d2efd35f98a248b97cc1f6155e6af169719f3d54900d34a98a4a
 
-c) For the a node to listen to the validator nodes
-
-	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --name MyNode03 --node-key=239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168 --offchain-worker always
-
 Note: For each of the commands the following fields should be change accordingly:
 
 	--base-path = .temp/node02 or .temp/node03
 	--port = To a port not used in other commands
 	--ws-port = To a port not used in other commands
 	--bootnodes = Update the last segment value to the peer-id of the main validator obtained in step 2
+	--name = to the given name
+	--node-key with the node key values obtained in step 2 for each account
+
+
+
+<h1>Non-Validator nodes</h1>
+
+To add new nodes to the network that are not authorized:
+1) GENERATE THE NODE-KEY AND PEER-ID FOR THE USER-THREE
+
+a) Generate a random node key and peer-id 
+	
+	./target/release/sugarfunge-node key generate-node-key
+	
+sample output:
+
+	Peer-id: 12D3KooWF3MLTqgFRAKVqAdscdfZSSb9xXKFJ8paNEbtETKczUto
+	key: 239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168
+
+b) Save the key as a file
+	
+	echo -n "239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168" > user-three-key
+
+c) Verify that the peer-id is correct using the node-key stored 
+	
+	./target/release/sugarfunge-node key inspect-node-key --file user-three-key
+		
+2) START NODE COMMAND FOR THE NOT AUTHORIZE NODE
+
+	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --name MyNode03 --node-key=239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168 --offchain-worker always
+	
+Note: For each of the commands the following fields should be change accordingly:
+
+	--base-path = .temp/node02 or .temp/node03
+	--port = To a port not used in other commands
+	--ws-port = To a port not used in other commands
 	--name = to the given name
 	--node-key with the node key values obtained in step 2 for each account
