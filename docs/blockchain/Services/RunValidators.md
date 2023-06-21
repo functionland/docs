@@ -1,10 +1,6 @@
-A minimum of tw ovalidator nodes is required for hte network to run.
+A minimum of two validator nodes is required for the network to run.
 
-- Requires a [Build](BuildNode.md) .
-- Run step 1 below to create accounts
-- Run step 2
-- Run step 5
-- Edit node/src/chain_specs
+- Requires a [Build](BuildNode) .
 
 ------------------------------------------------------------------------------------------------------------------------------------
 RUN TESNET VALIDATORS
@@ -93,15 +89,15 @@ Note: For other validators the following fields should be change accordingly:
 
 a) For the main validator node execute:
 
-cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node01 --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-interactive --node-key=4ac42a38b622dd9943c49ca9300000236406d35a43f0ce82eef556c1d81a4157
+	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node01 --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-interactive --node-key=4ac42a38b622dd9943c49ca9300000236406d35a43f0ce82eef556c1d81a4157
 
 b) For the rest of validator nodes execute:
 
-cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/12D3KooWC9nU1QzG8m3dZKSNqssmasdupLPhgu9adYe1h4ToBW7r --validator --name MyNode02 --password-interactive --node-key=5ed89682d5d0d2efd35f98a248b97cc1f6155e6af169719f3d54900d34a98a4a
+	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/12D3KooWC9nU1QzG8m3dZKSNqssmasdupLPhgu9adYe1h4ToBW7r --validator --name MyNode02 --password-interactive --node-key=5ed89682d5d0d2efd35f98a248b97cc1f6155e6af169719f3d54900d34a98a4a
 
 c) For the a node to listen to the validator nodes
 
-cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --name MyNode03 --node-key=239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168 --offchain-worker always
+	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --name MyNode03 --node-key=239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168 --offchain-worker always
 
 Note: For each of the commands the following fields should be change accordingly:
 	--base-path = .temp/node02 or .temp/node03
