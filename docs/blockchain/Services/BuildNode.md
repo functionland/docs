@@ -24,4 +24,6 @@
 
 	cargo build --release
 
-Now a folder named "./target/release" is create where it contains all the compiled codes
+Now a folder named "./target/release" is create where it contains all the compiled codes. If any error occured, your system might still be missing some dependancies. Please follow the full guide below and run step 6 again afterwards:
+
+## [Install OS dependencies and Rust](https://github.com/functionland/sugarfunge-node/blob/main/docs/rust-setup.md)

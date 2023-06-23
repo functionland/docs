@@ -1,7 +1,7 @@
 {
-  "name": "Local Testnet",
-  "id": "local_testnet",
-  "chainType": "Local",
+  "name": "Functionyard",
+  "id": "functionyard",
+  "chainType": "Live",
   "bootNodes": [],
   "telemetryEndpoints": null,
   "protocolId": null,
@@ -25,51 +25,11 @@
         "balances": [
           [
             "5CcHZucP2u1FXQW9wuyC11vAVxB3c48pUhc5cc9b3oxbKPL2",
-            100000000000000000000000000
+            10000000000000000000000000000
           ],
           [
             "5DD9qAHKNUqcYaKf5qgYra9y8s9BtbfLanJrTr3hQsK5XGGP",
-            100000000000000000000000000
-          ],
-          [
-            "5FLSigC9HGRKVhB9FiEo4Y3koPsNmBmLJbpXg2mp1hXcS59Y",
-            100000000000000000000000000
-          ],
-          [
-            "5DAAnrj7VHTznn2AWBemMuyBwZWs6FNFjdyVXUeYum3PTXFy",
-            100000000000000000000000000
-          ],
-          [
-            "5HGjWAeFDfFCWPsjFQdVV2Msvz2XtMktvgocEZcCj68kUMaw",
-            100000000000000000000000000
-          ],
-          [
-            "5CiPPseXPECbkjWCa6MnjNokrgYjMqmKndv2rSnekmSK2DjL",
-            100000000000000000000000000
-          ],
-          [
-            "5GNJqTPyNqANBkUVMN1LPPrxXnFouWXoe2wNSmmEoLctxiZY",
-            100000000000000000000000000
-          ],
-          [
-            "5HpG9w8EBLe5XCrbczpwq5TSXvedjrBGCwqxK1iQ7qUsSWFc",
-            100000000000000000000000000
-          ],
-          [
-            "5Ck5SLSHYac6WFt5UZRSsdJjwmpSZq85fd5TRNAdZQVzEAPT",
-            100000000000000000000000000
-          ],
-          [
-            "5HKPmK9GYtE1PSLsS1qiYU9xQ9Si1NcEhdeCq9sw5bqu4ns8",
-            100000000000000000000000000
-          ],
-          [
-            "5FCfAonRZgTFrTd9HREEyeJjDpT397KMzizE6T3DvebLFE7n",
-            100000000000000000000000000
-          ],
-          [
-            "5CRmqmsiNFExV6VbdmPJViVxrWmkaXXvBrSX8oqBT8R9vmWk",
-            100000000000000000000000000
+            10000000000000000000000000000
           ]
         ]
       },
@@ -93,38 +53,38 @@
               1,
               18,
               32,
-              28,
-              229,
-              240,
-              14,
-              246,
-              232,
-              147,
-              116,
-              175,
-              182,
-              37,
-              241,
-              174,
-              76,
-              21,
-              70,
-              211,
-              18,
-              52,
-              232,
+              27,
+              50,
+              25,
+              134,
+              137,
+              121,
+              156,
+              201,
+              144,
+              10,
+              135,
               126,
-              60,
-              63,
-              81,
-              166,
-              43,
+              185,
+              238,
+              19,
+              124,
+              124,
+              212,
+              0,
+              64,
+              192,
+              8,
+              94,
               145,
-              221,
-              107,
-              250,
-              87,
-              223
+              249,
+              67,
+              65,
+              135,
+              65,
+              20,
+              186,
+              19
             ],
             "5CcHZucP2u1FXQW9wuyC11vAVxB3c48pUhc5cc9b3oxbKPL2"
           ],
@@ -136,38 +96,38 @@
               1,
               18,
               32,
-              218,
-              205,
-              231,
-              113,
-              77,
-              133,
-              81,
-              246,
-              116,
-              184,
-              187,
-              75,
-              84,
-              35,
-              147,
-              131,
-              199,
-              106,
-              43,
-              40,
-              111,
-              164,
-              54,
-              233,
-              59,
-              43,
-              126,
-              178,
+              123,
+              56,
+              130,
+              212,
+              23,
+              159,
+              226,
+              151,
+              145,
               38,
-              191,
-              77,
-              231
+              55,
+              49,
+              255,
+              121,
+              161,
+              69,
+              75,
+              228,
+              127,
+              61,
+              47,
+              27,
+              201,
+              173,
+              40,
+              142,
+              190,
+              42,
+              136,
+              209,
+              155,
+              224
             ],
             "5DD9qAHKNUqcYaKf5qgYra9y8s9BtbfLanJrTr3hQsK5XGGP"
           ]

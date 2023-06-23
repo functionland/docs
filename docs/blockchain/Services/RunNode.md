@@ -74,6 +74,18 @@ a) Before generating the CustomSpec.json, in the file node/src/chain_spec add th
 
 ![Replacing Peer-id in the file](/img/validatorNode1.png)
 
+a.2) Now you need to rebuild the project to apply the above change in release:
+	
+	cd ..
+
+	sudo rm ./sugarfunge-node
+
+	git clone https://github.com/functionland/sugarfunge-node.git
+
+	cd sugarfunge-node
+
+	cargo build --release
+
 	
 b) Generate the CustomSpec.json
 
