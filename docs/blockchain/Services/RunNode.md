@@ -196,10 +196,38 @@ Here is the official Fula customSpecRaw.json file:
 
 ```bash
 cd sugarfunge-node
-sudo nano ./password1.txt
+
+sudo chmod 777 /var/lib/.sugarfunge-node
+sudo mkdir /var/lib/.sugarfunge-node
+sudo mkdir /var/lib/.sugarfunge-node/passwords
+sudo mkdir /var/lib/.sugarfunge-node/keys
+sudo mkdir /var/lib/.sugarfunge-node/keys/node01
+sudo mkdir /var/lib/.sugarfunge-node/keys/node02
+sudo mkdir /var/lib/.sugarfunge-node/data
+sudo mkdir /var/lib/.sugarfunge-node/data/node01
+sudo mkdir /var/lib/.sugarfunge-node/data/node02
 ```
 
-Insert the password for node01. Redo the same for ./password2.txt and put the password for node2. Then:
+Now insert Keys:
+
+```bash
+./target/release/sugarfunge-node key insert --base-path=/var/lib/.sugarfunge-node/node01 --chain customSpecRaw.json --scheme Sr25519 --suri "YOUR SECRET WORDS" --password-interactive --key-type aura
+
+./target/release/sugarfunge-node key insert --base-path=/var/lib/.sugarfunge-node/node01 --chain customSpecRaw.json --scheme Sr25519 --suri "YOUR SECRET WORDS" --password-interactive --key-type gran
+ ```
+
+ Redo the same for node02 and put the keys for node02.
+
+```bash
+sudo nano /var/lib/.sugarfunge-node/passwords/password1.txt
+```
+Insert the password for node1 and redo with password2 for node2.  Then revert the permission:
+
+```bash
+sudo chmod 755 /var/lib/.sugarfunge-node
+```
+
+Build:
 
 ```bash
 docker build -t sugarfunge-node:local -f docker/Dockerfile .
@@ -208,9 +236,9 @@ docker build -t sugarfunge-node:local -f docker/Dockerfile .
 Then you can run the node1 like:
 
 ```bash
-docker run --rm -d --name MyNode01 --network host sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node01 --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password1.txt" --node-key=2d...(the key)...a
+docker run --rm -d --name MyNode01 --network host -v /var/lib/.sugarfunge-node/passwords/password1.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node01:/keys -v /var/lib/.sugarfunge-node/data/node01:/data sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password.txt" --node-key=[key1]
 
-docker run --rm -d --name MyNode02 --network host sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/(peerId of first node) --validator --name MyNode02 --password-filename "/password2.txt" --node-key=5...(key to node).....1
+docker run --rm -d --name MyNode02 --network host -v /var/lib/.sugarfunge-node/passwords/password2.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node02:/keys -v /var/lib/.sugarfunge-node/data/node02:/data sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/[peerId1] --validator --name MyNode02 --password-filename "/password.txt" --node-key=[key2]
 ```
 
 ## Run as service
@@ -230,7 +258,7 @@ Requires=docker.service
 [Service]
 TimeoutStartSec=0
 Type=simple
-ExecStart=/usr/bin/docker run --rm --name MyNode01 --network host sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node01 --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password1.txt" --node-key=2d...(the key)...a
+ExecStart=/usr/bin/docker run --rm --name MyNode01 --network host -v /var/lib/.sugarfunge-node/passwords/password1.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node01:/keys -v /var/lib/.sugarfunge-node/data/node01:/data sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password.txt" --node-key=[key]
 ExecStop=/usr/bin/docker stop MyNode01
 Restart=always
 StandardOutput=file:/var/log/MyNode01.log
@@ -255,7 +283,7 @@ Requires=docker.service
 [Service]
 TimeoutStartSec=0
 Type=simple
-ExecStart=/usr/bin/docker run --rm --name MyNode02 --network host sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/(peerId of first node) --validator --name MyNode02 --password-filename "/password2.txt" --node-key=5...(key to node).....1
+ExecStart=/usr/bin/docker run --rm --name MyNode02 --network host -v /var/lib/.sugarfunge-node/passwords/password2.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node02:/keys -v /var/lib/.sugarfunge-node/data/node02:/data sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/[peerId1] --validator --name MyNode02 --password-filename "/password.txt" --node-key=[Key2]
 ExecStop=/usr/bin/docker stop MyNode02
 Restart=always
 StandardOutput=file:/var/log/MyNode02.log
@@ -267,8 +295,8 @@ WantedBy=multi-user.target
 
 ```bash
 sudo systemctl daemon-reload
-systemctl enable docker-sugarfunge-node1.service
-systemctl enable docker-sugarfunge-node2.service
-systemctl start docker-sugarfunge-node1.service
-systemctl start docker-sugarfunge-node2.service
+sudo systemctl enable docker-sugarfunge-node1.service
+sudo systemctl enable docker-sugarfunge-node2.service
+sudo systemctl start docker-sugarfunge-node1.service
+sudo systemctl start docker-sugarfunge-node2.service
 ```
