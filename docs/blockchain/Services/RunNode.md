@@ -186,3 +186,89 @@ Note: For each of the commands the following fields should be change accordingly
 	
 Here is the official Fula customSpecRaw.json file:
 [![Fula official raw specs]](/documents/customSpecRaw.json)
+
+---------------------------------------------------------------------------
+# Using Docker
+
+## [Install Docker](https://docs.docker.com/engine/install/)
+
+## Build the image
+
+```bash
+cd sugarfunge-node
+sudo nano ./password1.txt
+```
+
+Insert the password for node01. Redo the same for ./password2.txt and put the password for node2. Then:
+
+```bash
+docker build -t sugarfunge-node:local -f docker/Dockerfile .
+```
+
+Then you can run the node1 like:
+
+```bash
+docker run --rm -d --name MyNode01 --network host sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node01 --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password1.txt" --node-key=2d...(the key)...a
+
+docker run --rm -d --name MyNode02 --network host sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/(peerId of first node) --validator --name MyNode02 --password-filename "/password2.txt" --node-key=5...(key to node).....1
+```
+
+## Run as service
+
+```bash
+sudo nano /etc/systemd/system/docker-sugarfunge-node1.service
+```
+
+And insert:
+
+```bash
+[Unit]
+Description=Docker Sugarfunge Node 1
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+Type=simple
+ExecStart=/usr/bin/docker run --rm --name MyNode01 --network host sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node01 --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password1.txt" --node-key=2d...(the key)...a
+ExecStop=/usr/bin/docker stop MyNode01
+Restart=always
+StandardOutput=file:/var/log/MyNode01.log
+StandardError=file:/var/log/MyNode01.err
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo nano /etc/systemd/system/docker-sugarfunge-node2.service
+```
+
+And insert:
+
+```bash
+[Unit]
+Description=Docker Sugarfunge Node 2
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+Type=simple
+ExecStart=/usr/bin/docker run --rm --name MyNode02 --network host sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node02 --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/(peerId of first node) --validator --name MyNode02 --password-filename "/password2.txt" --node-key=5...(key to node).....1
+ExecStop=/usr/bin/docker stop MyNode02
+Restart=always
+StandardOutput=file:/var/log/MyNode02.log
+StandardError=file:/var/log/MyNode02.err
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl daemon-reload
+systemctl enable docker-sugarfunge-node1.service
+systemctl enable docker-sugarfunge-node2.service
+systemctl start docker-sugarfunge-node1.service
+systemctl start docker-sugarfunge-node2.service
+```
