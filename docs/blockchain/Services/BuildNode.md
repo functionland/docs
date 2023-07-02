@@ -10,7 +10,7 @@
 
 3- Clone node repo
 
-	git clone sugarfundge-node
+	git clone https://github.com/functionland/sugarfunge-node.git
 	
 4- Enter the folder
 
