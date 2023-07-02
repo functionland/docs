@@ -174,7 +174,7 @@ c) Verify that the peer-id is correct using the node-key stored
 		
 2) START NODE COMMAND FOR THE NOT AUTHORIZE NODE
 
-	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --name MyNode03 --node-key=239afb9dae01b5c010c454f1e1df64ce83b3e13803540df079677860a745d168 --offchain-worker always
+	cargo run --release -- --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=.tmp/node03 --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /dns4/node.functionyard.fx.land/tcp/30334/p2p/12D3KooWBeXV65svCyknCvG1yLxXVFwRxzBLqvBJnUF6W84BLugv --name MyNode03 --node-key=[key3] --offchain-worker always
 
 Note: For each of the commands the following fields should be change accordingly:
 
@@ -197,8 +197,8 @@ Here is the official Fula customSpecRaw.json file:
 ```bash
 cd sugarfunge-node
 
-sudo chmod 777 /var/lib/.sugarfunge-node
 sudo mkdir /var/lib/.sugarfunge-node
+sudo chmod 777 /var/lib/.sugarfunge-node
 sudo mkdir /var/lib/.sugarfunge-node/passwords
 sudo mkdir /var/lib/.sugarfunge-node/keys
 sudo mkdir /var/lib/.sugarfunge-node/keys/node01
@@ -211,9 +211,9 @@ sudo mkdir /var/lib/.sugarfunge-node/data/node02
 Now insert Keys:
 
 ```bash
-./target/release/sugarfunge-node key insert --base-path=/var/lib/.sugarfunge-node/node01 --chain customSpecRaw.json --scheme Sr25519 --suri "YOUR SECRET WORDS" --password-interactive --key-type aura
+./target/release/sugarfunge-node key insert --base-path=/var/lib/.sugarfunge-node/keys/node01 --chain customSpecRaw.json --scheme Sr25519 --suri "YOUR SECRET WORDS" --password-interactive --key-type aura
 
-./target/release/sugarfunge-node key insert --base-path=/var/lib/.sugarfunge-node/node01 --chain customSpecRaw.json --scheme Sr25519 --suri "YOUR SECRET WORDS" --password-interactive --key-type gran
+./target/release/sugarfunge-node key insert --base-path=/var/lib/.sugarfunge-node/keys/node01 --chain customSpecRaw.json --scheme Sr25519 --suri "YOUR SECRET WORDS" --password-interactive --key-type gran
  ```
 
  Redo the same for node02 and put the keys for node02.
@@ -233,12 +233,18 @@ Build:
 docker build -t sugarfunge-node:local -f docker/Dockerfile .
 ```
 
-Then you can run the node1 like:
+Then you can run the validator nodes like:
 
 ```bash
 docker run --rm -d --name MyNode01 --network host -v /var/lib/.sugarfunge-node/passwords/password1.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node01:/keys -v /var/lib/.sugarfunge-node/data/node01:/data sugarfunge-node:local --chain /customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30334 --ws-port 9944 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --validator --name MyNode01 --password-filename "/password.txt" --node-key=[key1]
 
 docker run --rm -d --name MyNode02 --network host -v /var/lib/.sugarfunge-node/passwords/password2.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node02:/keys -v /var/lib/.sugarfunge-node/data/node02:/data sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30335 --ws-port 9945 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /ip4/127.0.0.1/tcp/30334/p2p/[peerId1] --validator --name MyNode02 --password-filename "/password.txt" --node-key=[key2]
+```
+
+For non-validator node on Functionyard network, you can run:
+
+```bash
+docker run --rm -d --name MyNode03 --network host -v /var/lib/.sugarfunge-node/passwords/password3.txt:/password.txt -v /var/lib/.sugarfunge-node/keys/node03:/keys -v /var/lib/.sugarfunge-node/data/node03:/data sugarfunge-node:local --chain ./customSpecRaw.json --enable-offchain-indexing true --base-path=/data --keystore-path=/keys --port=30336 --ws-port 9946 --ws-external --rpc-cors=all --rpc-methods=Unsafe --rpc-external --bootnodes /dns4/node.functionyard.fx.land/tcp/30334/p2p/12D3KooWBeXV65svCyknCvG1yLxXVFwRxzBLqvBJnUF6W84BLugv --name MyNode03 --node-key=[key3] --offchain-worker always
 ```
 
 ## Run as service
