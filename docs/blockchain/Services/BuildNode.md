@@ -4,6 +4,8 @@
 
 	curl https://sh.rustup.rs -sSf | sh
 
+	source ~/.bashrc
+
 2- Install dependencies:
 
 	sudo apt-get install protobuf-compiler libclang-dev build-essential
@@ -14,7 +16,7 @@
 	
 4- Enter the folder
 
-	cd ./sugarfundge-node
+	cd ./sugarfunge-node
 	
 5- Install wasm32
 
