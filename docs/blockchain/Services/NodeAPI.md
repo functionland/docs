@@ -28,12 +28,24 @@ cargo run --release
 docker build -t sugarfunge-api:local -f docker/Dockerfile .
 ```
 
+## Edit the .env
+```bash
+sudo nano .ev.example
+```
+
+Save it and then:
+
+```bash
+sudo mv .env.example /var/lib/.sugarfunge-node/.env
+```
+
+
 ## Run the Node API
 
 Requires a [Node](Node.md) running.
 
 ```bash
-docker run --rm -d --network host sugarfunge-api:local
+docker run --rm -d --name MyNode03API --network host -v /var/lib/.sugarfunge-node/.env:/.env -v /var/lib/.sugarfunge-node/data/node03:/data sugarfunge-api:local --db-uri=/data --node-server ws://127.0.0.1:9946
 ```
 
 # Available arguments
