@@ -110,6 +110,7 @@ const sidebars = {
 			'blockchain/Services/NodeAPI',
 			'blockchain/Services/ProofEngine',
 			'blockchain/Services/Status',
+			'blockchain/Services/FulaContractAPI',
           ]
         },
         {
