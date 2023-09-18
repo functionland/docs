@@ -37,7 +37,8 @@ Description=Fula Contract API
 [Service]
 TimeoutStartSec=0
 Type=simple
-ExecStart=/home/user/fula-contract-api/target/release/functionland-contract-api --node-server=wss://node3.funct>Restart=always
+ExecStart=/home/user/fula-contract-api/target/release/functionland-contract-api --node-server=wss://node3.functionyard.fula.network
+Restart=always
 StandardOutput=file:/var/log/fula-contract-api.log
 StandardError=file:/var/log/fula-contract-api.err
 
