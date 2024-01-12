@@ -76,8 +76,10 @@ websocat ws://127.0.0.1:4000/ws
 
 # API Metadata Generation
 
-If you update the [Node](Node.md) manually, it's required to generate the metadata with the SugarFunge fork of [subxt](https://github.com/SugarFunge/subxt) to access the new state of the chain using the API.
+If you update the [Node](Node.md) manually and added pallets, it's required to generate the metadata with the SugarFunge fork of [subxt](https://github.com/SugarFunge/subxt) to access the new state of the chain using the API.
 
 ```bash
-subxt-cli metadata -f bytes > sugarfunge_metadata.scale
+cargo install subxt-cli
+
+subxt-cli metadata -f bytes > sugarfunge_metadata.scale --url http://localhost:9934/
 ```
