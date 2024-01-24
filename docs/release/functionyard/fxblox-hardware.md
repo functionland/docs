@@ -7,7 +7,7 @@ id: fxblox-hardware
 
 ### Step 1: Download the Firmware
 
-- **Download**: Find `minimal_update.zip` in the latest release under the Assets section on GitHub. As of 24/Jan/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.1.10/minimal_update.zip
+- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 24/Jan/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.1.10/minimal_update.zip
   - **Options**:
     - Download files with `minimal_` prefix if you do not need a desktop interface (access via Terminal, smaller file size).
     - Download files without `minimal_` prefix if you require a desktop interface.
@@ -36,3 +36,11 @@ id: fxblox-hardware
 ### Step 4: Post-Update
 
 - Future firmware updates will be automatic, eliminating the need for manual updates.
+
+## Video Demo of the update steps:
+
+### After attaching hte USB:
+https://github.com/functionland/rk1-image/assets/6176518/06ddf8ed-61a0-4031-b48d-77f7f7ba79eb
+
+### After about 15 minutes:
+https://github.com/functionland/rk1-image/assets/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289
