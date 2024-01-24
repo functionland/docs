@@ -47,6 +47,6 @@ id: fxblox-hardware
 
 ### After about 15 minutes:
 <video width="320" height="240" controls>
-  <source src="https://github.com/functionland/rk1-image/assets/6176518/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289" type="video/mp4" />
+  <source src="https://github.com/functionland/rk1-image/assets/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
