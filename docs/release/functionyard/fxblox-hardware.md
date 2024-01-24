@@ -43,4 +43,4 @@ id: fxblox-hardware
 ![After attaching the USB](https://github.com/functionland/rk1-image/assets/6176518/06ddf8ed-61a0-4031-b48d-77f7f7ba79eb)
 
 ### After about 15 minutes:
-![After about 15 minutes(https://github.com/functionland/rk1-image/assets/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289)
+![After about 15 minutes](https://github.com/functionland/rk1-image/assets/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289)
