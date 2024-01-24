@@ -7,7 +7,7 @@ id: fxblox-hardware
 
 ### Step 1: Download the Firmware
 
-- **Download**: Find `minimal_update.zip` in the latest release under the Assets section on GitHub.
+- **Download**: Find `minimal_update.zip` in the latest release under the Assets section on GitHub. As of 24/Jan/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.1.10/minimal_update.zip
   - **Options**:
     - Download files with `minimal_` prefix if you do not need a desktop interface (access via Terminal, smaller file size).
     - Download files without `minimal_` prefix if you require a desktop interface.
