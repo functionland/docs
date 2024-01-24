@@ -56,6 +56,7 @@ const sidebars = {
         },
       ]
     },
+
     {
       type: 'doc',
       label: 'Whitepaper',
@@ -86,7 +87,6 @@ const sidebars = {
         'RFCs/personal-data-reserve'
       ]
     },
-	,
     {
       type: 'category',
       label: 'Blockchain',
@@ -104,13 +104,13 @@ const sidebars = {
           },
           items:[
             'blockchain/Services/Explorer',
-			'blockchain/Services/Node',
-			'blockchain/Services/BuildNode',
-			'blockchain/Services/RunNode',
-			'blockchain/Services/NodeAPI',
-			'blockchain/Services/ProofEngine',
-			'blockchain/Services/Status',
-			'blockchain/Services/FulaContractAPI',
+            'blockchain/Services/Node',
+            'blockchain/Services/BuildNode',
+            'blockchain/Services/RunNode',
+            'blockchain/Services/NodeAPI',
+            'blockchain/Services/ProofEngine',
+            'blockchain/Services/Status',
+            'blockchain/Services/FulaContractAPI',
           ]
         },
         {
@@ -122,14 +122,14 @@ const sidebars = {
           },
           items:[
             'blockchain/Recipes/Account',
-			'blockchain/Recipes/Asset',
-			'blockchain/Recipes/Bag',
-			'blockchain/Recipes/Bundle',
-			'blockchain/Recipes/Challenges',
-			'blockchain/Recipes/Claims',
-			'blockchain/Recipes/Manifest',
-			'blockchain/Recipes/Market',
-			'blockchain/Recipes/Pool',
+            'blockchain/Recipes/Asset',
+            'blockchain/Recipes/Bag',
+            'blockchain/Recipes/Bundle',
+            'blockchain/Recipes/Challenges',
+            'blockchain/Recipes/Claims',
+            'blockchain/Recipes/Manifest',
+            'blockchain/Recipes/Market',
+            'blockchain/Recipes/Pool',
           ]
         },
       ]
@@ -189,6 +189,29 @@ const sidebars = {
       ]
     },
 
+  ],
+  functiontard: [
+    {
+      type: 'category',
+      label: 'Functionyard Testnet',
+      items: [
+        {
+          type:'category',
+          label:'Functionyard Network',
+          link: {
+            type:'doc',
+            id:'release/functionyard/index',
+          },
+          items:[
+            'release/functionyard/fxblox-hardware',
+            'release/functionyard/fxblox-app',
+            'release/functionyard/join',
+            'release/functionyard/metamask',
+            'release/functionyard/dapps',
+          ]
+        }
+      ]
+    }
   ]
 };
 
