@@ -28,6 +28,7 @@ id: fxblox-app
    - If you have FxBlox version with internal storage, there is no need to attach external storage
 10. Select your desired WiFi network for the FxBlox and enter the password.
 11. Finally, on the last screen reconnect your mobile device to your home WiFi and you can turn on the mobile data again if you want to. The app will confirm successful setup. Please note the app does not continue if you do not have an active internet connection.
+12. We recommend to unplug and replug the Blox after the initial setup once for a hard reboot and ensuring that everything is set.
 
 ### Troubleshooting
 
