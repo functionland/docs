@@ -22,10 +22,10 @@ id: fxblox-app
    - You may need to click back to manually return to app if it does not open Blox automatically after you sign in metamask)
    - It does not matter which chain you are on, in Metamask wallet.
 6. Tap "Connect to new blox".
-7. Manually connect your phone to the "FxBlox" WiFi, then continue in the app.
+7. Manually connect your phone to the "FxBlox" WiFi, and turn off "mobile data", then continue in the app.
 8. Attach at least 500GB of external storage to your FxBlox. Proceed by clicking "Next" once the app recognizes the storage.
 9. Select your desired WiFi network for the FxBlox and enter the password.
-10. Finally, on the last screen reconnect your mobile device to your home WiFi. The app will confirm successful setup.
+10. Finally, on the last screen reconnect your mobile device to your home WiFi and you can turn on the mobile data again if you want to. The app will confirm successful setup. Please note the app does not continue if you do not have an active internet connection.
 
 ### Troubleshooting
 
