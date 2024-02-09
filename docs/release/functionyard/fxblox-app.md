@@ -30,5 +30,5 @@ id: fxblox-app
 ### Troubleshooting
 
 - <b>If Metamask doesn't redirect:</b> Manually go back to the FxBlox app.
-- <b>App issues with Metamask:</b> On some phones if you cannot get the "Connect" and "sign" prompts in metamask, you may need to put both Metamask app and Blox app in Unrestriced mode from "Battery Optimization". follow: `Settings` > `Apps` > 'FxBlox` (and also for `Metmask`) > `Battery` / `App Battery` > Choose `Unrestricted`. After the setup you can return it back to default of `Optimized`
+- <b>App issues with Metamask:</b> On some phones if you cannot get the "Connect" and "sign" prompts in metamask, you may need to put both Metamask app and Blox app in Unrestriced mode from "Battery Optimization". follow: `Settings` > `Apps` > `FxBlox` (and also for `Metmask`) > `Battery` / `App Battery` > Choose `Unrestricted`. After the setup you can return it back to default of `Optimized`
 - <b>Final step connection issues:</b> Restart FxBlox and retry. If unresolved, restart the FxBlox app.
