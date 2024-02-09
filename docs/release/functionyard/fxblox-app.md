@@ -8,24 +8,27 @@ id: fxblox-app
 ### Initial Setup
 
 1. **Download the App**: 
-   - For Android: [FxBlox on Google Play (v1.4.8+)](https://play.google.com/store/apps/details?id=land.fx.blox).
+   - For Android: [FxBlox on Google Play (v1.5.5+)](https://play.google.com/store/apps/details?id=land.fx.blox).
    - For iOS: Available soon on the App Store.
-2. **Metamask Wallet**: Ensure you have a Metamask wallet for setting up your identity.
+2. **Metamask Wallet**: Ensure you have a [Metamask wallet](https://play.google.com/store/apps/details?id=io.metamask) for setting up your identity.
 
 ### App Configuration Steps
 
-1. Select "Setup Blox" in the app.
-2. Choose "Mumbai (Polygon Testnet)" as the chain and tap "Connect Wallet".
-3. Complete the connection in the Metamask app, then return to the FxBlox app.
-4. Enter a memorable password for data encryption and click "Link Password" (Note: This is not your Metamask password).
-5. Tap "Connect to new blox".
-6. Manually connect your phone to the "FxBlox" WiFi, then continue in the app.
-7. Attach at least 500GB of external storage to your FxBlox. Proceed by clicking "Next" once the app recognizes the storage.
-8. Select your desired WiFi network for the FxBlox and enter the password.
-9. Finally, on the last screen reconnect your mobile device to your home WiFi. The app will confirm successful setup.
+1. Open Metamask Wallet and it is better if oyu put it on "Ethereum Mainnet" (Mainnet which is usually the defual and not Testnet)
+2. Minimize Metamask (not close) and open Blox app.
+3. Read the [Terms and Condition](https://fx.land/terms) and if you agree, then Select "Agree and Setup Blox" in the app.
+4. Enter a memorable password for data encryption and click "Sign" (Note: This is not your Metamask password).
+5. Complete the connection in the Metamask app, then return to the FxBlox app.
+   - You may need to click back to manually return to app if it does not open Blox automatically after you sign in metamask)
+   - It does not matter which chain you are on, in Metamask wallet.
+6. Tap "Connect to new blox".
+7. Manually connect your phone to the "FxBlox" WiFi, then continue in the app.
+8. Attach at least 500GB of external storage to your FxBlox. Proceed by clicking "Next" once the app recognizes the storage.
+9. Select your desired WiFi network for the FxBlox and enter the password.
+10. Finally, on the last screen reconnect your mobile device to your home WiFi. The app will confirm successful setup.
 
 ### Troubleshooting
 
-- If Metamask doesn't redirect: Manually go back to the FxBlox app.
-- App issues with Metamask: Restart both apps and try again.
-- Final step connection issues: Restart FxBlox and retry. If unresolved, restart the FxBlox app.
+- <b>If Metamask doesn't redirect:</b> Manually go back to the FxBlox app.
+- <b>App issues with Metamask:</b> On some phones if you cannot get the "Connect" and "sign" prompts in metamask, you may need to put both Metamask app and Blox app in Unrestriced mode from "Battery Optimization". follow: `Settings` > `Apps` > 'FxBlox` (and also for `Metmask`) > `Battery` / `App Battery` > Choose `Unrestricted`. After the setup you can return it back to default of `Optimized`
+- <b>Final step connection issues:</b> Restart FxBlox and retry. If unresolved, restart the FxBlox app.
