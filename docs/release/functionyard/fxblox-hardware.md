@@ -30,8 +30,8 @@ id: fxblox-hardware
 4. **Final Steps**:
    - After about 15 minutes, the LED blinks green and blue. Remove the USB drive.
    - Restart the FxBlox by unplugging and plugging back the power.
-   - Optionally, reinsert the USB in a different port or remove the files if using the top port again.
-5. **Wait 10 min after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, taking about 10 minutes to fully process the update and show the FxBlox WiFi. Please wait for `10 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing hte update for `10 minutes` after the frist boot. We will add LED indicators in the future updates
+   - Optionally, reinsert the USB to a different port or remove the files if using the top port again.
+5. **Wait 30 min after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, taking about 30 minutes to fully process the update and show the FxBlox WiFi. Please wait for `30 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10 minutes` after the first boot. We will add LED indicators in future updates
 
 ### Step 4: Post-Update
 
