@@ -31,11 +31,13 @@ Before starting, make sure that your USB stick is **32GB or smaller**. Anything 
    - After about 15 minutes, the LED blinks green and blue. Remove the USB drive.
    - Restart the FxBlox by unplugging and plugging back the power.
    - Optionally, reinsert the USB to a different port or remove the files if using the top port again.
-5. **Wait after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, taking about 30 minutes to fully process the update and show the FxBlox WiFi. Please wait until you see the LEDs flash in `cyan` repeatedly. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for around `10 minutes` after the first boot until LEDs turn flashing `cyan`.
 
 ### Step 4: Post-Update
+**Wait after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, and go through a series of lights, this **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
 
-- Future firmware updates will be automatic, eliminating the need for manual updates.
+**Leave it plugged in!**: At any time, you may think it is done or stuck or it is turned off, but be rest assured that it is processing the update. After automatic restarts are done, the FxBlox will proceed to show a variety of colors including: <font color="Blue">blue</font>, <font color="green"> green</font>, <font color="cyan"> cyan</font>, <font color="yellow"> yellow</font>, off, <font color="red"> red</font>; in that order. This process make take around **10 minutes** until LEDs turn flashing <font color="cyan"> cyan</font>.
+
+**Future firmware updates will be automatic, eliminating the need for manual updates.**
 
 ## Video Demo of the update steps:
 
