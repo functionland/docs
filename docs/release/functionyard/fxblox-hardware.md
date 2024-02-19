@@ -14,7 +14,7 @@ id: fxblox-hardware
   - **Note**: If the file is split into multiple parts (due to GitHub size limits), download all parts to the same folder, and then you can unzip by clicking the one with `.zip` extension.
 
 ### Step 2: Unzip and Transfer to FAT32 USB
-
+Before starting, make sure that your USB stick is **32GB or smaller**. Anything larger than 32GB may not work because the limit for FAT32 is 32GB.
 - **Unzipping**:
   - Unzip `minimal_update.zip` on your computer.
   - **Important**: Unzip on your computer first, then transfer to avoid `FAT32` file size limitations.
