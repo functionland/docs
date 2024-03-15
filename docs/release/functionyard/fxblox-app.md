@@ -20,7 +20,7 @@ id: fxblox-app
 4. Enter a memorable password for data encryption and click `Sign` (Note: This is not your Metamask password).
 5. Complete the connection in the Metamask app, then return to the FxBlox app.
    - You may need to click back to manually return to the app if it does not open Blox automatically after you sign in Metamask
-   - It does not matter which chain (Ethereum, Mumbai, Goerli, etc) you are on, in your Metamask wallet.
+   - It does not matter which chain (Ethereum, Mumbai, etc) you are on in your Metamask wallet.
 6. Tap `Connect to new blox`.
 7. Manually connect your phone to the "FxBlox" WiFi/Hotspot, and turn off "mobile data", then continue in the app.
 8. Attach at least 500GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.

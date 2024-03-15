@@ -7,27 +7,31 @@ id: metamask
 
 This guide explains how to add the BORG token, which is not automatically listed in MetaMask, to your wallet on the Mumbai test network. There is an easy way and a manual way!
 
-## Easy Way
+## Easy Way (Desktop)
 
 ### Mumbai
 
 1. Adding `Mumbai` Network to Metamask: First, open [this link to add Mumbai testnet to your MetaMask](https://chainlist.org/chain/80001). Now click on the `Add to Metamask` button. It will open your Metamask extension on Chrome and add Mumbai Network to it (if not already added).
 
-![mumbai connect button](/img/metamask/mubai-connect-button.png)
+![mumbai connect button](/img/fxyard-network/mubai-connect-button.png)
 
 2. Adding the `BORG` token on `Mumbai`: First, open [this link to add Borg to Mumbai network](https://docs.metamask.io/wallet/reference/wallet_watchasset/?type=ERC20&options[address]=0x99a8b2B50c4bFBf916Add5DFdf680fc873FA81f4&options[symbol]=BORG&options[decimals]=18&options[image]=https://raw.githubusercontent.com/functionland/sugarfunge-explorer/master/assets/BORG.svg&options[tokenId]=BORG) and on the bottom right (you may need to scroll), click on the `Send Request` button. It opens your Metamask extension on Chrome and adds the `BORG` token to the `Mumbai` network (if not already added).
 
 <div class="text--center">
-   <img src="/img/metamask/connect-borg-button.png" />
+   <img src="/img/fxyard-network/connect-borg-button.png" />
 </div>
 
-### Goerli
+## Easy Way (Mobile)
 
-1. Adding `Goerli` Network to Metamask: First, open [this link to add Goerli testnet to your MetaMask](https://chainlist.org/chain/5) and click on the `Add to Metamask` button. It will open your Metamask extension on Chrome and add Goerli Network to it (if not already added).
+In Metamask mobile, you have to be using the browser that is available in the MetaMask app for the sites to recognize your Metamask wallet.
 
-![Alt text](/img/metamask/goerli-connect-button.png)
-
-2. Adding the `BORG` token on `Goerli`: Open [this link to add Borg to Goerli testnet](https://docs.metamask.io/wallet/reference/wallet_watchasset/?type=ERC20&options[address]=0x4fE33FB41B2A50ac82732C0399C9e2A82C1cBb5E&options[symbol]=BORG&options[decimals]=18&options[image]=https://raw.githubusercontent.com/functionland/sugarfunge-explorer/master/assets/BORG.svg&options[tokenId]=BORG)and on the bottom right (you may need to scroll), click on the `Send Request` button. It will open your Metamask extension on Chrome and add the `BORG` token to the `Goerli` network (if not already added).
+1. Copy/Paste https://chainlist.org/chain/80001 into the Metamask web browser.
+2. Click on `Connect Wallet` under where it says `Mumbai`. Confirm popup.
+<div class="text--center">
+   <img src="/img/fxyard-network/mobile-mm-connect.png" style={{width: 500}}/>
+</div>
+3. Copy/Paste, into a new tab of the Metamask web browser, https://docs.metamask.io/wallet/reference/wallet_watchasset/?type=ERC20&options[address]=0x99a8b2B50c4bFBf916Add5DFdf680fc873FA81f4&options[symbol]=BORG&options[decimals]=18&options[image]=https://raw.githubusercontent.com/functionland/sugarfunge-explorer/master/assets/BORG.svg&options[tokenId]=BORG.
+4. Scroll all the way down to the `Send Request` button. Confirm popup.
 
 ## Manual Way (Mobile/Desktop)
 
@@ -37,13 +41,13 @@ Ensure you have MetaMask installed and select the Mumbai Testnet. If Mumbai is n
 
 1. **Select "Add Network" manually**.
 <!-- New lines necessary for proper rendered styling on webpage -->
-   * **Mobile**: 
+   * **Mobile**: First, click on circled button. Then, `Add Network`
    
-   <img src="/img/metamask/mobile-network-sel.jpg" width="400" />
+   <img src="/img/fxyard-network/mobile-add-network.png" width="400" />
 
-   * **Desktop**:
+   * **Desktop**: First, click on circled button. Then, `Add Network`
    
-   <img src="/img/metamask/desktop-network-sel.png" width="400" />
+   <img src="/img/fxyard-network/desktop-network-sel.png" width="400" />
 
    * Alternatively, you can go to `Settings` -> `Networks` -> `Add network`, then `Custom Networks` or `Add a network manually`.
 2. **Enter the following details**:
