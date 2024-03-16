@@ -42,7 +42,7 @@ If you have setup FxBlox **before** official testnet launch, you will be require
 
 ## Format Drive
 
-If you were eager to test out nightly releases on your own, you may have trouble joining the official launch of the testnet. This is because the blocks from the temporary chains are incompatible with the official testnet blocks. To fix this, you need to clear out all the blocks, easiest way is to format the drive.
+If you were eager to test out nightly releases on your own, you may have trouble joining the official launch of the testnet. This is because the blocks from the temporary chains are incompatible with the official testnet blocks. To fix this, you need to erase all previous blocks, easiest way is to format the drive.
 
 To format your drive: 
 1. Click on the `Blox` tab.
@@ -55,3 +55,6 @@ To format your drive:
    <img src="/img/fxyard-network/format-button.png" style={{width: 400}}/>
 </div>
 4. Now wait! The light will turn purple. This process may take more or less than 5 minutes, dependent on the speed of your drive.
+5. The FxBlox will auto-reboot, after it is done the lights will turn off.
+
+FxBlox will automatically connect to testnet and save chain history. You should be able to join testnet now.
