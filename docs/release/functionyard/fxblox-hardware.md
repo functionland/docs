@@ -5,39 +5,47 @@ id: fxblox-hardware
 
 ## Preparing Your FxBlox
 
+:::warning 
+If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
+:::
+
 ### Step 1: Download the Firmware
 
-- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 16/Feb/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.1.22/minimal_update.zip
+- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 15/Mar/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.36.0/minimal_update.zip
   - **Options**:
     - Download files with `minimal_` prefix if you do not need a desktop interface (access via Terminal, smaller file size).
-    - Download files without `minimal_` prefix if you require a desktop interface.
-  - **Note**: If the file is split into multiple parts (due to GitHub size limits), download all parts to the same folder, and then you can unzip by clicking the one with `.zip` extension.
 
 ### Step 2: Unzip and Transfer to FAT32 USB
-Before starting, make sure that your USB stick is **32GB or smaller**. Anything larger than 32GB may not work because the limit for FAT32 is 32GB.
-- **Unzipping**:
-  - Unzip `minimal_update.zip` on your computer.
-  - **Important**: Unzip on your computer first, then transfer to avoid `FAT32` file size limitations.
-- **Important USB Preparation**:
-  - Use a USB drive formatted as `FAT32`.
-  - Copy unzipped files directly to the root of the USB drive. So the files `boot.scr`, `update.img.0`, `update.img.1` and `update.img.2` must be in the root of your USB disk
+:::info 
+Before starting, make sure that your USB stick is **32GB or smaller**. Anything larger than 32GB may not work due to the FAT32 file system limitations. Instructions **must** be done in this order to avoid complications.
+:::
+  1. Use a USB drive formatted as `FAT32`.
+  2. First, unzip `minimal_update.zip` onto your computer.
+  3. Then, copy unzipped files to USB drive to avoid potential file corruption.
+  4. Make sure to copy unzipped files directly to the root of the USB drive. So the files `boot.scr`, `update.img.0`, `update.img.1` and `update.img.2` , etc... must be in the root of your USB disk.
+
+  <div class="text--center">
+   <img src="/img/fxyard-network/root-usb.png" style={{width: 700}}/>
+</div>
 
 ### Step 3: Updating FxBlox
 
-1. **Turn Off**: Ensure your FxBlox is turned off.
-2. **USB Connection**: Connect the USB drive to the top USB port of the FxBlox. (Only the top port is designed for updates)
-3. **Power On**: Turn on your FxBlox. The LED will display green, blue, and then yellow, indicating the update process.
-4. **Final Steps**:
-   - After about 15 minutes, the LED blinks green and blue. Remove the USB drive.
-   - Restart the FxBlox by unplugging and plugging back the power.
-   - Optionally, reinsert the USB to a different port or remove the files if using the top port again.
+1. Ensure your FxBlox is turned off.
+2. Connect the USB drive to the top USB port of the FxBlox. (Only the top port is designed for updates)
+3. Turn on your FxBlox. The LED will display <font color="green">green</font>, <font color="blue">blue</font>, and then yellow, indicating the update process.
+4. After about 15 minutes, the LED blinks <font color="green">green</font> and <font color="blue">blue</font>. Remove the USB drive.
+5. Restart the FxBlox by unplugging and plugging back the power.
 
 ### Step 4: Post-Update
-**Wait after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, and go through a series of lights, this **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
+:::warning
+**Be patience on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
+:::
 
-**Leave it plugged in!**: At any time, you may think it is done or stuck or it is turned off, but be rest assured that it is processing the update. After automatic restarts are done, the FxBlox will proceed to show a variety of colors including: <font color="Blue">blue</font>, <font color="green"> green</font>, <font color="cyan"> cyan</font>, <font color="yellow"> yellow</font>, off, <font color="red"> red</font>; in that order. This process make take around **10 minutes** until LEDs turn flashing <font color="cyan"> cyan</font>.
+**Leave it plugged in!** At any time, you may think it is done or stuck or it is turned off, but be rest assured that it is processing the update. After automatic restarts are done, the FxBlox will proceed to show a variety of colors including: <font color="Blue">blue</font>, <font color="green"> green</font>, <font color="cyan"> cyan</font>, yellow, off, <font color="red"> red</font>; in that order. This process make take around **10 minutes** until LEDs turn flashing <font color="cyan"> cyan</font>.
 
-**Future firmware updates will be automatic, eliminating the need for manual updates.**
+:::info
+Future firmware updates will be over the air, eliminating the need for manual updates.
+:::
 
 ## Video Demo of the update steps:
 
