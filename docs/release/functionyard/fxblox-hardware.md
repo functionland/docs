@@ -7,14 +7,14 @@ id: fxblox-hardware
 
 ### Step 1: Download the Firmware
 
-- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 09/Feb/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.1.15/minimal_update.zip
+- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 16/Feb/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.1.22/minimal_update.zip
   - **Options**:
     - Download files with `minimal_` prefix if you do not need a desktop interface (access via Terminal, smaller file size).
     - Download files without `minimal_` prefix if you require a desktop interface.
   - **Note**: If the file is split into multiple parts (due to GitHub size limits), download all parts to the same folder, and then you can unzip by clicking the one with `.zip` extension.
 
 ### Step 2: Unzip and Transfer to FAT32 USB
-
+Before starting, make sure that your USB stick is **32GB or smaller**. Anything larger than 32GB may not work because the limit for FAT32 is 32GB.
 - **Unzipping**:
   - Unzip `minimal_update.zip` on your computer.
   - **Important**: Unzip on your computer first, then transfer to avoid `FAT32` file size limitations.
@@ -31,11 +31,13 @@ id: fxblox-hardware
    - After about 15 minutes, the LED blinks green and blue. Remove the USB drive.
    - Restart the FxBlox by unplugging and plugging back the power.
    - Optionally, reinsert the USB to a different port or remove the files if using the top port again.
-5. **Wait after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, taking about 30 minutes to fully process the update and show the FxBlox WiFi. Please wait until you see the LEDs flash in `cyan` repeatedly. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for around `10 minutes` after the first boot until LEDs turn flashing `cyan`.
 
 ### Step 4: Post-Update
+**Wait after First Boot**: On the first boot post-update, the FxBlox automatically reboots 3 times, and go through a series of lights, this **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
 
-- Future firmware updates will be automatic, eliminating the need for manual updates.
+**Leave it plugged in!**: At any time, you may think it is done or stuck or it is turned off, but be rest assured that it is processing the update. After automatic restarts are done, the FxBlox will proceed to show a variety of colors including: <font color="Blue">blue</font>, <font color="green"> green</font>, <font color="cyan"> cyan</font>, <font color="yellow"> yellow</font>, off, <font color="red"> red</font>; in that order. This process make take around **10 minutes** until LEDs turn flashing <font color="cyan"> cyan</font>.
+
+**Future firmware updates will be automatic, eliminating the need for manual updates.**
 
 ## Video Demo of the update steps:
 
