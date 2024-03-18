@@ -1,5 +1,5 @@
 ---
-title: FxBlox App
+title: FxBlox App Setup
 id: fxblox-app
 ---
 
