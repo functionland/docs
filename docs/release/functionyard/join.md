@@ -3,6 +3,9 @@ title: Joining Testnet
 id: join
 ---
 ## Joining the Testnet
+:::warning 
+If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
+:::
 
 1. In the `FxBlox` App, go to the `Users` Page and click `Join Testnet`
 <div class="text--center">
