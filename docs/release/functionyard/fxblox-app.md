@@ -6,7 +6,9 @@ id: fxblox-app
 ## Installing the FxBlox App
 
 ### Initial Setup
-
+:::warning 
+If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
+:::
 1. **Download the App**: 
    - For Android: [FxBlox on Google Play (v1.5.5+)](https://play.google.com/store/apps/details?id=land.fx.blox).
    - For iOS: Available soon on the App Store.
@@ -14,7 +16,7 @@ id: fxblox-app
 
 ### App Configuration Steps
 
-1. Open Metamask Wallet. We recommend having the opening network set to "Ethereum Mainnet" for a smoother setup process. (Mainnet which is usually the default and not Testnet)
+1. Open Metamask Wallet. We recommend having the opening network set to "Ethereum Mainnet" for a smoother setup process.
 2. Minimize Metamask (not close) and open the FxBlox app.
 3. Read the [Terms and Condition](https://fx.land/terms) and if you agree, then select `Agree and Setup Blox` in the app.
 4. Enter a memorable password for data encryption and click `Sign` (Note: This is not your Metamask password).
@@ -37,3 +39,22 @@ id: fxblox-app
 - **Final step connection issues**: Connect to mobile or home wifi, restart the FxBlox app, select `Connect to Existing Blox`. If that doesn't work, restart the FxBlox device. Close app and reopen to proceed with `Connect to new Blox`.
 - **If Metamask doesn't redirect after signing transaction**: Manually go back to the FxBlox app.
 - **App issues with Metamask**: On some phones, if you cannot get the "Connect" and "sign" prompts in Metamask, you may need to put both the Metamask app and Blox app in Unrestricted mode from the "Battery Optimization". Go to: `Settings` > `Apps` > `FxBlox` > `Battery` / `App Battery` > Choose `Unrestricted`. Do the same for the Metamask app. After the setup, you can return it back to the default of `Optimized`
+
+## Format Drive
+
+If you were eager to test out nightly releases on your own, you may have trouble joining the official launch of the testnet. This is because the blocks from the temporary chains are incompatible with the official testnet blocks. To fix this, you need to erase all previous blocks, easiest way is to format the drive.
+
+To format your drive: 
+1. Click on the `Blox` tab.
+<div class="text--center">
+   <img src="/img/fxyard-network/blox-page.png" style={{width: 450}}/>
+</div>
+2. Click and hold the `Hard Disk` you want to format.
+3. When the pop-up shows, click the `Format` button.
+<div class="text--center">
+   <img src="/img/fxyard-network/format-button.png" style={{width: 400}}/>
+</div>
+4. Now wait! The light will turn purple. This process may take more or less than 5 minutes, dependent on the speed of your drive.
+5. The FxBlox will auto-reboot, after it is done the lights will turn off.
+
+FxBlox will automatically connect to testnet and save chain history. You should be able to join testnet now.
