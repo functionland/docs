@@ -1,5 +1,5 @@
 ---
-title: FxBlox App
+title: FxBlox App Setup
 id: fxblox-app
 ---
 
@@ -10,7 +10,7 @@ id: fxblox-app
 If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
 :::
 1. **Download the App**: 
-   - For Android: [FxBlox on Google Play (v1.5.5+)](https://play.google.com/store/apps/details?id=land.fx.blox).
+   - For Android: [FxBlox on Google Play (v1.6.2+)](https://play.google.com/store/apps/details?id=land.fx.blox).
    - For iOS: Available soon on the App Store.
 2. **Metamask Wallet**: Ensure you have a [Metamask wallet](https://play.google.com/store/apps/details?id=io.metamask) for setting up your identity.
 
@@ -39,6 +39,25 @@ If you have setup FxBlox **before** official testnet launch, you will be require
 - **Final step connection issues**: Connect to mobile or home wifi, restart the FxBlox app, select `Connect to Existing Blox`. If that doesn't work, restart the FxBlox device. Close app and reopen to proceed with `Connect to new Blox`.
 - **If Metamask doesn't redirect after signing transaction**: Manually go back to the FxBlox app.
 - **App issues with Metamask**: On some phones, if you cannot get the "Connect" and "sign" prompts in Metamask, you may need to put both the Metamask app and Blox app in Unrestricted mode from the "Battery Optimization". Go to: `Settings` > `Apps` > `FxBlox` > `Battery` / `App Battery` > Choose `Unrestricted`. Do the same for the Metamask app. After the setup, you can return it back to the default of `Optimized`
+
+## Add Multiple FxBlox's
+
+As of Android/iOS app version 1.6.2, there is not an easy way to add more than one blox to your account. Follow these additional steps if you would like to connect more than one blox:
+
+1. If not already done, complete setup of your first Blox. 
+2. Verify Blox is listed as `Authorized` under `Settings`->`Blox Discovery`. If not, restart your Blox by unplug/plug-ing it back in.
+3. `Log Out` of your account by going to `Settings` -> `Log Out`.
+4. Proceed and complete set-up of your next FxBlox.
+5. Repeat steps 2-4 for all the FxBloxes you have, except for the last one.
+6. When you've finally added the last FxBlox, go to `Settings` -> `Blox Discovery`.
+7. All FxBloxes should say `Authorized`, so select them and click `Add selected blox(s)`.
+8. Verify you can see all of them by going to `Blox` tab and swiping left/right between them.
+
+:::info 
+As you can see the functionality is there, but priotization of an easier way to add them is scheduled for after testnet launch.
+
+**Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
+:::
 
 ## Format Drive
 

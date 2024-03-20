@@ -20,6 +20,21 @@ const sidebars = {
       type: 'doc',
       label: 'Welcome',
       id: 'welcome',
+    },   
+    {
+      type:'category',
+      label:'Functionyard Testnet',
+      link: {
+        type:'doc',
+        id:'release/functionyard/index',
+      },
+      items:[
+        'release/functionyard/fxblox-hardware',
+        'release/functionyard/fxblox-app',
+        'release/functionyard/join',
+        'release/functionyard/metamask',
+        'release/functionyard/dapps',
+      ]
     },
     {
       type: 'category',
@@ -190,29 +205,6 @@ const sidebars = {
     },
 
   ],
-  functiontard: [
-    {
-      type: 'category',
-      label: 'Functionyard Testnet',
-      items: [
-        {
-          type:'category',
-          label:'Functionyard Network',
-          link: {
-            type:'doc',
-            id:'release/functionyard/index',
-          },
-          items:[
-            'release/functionyard/fxblox-hardware',
-            'release/functionyard/fxblox-app',
-            'release/functionyard/join',
-            'release/functionyard/metamask',
-            'release/functionyard/dapps',
-          ]
-        }
-      ]
-    }
-  ]
 };
 
 module.exports = sidebars;

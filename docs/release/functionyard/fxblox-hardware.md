@@ -1,5 +1,5 @@
 ---
-title: FxBlox Hardware
+title: FxBlox Firmware Upgrade Guide
 id: fxblox-hardware
 ---
 
@@ -33,7 +33,20 @@ Before starting, make sure that your USB stick is **32GB or smaller**. Anything 
 1. Ensure your FxBlox is turned off.
 2. Connect the USB drive to the top USB port of the FxBlox. (Only the top port is designed for updates)
 3. Turn on your FxBlox. The LED will display <font color="green">green</font>, <font color="blue">blue</font>, and then yellow, indicating the update process.
+<div class="text--center">
+  <video width="400" height="400" controls>
+    <source src="https://github.com/functionland/rk1-image/assets/6176518/06ddf8ed-61a0-4031-b48d-77f7f7ba79eb" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 4. After about 15 minutes, the LED blinks <font color="green">green</font> and <font color="blue">blue</font>. Remove the USB drive.
+<div class="text--center">
+  <video width="400" height="400" controls>
+    <source src="https://github.com/functionland/rk1-image/assets/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 5. Restart the FxBlox by unplugging and plugging back the power.
 
 ### Step 4: Post-Update
@@ -46,17 +59,3 @@ Before starting, make sure that your USB stick is **32GB or smaller**. Anything 
 :::info
 Future firmware updates will be over the air, eliminating the need for manual updates.
 :::
-
-## Video Demo of the update steps:
-
-### After attaching the USB:
-<video width="320" height="240" controls>
-  <source src="https://github.com/functionland/rk1-image/assets/6176518/06ddf8ed-61a0-4031-b48d-77f7f7ba79eb" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-### After about 15 minutes:
-<video width="320" height="240" controls>
-  <source src="https://github.com/functionland/rk1-image/assets/6176518/71d42e46-1cc8-4ab7-b573-a11eeaea3289" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
