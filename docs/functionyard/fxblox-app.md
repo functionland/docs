@@ -4,11 +4,11 @@ id: fxblox-app
 ---
 
 ## Installing the FxBlox App
-
-### Initial Setup
 :::warning 
-If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
+If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](./fxblox-app.md/#format-drive)**
 :::
+### Initial Setup
+
 1. **Download the App**: 
    - For Android: [FxBlox on Google Play (v1.6.2+)](https://play.google.com/store/apps/details?id=land.fx.blox).
    - For iOS: Available soon on the App Store.
@@ -34,7 +34,7 @@ If you have setup FxBlox **before** official testnet launch, you will be require
 10. Finally, on the last screen reconnect your mobile device to your home WiFi and you can turn on the mobile data again if you want to. The app will confirm the successful setup. Please note the app does not continue if you do not have an active internet connection. When Blox is connected to the internet, the LEDs turn `green` for 30 seconds and then turn off.
 11. We recommend unplugging and replugging the Blox after the initial setup once for a hard reboot and ensuring that everything is set. After you re-plug the power and it boots, it may reboot automatically once as well.
 
-### Troubleshooting
+### Troubleshoot
 
 - **Final step connection issues**: Connect to mobile or home wifi, restart the FxBlox app, select `Connect to Existing Blox`. If that doesn't work, restart the FxBlox device. Close app and reopen to proceed with `Connect to new Blox`.
 - **If Metamask doesn't redirect after signing transaction**: Manually go back to the FxBlox app.

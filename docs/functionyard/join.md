@@ -12,7 +12,7 @@ id: join
   - If the `Account` and `Join` buttons are greyed out, it means the blox is still syncing the chain data. It may take a few minutes to up to a day depending on the speed of the attached USB and internet speed. We will add a more visual indicator of this in future releases.
 
 :::warning 
-If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
+If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](./fxblox-app.md/#format-drive)**
 :::
 
 2. In the FxBlox app, go to `Settings > Pools`. Join a pool nearest to your city. Choose the one closest to you from the list. Please note, that if you choose a pool that is far from you, the request will automatically rejected by the system.
