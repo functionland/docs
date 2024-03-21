@@ -26,14 +26,15 @@ const sidebars = {
       label:'Functionyard Testnet',
       link: {
         type:'doc',
-        id:'release/functionyard/index',
+        id:'functionyard/index',
       },
       items:[
-        'release/functionyard/fxblox-hardware',
-        'release/functionyard/fxblox-app',
-        'release/functionyard/join',
-        'release/functionyard/metamask',
-        'release/functionyard/dapps',
+        'functionyard/fxblox-hardware-rpi',
+        'functionyard/fxblox-hardware',
+        'functionyard/fxblox-app',
+        'functionyard/join',
+        'functionyard/metamask',
+        'functionyard/dapps',
       ]
     },
     {
