@@ -1,12 +1,12 @@
 ---
-title: FxBlox Firmware Upgrade Guide
+title: FxBlox Lite Plus (RK1)
 id: fxblox-hardware
 ---
 
-## Preparing Your FxBlox
+## Updating Your FxBlox Lite Plus (RK1)
 
 :::warning 
-If you have setup FxBlox **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. You can **format the drive after completing setup** and by **click and holding anywhere on the Hard Drive info box** until the pop-up option appears. See more [details here](./fxblox-app.md/#format-drive)
+If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](./fxblox-app.md/#format-drive)**
 :::
 
 ### Step 1: Download the Firmware
@@ -50,9 +50,7 @@ Before starting, make sure that your USB stick is **32GB or smaller**. Anything 
 5. Restart the FxBlox by unplugging and plugging back the power.
 
 ### Step 4: Post-Update
-:::warning
-**Be patience on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
-:::
+**Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
 
 **Leave it plugged in!** At any time, you may think it is done or stuck or it is turned off, but be rest assured that it is processing the update. After automatic restarts are done, the FxBlox will proceed to show a variety of colors including: <font color="Blue">blue</font>, <font color="green"> green</font>, <font color="cyan"> cyan</font>, yellow, off, <font color="red"> red</font>; in that order. This process make take around **10 minutes** until LEDs turn flashing <font color="cyan"> cyan</font>.
 
