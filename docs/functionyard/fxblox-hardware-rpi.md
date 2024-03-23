@@ -59,7 +59,7 @@ To automatically get that version, you need to connect the Blox to the wifi firs
 5. Now, wait 24 hours for the update to install. [** * **](#troubleshoot)
 6. With new version installed, you can proceed with the [normal upgrading process.](#step-1-download-the-firmware)
 
-### Troubleshoot:
+### Troubleshoot
 * You may need to wait somewhere between 20-30 seconds for the button to appear.
 * You may not get a `setup complete` message afer connecting to wifi, because you don't have the latest firmware version. Check your router settings to see if it connected properly.
 * We recommend waiting 24 hours, because there are no indicators for when it is completed.
