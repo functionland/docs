@@ -29,7 +29,7 @@ https://win32diskimager.org/
 ### Step 3: Updating FxBlox
 
 1. **Turn Off**: Ensure your FxBlox (RPI) Lite is turned off.
-2. **USB Connection**: Connect the USB drive to one of USB port of the FxBlox Lite (RPI).
+2. **USB Connection**: Connect the USB drive to the BOTTOM USB port of the FxBlox Lite (RPI).
 3. **Power On**: Turn on your FxBlox Lite (RPI). After about 30 sec, the LED will blink yellow 5 times that indicating the update process started.
 :::warning
 In update process the LED blinks red and green. This phase is very critical, and any mistake in this phase cause breaking FxBlox Lite (RPI). 
