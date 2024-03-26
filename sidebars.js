@@ -36,6 +36,7 @@ const sidebars = {
         'functionyard/join',
         'functionyard/metamask',
         'functionyard/dapps',
+        'functionyard/fxfotos',
       ]
     },
     {
