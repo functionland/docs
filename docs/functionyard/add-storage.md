@@ -5,6 +5,7 @@ id: add-storage
 ## Compatible Storage Drives
 
 Almost all types of storage mediums are compatible with the FxBlox. The Blox has internal slots for:
+- [Framework Storage Expansion Cards](https://frame.work/marketplace/expansion-cards)
 - MicroSD
 - M.2 NVMe
 - And any internal/external drives via USB-C (or USB-C adaptor)
@@ -16,15 +17,15 @@ To install an NVMe or MicroSD drive, you'll have to open the Blox to gain access
 
 1. Remove the four black screws of the 3-port USB-C housing.
 <!-- <picture here> -->
-2. Remove the four silver screws on the bottom of the Blox. 
+2. Remove the four silver screws on the bottom of the Blox.
 <!-- <picture here> -->
 3. Slowly slide out the SBC.
-4. Remove light orange cover on the nvme screw mounting point. 
+4. Remove light orange cover on the nvme screw mounting point.
 
 ### Install M.2 NVMe drive
 With nvme drives, there are a lot of options to choose from. Which ever you choose, M.2 NVMe drives are plenty fast enough to maintain a quality speed for reads, writes, and data transfers.
 
-To install your first NVMe drive: 
+To install your first NVMe drive:
 1. Follow [steps above to open the case.](#install-internal-storage)
 2. Insert NVMe drive into M.2 slot at an angle. Make sure no pins are showing.
 3. Hold drive down, while you screw it into place. (Screw not included with FxBlox)
@@ -47,10 +48,10 @@ You can use any type of drive as long as it can be connected via USB-C cable or 
 - Hardware RAID arrays
 - etc...
 
-## Format Drive
+## Manually Parition and Format
 If you want to add additional storage at some point after initial setup. You will need to manually parition and format the drive before it can be used by the FxBlox.
 
-You will need to **parition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line.
+You will need to **parition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line. Windows will require a third party tool.
 
 ### Linux (Terminal)
 Although the drive can not be used by the Fula net yet, we can manually format it through the Blox's desktop interface. At this point, your Blox must already have an internet connection, so you can either remotely login from another computer with `ssh`, or connect keyboard, video, & mouse. [Checkout this article](https://fierrolabs.medium.com/how-to-remote-control-your-fxblox-mac-windows-linux-d0771b1565ca), made by a community member, for more information on how to do that.
@@ -80,11 +81,12 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 1. Start by downloading the [fdisk command-line tool on sourceforge](https://sourceforge.net/projects/gptfdisk/)
 2. Install app by double-clicking on the downloaded dpkg file
 3. You will not be able to open it, because of Apple security measures. To circumvent them, open `Settings` -> `Privacy & Security` -> `Security`
-5. Click on `Allow Anyways`
-6. Connect drive to Mac, if not already done. Click `Allow` to allow access to drive and now click `Ignore` to keep it discoverable
-7. Open up your Terminal app by searching your Applications or search with Spotlight by pressing `CMD` + `SPACEBAR`, then type `Terminal`
-8. Identify disk location with `diskutil list`. You'll want to keep note of the path, it should be something like `/dev/disk#`
-9. Now start command-line utility with `sudo gdisk`
+4. Click on `Allow Anyways`
+5. Connect drive to Mac, if not already done. Click `Allow` to allow access to drive and now click `Ignore` to keep it discoverable
+6. Open up your Terminal app by searching your Applications or search with Spotlight by pressing `CMD` + `SPACEBAR`, then type `Terminal`
+7. Identify disk location with `diskutil list`. You'll want to keep note of the path, it should be something like `/dev/disk#`
+8. Now start command-line utility with `sudo gdisk`. See [example output](#example-output).
+9. Enter device path found in step 7.
 10. Hit `n`, to create a new GPT partition
 11. Accept the default partition number (1)
 12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive)
@@ -93,22 +95,45 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 15. Hit `y` to proceed, wait for it to complete, and safely eject drive
 16. Connect your drive to the FxBlox
 17. Close FxBlox app if its currently opened, otherwise open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
+#### Example Output
+<div class="text--center">
+    <img src="/img/fxyard-network/gdisk-output.jpg" style={{width: 700}}/>
+</div>
 
 ### Windows (Free Third-Party App)
 
 Ext4 is a linux standard that Windows does not support without some third-party help. There are various paid and free options out there, but we recommend [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html).
 
 1. Install [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html) if not already done
+
 2. Plug in storage device to your Windows computer, if not already done
-3. Open the app. Select `Parition Manager` from the left sidebar.
+
+3. Open the app. Select `Parition Manager` from the left sidebar
+
 4. Select the new drive
+
+![blank drive](/img/fxyard-network/blank-drive.jpg)
+
 5. On the right sidebar, click `Create`
+<div class="text--center">
+    <img src="/img/fxyard-network/r-sidebar.jpg" />
+</div>
+
 6. Make sure `EXT4` is selected under `File system`
+<div class="text--center">
+    <img src="/img/fxyard-network/partition-config-screen.jpeg" style={{width: 700}}/>
+</div>
+
 7. Click `OK`
-8. Click `Execute # Task(s)` at the bottom of the right sidebar of the main window
-9. Close app and eject drive
-10. Connect your drive to the FxBlox
-11. Close FxBlox app if its currently opened, otherwise open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
+8. Ensure drive partition type is listed as `GPT` instead of `MBR`.
+    - If it is **not**, select drive. Then, in right sidebar, select `Convert MBR to GPT` to add it to task list queue.
+9. Click `Execute # Task(s)` at the bottom of the right sidebar of the main window
+<div class="text--center">
+    <img src="/img/fxyard-network/verif-exec-task.png" style={{width: 700}}/>
+</div>
+10. Wait for task(s) to complete, then close app and eject drive
+11. Connect your drive to the FxBlox
+12. Close FxBlox app if its currently opened, otherwise open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
 
 ## Troubleshoot
 - **Drive not recognized in Windows.** If your windows computer doesn't see the connected drive, try restarting your computer first. Then look into potentially installing drivers for the storage device.
