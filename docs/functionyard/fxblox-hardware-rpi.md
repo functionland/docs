@@ -35,13 +35,13 @@ https://win32diskimager.org/
 In update process the LED blinks red and green. This phase is very critical, and any mistake in this phase cause breaking FxBlox Lite (RPI). 
 :::
 4. After about 10 minutes, the LED blinks red only. Remove the USB drive.
-5. Restart the FxBlox Lite (RPI) by unplugging and plugging back the power.
+5. Restart the FxBlox Lite (RPI) by unplugging and plugging back the power (Make sure an external storage, without the img files, is plugged to the bottom port of blox before powering it back on or the sequence of lighting you would see might defer from this documentation). The best partitioning format for storage devices is `ext4` but `vfat` is also acceptable.
 
 ### Step 4: Post-Update
 
-**Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the FxBlox WiFi.
+**Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the `FxBlox` WiFi.
 
-Please wait for `10 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10 minutes` after the frist boot. We will add LED indicators in the future updates.
+Please wait for `10-30 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-30 minutes` after the frist boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox. If no external storage is plugged, then you cannot see this sequence.
 
 :::info 
 **Future firmware updates will be automatic, eliminating the need for manual updates.**
