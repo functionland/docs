@@ -31,6 +31,7 @@ const sidebars = {
       items:[
         'functionyard/fxblox-hardware-rpi',
         'functionyard/fxblox-hardware',
+        'functionyard/add-storage',
         'functionyard/fxblox-app',
         'functionyard/join',
         'functionyard/metamask',

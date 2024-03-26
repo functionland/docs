@@ -9,8 +9,6 @@ This guide explains how to add the BORG token, which is not automatically listed
 
 ## Easy Way (Desktop)
 
-### Mumbai
-
 1. Adding `Mumbai` Network to Metamask: First, open [this link to add Mumbai testnet to your MetaMask](https://chainlist.org/chain/80001). Now click on the `Add to Metamask` button. It will open your Metamask extension on Chrome and add Mumbai Network to it (if not already added).
 
 ![mumbai connect button](/img/fxyard-network/mubai-connect-button.png)
@@ -35,7 +33,7 @@ In Metamask mobile, you have to be using the browser that is available in the Me
 
 ## Manual Way (Mobile/Desktop)
 
-### Step 1: Select the Mumbai Network in MetaMask
+#### Step 1: Select the Mumbai Network in MetaMask
 
 Ensure you have MetaMask installed and select the Mumbai Testnet. If Mumbai is not listed:
 
@@ -57,7 +55,7 @@ Ensure you have MetaMask installed and select the Mumbai Testnet. If Mumbai is n
    - Currency Symbol: `MATIC`
    - Block Explorer URL: `https://polygonscan.com/`
 
-### Step 2: Add BORG Token
+#### Step 2: Add BORG Token
 
 1. Open the MetaMask extension
 2. Go to the `Assets` or `Tokens` tab
@@ -69,3 +67,10 @@ Ensure you have MetaMask installed and select the Mumbai Testnet. If Mumbai is n
 7. Review the token details and click `Import Tokens`
 
 Congratulations, the BORG token is now added to your MetaMask wallet on the Mumbai chain!
+
+## Troubleshoot
+
+1. **BORG token no longer shows in Metamask wallet.** This may be because the Mumbai chain rpc provider is unavailable. You can remedy this by redoing the steps outlined in this guide ([easy way](#adding-borg-token-to-metamask-on-mumbai-chain) or [manual way](#manual-way-mobiledesktop)).
+2. **Error when adding Mumbai chain.** This may occur because the Mumbai chain rpc provider is unavailable, if you are selecting a provider from the list, make sure that it has a green check mark for both `Score` and `Privacy`. This will most likely occur when doing the [manual way](#manual-way-mobiledesktop).
+
+![mumbai chain options](/img/fxyard-network/mumbai_options.png)
