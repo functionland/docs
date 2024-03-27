@@ -43,7 +43,7 @@ If adding more than one FxBlox to your app, get familiar with [these instruction
 - **If Metamask doesn't redirect after signing transaction**: Manually go back to the FxBlox app.
 - **App issues with Metamask**: On some phones, if you cannot get the "Connect" and "sign" prompts in Metamask, you may need to put both the Metamask app and Blox app in Unrestricted mode from the "Battery Optimization". Go to: `Settings` > `Apps` > `FxBlox` > `Battery` / `App Battery` > Choose `Unrestricted`. Do the same for the Metamask app. After the setup, you can return it back to the default of `Optimized`
 
-## Add Multiple FxBlox's
+## Add Multiple FxBloxes
 
 As of Android/iOS app version 1.6.7, there is not an easy way to add more than one blox to your account. Follow these additional steps if you would like to connect more than one blox:
 

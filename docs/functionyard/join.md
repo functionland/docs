@@ -32,3 +32,23 @@ If you were helping test nightly firmware releases **before** official testnet l
 <div class="text--center">
    <img src="/img/fxyard-network/leave-btn.png" style={{width: 400}}/>
 </div>
+
+## Add Multiple FxBloxes
+:::info
+If you do not already have all Bloxes added in your app, then checkout [this guide](./fxblox-app.md#add-multiple-fxbloxes) on how to add them.
+:::
+Every FxBlox is not automatically enrolled in the testnet. The Blox that is showing in the `Blox` tab, is the "Active" Blox which populates the rest of the settings. There are two scenarios that you may fall under.
+
+### Bought during Indiegogo campaign
+
+To add any extra Bloxes to the testnet, you need to:
+1. Make sure you have already followed [the steps above](#joining-the-testnet) to add your first Blox to the testnet. 
+2. Swipe left/right to display the next Blox you want to add.
+3. Go to `Settings` -> `Pool`, select the testnet pool closest to you.
+4. Repeat steps 2-3 for any following Blox.
+
+### Bought Blox outside of campaign
+
+If you bought a Blox from the available units on the [shop.fx.land](https://shop.fx.land/) or a second-hand resellers site. Then you will need to send a message to sales@fx.land to have your `Blox Account ID` added to testnet backend. You `Blox Account ID` is shown under the `User` Tab after completing setup.
+
+After this has been completed, you will have to wait a couple hours for the testnet to sync and then yo uwill be able to join.
