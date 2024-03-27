@@ -1,6 +1,6 @@
 ---
 title: Welcome
-id: welcome
+id: index
 ---
 # Welcome to Functionland
 
@@ -20,11 +20,11 @@ There is currently no single chain agnostic token we can use to pay for decentra
 
 There is currently no easy way for us to take advantage of cloud convenience without losing our data the moment we stop paying the bills.  In other words, once you start paying, you can never stop.
 
-**Enter BAS**
+### [Enter BAS](./welcome/bas.md)
 
 There is currently no modular, open-source, datacenter-grade server hardware option available.  Hardware that is fully customizable and aesthetically appealing enough to sit comfortably in your home.
 
-**Enter Box**
+### [Enter Blox](./welcome/blox.md)
 
 There are currently no freemium options for consumers to compute on and store larger sets of data.
 

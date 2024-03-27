@@ -23,7 +23,10 @@ const sidebars = {
         type: 'doc',
         id: 'index',
       },
-      items:['welcome/bas',]
+      items:[
+        'welcome/bas',
+        'welcome/blox',
+      ]
     },
     {
       type: 'category',
