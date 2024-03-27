@@ -4,28 +4,14 @@ id: bas
 ---
 You've heard of a network attached storage (NAS), but you haven't heard of a blockchain attached storage (BAS).
 
-There is currently no modular, open-source, datacenter-grade server hardware option available.  Hardware that is fully customizable and aesthetically appealing enough to sit comfortably in your home.
+There is currently no modular, open-source, datacenter-grade server hardware option available. Hardware that is fully customizable and aesthetically appealing enough to sit comfortably in your home.
 
 Which is why we are creating just that!
 
-## Hardware
+## Blox to BAS
+The mission behind creating the Blox is to disrupt the centralized cloud storage status-quo. To do this, we need to create a truly people-owned internet. The idea is, get uniform hardware into the hands of the people to ease early development processes and enable users to upload photos and videos to the chain of devices.
 
-ARM-based single board computers (SBCs) have grown in popularity and performance. They consume a fraction of the energy that typical home NAS servers do and perform just as good. We have two models currently in user's hands. The **FxBlox Lite** and **FxBlox Lite Plus**. 
-
-| FxBlox Lite | FxBlox Lite Plus  |
-|     :-:     |         :-:       |
-|  Unavailable |     $400     |
-| Raspberry Pi CM4  | Rockchip RK3588 |
-|  8GB RAM   | 8/32GB RAM  |
-|  16GB EMMC | 16GB EMMC |
-|  3 Modular I/O Ports | 3 Modular I/O Ports |
-|  NVMe support | NVMe support |
-|  Dual 4K | Dual 4K |
-|  Wifi 6 | Wifi 6 |
-
-As the name implies, the Plus model is a more powerful unit, which is a direct result of the upgraded CPU, the Rockchip RK3588!
-
-As for storage, the FxBlox is compatible with most storage types via usb-c cable or adapter. It also has a single slot for an internal M.2 NVMe drive. 
+Blox owners are incentivized to always stay online and not act maliciously thanks to the blockchain mechanisms in place. Even if an owner were to delete user's files from their Blox, that user's files would still be safe because they would have already been replicated to multiple other Bloxes in geographically different locations.
 
 ## BAS for Web2
 
