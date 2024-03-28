@@ -17,12 +17,19 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     {
-      type: 'doc',
-      label: 'Welcome',
-      id: 'welcome',
-    },   
+      type: 'category',
+      label: 'Introduction',
+      link: {
+        type: 'doc',
+        id: 'index',
+      },
+      items:[
+        'welcome/bas',
+        'welcome/blox',
+      ]
+    },
     {
-      type:'category',
+      type: 'category',
       label:'Functionyard Testnet',
       link: {
         type:'doc',
