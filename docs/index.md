@@ -12,31 +12,31 @@ We developed [Fotos](https://github.com/functionland/fotos) as a Web3 alternativ
 
 But while developing Fotos, we realized there are still many pieces missing from the Web3 stack; pieces that are necessary to achieving the better future we envision.
 
-What we realized:
+## What we realized:
 
 There is currently no single chain agnostic token we can use to pay for decentralized infrastructure or software services.
 
-**Enter $FULA token**
+### Enter $FULA token
 
 There is currently no easy way for us to take advantage of cloud convenience without losing our data the moment we stop paying the bills.  In other words, once you start paying, you can never stop.
 
-### [Enter BAS](./welcome/bas.md)
+### Enter [BAS](./welcome/bas.md)
 
 There is currently no modular, open-source, datacenter-grade server hardware option available.  Hardware that is fully customizable and aesthetically appealing enough to sit comfortably in your home.
 
-### [Enter Blox](./welcome/blox.md)
+### Enter [Blox](./welcome/blox.md)
 
 There are currently no freemium options for consumers to compute on and store larger sets of data.
 
-**Enter Fula local pools**
+### Enter Fula local pools
 
 There is currently no platform based on open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and get paid for doing so.
 
-**Enter the [Fula API](./api-intro)**
+### Enter [Fula API](./api-intro)
 
 We decided to build them.  We call it the **Fula network**.
 
-![Fula Network Architectuer](/img/fula-network-arch.png)
+![Fula Network Architecture](/img/fula-network-arch.png)
 
 ## Tell me more about the Fula network.  How does it work?
 
