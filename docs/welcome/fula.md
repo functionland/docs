@@ -36,7 +36,7 @@ Become a pioneer.  Join us on our journey to bring Web3 into the mainstream.
 
 You can do that by:
 
-  * joining the revolution by ordering your FxBlox on [shop.fx.land](https://shop.fx.land)
+  * joining the revolution and ordering your FxBlox on [shop.fx.land](https://shop.fx.land)
 
   * heading over to [Fula API](./api-intro) docs to learn how to develop your own DApps on the FxBlox
 
