@@ -4,74 +4,39 @@ id: index
 ---
 # Welcome to Functionland
 
-Functionland was founded on a core set of Web3 principles.  At the heart of these principles is a simple premise: <b>We each have an inalienable right to own our own data.</b>
+Functionland was founded on a core set of Web3 principles. At the heart of these principles is a simple premise: **<u>We each have an inalienable right to own our own data.</u>**
 
-We set out to build a better future around this simple premise.  We started by developing an app that liberates a set of "own data" we think is particularly important to people: personal home photos and video.
+We set out to build a better future around this simple premise. We started by developing an app that liberates a set of "own data" we think is particularly important to people: personal home photos and video.
 
 We developed [Fotos](https://github.com/functionland/fotos) as a Web3 alternative to available photo and video sharing and backup applications.
 
 But while developing Fotos, we realized there are still many pieces missing from the Web3 stack; pieces that are necessary to achieving the better future we envision.
 
-## What we realized:
+## What We Realized
 
-There is currently no single chain agnostic token we can use to pay for decentralized infrastructure or software services.
+With big tech cloud companies having unfettered access to our data, we needed to created a system that will:
+1. Never lose access to our photos, video, and other personal data, for as long as we live.
+2. Give access to information to anyone in the world without regard for who they are.
+3. Enable any developer to easily build and get paid for their products and services.
+
+Which is when we realized, there was no single chain agnostic token we can use to incentivize people to offer up both their storage and computer power for blockchain products and services.
 
 ### Enter $FULA token
 
-There is currently no easy way for us to take advantage of cloud convenience without losing our data the moment we stop paying the bills.  In other words, once you start paying, you can never stop.
+**$FULA** will be the catalyst for keeping the infrastructure online at all times and getting users to store their photos and video, for as long as they want. Storage providing and compute providers are two sides of the same coin. Providers require payment for offering their service to the public. And consumers need a corresponding way to pay for said services.
 
-### Enter [BAS](./welcome/bas.md)
+### Enter [BAS](./welcome/bas)
 
-There is currently no modular, open-source, datacenter-grade server hardware option available.  Hardware that is fully customizable and aesthetically appealing enough to sit comfortably in your home.
+We created the first uniform **Blockchain Attached Storage (BAS)** device! As a provider, you can use your storage device(s) to completely own your data and gain rewards for offering up your extra storage to the public. And as a consumer, can pay-as-you-go! It'll be like you have access to infinite storage and just pay for what you need to keep your data alive for as long as you like.
 
-### Enter [Blox](./welcome/blox.md)
+### Enter [FxBlox](./welcome/blox)
 
-There are currently no freemium options for consumers to compute on and store larger sets of data.
-
-### Enter Fula local pools
-
-There is currently no platform based on open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and get paid for doing so.
+FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful design, power-efficient board, and next-gen processing is not gate-kept by inflated pricing. Bloxes are competitively priced and offer the **<u>lowest</u>** barrier to entry in any decentralized storage blockchain. Our network has the potential to vertically and horizontally scale faster than any protocol before.
 
 ### Enter [Fula API](./api-intro)
 
-We decided to build them.  We call it the **Fula network**.
+To enable any developer to build apps and services on this brand new protocol, we introduce the **<u>Fula API</u>**. An open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and to get paid for their work.
 
-![Fula Network Architecture](/img/fula-network-arch.png)
+## [Fula Network](./welcome/fula)
 
-## Tell me more about the Fula network.  How does it work?
-
-To become a truly viable alternative to Big Tech cloud storage, we need to guarantee:
-
-  * reliability
-
-  * availability
-
-  * security
-
-To guarantee reliability, availability and security, we designed a system that utilizes an already existent decentralized web.
-
-The Fula network is peer-to-peer architecture designed with open protocols and specifications such as [libp2p](https://libp2p.io/), [IPFS](https://ipfs.io/) and [decentralized identity](https://www.w3.org/TR/did-core/).
-
-This allows us to achieve an unprecedented level of interoperability and makes every participant in the ecosystem future proof, including DApp developers.
-
-By developing on the Fula platform, you earn $FULA from your open-source contributions.  At the same time, you avoid locking yourself in to a single platform with proprietary APIs and archaic approval processes.
-
-By decoupling data from the application, DApp developers can focus on providing rich user experiences without having to worry about what happens to customer data.
-
-It also means Box customers will not be locked in to using any one, single DApp.
-
-The Fula network provides a free, open market for service providers.  Box customers are not just consumers; they can become producers within this new ecosystem too.
-
-In short, it's a positive sum protocol for everyone.
-
-Like what you hear?  Become a pioneer.  Join us on our journey to bring Web3 into the mainstream.
-
-You can do that by:
-
-  * backing us on [indiegogo](https://www.indiegogo.com/projects/box-secure-subscription-free-cloud-alternative#/)
-
-  * heading over to [Fula API](./api-intro) docs to learn how to develop your own DApps on the Box
-
-  * providing feedback/input on our [RFCs](https://github.com/functionland/docs/tree/main/RFCs)
-
-  * sign into one of our [socials](https://linktr.ee/fxland) and join the conversation!
+All together we get the **Fula Network**. This network has power in numbers, it is for the people, and will create a new internet that fixes the security and other fundamental problems with the internet of today.
