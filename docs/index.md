@@ -15,7 +15,7 @@ But while developing Fotos, we realized there are still many pieces missing from
 ## What We Realized
 
 With big tech cloud companies having unfettered access to our data, we needed to created a system that will:
-1. Never lose access to our photos, video, and other personal data, for as long as we live.
+1. Never lose access to our photos, video, and other personal data, for as long as we choose.
 2. Give access to information to anyone in the world without regard for who they are.
 3. Enable any developer to easily build and get paid for their products and services.
 
