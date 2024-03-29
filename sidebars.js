@@ -24,6 +24,7 @@ const sidebars = {
         id: 'index',
       },
       items:[
+        'welcome/fula',
         'welcome/bas',
         'welcome/blox',
       ]
