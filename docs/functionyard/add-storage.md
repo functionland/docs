@@ -109,36 +109,47 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 2. Plug in storage device to your Windows computer, if not already done
 
 3. Open the app. Select `Parition Manager` from the left sidebar
+    - It may immediately recognize the drive and push you to use the Parition Wizard. The partition wizard is a paid service, so if you exit out of that window you can continue to use the app normally (as described below).
 
 4. Select the new drive
 
 ![blank drive](/img/fxyard-network/blank-drive.jpg)
 
-5. On the right sidebar, click `Create`
+5. Ensure drive partition type is listed as `GPT` instead of `MBR`.
+    - If it is **not**, select drive. Then, in right sidebar, select `Initialize to GPT` to add it to task list queue.
+
 <div class="text--center">
-    <img src="/img/fxyard-network/r-sidebar.jpg" />
+    <img src="/img/fxyard-network/init-gpt.png"/>
 </div>
 
-6. Make sure `EXT4` is selected under `File system`
+6. Select drive, and on the right sidebar, click `Create`
+<div class="text--center">
+    <img src="/img/fxyard-network/r-sidebar.png" />
+</div>
+
+7. Make sure `EXT4` is selected under `File system`
 <div class="text--center">
     <img src="/img/fxyard-network/partition-config-screen.jpeg" style={{width: 700}}/>
 </div>
 
-7. Click `OK`
-8. Ensure drive partition type is listed as `GPT` instead of `MBR`.
-    - If it is **not**, select drive. Then, in right sidebar, select `Convert MBR to GPT` to add it to task list queue.
+8. Click `OK`
+
 9. Click `Execute # Task(s)` at the bottom of the right sidebar of the main window
+
 <div class="text--center">
-    <img src="/img/fxyard-network/verif-exec-task.png" style={{width: 700}}/>
+    <img src="/img/fxyard-network/queue-2.png"/>
 </div>
+
 10. Wait for task(s) to complete, then close app and eject drive
+
 11. Connect your drive to the FxBlox
+
 12. Close FxBlox app if its currently opened, otherwise open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
 
 ## Troubleshoot
 - **Drive not recognized in Windows.** If your windows computer doesn't see the connected drive, try restarting your computer first. Then look into potentially installing drivers for the storage device.
 - **FxBlox not updating storage capacity.** If your FxBlox doesn't update the storage the maximum storage capactity even after formatting, try restarting the FxBlox by unplug-plugging it back in.
-- **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2.
+- **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2. Currently, newly added storage gets added to the total instead of as a separate device.
 
 :::info 
 **Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
