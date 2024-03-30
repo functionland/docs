@@ -3,7 +3,7 @@ title: Fula Network
 id: fula
 ---
 
-![Fula Network Architecture](/img/fula-network-arch.png)
+![Fula Network Architecture](/img/welcome/fula-network-arch.png)
 
 ## How does it work?
 

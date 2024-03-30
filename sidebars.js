@@ -23,10 +23,23 @@ const sidebars = {
         type: 'doc',
         id: 'index',
       },
-      items:[
+      items: [
         'welcome/fula',
         'welcome/bas',
         'welcome/blox',
+        {
+          type: 'category',
+          label: 'How to Contribute',
+          link: {
+            type: 'doc',
+            id: 'welcome/contribute/contribute',
+          },
+          items: [
+            'welcome/contribute/style',
+            'welcome/contribute/writing',
+            'welcome/contribute/contribution-tutorial',
+          ]
+        }
       ]
     },
     {
