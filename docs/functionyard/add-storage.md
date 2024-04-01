@@ -77,7 +77,7 @@ In the following commands, replace `sdx` with the device name(s) found in the ou
 14. You should now see that your total maximum storage has increased by the size of the drive you installed.
 
 ### MacOS (Terminal)
-Ext4 is a linux standard that MacOS does not support without some third-party help. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
+Ext4 is a linux standard that MacOS does not support without some third-party help. You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
 1. Start by downloading the [fdisk command-line tool on sourceforge](https://sourceforge.net/projects/gptfdisk/)
 2. Install app by double-clicking on the downloaded dpkg file
 3. You will not be able to open it, because of Apple security measures. To circumvent them, open `Settings` -> `Privacy & Security` -> `Security`
@@ -88,13 +88,13 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 8. Now start command-line utility with `sudo gdisk`. See [example output](#example-output).
 9. Enter device path found in step 7.
 10. Hit `n`, to create a new GPT partition
-11. Accept the default partition number (1)
-12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive)
+11. Accept the default partition number by just pressing `return/Enter`.
+12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive) by just pressing `return/Enter`
 13. Enter `8300` for the Hex-code/GUID. This is shortform to select the 'Linux Filesystem'
 14. Enter `w` to write table to disk and exit tool
 15. Hit `y` to proceed, wait for it to complete, and safely eject drive
 16. Connect your drive to the FxBlox
-17. Close FxBlox app if its currently opened, otherwise open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
+17. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
 #### Example Output
 <div class="text--center">
     <img src="/img/fxyard-network/gdisk-output.jpg" style={{width: 700}}/>
