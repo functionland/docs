@@ -53,8 +53,12 @@ If you want to add additional storage at some point after initial setup. You wil
 
 You will need to **parition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line. Windows will require a third party tool.
 
-### Linux (Terminal)
-Although the drive can not be used by the Fula net yet, we can manually format it through the Blox's desktop interface. At this point, your Blox must already have an internet connection, so you can either remotely login from another computer with `ssh`, or connect keyboard, video, & mouse. [Checkout this article](https://fierrolabs.medium.com/how-to-remote-control-your-fxblox-mac-windows-linux-d0771b1565ca), made by a community member, for more information on how to do that.
+### Linux (Terminal) (Recommended)
+__You do not need a separate Linux computer to do this.__ Although the drive can not be seen in the FxBlox app yet, we can manually format it through the Blox's desktop interface. 
+
+At this point, your Blox must already have an internet connection, if not please complete the [setting up your FxBlox first](fxblox-app.md#app-configuration-steps). If completing set is not an option, you can connect an ethernet cable via usb-c. This will allow you to remotely login from another computer with `ssh`. [Checkout this article](https://fierrolabs.medium.com/how-to-remote-control-your-fxblox-mac-windows-linux-d0771b1565ca), made by a community member, for more information on how to do that.
+
+Alternatively, you can connect keyboard, video, & mouse. Middle and bottom port are DisplayPort and HDMI compatible.
 
 1. Connect your drive to the FxBlox
 2. Connect to your FxBlox via `ssh` or keyboard, video, & mouse
@@ -77,7 +81,7 @@ In the following commands, replace `sdx` with the device name(s) found in the ou
 14. You should now see that your total maximum storage has increased by the size of the drive you installed.
 
 ### MacOS (Terminal)
-Ext4 is a linux standard that MacOS does not support without some third-party help. You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
+Ext4 is a linux standard that MacOS does not support without some third-party help. **You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4**. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
 1. Start by downloading the [fdisk command-line tool on sourceforge](https://sourceforge.net/projects/gptfdisk/)
 2. Install app by double-clicking on the downloaded dpkg file
 3. You will not be able to open it, because of Apple security measures. To circumvent them, open `Settings` -> `Privacy & Security` -> `Security`
@@ -85,7 +89,7 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 5. Connect drive to Mac, if not already done. Click `Allow` to allow access to drive and now click `Ignore` to keep it discoverable
 6. Open up your Terminal app by searching your Applications or search with Spotlight by pressing `CMD` + `SPACEBAR`, then type `Terminal`
 7. Identify disk location with `diskutil list`. You'll want to keep note of the path, it should be something like `/dev/disk#`
-8. Now start command-line utility with `sudo gdisk`. See [example output](#example-output).
+8. Now start command-line utility with `sudo gdisk`. **See [Example Output](#example-output) and [Troubleshoot](#troubleshoot) for more information**.
 9. Enter device path found in step 7.
 10. Hit `n`, to create a new GPT partition
 11. Accept the default partition number by just pressing `return/Enter`.
@@ -150,6 +154,11 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 - **Drive not recognized in Windows.** If your windows computer doesn't see the connected drive, try restarting your computer first. Then look into potentially installing drivers for the storage device.
 - **FxBlox not updating storage capacity.** If your FxBlox doesn't update the storage the maximum storage capactity even after formatting, try restarting the FxBlox by unplug-plugging it back in.
 - **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2. Currently, newly added storage gets added to the total instead of as a separate device.
+- **Parition Exists already (MacOS).** If a partition exists already, then you will want to delete it first, write to drive, and rerun the command:
+    1. Get to step 9 in the _[Manually Parition and Format for Mac](#macos-terminal)_ instructions
+    2. Hit `d`, to delete partition(s).
+    3. Hit `w`, confirm by hitting `y` and saving state.
+    4. Continue _[Manually Parition and Format for Mac](#macos-terminal)_ instructions, from step 7.
 
 :::info 
 **Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
