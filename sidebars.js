@@ -24,20 +24,20 @@ const sidebars = {
         id: 'index',
       },
       items: [
-        'welcome/fula',
-        'welcome/bas',
-        'welcome/blox',
+        'introduction/fula',
+        'introduction/bas',
+        'introduction/blox',
         {
           type: 'category',
           label: 'How to Contribute',
           link: {
             type: 'doc',
-            id: 'welcome/contribute/contribute',
+            id: 'introduction/contribute/contribute',
           },
           items: [
-            'welcome/contribute/style',
-            'welcome/contribute/writing',
-            'welcome/contribute/contribution-tutorial',
+            'introduction/contribute/styling',
+            'introduction/contribute/writing',
+            'introduction/contribute/contribution-tutorial',
           ]
         }
       ]

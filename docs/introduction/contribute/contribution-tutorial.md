@@ -4,7 +4,7 @@ id: contribution-tutorial
 ---
 This style guide is adapted from IPFS's ["__Contribution Tutorial__"](https://docs.ipfs.tech/community/contribute/contribution-tutorial/) article.
 
-While the [grammar, formatting, and style](./contribution/styling) and the [writing guide](./contribution/writing) can both help you write good content for the Fula docs, they don't delve into _how_ you can submit your content changes. This guide will walk you through finding an issue, fixing it, and then submitting your fix to `functionland/docs`.
+While the [grammar, formatting, and style](./styling-guide.md) and the [writing guide](./writing-guide.md) can both help you write good content for the Fula docs, they don't delve into _how_ you can submit your content changes. This guide will walk you through finding an issue, fixing it, and then submitting your fix to `functionland/docs`.
 
 There are plenty of small-sized issues around IPFS documentation that make for easy, helpful contributions to the Fula net project. Here, we'll walk through:
 

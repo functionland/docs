@@ -1,6 +1,6 @@
 ---
 title: Style Guide
-id: style
+id: styling
 ---
 This style guide is adapted from IPFS's ["__Grammer, formatting, and style__"](https://docs.ipfs.tech/community/contribute/grammar-formatting-and-style/) rules.
 
