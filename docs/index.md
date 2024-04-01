@@ -25,11 +25,11 @@ Which is when we realized, there was no single chain agnostic token we can use t
 
 **$FULA** will be the catalyst for keeping the infrastructure online at all times and getting users to store their photos and video, for as long as they want. Storage providing and compute providers are two sides of the same coin. Providers require payment for offering their service to the public. And consumers need a corresponding way to pay for said services.
 
-### Enter [BAS](./welcome/bas)
+### Enter [BAS](./introduction/bas)
 
 We created the first uniform **Blockchain Attached Storage (BAS)** device! As a provider, you can use your storage device(s) to completely own your data and gain rewards for offering up your extra storage to the public. And as a consumer, can pay-as-you-go! It'll be like you have access to infinite storage and just pay for what you need to keep your data alive for as long as you like.
 
-### Enter [FxBlox](./welcome/blox)
+### Enter [FxBlox](./introduction/blox)
 
 FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful design, power-efficient board, and next-gen processing is not gate-kept by inflated pricing. Bloxes are competitively priced and offer the **<u>lowest</u>** barrier to entry in any decentralized storage blockchain. Our network has the potential to vertically and horizontally scale faster than any protocol before.
 
@@ -37,6 +37,6 @@ FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful 
 
 To enable any developer to build apps and services on this brand new protocol, we introduce the **<u>Fula API</u>**. An open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and to get paid for their work.
 
-## [Fula Network](./welcome/fula)
+## [Fula Network](./introduction/fula)
 
 All together we get the **Fula Network**. This network has power in numbers, it is for the people, and will create a new internet that fixes the security and other fundamental problems with the internet of today.

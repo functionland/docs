@@ -39,6 +39,6 @@ Please ensure that you submit your contribution to the appropriate repository ba
 
 ## Contribute to [Fula docs](https://github.com/functionland/docs)
 
-Technical writers of any level are greatly appreciated. If you are considering contributing to the documentation, please take a look at our [Styling](./contribute/style) and [Writing](./contribute/writing) guides to learn more about our writing styles.
+Technical writers of any level are greatly appreciated. If you are considering contributing to the documentation, please take a look at our [Styling](./contribute/styling) and [Writing](./contribute/writing) guides to learn more about our writing styles.
 
 Thank you for contributing to our projects and helping us build better software together!
