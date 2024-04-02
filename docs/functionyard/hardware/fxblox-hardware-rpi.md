@@ -5,7 +5,7 @@ id: fxblox-hardware-rpi
 
 ## Updating Your FxBlox Lite (RPI)
 :::warning 
-If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](./fxblox-app.md/#format-drive)**
+If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](../fxblox-app.md/#format-drive)**
 :::
 ### Step 1: Download the firmware
 :::info
