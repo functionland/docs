@@ -54,7 +54,7 @@ To automatically get that version, you need to connect the Blox to the wifi firs
 
 1. Download the latest iOS/Android app.
 2. Follow prompts to create password and connect Metamask.
-3. If possible, skip format disk. [** * **](#troubleshoot)
+3. On the authorize blox screen wait for 15 seconds and a "skip" button apperas. click that to skip the authorization and then click yes to confirm. [** * **](#troubleshoot)
 4. Connect Blox to wifi. [** * **](#troubleshoot)
 5. Now, wait 24 hours for the update to install. [** * **](#troubleshoot)
 6. With new version installed, you can proceed with the [normal upgrading process.](#step-1-download-the-firmware)
