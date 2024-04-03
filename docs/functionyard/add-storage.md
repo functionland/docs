@@ -2,6 +2,8 @@
 title: Add Storage
 id: add-storage
 ---
+import ReactPlayer from 'react-player';
+
 ## Compatible Storage Drives
 
 Almost all types of storage mediums are compatible with the FxBlox. The Blox has internal slots for:
@@ -82,6 +84,11 @@ In the following commands, replace `sdx` with the device name(s) found in the ou
 
 ### MacOS (Terminal)
 Ext4 is a linux standard that MacOS does not support without some third-party help. **You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4**. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
+
+#### Video Guide
+<ReactPlayer controls url='https://youtu.be/Kmcsxbx4rcY' />
+
+#### Written Guide
 1. Start by downloading the [fdisk command-line tool on sourceforge](https://sourceforge.net/projects/gptfdisk/)
 2. Install app by double-clicking on the downloaded dpkg file
 3. You will not be able to open it, because of Apple security measures. To circumvent them, open `Settings` -> `Privacy & Security` -> `Security`
@@ -92,27 +99,33 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 8. Now start command-line utility with `sudo gdisk`. **See [Example Output](#example-output) and [Troubleshoot](#troubleshoot) for more information**.
 9. Enter device path found in step 7.
 10. Hit `n`, to create a new GPT partition
+    - If partition already exists, press `d` to delete it.
+    - if multiple partitions exist, checkout [Troubleshoot](#troubleshoot) section.
 11. Accept the default partition number by just pressing `return/Enter`.
 12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive) by just pressing `return/Enter`
 13. Enter `8300` for the Hex-code/GUID. This is shortform to select the 'Linux Filesystem'
 14. Enter `w` to write table to disk and exit tool
 15. Hit `y` to proceed, wait for it to complete, and safely eject and reinsert drive.
+
 #### Example Output
+
 <div class="text--center">
     <img src="/img/fxyard-network/gdisk-output.jpg" style={{width: 700}}/>
 </div>
 
-16. After partitioning is complete. Now we can format using the `e2fsprogs` command.
-17. Download with `brew install e2fsprogs`. This might take a while if Brew is not up-to-date.
-18. Now verify disk path again with `diskutil list`.
-19. Run ```sudo `brew --prefix e2fsprogs`/sbin/mkfs.ext4 /dev/diskXs1```
+After partitioning is complete. Now we can format using the `e2fsprogs` command.
+
+16. Download with `brew install e2fsprogs`. This might take a while if Brew is not up-to-date.
+17. Now verify disk path again with `diskutil list`.
+18. Run ```sudo `brew --prefix e2fsprogs`/sbin/mkfs.ext4 /dev/diskXs1```
 
 :::info replace the `X` in `/dev/diskXs1` with the path found in step 18!
 :::
-20. Wait for it to complete and safely eject drive.
-21. Connect your drive to the FxBlox.
-22. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app. 
-23. If the drive does not show within the next 5 minutes there maybe a variety of issues occurring. **Checkout the [Troubleshooting](#troubleshoot) section for more details.**
+19. Wait for it to complete and safely eject drive.
+20. Connect your drive to the FxBlox.
+21. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app. 
+
+If the drive does not show within the next 5 minutes there maybe a variety of issues occurring. **Checkout the [Troubleshooting](#troubleshoot) section for more details.**
 
 ### Windows (Free Third-Party App)
 
