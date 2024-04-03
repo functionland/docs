@@ -96,13 +96,23 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive) by just pressing `return/Enter`
 13. Enter `8300` for the Hex-code/GUID. This is shortform to select the 'Linux Filesystem'
 14. Enter `w` to write table to disk and exit tool
-15. Hit `y` to proceed, wait for it to complete, and safely eject drive
-16. Connect your drive to the FxBlox
-17. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
+15. Hit `y` to proceed, wait for it to complete, and safely eject and reinsert drive.
 #### Example Output
 <div class="text--center">
     <img src="/img/fxyard-network/gdisk-output.jpg" style={{width: 700}}/>
 </div>
+
+16. After partitioning is complete. Now we can format using the `e2fsprogs` command.
+17. Download with `brew install e2fsprogs`. This might take a while if Brew is not up-to-date.
+18. Now verify disk path again with `diskutil list`.
+19. Run ```sudo `brew --prefix e2fsprogs`/sbin/mkfs.ext4 /dev/diskXs1```
+
+:::info replace the `X` in `/dev/diskXs1` with the path found in step 18!
+:::
+20. Wait for it to complete and safely eject drive.
+21. Connect your drive to the FxBlox.
+22. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app. 
+23. If the drive does not show within the next 5 minutes there maybe a variety of issues occurring. **Checkout the [Troubleshooting](#troubleshoot) section for more details.**
 
 ### Windows (Free Third-Party App)
 
@@ -152,7 +162,10 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 
 ## Troubleshoot
 - **Drive not recognized in Windows.** If your windows computer doesn't see the connected drive, try restarting your computer first. Then look into potentially installing drivers for the storage device.
-- **FxBlox not updating storage capacity.** If your FxBlox doesn't update the storage the maximum storage capactity even after formatting, try restarting the FxBlox by unplug-plugging it back in.
+- **Storage capacity not updating** This could be for a variety of issues:
+    - Try closing/opening your app a couple of times, but also press the `retry` buttons a once or twice in between.
+    - Restart the FxBlox by unplug-plugging it back in.
+    - The usb3 drive is connected to a usb2 port. On a **FxBlox Lite**, the top two ports are USB2.0 and the bottom is USB3.0. On a **FxBlox Lite Plus**, the top port is USB2.0 and the bottom two are USB3.0.
 - **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2. Currently, newly added storage gets added to the total instead of as a separate device.
 - **Parition Exists already (MacOS).** If a partition exists already, then you will want to delete it first, write to drive, and rerun the command:
     1. Get to step 9 in the _[Manually Parition and Format for Mac](#macos-terminal)_ instructions
