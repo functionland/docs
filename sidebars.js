@@ -50,8 +50,18 @@ const sidebars = {
         id:'functionyard/index',
       },
       items:[
-        'functionyard/fxblox-hardware-rpi',
-        'functionyard/fxblox-hardware',
+        {
+          type: 'category',
+          label: 'Hardware',
+          link: {
+            type: 'doc',
+            id:'functionyard/hardware/fxblox-hardware',
+          },
+          items: [
+            'functionyard/hardware/fxblox-hardware-rpi',
+            'functionyard/hardware/fxblox-hardware-rk1',
+          ]
+        },
         'functionyard/add-storage',
         'functionyard/fxblox-app',
         'functionyard/join',
