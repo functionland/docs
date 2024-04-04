@@ -2,6 +2,8 @@
 title: Add Storage
 id: add-storage
 ---
+import ReactPlayer from 'react-player';
+
 ## Compatible Storage Drives
 
 Almost all types of storage mediums are compatible with the FxBlox. The Blox has internal slots for:
@@ -54,34 +56,53 @@ If you want to add additional storage at some point after initial setup. You wil
 You will need to **parition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line. Windows will require a third party tool.
 
 ### Linux (Terminal) (Recommended)
-__You do not need a separate Linux computer to do this.__ Although the drive can not be seen in the FxBlox app yet, we can manually format it through the Blox's desktop interface. 
+__You do not need a separate Linux computer to do this.__ Although the drive can not be seen in the FxBlox app yet, we can manually format it through the Blox's desktop interface.
 
 At this point, your Blox must already have an internet connection, if not please complete the [setting up your FxBlox first](fxblox-app.md#app-configuration-steps). If completing set is not an option, you can connect an ethernet cable via usb-c. This will allow you to remotely login from another computer with `ssh`. [Checkout this article](https://fierrolabs.medium.com/how-to-remote-control-your-fxblox-mac-windows-linux-d0771b1565ca), made by a community member, for more information on how to do that.
 
-Alternatively, you can connect keyboard, video, & mouse. Middle and bottom port are DisplayPort and HDMI compatible.
+Alternatively, you can connect keyboard, video, & mouse. Bottom port is DisplayPort and HDMI compatible on both the CM4 and RK1.
 
+#### Video Guide
+<center>
+    <ReactPlayer controls url="https://youtu.be/jAKz-fTesAg" />
+</center>
+
+#### Written Guide
 1. Connect your drive to the FxBlox
 2. Connect to your FxBlox via `ssh` or keyboard, video, & mouse
-3. Log in to `pi` account using password `fxblox`
-4. Open up Terminal app with Ctrl + Alt + T
-5. Update current packages with `sudo apt update && sudo apt upgrade`
-6. Enter password `fxblox`
-7. Confirm install with `y`
-8. Download `parted` app with `sudo apt install parted`
-9. Identify new disk(s) with `sudo parted -l | grep Error`
+    - If you have FxBlox Lite (CM4):
+        - `ssh pi@fulatower`, password `raspberry`
+    - If you have FxBlox Lite Plus (RK1):
+        - `ssh pi@fxblox-rk1`, password `fxblox`
+    - When connecting directly, open up Terminal app with `Ctrl + Alt + T`
+3. Update current packages with `sudo apt update && sudo apt upgrade`. Enter your password.
+    :::If it asks to choose between files
+    If it asks to choose (y/n) between two file versions, enter `n`.
+    :::
+4. Download `parted` app with `sudo apt install parted`
+5. Identify new disk(s) with `lsblk`. External drives will show up as `sdX`. Internal drives would show up as the type of device.
 
 :::info 
 In the following commands, replace `sdx` with the device name(s) found in the output of the above command. Repeat steps 10-12 for any new drives you have, one at a time.
 :::
 
-10. Assign your drive the `GPT` paritioning standard with `sudo parted /dev/sdx mklabel gpt`
-11. Partition your drive with `sudo parted -a opt /dev/sdx mkpart primary ext4 0% 100%`
-12. Format the newly created parition with `sudo mkfs.ext4 /dev/sdx1`
-13. Close FxBlox app if its currently opened, otherwise open your Fxblox app now
-14. You should now see that your total maximum storage has increased by the size of the drive you installed.
+6. Assign your drive the `GPT` partition standard with `sudo parted /dev/sdx mklabel gpt`
+7. Partition your drive with `sudo parted -a opt /dev/sdx mkpart primary ext4 0% 100%`
+8. Format the newly created partition with `sudo mkfs.ext4 /dev/sdx1`
+9. Wait for it to complete. Then restart FxBlox app.
+10. You should now see that your total maximum storage has increased by the size of the drive you installed. You may also need to hit the refresh button.
+
+If you have any issues, checkout the [Troubleshoot](#troubleshoot) section for more information.
 
 ### MacOS (Terminal)
 Ext4 is a linux standard that MacOS does not support without some third-party help. **You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4**. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
+
+#### Video Guide
+<center>
+    <ReactPlayer controls url='https://youtu.be/Kmcsxbx4rcY' />
+</center>
+
+#### Written Guide
 1. Start by downloading the [fdisk command-line tool on sourceforge](https://sourceforge.net/projects/gptfdisk/)
 2. Install app by double-clicking on the downloaded dpkg file
 3. You will not be able to open it, because of Apple security measures. To circumvent them, open `Settings` -> `Privacy & Security` -> `Security`
@@ -92,32 +113,44 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
 8. Now start command-line utility with `sudo gdisk`. **See [Example Output](#example-output) and [Troubleshoot](#troubleshoot) for more information**.
 9. Enter device path found in step 7.
 10. Hit `n`, to create a new GPT partition
+    - If partition already exists, press `d` to delete it.
+    - if multiple partitions exist, checkout [Troubleshoot](#troubleshoot) section.
 11. Accept the default partition number by just pressing `return/Enter`.
 12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive) by just pressing `return/Enter`
 13. Enter `8300` for the Hex-code/GUID. This is shortform to select the 'Linux Filesystem'
 14. Enter `w` to write table to disk and exit tool
 15. Hit `y` to proceed, wait for it to complete, and safely eject and reinsert drive.
+
 #### Example Output
+
 <div class="text--center">
     <img src="/img/fxyard-network/gdisk-output.jpg" style={{width: 700}}/>
 </div>
 
-16. After partitioning is complete. Now we can format using the `e2fsprogs` command.
-17. Download with `brew install e2fsprogs`. This might take a while if Brew is not up-to-date.
-18. Now verify disk path again with `diskutil list`.
-19. Run ```sudo `brew --prefix e2fsprogs`/sbin/mkfs.ext4 /dev/diskXs1```
+After partitioning is complete. Now we can format using the `e2fsprogs` command.
+
+16. Download with `brew install e2fsprogs`. This might take a while if Brew is not up-to-date.
+17. Now verify disk path again with `diskutil list`.
+18. Run ```sudo `brew --prefix e2fsprogs`/sbin/mkfs.ext4 /dev/diskXs1```
 
 :::info replace the `X` in `/dev/diskXs1` with the path found in step 18!
 :::
-20. Wait for it to complete and safely eject drive.
-21. Connect your drive to the FxBlox.
-22. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app. 
-23. If the drive does not show within the next 5 minutes there maybe a variety of issues occurring. **Checkout the [Troubleshooting](#troubleshoot) section for more details.**
+19. Wait for it to complete and safely eject drive.
+20. Connect your drive to the FxBlox.
+21. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app. 
+
+If the drive does not show within the next 5 minutes there maybe a variety of issues occurring. **Checkout the [Troubleshooting](#troubleshoot) section for more details.**
 
 ### Windows (Free Third-Party App)
 
 Ext4 is a linux standard that Windows does not support without some third-party help. There are various paid and free options out there, but we recommend [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html).
 
+#### Video Guide 
+<center>
+    <ReactPlayer controls url="https://youtu.be/lVuTGof1pGI" />
+</center>
+
+#### Written Guide
 1. Install [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html) if not already done
 
 2. Plug in storage device to your Windows computer, if not already done
@@ -131,12 +164,13 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 
 5. Ensure drive partition type is listed as `GPT` instead of `MBR`.
     - If it is **not**, select drive. Then, in right sidebar, select `Initialize to GPT` to add it to task list queue.
+    - Optionally, execute task.
 
 <div class="text--center">
     <img src="/img/fxyard-network/init-gpt.png"/>
 </div>
 
-6. Select drive, and on the right sidebar, click `Create`
+6. Select unallocated drive, and on the right sidebar, click `Create`
 <div class="text--center">
     <img src="/img/fxyard-network/r-sidebar.png" />
 </div>

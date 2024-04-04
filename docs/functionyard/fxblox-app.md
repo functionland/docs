@@ -71,14 +71,14 @@ If you were eager to test out nightly releases on your own, you may have trouble
 
 To format your drive: 
 1. Tap on the `Blox` tab to see this screen
-<div class="text--center">
+<center>
    <img src="/img/fxyard-network/blox-page.png" style={{width: 450}}/>
-</div>
+</center>
 2. **Tap and hold** the `Hard Disk` you want to format
 3. When the pop-up shows, click the `Format` button
-<div class="text--center">
+<center>
    <img src="/img/fxyard-network/format-button.png" style={{width: 400}}/>
-</div>
+</center>
 4. **Now wait!** The light will turn purple. This process may take more or less than 5 minutes, dependent on the speed of your drive.
 5. The FxBlox will auto-reboot, after it is done the lights will turn off.
 
