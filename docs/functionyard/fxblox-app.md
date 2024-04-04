@@ -10,8 +10,8 @@ If you were helping test nightly firmware releases **before** official testnet l
 ### Initial Setup
 
 1. **Download the App**: 
-   - For Android: [FxBlox on Google Play (v1.6.7+)](https://play.google.com/store/apps/details?id=land.fx.blox).
-   - For iOS: Available soon on the App Store.
+   - For Android: [FxBlox on Google Play (v1.6.11+)](https://play.google.com/store/apps/details?id=land.fx.blox).
+   - For iOS: [FxBlox on AppStore (v1.6.11+)](https://apps.apple.com/ca/app/fxblox/id6444862171).
 2. **Metamask Wallet**: Ensure you have a [Metamask wallet](https://play.google.com/store/apps/details?id=io.metamask) for setting up your identity.
 
 ### App Configuration Steps
