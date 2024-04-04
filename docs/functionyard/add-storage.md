@@ -60,27 +60,39 @@ __You do not need a separate Linux computer to do this.__ Although the drive can
 
 At this point, your Blox must already have an internet connection, if not please complete the [setting up your FxBlox first](fxblox-app.md#app-configuration-steps). If completing set is not an option, you can connect an ethernet cable via usb-c. This will allow you to remotely login from another computer with `ssh`. [Checkout this article](https://fierrolabs.medium.com/how-to-remote-control-your-fxblox-mac-windows-linux-d0771b1565ca), made by a community member, for more information on how to do that.
 
-Alternatively, you can connect keyboard, video, & mouse. Middle and bottom port are DisplayPort and HDMI compatible.
+Alternatively, you can connect keyboard, video, & mouse. Bottom port is DisplayPort and HDMI compatible on both the CM4 and RK1.
 
+#### Video Guide
+<center>
+    <ReactPlayer controls url="https://youtu.be/jAKz-fTesAg" />
+</center>
+
+#### Written Guide
 1. Connect your drive to the FxBlox
 2. Connect to your FxBlox via `ssh` or keyboard, video, & mouse
-3. Log in to `pi` account using password `fxblox`
-4. Open up Terminal app with Ctrl + Alt + T
-5. Update current packages with `sudo apt update && sudo apt upgrade`
-6. Enter password `fxblox`
-7. Confirm install with `y`
-8. Download `parted` app with `sudo apt install parted`
-9. Identify new disk(s) with `sudo parted -l | grep Error`
+    - If you have FxBlox Lite (CM4):
+        - `ssh pi@fulatower`, password `raspberry`
+    - If you have FxBlox Lite Plus (RK1):
+        - `ssh pi@fxblox-rk1`, password `fxblox`
+    - When connecting directly, open up Terminal app with `Ctrl + Alt + T`
+3. Update current packages with `sudo apt update && sudo apt upgrade`. Enter your password.
+    :::If it asks to choose between files
+    If it asks to choose (y/n) between two file versions, enter `n`.
+    :::
+4. Download `parted` app with `sudo apt install parted`
+5. Identify new disk(s) with `lsblk`. External drives will show up as `sdX`. Internal drives would show up as the type of device.
 
 :::info 
 In the following commands, replace `sdx` with the device name(s) found in the output of the above command. Repeat steps 10-12 for any new drives you have, one at a time.
 :::
 
-10. Assign your drive the `GPT` paritioning standard with `sudo parted /dev/sdx mklabel gpt`
-11. Partition your drive with `sudo parted -a opt /dev/sdx mkpart primary ext4 0% 100%`
-12. Format the newly created parition with `sudo mkfs.ext4 /dev/sdx1`
-13. Close FxBlox app if its currently opened, otherwise open your Fxblox app now
-14. You should now see that your total maximum storage has increased by the size of the drive you installed.
+6. Assign your drive the `GPT` partition standard with `sudo parted /dev/sdx mklabel gpt`
+7. Partition your drive with `sudo parted -a opt /dev/sdx mkpart primary ext4 0% 100%`
+8. Format the newly created partition with `sudo mkfs.ext4 /dev/sdx1`
+9. Wait for it to complete. Then restart FxBlox app.
+10. You should now see that your total maximum storage has increased by the size of the drive you installed. You may also need to hit the refresh button.
+
+If you have any issues, checkout the [Troubleshoot](#troubleshoot) section for more information.
 
 ### MacOS (Terminal)
 Ext4 is a linux standard that MacOS does not support without some third-party help. **You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4**. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
