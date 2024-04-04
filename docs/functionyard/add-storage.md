@@ -56,7 +56,7 @@ If you want to add additional storage at some point after initial setup. You wil
 You will need to **parition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line. Windows will require a third party tool.
 
 ### Linux (Terminal) (Recommended)
-__You do not need a separate Linux computer to do this.__ Although the drive can not be seen in the FxBlox app yet, we can manually format it through the Blox's desktop interface. 
+__You do not need a separate Linux computer to do this.__ Although the drive can not be seen in the FxBlox app yet, we can manually format it through the Blox's desktop interface.
 
 At this point, your Blox must already have an internet connection, if not please complete the [setting up your FxBlox first](fxblox-app.md#app-configuration-steps). If completing set is not an option, you can connect an ethernet cable via usb-c. This will allow you to remotely login from another computer with `ssh`. [Checkout this article](https://fierrolabs.medium.com/how-to-remote-control-your-fxblox-mac-windows-linux-d0771b1565ca), made by a community member, for more information on how to do that.
 
@@ -86,7 +86,9 @@ In the following commands, replace `sdx` with the device name(s) found in the ou
 Ext4 is a linux standard that MacOS does not support without some third-party help. **You will not be able to use the `Disk Utility` app on Mac, to partition to Ext4**. We do not need to mount our drive to Mac, we just need to partition and format it. To do so:
 
 #### Video Guide
-<ReactPlayer controls url='https://youtu.be/Kmcsxbx4rcY' />
+<center>
+    <ReactPlayer controls url='https://youtu.be/Kmcsxbx4rcY' />
+</center>
 
 #### Written Guide
 1. Start by downloading the [fdisk command-line tool on sourceforge](https://sourceforge.net/projects/gptfdisk/)
@@ -131,6 +133,12 @@ If the drive does not show within the next 5 minutes there maybe a variety of is
 
 Ext4 is a linux standard that Windows does not support without some third-party help. There are various paid and free options out there, but we recommend [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html).
 
+#### Video Guide 
+<center>
+    <ReactPlayer controls url="https://youtu.be/lVuTGof1pGI" />
+</center>
+
+#### Written Guide
 1. Install [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html) if not already done
 
 2. Plug in storage device to your Windows computer, if not already done
@@ -144,12 +152,13 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 
 5. Ensure drive partition type is listed as `GPT` instead of `MBR`.
     - If it is **not**, select drive. Then, in right sidebar, select `Initialize to GPT` to add it to task list queue.
+    - Optionally, execute task.
 
 <div class="text--center">
     <img src="/img/fxyard-network/init-gpt.png"/>
 </div>
 
-6. Select drive, and on the right sidebar, click `Create`
+6. Select unallocated drive, and on the right sidebar, click `Create`
 <div class="text--center">
     <img src="/img/fxyard-network/r-sidebar.png" />
 </div>
