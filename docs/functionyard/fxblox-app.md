@@ -5,7 +5,7 @@ id: fxblox-app
 
 ## Installing the FxBlox App
 :::warning 
-If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](./fxblox-app.md/#format-drive)**
+We suggest everyone format their storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns purple and reboots after a few seconds. you should wait for the light be become flashing light-blue and reconnect to FxBlox again to continue the process
 :::
 ### Initial Setup
 
