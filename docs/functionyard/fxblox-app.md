@@ -4,9 +4,7 @@ id: fxblox-app
 ---
 
 ## Installing the FxBlox App
-:::warning 
-We suggest everyone format their storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns purple and reboots after a few seconds. you should wait for the light be become flashing light-blue and reconnect to FxBlox again to continue the process
-:::
+
 ### Initial Setup
 
 1. **Download the App**: 
@@ -17,6 +15,10 @@ We suggest everyone format their storage. At the "set Authorizer" page, wait for
 ### App Configuration Steps
 :::info 
 If adding more than one FxBlox to your app, get familiar with [these instructions first.](#add-multiple-fxbloxs)
+:::
+
+:::info 
+For a successful setup you should either have the Blox with internal storage, or attach an external storage to it.
 ::: 
 
 1. Open Metamask Wallet. We recommend having the opening network set to "Ethereum Mainnet" for a smoother setup process.
@@ -28,9 +30,14 @@ If adding more than one FxBlox to your app, get familiar with [these instruction
    - It does not matter which chain (Ethereum, Mumbai, etc) you are on in your Metamask wallet.
 6. Tap `Connect to new blox`.
 7. Manually connect your phone to the "FxBlox" WiFi/Hotspot, and turn off "mobile data", then continue in the app.
-8. Attach at least 500GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
+   
+:::warning 
+Everyone should format their storage in step 8. If oyu have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process
+:::
+
+8. Make sure you have attached at least 300GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
    - If the storage is not recognized ensure that is it correctly formatted by clicking on the `Format` button.
-      - The light will turn <font color="purple"> purple</font>, to indicate it is formatting. **Formatting times depend on storage medium and capacity**, so be patient during this time. Device will reboot automatically and eventually start flashing <font color="cyan"> cyan</font> again when it is ready to proceed.
+      - The light will turn <font color="purple"> purple</font>, to indicate it is formatting. **Formatting times depend on storage medium and capacity**, so be patient during this time. Device will reboot automatically and eventually start flashing <font color="cyan"> light blue</font> again when it is ready to proceed.
    - If you have an FxBlox version with internal storage, there is no need to attach external storage.
 9. Select your desired WiFi network for the FxBlox and enter the password.
    - If you entered the wrong password, double check you're connected to FxBlox Wifi and just go back to the wifi selection screen to choose and re-enter your password.
