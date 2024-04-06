@@ -32,7 +32,7 @@ For a successful setup you should either have the Blox with internal storage, or
 7. Manually connect your phone to the "FxBlox" WiFi/Hotspot, and turn off "mobile data", then continue in the app.
    
 :::warning 
-Everyone should format their storage in step 8. If oyu have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process
+Everyone should format their storage in step 8. If you have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process
 :::
 
 8. Make sure you have attached at least 300GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
