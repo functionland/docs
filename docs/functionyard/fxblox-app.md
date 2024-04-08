@@ -67,7 +67,7 @@ If you're using the default naming scheme `Blox unit #X`, then name your last Bl
 8. Verify you can see all of them by going to `Blox` tab and swiping left/right between them.
 
 :::info 
-As you can see the functionality is there, but priotization of an easier way to add them is scheduled for after testnet launch.
+As you can see the functionality is there, but prioritization of an easier way to add them is scheduled for after testnet launch.
 
 **Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
 :::

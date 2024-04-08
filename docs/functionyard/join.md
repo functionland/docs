@@ -51,4 +51,4 @@ To add any extra Bloxes to the testnet, you need to:
 
 If you bought a Blox from the available units on the [shop.fx.land](https://shop.fx.land/) or a second-hand resellers site. Then you will need to send a message to sales@fx.land to have your `Blox Account ID` added to testnet backend. You `Blox Account ID` is shown under the `User` Tab after completing setup.
 
-After this has been completed, you will have to wait a couple hours for the testnet to sync and then yo uwill be able to join.
+After this has been completed, you will have to wait a couple hours for the testnet to sync and then you will be able to join.

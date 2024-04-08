@@ -37,11 +37,13 @@ In update process the LED blinks red and green. This phase is very critical, and
 4. After about 10 minutes, the LED blinks red only. Remove the USB drive.
 5. Restart the FxBlox Lite (RPI) by unplugging and plugging back the power (Make sure an external storage, without the img files, is plugged to the bottom port of blox before powering it back on or the sequence of lighting you would see might defer from this documentation). The best partitioning format for storage devices is `ext4` but `vfat` is also acceptable.
 
+**Note** If the blox stays in blue/white color, or does not connect to wifi and neither shows FxBlox hotspot or you rebooted during hte update and think it is broken, you need to do a full re-image by following the [instructions here](fxblox-hardware-rpi-reimage.md).
+
 ### Step 4: Post-Update
 
 **Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the `FxBlox` WiFi.
 
-Please wait for `10-30 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-30 minutes` after the frist boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox. If no external storage is plugged, then you cannot see this sequence.
+Please wait for `10-30 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-30 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox. If no external storage is plugged, then you cannot see this sequence.
 
 :::info 
 **Future firmware updates will be automatic, eliminating the need for manual updates.**
@@ -54,12 +56,13 @@ To automatically get that version, you need to connect the Blox to the wifi firs
 
 1. Download the latest iOS/Android app.
 2. Follow prompts to create password and connect Metamask.
-3. On the authorize blox screen wait for 15 seconds and a "skip" button apperas. click that to skip the authorization and then click yes to confirm. [** * **](#troubleshoot)
+3. On the authorize blox screen wait for 15 seconds and a "skip" button appears in the bottom left. click that to skip the authorization and then click yes to confirm. [** * **](#troubleshoot)
 4. Connect Blox to wifi. [** * **](#troubleshoot)
 5. Now, wait 24 hours for the update to install. [** * **](#troubleshoot)
 6. With new version installed, you can proceed with the [normal upgrading process.](#step-1-download-the-firmware)
 
 ### Troubleshoot
 * You may need to wait somewhere between 20-30 seconds for the button to appear.
-* You may not get a `setup complete` message afer connecting to wifi, because you don't have the latest firmware version. Check your router settings to see if it connected properly.
+* You may not get a `setup complete` message after connecting to wifi, because you don't have the latest firmware version. Check your router settings to see if it connected properly.
 * We recommend waiting 24 hours, because there are no indicators for when it is completed.
+* If the blox stays in blue/white color for a long time after reboot, or does not connect to wifi and neither shows FxBlox hotspot or you rebooted during hte update and think it is broken, you need to do a full re-image by following the [instructions here](fxblox-hardware-rpi-reimage.md)
