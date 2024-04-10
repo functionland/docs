@@ -8,8 +8,8 @@ id: fxblox-app
 ### Initial Setup
 
 1. **Download the App**: 
-   - For Android: [FxBlox on Google Play (v1.6.11+)](https://play.google.com/store/apps/details?id=land.fx.blox).
-   - For iOS: [FxBlox on AppStore (v1.6.11+)](https://apps.apple.com/ca/app/fxblox/id6444862171).
+   - For Android: [FxBlox on Google Play (v1.6.14+)](https://play.google.com/store/apps/details?id=land.fx.blox).
+   - For iOS: [FxBlox on AppStore (v1.6.14+)](https://apps.apple.com/ca/app/fxblox/id6444862171).
 2. **Metamask Wallet**: Ensure you have a [Metamask wallet](https://play.google.com/store/apps/details?id=io.metamask) for setting up your identity.
 
 ### App Configuration Steps
@@ -90,3 +90,13 @@ To format your drive:
 5. The FxBlox will auto-reboot, after it is done the lights will turn off.
 
 FxBlox will automatically connect to testnet and save chain history. You should be able to join testnet now.
+
+## App features
+
+1- You can transfer your earned tokens to your wallet by holding your finger on the `Earnings` section in the Home Page and paste the address of you wallet by clicking the icon (Please note manually entering is not allowed)
+
+2- You can format the storage by holding your finger on the `Hard Disks` section of the Home Page
+
+3- You can check blox details by clicking on the blox icon in Home page and some other details by clicking on the profile icon on top right
+
+4- You can see added or existing Bloxes in the network, when you are connected to the same wifi as blox and choose `Blox Discovery` from Settings tab
