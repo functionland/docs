@@ -11,7 +11,8 @@ If you were helping test nightly firmware releases **before** official testnet l
 :::info
 If this is your very first time setting up your FxBlox Lite, see these [instructions first](#first-time-setup)
 :::
-- **Download**: Find `rpi_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub.
+- **Download**: Find `rpi_cm4_usb_update.zip` files in the [latest release](https://github.com/functionland/rpi-image/releases/latest) under the Assets section on GitHub, and download all files that start with `rpi_cm4_usb_update`.
+- **Download**: You need `7zip` to unzip the downloaded chunked zip files. You can download it from [their website here](https://www.7-zip.org/download.html), and then right click on the file that ends with `.zip.001` and choose `7zip > extract`
 
 - Download: Download `Win32 Disk Imager` for writing update firmware to USB. 
 https://win32diskimager.org/
@@ -37,7 +38,7 @@ In update process the LED blinks red and green. This phase is very critical, and
 4. After about 10 minutes, the LED blinks red only. Remove the USB drive.
 5. Restart the FxBlox Lite (RPI) by unplugging and plugging back the power (Make sure an external storage, without the img files, is plugged to the bottom port of blox before powering it back on or the sequence of lighting you would see might defer from this documentation). The best partitioning format for storage devices is `ext4` but `vfat` is also acceptable.
 
-**Note** If the blox stays in blue/white color, or does not connect to wifi and neither shows FxBlox hotspot or you rebooted during hte update and think it is broken, you need to do a full re-image by following the [instructions here](fxblox-hardware-rpi-reimage.md).
+**Note** If the blox stays in blue/white color, or does not connect to wifi and neither shows FxBlox hotspot or you rebooted during the update and think it is broken, you need to do a full re-image by following the [instructions here](fxblox-hardware-rpi-reimage.md).
 
 ### Step 4: Post-Update
 
