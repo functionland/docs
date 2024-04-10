@@ -42,13 +42,15 @@ In update process the LED blinks red and green. This phase is very critical, and
 
 ### Step 4: Post-Update
 
-**Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **15 minutes** to fully process the update and show the `FxBlox` WiFi.
+1. Ensure your FxBlox is turned off.
+2. Connect the external storage USB drive (not needed if you have internal) to the bottom USB port of the FxBlox.
+3. Turn on your FxBlox. After automatic restarts are done, the FxBlox will proceed to show a variety of colors including: <font color="Blue">blue</font>, <font color="green"> green</font>, <font color="cyan"> cyan</font>, yellow, off, <font color="red"> red</font>; in that order. This process make take around **10 minutes** until LEDs turn flashing <font color="cyan"> light-blue</font>
 
-Please wait for `10-15 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-15 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox. If no external storage is plugged, then you cannot see this sequence.
+Please wait for `10-15 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-15 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox or it has internal storage (XL orders). If no external storage is plugged, then you cannot see this sequence until you plug one.
 
-**Use FxBlox App**: AFter the lights become a flashing blue, you can start setting up the Blox with the application. Follow on-screen instructions in the app.
+**Use FxBlox App**: AFter the lights become a flashing blue, you can start setting up the Blox with the application. Follow on-screen instructions in the app. Please make sure follow instructions as detailed in the [documentation](../fxblox-app.md)
 
-- If at the end of setup, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
+- If at the end of setup through the FxBlox app, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
 
 :::info 
 **Future firmware updates will be automatic, eliminating the need for manual updates.**
