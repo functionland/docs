@@ -35,11 +35,14 @@ FxFotos is a decentralized media manager. It automatically syncs up your media f
 - `Fula Account`: This is the Fula account that the tokens/payments for backing up your data will be deducted from. For testnet initially there is no charge but also no guarantee for hte data you upload (Not private)
 - `Your PeerID`: This is the peer id that the application uses to connect to other nodes (Not private)
 
-8. Click on `Choose a pool for uploads` and select a pool close to you. If you make a mistake, you can `Clear pool selection` and select another pool.
 
-9. Click back and go to main screen.
+8. Click on the 'open in new window' icon next to the `Fula Account` and follow the instructions on the page to join.
 
-10. To upload/backup a media file, click on it to open, then tap one time on the screen and you see a back up icon shown at the bottom of screen.
+9. Click on `Choose a pool for uploads` and select a pool close to you. If you make a mistake, you can `Clear pool selection` and select another pool.
+
+10. Click back and go to main screen.
+
+11. To upload/backup a media file, click on it to open, then tap one time on the screen and you see a back up icon shown at the bottom of screen.
 
 :::info 
 We have deactivated the auto-sync initially during testnet launch to give us better troubleshooting and debugging opportunity. We thank you for your patience. 
