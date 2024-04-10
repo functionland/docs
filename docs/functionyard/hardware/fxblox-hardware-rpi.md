@@ -42,9 +42,13 @@ In update process the LED blinks red and green. This phase is very critical, and
 
 ### Step 4: Post-Update
 
-**Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **30 minutes** to fully process the update and show the `FxBlox` WiFi.
+**Be patient on the first boot, post-update!** The FxBlox automatically reboots 3 times, and will go through a series of lights. This **full process** should take about **15 minutes** to fully process the update and show the `FxBlox` WiFi.
 
-Please wait for `10-30 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-30 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox. If no external storage is plugged, then you cannot see this sequence.
+Please wait for `10-15 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-15 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox. If no external storage is plugged, then you cannot see this sequence.
+
+**Use FxBlox App**: AFter the lights become a flashing blue, you can start setting up the Blox with the application. Follow on-screen instructions in the app.
+
+- If at the end of setup, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
 
 :::info 
 **Future firmware updates will be automatic, eliminating the need for manual updates.**
