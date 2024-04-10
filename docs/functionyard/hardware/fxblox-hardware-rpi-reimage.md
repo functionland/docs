@@ -54,11 +54,11 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 
 7. **Download the Latest Image**
 
-   Download the latest image for your CM4, from [the official GitHub repository](https://github.com/functionland/rk1-image/latest/release). Download all the files that start with CM4_update into one folder on your computer.
+   Download the latest image for your CM4, from [the official GitHub repository](https://github.com/functionland/rpi-image/releases/latest). Download all the files that start with `rpi_cm4_fulimage` into one folder on your computer.
 
 8. **Unzip the Image Content**
 
-   Right click on the one that ends with .zip and click Extract All. Extract the contents of the downloaded image to a known location on your computer. you can also use a software like 7zip to unzip but both Windows and Mac should natively support the unzip.
+   Right click on the one that ends with `.zip.001` and use [7zip application](https://www.7-zip.org/download.html) to extract. Extract the contents of the downloaded image to a known location on your computer.
 
 9. **Install and Run Raspberry Pi Imager**
 
