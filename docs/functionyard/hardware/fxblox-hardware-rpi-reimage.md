@@ -94,3 +94,5 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 15. **Closing the Tower**
 
     Once you've confirmed a successful setup through the FxBlox app, close up the tower again to protect it from damage.
+
+- If at the end of setup, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
