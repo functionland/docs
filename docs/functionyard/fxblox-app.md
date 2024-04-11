@@ -21,6 +21,10 @@ If adding more than one FxBlox to your app, get familiar with [these instruction
 For a successful setup you should either have the Blox with internal storage, or attach an external storage to it.
 ::: 
 
+:::info 
+Please make sure you first uninstall (not update) any previous version of FxBlox on your phone and then re-install the latest version
+::: 
+
 1. Open Metamask Wallet. We recommend having the opening network set to "Ethereum Mainnet" for a smoother setup process.
 2. Minimize Metamask (not close) and open the FxBlox app.
 3. Read the [Terms and Condition](https://fx.land/terms) and if you agree, then select `Agree and Setup Blox` in the app.
