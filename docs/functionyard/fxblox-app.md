@@ -54,6 +54,10 @@ If for any reason you see the capacity at 0 again after Format, you should forma
 10. Finally, on the last screen reconnect your mobile device to your home WiFi and you can turn on the mobile data again if you want to. The app will confirm the successful setup. Please note the app does not continue if you do not have an active internet connection. When Blox is connected to the internet, the LEDs turn `green` for 30 seconds and then turn off.
 11. We recommend unplugging and replugging the Blox after the initial setup once for a hard reboot and ensuring that everything is set. After you re-plug the power and it boots, it may reboot automatically once as well.
 
+:::info
+At the end of the setup when it is completed, the chain starts syncing. It may give a popup to `Reset Chain Data`, Please ignore that and wait until the sync is completed. you can check the progress of the sync in `Settings` -> `Pools`
+:::
+
 ### Troubleshoot
 
 - **Final step connection issues**: Connect to mobile or home wifi, restart the FxBlox app, select `Connect to Existing Blox`. If that doesn't work, restart the FxBlox device. Close app and reopen to proceed with `Connect to new Blox`.
