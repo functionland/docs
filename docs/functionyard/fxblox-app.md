@@ -5,6 +5,10 @@ id: fxblox-app
 
 ## Installing the FxBlox App
 
+:::warning
+Please note there is no need for extra reboots, long waits other than what is specified or multiple retries if you exactly follow these instructions. If at any point it is not as expected, it means there is an issue and you need to contact hte support
+:::
+
 ### Initial Setup
 
 1. **Download the App**: 
@@ -36,7 +40,9 @@ Please make sure to first uninstall (not update) any previous version of FxBlox 
 7. Manually connect your phone to the "FxBlox" WiFi/Hotspot, and turn off "mobile data", then continue in the app.
    
 :::warning 
-Everyone should format their storage in step 8. If you have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process
+Everyone should format their storage in step 8. If you have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. The app goes to `Connect to blox` screen again. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process.
+
+If for any reason you see the capacity at 0 again after Format, you should format the external disk yourself, of if you have 1TB internal, contact support
 :::
 
 8. Make sure you have attached at least 300GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
