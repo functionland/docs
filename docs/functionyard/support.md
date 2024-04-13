@@ -12,5 +12,14 @@ No matter what happens we are here to support you as a valued member of Fula net
 - You can also get the support from community by posting in our [telegram group](https://t.me/fxblox), however, support from the team will only be provided on the support portal.
   
 - You can open a support ticket from our [Discord channel](https://discord.gg/DKCnSJmbH6)
+  
+- Please include the below information:
+  - Is it CM4 or RK1?
+  - Do you have external storage attach or internal?
+  - What was hte exact behavior?
+
+:::info
+Please be as specific as possible. Unfortunately, general statements like it doesn't work, just delay hte process of support
+:::
 
 To ensure we can support everyone, please do not DM or email the individuals in Functionland. We appreciate your cooperation.
