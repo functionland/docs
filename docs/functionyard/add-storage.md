@@ -34,10 +34,10 @@ To install your first NVMe drive:
 4. Follow steps in reverse order to put the case back together.
 
 ### Install MicroSD Card
-MicroSD cards have comparitively slow read & write speeds. We don't have enough data to recommend them as a method of storage for Fula net, but it should still be possible to run a high-speed, high-capacity card. The port is located under the wifi card. To access it:
+MicroSD cards have comparatively slow read & write speeds. We don't have enough data to recommend them as a method of storage for Fula net, but it should still be possible to run a high-speed, high-capacity card. The port is located under the wifi card. To access it:
 
 1. Follow [steps above to open the case.](#install-internal-storage)
-2. Wifi card **does not** need to be removed to insert microsd card. Insert microSD card from the side of the board. 
+2. Wifi card **does not** need to be removed to insert microSD card. Insert microSD card from the side of the board. 
 3. Follow steps in reverse order to put the case back together.
 
 ## Install External Storage
@@ -50,10 +50,10 @@ You can use any type of drive as long as it can be connected via USB-C cable or 
 - Hardware RAID arrays
 - etc...
 
-## Manually Parition and Format
-If you want to add additional storage at some point after initial setup. You will need to manually parition and format the drive before it can be used by the FxBlox.
+## Manually Partition and Format
+If you want to add additional storage at some point after initial setup. You will need to manually partition and format the drive before it can be used by the FxBlox.
 
-You will need to **parition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line. Windows will require a third party tool.
+You will need to **partition 100%** of the drive and **format to ext4**. To do this on Mac and Linux, you will want to be comfortable with the command line. Windows will require a third party tool.
 
 ### Linux (Terminal) (Recommended)
 __You do not need a separate Linux computer to do this.__ Although the drive can not be seen in the FxBlox app yet, we can manually format it through the Blox's desktop interface.
@@ -117,7 +117,7 @@ Ext4 is a linux standard that MacOS does not support without some third-party he
     - if multiple partitions exist, checkout [Troubleshoot](#troubleshoot) section.
 11. Accept the default partition number by just pressing `return/Enter`.
 12. Accept the default starting and ending sectors (creates a partition that spans 100% of the drive) by just pressing `return/Enter`
-13. Enter `8300` for the Hex-code/GUID. This is shortform to select the 'Linux Filesystem'
+13. Enter `8300` for the Hex-code/GUID. This is short form to select the 'Linux Filesystem'
 14. Enter `w` to write table to disk and exit tool
 15. Hit `y` to proceed, wait for it to complete, and safely eject and reinsert drive.
 
@@ -151,12 +151,12 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 </center>
 
 #### Written Guide
-1. Install [Parition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html) if not already done
+1. Install [Partition Master Free by EaseUS](https://www.easeus.com/partition-manager/epm-free.html) if not already done
 
 2. Plug in storage device to your Windows computer, if not already done
 
-3. Open the app. Select `Parition Manager` from the left sidebar
-    - It may immediately recognize the drive and push you to use the Parition Wizard. The partition wizard is a paid service, so if you exit out of that window you can continue to use the app normally (as described below).
+3. Open the app. Select `Partition Manager` from the left sidebar
+    - It may immediately recognize the drive and push you to use the Partition Wizard. The partition wizard is a paid service, so if you exit out of that window you can continue to use the app normally (as described below).
 
 4. Select the new drive
 
@@ -201,11 +201,11 @@ Ext4 is a linux standard that Windows does not support without some third-party 
     - Restart the FxBlox by unplug-plugging it back in.
     - The usb3 drive is connected to a usb2 port. On a **FxBlox Lite**, the top two ports are USB2.0 and the bottom is USB3.0. On a **FxBlox Lite Plus**, the top port is USB2.0 and the bottom two are USB3.0.
 - **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2. Currently, newly added storage gets added to the total instead of as a separate device.
-- **Parition Exists already (MacOS).** If a partition exists already, then you will want to delete it first, write to drive, and rerun the command:
-    1. Get to step 9 in the _[Manually Parition and Format for Mac](#macos-terminal)_ instructions
+- **Partition Exists already (MacOS).** If a partition exists already, then you will want to delete it first, write to drive, and rerun the command:
+    1. Get to step 9 in the _[Manually Partition and Format for Mac](#macos-terminal)_ instructions
     2. Hit `d`, to delete partition(s).
     3. Hit `w`, confirm by hitting `y` and saving state.
-    4. Continue _[Manually Parition and Format for Mac](#macos-terminal)_ instructions, from step 7.
+    4. Continue _[Manually Partition and Format for Mac](#macos-terminal)_ instructions, from step 7.
 
 :::info 
 **Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**

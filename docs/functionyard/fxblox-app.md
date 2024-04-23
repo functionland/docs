@@ -4,19 +4,29 @@ id: fxblox-app
 ---
 
 ## Installing the FxBlox App
-:::warning 
-If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](./fxblox-app.md/#format-drive)**
+
+:::warning
+Please note there is no need for extra reboots, long waits other than what is specified or multiple retries if you exactly follow these instructions. If at any point it is not as expected, it means there is an issue and you need to contact hte support
 :::
+
 ### Initial Setup
 
 1. **Download the App**: 
-   - For Android: [FxBlox on Google Play (v1.6.11+)](https://play.google.com/store/apps/details?id=land.fx.blox).
-   - For iOS: [FxBlox on AppStore (v1.6.11+)](https://apps.apple.com/ca/app/fxblox/id6444862171).
+   - For Android: [FxBlox on Google Play (v1.6.14+)](https://play.google.com/store/apps/details?id=land.fx.blox).
+   - For iOS: [FxBlox on AppStore (v1.6.14+)](https://apps.apple.com/ca/app/fxblox/id6444862171).
 2. **Metamask Wallet**: Ensure you have a [Metamask wallet](https://play.google.com/store/apps/details?id=io.metamask) for setting up your identity.
 
 ### App Configuration Steps
 :::info 
 If adding more than one FxBlox to your app, get familiar with [these instructions first.](#add-multiple-fxbloxs)
+:::
+
+:::info 
+For a successful setup you should either have the Blox with internal storage, or attach an external storage to it.
+::: 
+
+:::warning 
+Please make sure to first uninstall (not update) any previous version of FxBlox on your phone and then re-install the latest version
 ::: 
 
 1. Open Metamask Wallet. We recommend having the opening network set to "Ethereum Mainnet" for a smoother setup process.
@@ -28,14 +38,25 @@ If adding more than one FxBlox to your app, get familiar with [these instruction
    - It does not matter which chain (Ethereum, Mumbai, etc) you are on in your Metamask wallet.
 6. Tap `Connect to new blox`.
 7. Manually connect your phone to the "FxBlox" WiFi/Hotspot, and turn off "mobile data", then continue in the app.
-8. Attach at least 500GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
+   
+:::warning 
+Everyone should format their storage in step 8. If you have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. The app goes to `Connect to blox` screen again. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process.
+
+If for any reason you see the capacity at 0 again after Format, you should format the external disk yourself, of if you have 1TB internal, contact support
+:::
+
+8. Make sure you have attached at least 300GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
    - If the storage is not recognized ensure that is it correctly formatted by clicking on the `Format` button.
-      - The light will turn <font color="purple"> purple</font>, to indicate it is formatting. **Formatting times depend on storage medium and capacity**, so be patient during this time. Device will reboot automatically and eventually start flashing <font color="cyan"> cyan</font> again when it is ready to proceed.
+      - The light will turn <font color="purple"> purple</font>, to indicate it is formatting. **Formatting times depend on storage medium and capacity**, so be patient during this time. Device will reboot automatically and eventually start flashing <font color="cyan"> light blue</font> again when it is ready to proceed.
    - If you have an FxBlox version with internal storage, there is no need to attach external storage.
 9. Select your desired WiFi network for the FxBlox and enter the password.
    - If you entered the wrong password, double check you're connected to FxBlox Wifi and just go back to the wifi selection screen to choose and re-enter your password.
 10. Finally, on the last screen reconnect your mobile device to your home WiFi and you can turn on the mobile data again if you want to. The app will confirm the successful setup. Please note the app does not continue if you do not have an active internet connection. When Blox is connected to the internet, the LEDs turn `green` for 30 seconds and then turn off.
 11. We recommend unplugging and replugging the Blox after the initial setup once for a hard reboot and ensuring that everything is set. After you re-plug the power and it boots, it may reboot automatically once as well.
+
+:::info
+At the end of the setup when it is completed, the chain starts syncing. It may give a popup to `Reset Chain Data`, Please ignore that and wait until the sync is completed. you can check the progress of the sync in `Settings` -> `Pools`
+:::
 
 ### Troubleshoot
 
@@ -60,7 +81,7 @@ If you're using the default naming scheme `Blox unit #X`, then name your last Bl
 8. Verify you can see all of them by going to `Blox` tab and swiping left/right between them.
 
 :::info 
-As you can see the functionality is there, but priotization of an easier way to add them is scheduled for after testnet launch.
+As you can see the functionality is there, but prioritization of an easier way to add them is scheduled for after testnet launch.
 
 **Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
 :::
@@ -83,3 +104,13 @@ To format your drive:
 5. The FxBlox will auto-reboot, after it is done the lights will turn off.
 
 FxBlox will automatically connect to testnet and save chain history. You should be able to join testnet now.
+
+## App features
+
+1- You can transfer your earned tokens to your wallet by holding your finger on the `Earnings` section in the Home Page and paste the address of you wallet by clicking the icon (Please note manually entering is not allowed)
+
+2- You can format the storage by holding your finger on the `Hard Disks` section of the Home Page
+
+3- You can check blox details by clicking on the blox icon in Home page and some other details by clicking on the profile icon on top right
+
+4- You can see added or existing Bloxes in the network, when you are connected to the same wifi as blox and choose `Blox Discovery` from Settings tab

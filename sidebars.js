@@ -73,6 +73,7 @@ const sidebars = {
         'functionyard/metamask',
         'functionyard/dapps',
         'functionyard/fxfotos',
+        'functionyard/support',
       ]
     },
     {
