@@ -2,7 +2,7 @@
 title: Installing Box on Raspberry Pi OS
 id: rpi-setup
 ---
-import WorkInProgress from '../components/WorkInProgress.mdx'
+import WorkInProgress from '../../components/WorkInProgress.mdx'
 
 # Installing Box on Raspberry Pi OS
 

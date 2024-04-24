@@ -43,8 +43,13 @@ const sidebars = {
       ]
     },
     {
+      type: 'doc',
+      label: 'Getting Started With FxBlox',
+      id: 'getting-started-testnet',
+    },
+    {
       type: 'category',
-      label:'Functionyard Testnet',
+      label: 'Functionyard Testnet',
       link: {
         type:'doc',
         id:'functionyard/index',
@@ -84,11 +89,11 @@ const sidebars = {
           label:'Getting Started',
           link: {
             type:'doc',
-            id:'getting-started',
+            id:'api/getting-started/index',
           },
           items:[
-            'getting-started/box-setup',
-            'getting-started/using-samples',
+            'api/getting-started/box-setup',
+            'api/getting-started/using-samples',
           ]
         },
         {
@@ -99,7 +104,7 @@ const sidebars = {
             id:'reference-api',
           },
           items:[
-              'api/client-instance',
+            'api/client-instance',
             'api/graph-api',
             'api/file-api'
           ]

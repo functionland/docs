@@ -2,7 +2,7 @@
 title: The Fula Client Library
 id: fula-client
 ---
-import WorkInProgress from '../components/WorkInProgress.mdx'
+import WorkInProgress from '../../components/WorkInProgress.mdx'
 
 # The Fula Client Library
 Fula client lets you connect your web application to the Box using [libp2p](https://libp2p.io/). It helps DApp developers to use a Box as the back-end for their applications. You can use the File and Graph APIs to store and retrieve your data.
