@@ -1,3 +1,4 @@
+---
 title: Re-imaging RK1
 id: fxblox-hardware-rk1-reimage
 ---
@@ -25,6 +26,7 @@ If for any reason the RK1 fulatower gets stuck in a blue/white light without goi
 4. **Download, unzip, and install RKDevTool app**
 
 5. **Download and unzip latest full image from GitHub**
+
     Find `minimal_fullimage_minimal.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub.
 
     Now, find it in your Downloads, right-click it, and extract all.
