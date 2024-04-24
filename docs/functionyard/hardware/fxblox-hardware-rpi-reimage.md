@@ -1,14 +1,17 @@
 ---
 title: Re-imaging CM4
+id: fxblox-hardware-rpi-reimage
 ---
+import ReactPlayer from 'react-player';
 
-## Re-imaging CM4
-
+# Advanced Firmware Update Process
 If for any reason the CM4 fulatower gets stuck in a blue/white light without going through the whole boot process, or it is not connected to the Wi-Fi or propagating the FxBlox hotspot, you need to perform a full re-image. This process requires you to first open the tower, which involves unscrewing parts of it. The process of opening the tower is shown in the video below:
 
-[![How to open the tower](https://img.youtube.com/vi/feBov6U_kJs/0.jpg)](https://youtu.be/feBov6U_kJs?t=246)
+<center>
+   <ReactPlayer controls url="https://youtu.be/feBov6U_kJs&t=246s" />
+</center>
 
-### Steps for Re-imaging
+## Steps for Re-imaging
 
 1. **Unplug the Tower from Power**
 
@@ -26,7 +29,7 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 
 4. **Short Circuit the Two Pins**
 
-   Short circuit the two pins located on the bottom left side of the Raspberry Pi module. You can use anything to short circuit them, like putting hte head of a USC-C cable between them. but make sure hte material you are using is conductive nad not Aluminum for example (key rings for example are usually aluminum)
+   Short circuit the two pins located on the bottom left side of the Raspberry Pi module. You can use anything to short circuit them, like putting the head of a USC-C cable between them. But make sure the material you are using is conductive and not Aluminum for example (key rings for example are usually aluminum)
 
    ![Placeholder for short circuit pins image](/img/fxyard-network/rpi-shortcircuit.jpg)
 
