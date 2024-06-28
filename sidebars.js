@@ -79,6 +79,17 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Pinning Service API',
+      link: {
+        type:'doc',
+        id:'pinning-service/index'
+      },
+      items:[
+        'pinning-service/ipfs-pinning-service-api',
+      ]
+    },
+    {
+      type: 'category',
       label: 'Fula API',
       link: {
         type: 'doc',
