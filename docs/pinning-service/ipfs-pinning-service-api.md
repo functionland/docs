@@ -28,11 +28,9 @@ Functionland Fula users looking to utilize the IPFS Pinning Services API can do 
 
 ### Authentication
 
-To authenticate with Functionland through the Pinning Services API spec, you'll first need to have an `accessToken`. You can create this API token on the [Fula Keys Page](https://cloud.fx.land/) (Invite-Only as of this date)
+To authenticate with Functionland through the Pinning Services API spec, you'll first need to have an `accessToken`. You can create this API token on the [Fula Cloud Page](https://cloud.fx.land/) (FREE 20GB pinning!)
 
-When you create a new API key, you'll need to take note of the JWT ([JSON Web Token](https://jwt.io/)) token that's shown to you immediately after creation. This JWT is specific to the API key and shares the same permissions.
-
-If you ever revoke the API key for this JWT, this JWT will no longer be valid for authenticating to the Pinning Services API.
+If you ever revoke the API key, it will no longer be valid for authenticating to the Pinning Services API.
 
 **Configuring Functionland Fula in the IPFS Desktop App**
 
