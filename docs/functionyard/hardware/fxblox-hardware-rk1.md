@@ -2,6 +2,7 @@
 title: FxBlox Lite Plus (RK1)
 id: fxblox-hardware-rk1
 ---
+import ReactPlayer from 'react-player';
 
 ## Updating Your FxBlox Lite Plus (RK1)
 
@@ -9,6 +10,13 @@ id: fxblox-hardware-rk1
 If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](../fxblox-app.md/#format-drive)**
 :::
 
+## Video Guide
+
+<center>
+  <ReactPlayer controls url="https://youtu.be/O4-PoQ5wCqs" />
+</center>
+
+## Written Guide
 ### Step 1: Download the Firmware
 
 - **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 22/JUNE/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.54.18/minimal_update.zip
