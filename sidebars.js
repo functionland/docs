@@ -65,7 +65,8 @@ const sidebars = {
           items: [
             'functionyard/hardware/fxblox-hardware-rpi',
             'functionyard/hardware/fxblox-hardware-rk1',
-            'functionyard/hardware/fxblox-hardware-rpi-reimage'
+            'functionyard/hardware/fxblox-hardware-rpi-reimage',
+            // 'functionyard/hardware/fxblox-hardware-rk1-reimage'
           ]
         },
         'functionyard/add-storage',

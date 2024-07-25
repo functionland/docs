@@ -5,13 +5,15 @@ id: fxblox-hardware-rpi-reimage
 import ReactPlayer from 'react-player';
 
 # Advanced Firmware Update Process
-If for any reason the CM4 fulatower gets stuck in a blue/white light without going through the whole boot process, or it is not connected to the Wi-Fi or propagating the FxBlox hotspot, you need to perform a full re-image. This process requires you to first open the tower, which involves unscrewing parts of it. The process of opening the tower is shown in the video below:
+If for any reason the CM4 fulatower gets stuck in a blue/white light without going through the whole boot process, or it is not connected to the Wi-Fi or propagating the FxBlox hotspot, you need to perform a full re-image.
+
+## Video Guide for Re-Imaging
 
 <center>
-   <ReactPlayer controls url="https://youtu.be/feBov6U_kJs&t=246s" />
+   <ReactPlayer controls url="https://youtu.be/Fi9jz-qOHxs?si=4sqX1mR-ccUxDOj7" />
 </center>
 
-## Steps for Re-imaging
+## Written Steps for Re-Imaging
 
 1. **Unplug the Tower from Power**
 
@@ -61,7 +63,7 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 
 8. **Unzip the Image Content**
 
-   Right click on the one that ends with `.zip.001` and use [7zip application](https://www.7-zip.org/download.html) to extract. Extract the contents of the downloaded image to a known location on your computer.
+   Right click on downloaded zip and use [7zip application](https://www.7-zip.org/download.html) to extract. Extract the contents of the downloaded image to a known location on your computer.
 
 9. **Install and Run Raspberry Pi Imager**
 
