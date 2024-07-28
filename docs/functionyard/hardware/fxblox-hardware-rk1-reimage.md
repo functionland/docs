@@ -1,5 +1,5 @@
 ---
-title: Re-Imaging RK1
+title: Re-imaging RK1
 id: fxblox-hardware-rk1-reimage
 ---
 import ReactPlayer from 'react-player';
