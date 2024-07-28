@@ -59,26 +59,35 @@ If for any reason the RK1 fulatower gets stuck in a blue/white light without goi
 
    To get the RK1 into BOOT mode, you need to "short the pins". Specifically you need to short the pins labeled BOOT. This means to create a connection between one pin and the another. This can be done with anything conductive. Or if you have male-male jumper cable that would the best way to short the pins.
 
-   <!-- <picture here> -->
+   <img src="/img/fxyard-network/bootpins.JPG" style={{ width:400 }} />
+   
+   The red box shows where the pins marked BOOT are located.
+   <br/>
+   <img src="/img/fxyard-network/bootpins2.jpg" style={{ width:400 }} />
+
+   So to not take apart the whole board, the jumper cable can be inserted through the bottom of the board.
 10. **Connect Blox to computer**
 
    Connect a usb-c cable to the middle port and the other end to your computer. ONLY the middle port is used for loading the firmware onto the Blox.
 
-11. **How To Run RKDevTool**
+11. **Power on Blox and run RKDevTool**
 
-   In the first row, make sure you have Storage: blank and Name: Loader.
-   Now, click on the Path cell and find the unzipped, spl loader you downloaded earlier.
-   In the second row, make sure you have Storage: EMMC and Name: Image. 
-   Now, similar thing here, click on the Path cell, and find the unzipped, minimal_full_image from earlier.
+   With the Blox connected to your computer and the installer ready. Connect a power cable to the blox, and now you should hear your windows device recognize the blox.
 
-   Make sure the "Write By Address" check box is checked.
+12. **How To Run RKDevTool**
 
-12. **Power on Blox and run RKDevTool**
+      1. Verify the Name col, is set to blank and EMMC.
+      2. Click on the elipse's cell in row 1 to select the spl loader. Now, click on the second row's elipse cell to choose the full image.
+      3. Check the _Write by Address_ box.
+      4. Verify it says Found One MASKROM Device at the bottom of the page.
+      5. Click *Run* and wait about 10 minutes for it to complete.
 
-   With the Blox connected to your computer and the installer ready. Connect a power cable to the blox, and now you should hear your windows device recognize the blox. Additionally, the RKDevTool will now show MASKOM Device at the bottom of its screen. Now that your blox is listed in the software you can press "run" to load the firmware onto the sbc.This process should take less than 10 minutes.
+   <img src="/img/fxyard-network/rkdev_ss.png"/>
 
 13. **Finishing steps**
 
-   After you get a message saying the downloading is complete. You can unplug the jumper cable, pc cable, and now unplug and replug in the power. Now wait 10-20 minutes to get a flashing cyan lights.
+   After you get a message saying the downloading is complete. You can unplug the jumper cable, pc cable, and now unplug and replug in the power. Now wait 10-20 minutes to get a flashing cyan lights. Be patient on the first boot, post-update! The FxBlox automatically reboots a couple times and will go through a series of lights. This full process should take about 20 minutes to fully process the update and show the FxBlox WiFi.
 
 14. **Put Blox back together**
+
+   After you've verified that the Blox can get to the flashing cyan light state, you can unplug the Blox, put it back together, and plug it back in.
