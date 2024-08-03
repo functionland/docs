@@ -2,41 +2,47 @@
 title: FxBlox Lite (CM4)
 id: fxblox-hardware-rpi
 ---
+import ReactPlayer from 'react-player';
 
-## Updating Your FxBlox Lite (RPI)
-:::warning 
-If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](../fxblox-app.md/#format-drive)**
-:::
+## Video Guide for USB Updating The FxBlox Lite (RPI)
+
+<center>
+   <ReactPlayer controls url="https://youtu.be/b2I042BL1KU" />
+</center>
+
+## Written Steps for USB Updating
+
 ### Step 1: Download the firmware
 :::info
 If this is your very first time setting up your FxBlox Lite, see these [instructions first](#first-time-setup)
 :::
 - **Download**: Find `rpi_cm4_usb_update.zip` files in the [latest release](https://github.com/functionland/rpi-image/releases/latest) under the Assets section on GitHub, and download all files that start with `rpi_cm4_usb_update`.
-- **Download**: You need `7zip` to unzip the downloaded chunked zip files. You can download it from [their website here](https://www.7-zip.org/download.html), and then right click on the file that ends with `.zip.001` and choose `7zip > extract`
-
-- Download: Download `Win32 Disk Imager` for writing update firmware to USB. 
-https://win32diskimager.org/
+- **Unzipping Tools**: 
+    - **Windows**: You need `7zip` to unzip the downloaded chunked zip files. You can download it from [their website here](https://www.7-zip.org/download.html), and then right click on the file that ends with `.zip.001` and choose `7zip > extract`
+    - **MacOS**: You can download `The Unarchiver` https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12 from the AppStore.
+- **USB Flashing Tool**: Download `Balena Etcher` for writing update firmware to USB
+https://etcher.balena.io/#download-etcher.d
   
 ### Step 2: Unzip and Write image to USB
 
 1. **Unzipping**: Unzip `rpi_update.zip` on your computer. After unzipping there must be a .img file.
 2. **Writing Image to USB**:  
-    - In Image File section select `rpi_update.img` file.
-    - In Device section select USB Disk Partion letter.
-    - Click Write to start flashing USB Disk.
+    - In Image File section, select `rpi_update.img` file.
+    - In Device section, select the USB device.
+    - Click Flash to start flashing USB Disk.
 
-    ![Win32 Disk Imager](/img/fxyard-network/win32DiskImager.png)
+    ![Win32 Disk Imager](/img/fxyard-network/balenaetcher.png)
 
 ### Step 3: Updating FxBlox
 
 1. **Turn Off**: Ensure your FxBlox (RPI) Lite is turned off.
 2. **USB Connection**: Connect the USB drive to the BOTTOM USB port of the FxBlox Lite (RPI).
-3. **Power On**: Turn on your FxBlox Lite (RPI). After about 30 sec, the LED will blink yellow 5 times that indicating the update process started.
+3. **Power On**: Turn on your FxBlox Lite (RPI). After about 30 sec, the LED will turn yellow/white, indicating the update process started.
 :::warning
 In update process the LED blinks red and green. This phase is very critical, and any mistake in this phase cause breaking FxBlox Lite (RPI). 
 :::
 4. After about 10 minutes, the LED blinks red only. Remove the USB drive.
-5. Restart the FxBlox Lite (RPI) by unplugging and plugging back the power (Make sure an external storage, without the img files, is plugged to the bottom port of blox before powering it back on or the sequence of lighting you would see might defer from this documentation). The best partitioning format for storage devices is `ext4` but `vfat` is also acceptable.
+5. Restart the FxBlox Lite (RPI) by unplugging and plugging back the power (Make sure an external storage, without the img files, is plugged to the bottom port of blox before powering it back on or the sequence of lighting you would see might defer from this documentation). The best partitioning format for storage devices is `ext4` but `vfat` is also acceptable. Checkout our documentation on [formatting an ssd.](../add-storage.md)
 
 **Note** If the blox stays in blue/white color, or does not connect to wifi and neither shows FxBlox hotspot or you rebooted during the update and think it is broken, you need to do a full re-image by following the [instructions here](fxblox-hardware-rpi-reimage.md).
 
@@ -48,7 +54,7 @@ In update process the LED blinks red and green. This phase is very critical, and
 
 Please wait for `10-15 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-15 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox or it has internal storage (XL orders). If no external storage is plugged, then you cannot see this sequence until you plug one.
 
-**Use FxBlox App**: AFter the lights become a flashing blue, you can start setting up the Blox with the application. Follow on-screen instructions in the app. Please make sure follow instructions as detailed in the [documentation](../fxblox-app.md)
+**Use FxBlox App**: After the lights become a flashing blue, you can start setting up the Blox with the application. Follow on-screen instructions in the app. Please make sure follow instructions as detailed in the [documentation](../fxblox-app.md)
 
 - If at the end of setup through the FxBlox app, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
 
