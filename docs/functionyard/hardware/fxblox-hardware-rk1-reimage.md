@@ -63,7 +63,8 @@ If for any reason the RK1 fulatower gets stuck in a blue/white light without goi
    
    The red box shows where the pins marked BOOT are located.
    <br/>
-   <img src="/img/fxyard-network/bootpins2.jpg" style={{ width:400 }} />
+
+   <img src="/img/fxyard-network/bootpins-out.jpg" style={{ width:400 }} />
 
    So to not take apart the whole board, the jumper cable can be inserted through the bottom of the board.
 10. **Connect Blox to computer**
