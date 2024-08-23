@@ -72,6 +72,7 @@ const sidebars = {
         'functionyard/add-storage',
         'functionyard/fxblox-app',
         'functionyard/join',
+        'functionyard/join-windows',
         'functionyard/metamask',
         'functionyard/dapps',
         'functionyard/fxfotos',
