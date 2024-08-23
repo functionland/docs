@@ -55,6 +55,10 @@ Follow this link to download the [Fula Node for Windows](https://fx.land/1.4/Ful
 6. Click on the _Token Account ID_ to copy to clip board.
 7. Go to [https://fund.functionyard.fula.network/](https://fund.functionyard.fula.network/) to register your node in the testnet.
 
+<center>
+    <img src="/img/fxyard-network/join-testnet.png" style={{width: 500}}/>
+</center>
+
 ### Joining by invitation
 Send _Token Account ID_ to the person who is inviting you so they can proceed with the next steps.
 
@@ -70,11 +74,11 @@ Send _Token Account ID_ to the person who is inviting you so they can proceed wi
 
 ### NFT Hodler
 1. Fill in the _Token Account ID_.
-2. Click "Join Testnet Using NFT".
+2. Click **Join Testnet Using NFT**.
 3. Sign the transaction.
 
 ## Join a Pool
-In the _Join a Pool_ page, click on the pool that is closest to your geographical location. This is to ensure data replication, writing, and reading speeds are quick for all those in the region.
+In the _Join a Pool_ page, click on the pool that is closest to your geographical location. This is to ensure data replication, writing, and reading speeds are quick for everyone.
 
 ## View Rewards and container status
 After at least a day, the node will have earned storage rewards. Now, click on the _Fula taskbar icon_, to see the status of fula containers and the rewards.
