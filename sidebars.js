@@ -42,11 +42,7 @@ const sidebars = {
         }
       ]
     },
-    {
-      type: 'doc',
-      label: 'Getting Started With FxBlox',
-      id: 'getting-started-testnet',
-    },
+    'getting-started-testnet',
     {
       type: 'category',
       label: 'Functionyard Testnet',
@@ -72,10 +68,10 @@ const sidebars = {
         'functionyard/add-storage',
         'functionyard/fxblox-app',
         'functionyard/join',
-        'functionyard/join-windows',
         'functionyard/metamask',
         'functionyard/dapps',
         'functionyard/fxfotos',
+        'functionyard/join-windows',
         'functionyard/support',
       ]
     },
