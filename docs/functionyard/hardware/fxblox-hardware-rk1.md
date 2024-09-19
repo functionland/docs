@@ -19,7 +19,7 @@ If you were helping test nightly firmware releases **before** official testnet l
 ## Written Guide
 ### Step 1: Download the Firmware
 
-- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 22/JUNE/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.54.18/minimal_update.zip
+- **Download**: Find `minimal_update.zip` in the [latest release](https://github.com/functionland/rk1-image/releases/latest) under the Assets section on GitHub. As of 22/JUNE/2024, this is the latest file: https://github.com/functionland/rk1-image/releases/download/v1.54.41/minimal_update.zip
   - **Options**:
     - Download files with `minimal_` prefix if you do not need a desktop interface (access via Terminal, smaller file size).
 
