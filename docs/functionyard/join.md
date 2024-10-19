@@ -9,6 +9,7 @@ id: join
    <img src="/img/fxyard-network/join-testnet.png" style={{width: 400}}/>
 </div>
   - Or you can manually visit the testnet page at [Functionyard Testnet](https://fund.functionyard.fula.network) and enter your Indiegogo campaign order details and account id from the Blox app.
+  - For Indiegogo orders the orderid is the indiegogo order id, and for shopifu orders it is the shipping tracking number
   - If the `Account` and `Join` buttons are greyed out, it means the blox is still syncing the chain data. You can check the progress of sync in the `Settings -> Pools` page.
 
 :::info 
