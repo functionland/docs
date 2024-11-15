@@ -31,11 +31,7 @@ You can report issues through the following channels:
 
 ## 4. High-Level Setup Process
 At a high level, follow these steps to connect your Blox to the network:
-1. Identify which Blox model you have (CM4 or RK1).
-2. Follow the respective process to update your Blox.
-3. Connect your Blox to Wi-Fi using the FxBlox app.
-4. Join the testnet in both the FxBlox app and FxFotos app.
-5. Start storing, earning, and uploading files to the network!
+![Blox Setup Flow](/img/welcome/getting-started.jpeg)
 
 :::info 
 When going through the setup documentation, please read each instruction carefully! The docs are created to give you the smoothest onboarding experience as possible!
