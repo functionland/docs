@@ -18,9 +18,9 @@ An Audit Report ic created by [0xMacro](https://0xmacro.com/)
 ## Contracts
 And also smart contracts are deployed:
 
-1- [Goerli Network](https://goerli.etherscan.io/token/0x4fE33FB41B2A50ac82732C0399C9e2A82C1cBb5E)
+1- [Sepolia Network](https://sepolia.etherscan.io/address/0x22f6A309241216B85CF966f47a5ad6f77a0C166c)
 
-2- [Mumbai Network](https://mumbai.polygonscan.com/token/0x99a8b2B50c4bFBf916Add5DFdf680fc873FA81f4)
+2- [Amoy Network](https://www.oklink.com/amoy/address/0x26a35A943231DC8C4C9B0A1756e23A42aDbA54fe)
 
 ## Explorer
 And a network explorer is made avaialbe here:
