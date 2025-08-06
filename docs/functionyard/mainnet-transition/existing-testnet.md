@@ -92,7 +92,7 @@ A: The process takes 2-3 hours total, including waiting time for device updates.
 A: The transition to mainnet is intended to be permanent. Contact support if you need to revert.
 
 **Q: What if my device type isn't listed?**
-A: These guides cover Android and iOS. For other devices, contact our [Support team](/docs/functionyard/support).
+A: These guides cover Android and iOS. For other devices, contact our [Support team](/functionyard/support).
 
 ---
 
@@ -102,6 +102,6 @@ If you're unsure about your device type or connection status:
 
 1. **Check your device**: Look at your phone/tablet settings to confirm Android or iOS
 2. **Check connection status**: Open your FxBlox app and look at the main screen
-3. **Contact support**: Visit our [Support page](/docs/functionyard/support) for assistance
+3. **Contact support**: Visit our [Support page](/functionyard/support) for assistance
 
 **Ready to start?** Choose your device path above and follow the detailed instructions!

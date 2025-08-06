@@ -51,4 +51,4 @@ Ensure your FxBlox app is updated to **version 2.0.1 or higher**. You can check 
 
 ---
 
-*Need help? Visit our [Support](/docs/functionyard/support) page for additional assistance.*
+*Need help? Visit our [Support](/functionyard/support) page for additional assistance.*
