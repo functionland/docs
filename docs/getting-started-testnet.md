@@ -37,4 +37,15 @@ At a high level, follow these steps to connect your Blox to the network:
 When going through the setup documentation, please read each instruction carefully! The docs are created to give you the smoothest onboarding experience as possible!
 :::
 
-Congratulations! You're now ready to explore the decentralized storage world with FxBlox. If you have any questions or need further assistance, don't hesitate to reach out through our support channels. Proceed to the [next page (Functionyard Testnet)](/functionyard) when you're ready!
+Congratulations! You're now ready to explore the decentralized storage world with FxBlox. If you have any questions or need further assistance, don't hesitate to reach out through our support channels. 
+
+## Next Steps
+
+Choose your path based on your needs:
+
+- **[Mainnet Transition](/functionyard/mainnet-transition)** - Transition from testnet to mainnet or start fresh on mainnet
+- **[Hardware Setup](/functionyard/hardware/fxblox-hardware)** - Detailed hardware guides for your FxBlox device
+- **[FxBlox App Setup](/functionyard/fxblox-app)** - Configure your mobile app
+- **[Add Storage](/functionyard/add-storage)** - Expand your storage capacity
+- **[Functionyard Testnet](/functionyard)** - Join the testnet for testing and development
+- **[Support](/functionyard/support)** - Get help when you need it

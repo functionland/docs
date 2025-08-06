@@ -45,34 +45,49 @@ const sidebars = {
     'getting-started-testnet',
     {
       type: 'category',
+      label: 'Mainnet Transition',
+      link: {
+        type: 'doc',
+        id: 'functionyard/mainnet-transition/index',
+      },
+      items: [
+        'functionyard/mainnet-transition/existing-testnet',
+        'functionyard/mainnet-transition/new-installation',
+        'functionyard/mainnet-transition/android-connected',
+        'functionyard/mainnet-transition/android-disconnected',
+        'functionyard/mainnet-transition/ios',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Hardware',
+      link: {
+        type: 'doc',
+        id:'functionyard/hardware/fxblox-hardware',
+      },
+      items: [
+        'functionyard/hardware/fxblox-hardware-rpi',
+        'functionyard/hardware/fxblox-hardware-rk1',
+        'functionyard/hardware/fxblox-hardware-rpi-reimage',
+        'functionyard/hardware/fxblox-hardware-rk1-reimage',
+      ]
+    },
+    'functionyard/add-storage',
+    'functionyard/fxblox-app',
+    'functionyard/support',
+    {
+      type: 'category',
       label: 'Functionyard Testnet',
       link: {
         type:'doc',
         id:'functionyard/index',
       },
       items:[
-        {
-          type: 'category',
-          label: 'Hardware',
-          link: {
-            type: 'doc',
-            id:'functionyard/hardware/fxblox-hardware',
-          },
-          items: [
-            'functionyard/hardware/fxblox-hardware-rpi',
-            'functionyard/hardware/fxblox-hardware-rk1',
-            'functionyard/hardware/fxblox-hardware-rpi-reimage',
-            'functionyard/hardware/fxblox-hardware-rk1-reimage',
-          ]
-        },
-        'functionyard/add-storage',
-        'functionyard/fxblox-app',
         'functionyard/join',
         'functionyard/metamask',
         'functionyard/dapps',
         'functionyard/fxfotos',
         'functionyard/join-windows',
-        'functionyard/support',
       ]
     },
     {
