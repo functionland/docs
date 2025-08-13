@@ -224,6 +224,7 @@ const sidebars = {
       items: [
         'functionyard/troubleshooting/manual-claim-rewards',
         'functionyard/troubleshooting/disconnected-blox',
+        'functionyard/troubleshooting/switch-chain',
       ]
     },
   ],

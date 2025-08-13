@@ -16,6 +16,12 @@ If your FxBlox appears disconnected or unresponsive:
 
 - **[Disconnected Blox](disconnected-blox.md)** - LED-based troubleshooting guide to diagnose and fix connection issues
 
+### Blockchain Network Issues
+
+If you're experiencing problems with blockchain network switching:
+
+- **[Switch Chain](switch-chain.md)** - Resolve persistent "Switch to Chain" button issues and network connectivity problems
+
 ## Getting Additional Help
 
 If you can't find a solution to your problem in this troubleshooting section:
