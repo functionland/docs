@@ -214,6 +214,18 @@ const sidebars = {
         },
       ]
     },
+    {
+      type: 'category',
+      label: 'Troubleshooting',
+      link: {
+        type: 'doc',
+        id: 'functionyard/troubleshooting/index',
+      },
+      items: [
+        'functionyard/troubleshooting/manual-claim-rewards',
+        'functionyard/troubleshooting/disconnected-blox',
+      ]
+    },
   ],
   mvpSidebar: [
     {
