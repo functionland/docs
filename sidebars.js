@@ -102,41 +102,10 @@ const sidebars = {
       ]
     },
     {
-      type: 'category',
+      type: 'link',
       label: 'Fula API',
-      link: {
-        type: 'doc',
-        id:'api-intro',
-      },
-      items: [
-        {
-          type:'category',
-          label:'Getting Started',
-          link: {
-            type:'doc',
-            id:'api/getting-started/index',
-          },
-          items:[
-            'api/getting-started/box-setup',
-            'api/getting-started/using-samples',
-          ]
-        },
-        {
-          type:'category',
-          label:'Reference',
-          link: {
-            type: 'doc',
-            id:'reference-api',
-          },
-          items:[
-            'api/client-instance',
-            'api/graph-api',
-            'api/file-api'
-          ]
-        },
-      ]
+      href: 'https://docs.fx.land/fula-api',
     },
-
     {
       type: 'doc',
       label: 'Whitepaper',
