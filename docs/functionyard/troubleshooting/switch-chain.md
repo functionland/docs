@@ -68,7 +68,7 @@ When you see "Return to App" in MetaMask, it means the network switching process
 ### If the Button Still Appears
 - **Clear your browser cache** if using the web version
 - **Try disconnecting and reconnecting** your wallet in the app
-- **Ensure you have the latest version** of both FxBlox app and MetaMask
+- **Reload the FxBlox tab** to make sure you are on the latest version of the web app, and check that MetaMask is up to date
 
 ### Network Configuration Issues
 - **Verify network details** in MetaMask match the official network parameters

@@ -33,6 +33,10 @@ You can report issues through the following channels:
 At a high level, follow these steps to connect your Blox to the network:
 ![Blox Setup Flow](/img/welcome/getting-started.jpeg)
 
+:::info The FxBlox app runs in your browser
+Set your Blox up at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** using Chrome or Edge, on a computer or an Android phone — there is nothing to install. The Android and iOS apps are being discontinued. See [FxBlox App Setup](/functionyard/fxblox-app) for the full walkthrough.
+:::
+
 :::info 
 When going through the setup documentation, please read each instruction carefully! The docs are created to give you the smoothest onboarding experience as possible!
 :::
@@ -45,7 +49,7 @@ Choose your path based on your needs:
 
 - **[Mainnet Transition](/functionyard/mainnet-transition)** - Transition from testnet to mainnet or start fresh on mainnet
 - **[Hardware Setup](/functionyard/hardware/fxblox-hardware)** - Detailed hardware guides for your FxBlox device
-- **[FxBlox App Setup](/functionyard/fxblox-app)** - Configure your mobile app
+- **[FxBlox App Setup](/functionyard/fxblox-app)** - Set up your Blox with the web app
 - **[Add Storage](/functionyard/add-storage)** - Expand your storage capacity
 - **[Functionyard Testnet](/functionyard)** - Join the testnet for testing and development
 - **[Support](/functionyard/support)** - Get help when you need it

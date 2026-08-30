@@ -7,25 +7,33 @@ id: index
 
 Welcome to the Mainnet Transition guide! This section will help you smoothly transition from testnet to mainnet based on your specific situation.
 
+## Manage your Blox from the browser
+
+The FxBlox app now runs in your browser at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** — nothing to install, and always the latest version.
+
+Open it in **Chrome or Edge**, on a computer or an Android phone. Your identity is derived from your password and your wallet signature exactly as it was on the phone, so a Blox you already set up is recognised straight away.
+
+:::caution The Android and iOS apps are being discontinued
+They will stop receiving updates. See [FxBlox App Setup](/functionyard/fxblox-app) for the full walkthrough, and [iPhone & iPad](/functionyard/mainnet-transition/ios) if you use an Apple device.
+:::
+
 ## Quick Navigation
 
-To get the most relevant instructions for your situation, please answer these simple questions:
+Pick the guide that matches your situation:
 
-<div style={{backgroundColor: '#f8f9fa', padding: '20px', borderRadius: '8px', margin: '20px 0'}}>
+### What is your Blox's connection status?
 
-### 📱 What device are you using?
-- **[Android](/functionyard/mainnet-transition/android-connected)** - For Android devices
-- **[iOS](/functionyard/mainnet-transition/ios)** - For iPhone/iPad devices
+- **[Blox is connected](/functionyard/mainnet-transition/android-connected)** — the app shows your Blox as connected and working
+- **[Blox is disconnected](/functionyard/mainnet-transition/android-disconnected)** — the app shows your Blox as disconnected
 
-### 📦 What's your installation status?
-- **[Already Joined Testnet](/functionyard/mainnet-transition/existing-testnet)** - You've been using the testnet
-- **[New Installation](/functionyard/mainnet-transition/new-installation)** - Fresh setup, never joined testnet
+### What is your installation status?
 
-### 🔗 What's your Blox connection status?
-- **Connected** - Your Blox app shows connected to your device
-- **Disconnected** - Your Blox app shows disconnected from your device
+- **[Already joined testnet](/functionyard/mainnet-transition/existing-testnet)** — you have been using the testnet
+- **[New installation](/functionyard/mainnet-transition/new-installation)** — fresh setup, never joined testnet
 
-</div>
+### Using an iPhone or iPad?
+
+- **[iPhone & iPad](/functionyard/mainnet-transition/ios)** — what to do, since the web app cannot run on iOS
 
 ## Important Notes
 
@@ -33,21 +41,9 @@ To get the most relevant instructions for your situation, please answer these si
 Before starting the transition process, make sure to **copy and save your Blox account ID** for future claiming of earned testnet tokens. You will need this for the claim process at [https://claim-ui.fula.network](https://claim-ui.fula.network).
 :::
 
-:::info App Version Requirement
-Ensure your FxBlox app is updated to **version 2.0.1 or higher**. You can check your app version in **Settings > About** at the bottom of the screen.
+:::info Version requirement
+The web app is always up to date — just reload the tab. If you are still on the legacy mobile app, make sure it is **version 2.0.1 or higher**; you can check it in **Settings > About** at the bottom of the screen.
 :::
-
-## Quick Start Paths
-
-### For Android Users
-1. **[Connected Blox](/functionyard/mainnet-transition/android-connected)** - Your Blox is connected and working
-2. **[Disconnected Blox](/functionyard/mainnet-transition/android-disconnected)** - Your Blox shows as disconnected
-
-### For iOS Users
-1. **[iOS Transition Guide](/functionyard/mainnet-transition/ios)** - Complete iOS transition process
-
-### For New Users
-1. **[New Installation Guide](/functionyard/mainnet-transition/new-installation)** - Fresh setup instructions
 
 ---
 

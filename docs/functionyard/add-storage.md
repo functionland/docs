@@ -89,7 +89,7 @@ In the following commands, replace `sdx` with the device name(s) found in the ou
 6. Assign your drive the `GPT` partition standard with `sudo parted /dev/sdx mklabel gpt`
 7. Partition your drive with `sudo parted -a opt /dev/sdx mkpart primary ext4 0% 100%`
 8. Format the newly created partition with `sudo mkfs.ext4 /dev/sdx1`
-9. Wait for it to complete. Then restart FxBlox app.
+9. Wait for it to complete. Then restart the FxBlox app (in the web app, reload the tab).
 10. You should now see that your total maximum storage has increased by the size of the drive you installed. You may also need to hit the refresh button.
 
 If you have any issues, checkout the [Troubleshoot](#troubleshoot) section for more information.
@@ -137,7 +137,7 @@ After partitioning is complete. Now we can format using the `e2fsprogs` command.
 :::
 19. Wait for it to complete and safely eject drive.
 20. Connect your drive to the FxBlox.
-21. **Close FxBlox app**. Now open your Fxblox app now and see your total maximum storage increase in the FxBlox app. 
+21. **Restart the FxBlox app** (in the web app, reload the tab; on the mobile app, close and re-open it). You should now see your total maximum storage increase. 
 
 If the drive does not show within the next 5 minutes there maybe a variety of issues occurring. **Checkout the [Troubleshooting](#troubleshoot) section for more details.**
 
@@ -192,12 +192,12 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 
 11. Connect your drive to the FxBlox
 
-12. Close FxBlox app if its currently opened, otherwise open your Fxblox app now and see your total maximum storage increase in the FxBlox app.
+12. Restart the FxBlox app (in the web app, reload the tab; on the mobile app, close and re-open it) and see your total maximum storage increase.
 
 ## Troubleshoot
 - **Drive not recognized in Windows.** If your windows computer doesn't see the connected drive, try restarting your computer first. Then look into potentially installing drivers for the storage device.
 - **Storage capacity not updating** This could be for a variety of issues:
-    - Try closing/opening your app a couple of times, but also press the `retry` buttons a once or twice in between.
+    - Try reloading the app a couple of times (reload the tab in the web app), but also press the `retry` buttons a once or twice in between.
     - Restart the FxBlox by unplug-plugging it back in.
     - The usb3 drive is connected to a usb2 port. On a **FxBlox Lite**, the top two ports are USB2.0 and the bottom is USB3.0. On a **FxBlox Lite Plus**, the top port is USB2.0 and the bottom two are USB3.0.
 - **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2. Currently, newly added storage gets added to the total instead of as a separate device.

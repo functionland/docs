@@ -11,10 +11,12 @@ First, observe your FxBlox LED to determine its current state:
 **What it means**: Your FxBlox needs to be set up from scratch.
 
 **Solution**:
-1. **Uninstall the FxBlox app** from your mobile device
-2. **Reinstall the FxBlox app** from your app store
-3. **Open the app** and follow the setup process
+1. **Open the FxBlox app** at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/) in Chrome or Edge
+2. On the *Set identity* screen, use **Clear app storage** — this is the browser equivalent of uninstalling and reinstalling, and removes the stored identity, Blox list, settings and caches
+3. **Follow the setup process** from the start
 4. **Set up your FxBlox from the beginning** as if it were a new device
+
+See [FxBlox App Setup](../fxblox-app.md) for the full walkthrough.
 
 :::info
 A continuously flashing cyan LED indicates the device is in setup mode and ready for initial configuration.
@@ -40,7 +42,7 @@ A continuously flashing cyan LED indicates the device is in setup mode and ready
    - The LED will turn yellow, then **immediately purple**
 4. **Wait 10 minutes** while it processes
 5. After 10 minutes, it will start **flashing cyan**
-6. **Uninstall and reinstall** the FxBlox app
+6. **Clear app storage** in the web app (on the *Set identity* screen)
 7. **Set up from the beginning**
 
 :::warning
@@ -52,16 +54,16 @@ Make sure to wait for the complete yellow → off sequence before each unplug/re
 If the above methods don't work, try connecting via Bluetooth:
 
 **Steps**:
-1. **Open the FxBlox app**
-2. **Go to Settings → Bluetooth Commands**
-3. **Click the connect icon** in the top right corner
-4. The app will attempt to connect via Bluetooth to your Blox
-5. **If connection succeeds**, you'll see several buttons appear
-6. **Click "Hotspot"** to put your Blox into hotspot mode
-7. **Connect your mobile phone** to the "FxBlox" WiFi network
-8. **In the app**, click the **down arrow next to "Disconnected"**
-9. **Click "Connect to WiFi"**
-10. **Follow the on-screen instructions** to reconnect your Blox to WiFi
+1. **Open the FxBlox app** at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/) in Chrome or Edge
+2. **Go to Settings → Bluetooth** ([/settings/bluetooth](https://docs.fx.land/fxblox-web/settings/bluetooth))
+3. **Click the connect icon** in the top right corner, then pick the device starting with `fulatower` or `fxblox` in Chrome's chooser
+   - The Blox advertises periodically — leave the chooser open for up to 90 seconds if it does not appear straight away
+4. **If connection succeeds**, you'll see several command buttons appear
+5. **Click "Hotspot"** to put your Blox into hotspot mode
+6. **Connect your computer or phone** to the "FxBlox" WiFi network
+7. **In the app**, open the connection options next to **"Disconnected"**
+8. **Click "Connect to WiFi"**
+9. **Follow the on-screen instructions** to reconnect your Blox to WiFi
 
 :::tip
 The Bluetooth connection method is useful when your Blox can't connect to WiFi but is still responsive via Bluetooth.
@@ -85,10 +87,10 @@ Most FxBlox devices are RK1 models. If you're unsure which model you have, try t
 
 | LED Pattern | Meaning | Action Required |
 |-------------|---------|----------------|
-| Continuously flashing cyan | Setup mode | Reinstall app and setup from scratch |
+| Continuously flashing cyan | Setup mode | Clear app storage and set up from scratch |
 | Blue → Green → Off → Yellow → Off | Latest firmware detected | Perform 4x unplug/replug reset |
 | Yellow → Purple | Factory reset in progress | Wait 10 minutes |
-| Flashing cyan (after reset) | Ready for setup | Reinstall app and setup |
+| Flashing cyan (after reset) | Ready for setup | Clear app storage and set up |
 | Off/No response | Possible hardware issue | Try Bluetooth method or re-imaging |
 
 ## Additional Support
