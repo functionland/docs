@@ -5,29 +5,29 @@ id: ios
 
 # iPhone & iPad
 
-## The web app does not run on iOS
+## iOS is not supported — use a computer
 
-The FxBlox app now runs in the browser, but **it cannot run on an iPhone or iPad**.
+The FxBlox app **does not support iPhone or iPad**.
 
 Setting up and managing a Blox needs Web Bluetooth and your browser's local-network permission. Apple requires every browser on iOS — including Chrome and Edge — to use its WebKit engine, and WebKit provides neither. This is a limitation of iOS itself, not something the app can work around.
 
-:::tip What to do instead
-1. **Use a computer.** Windows, macOS or Linux with **Chrome or Edge**, at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/). This is the recommended route and gives you the full app.
-2. **Or use an Android phone**, also with Chrome or Edge.
-3. **Or keep using the legacy iOS app** for now — see below.
+:::tip Use a computer instead
+Open [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/) on a **computer** — Windows, macOS or Linux — in **Chrome or Edge**. There is nothing to install.
 
-Your identity is derived from your password and your wallet signature, so whichever device you use, the same password with the same wallet gives you the same identity and your existing Bloxes are recognised immediately. Nothing needs re-pairing.
+This is the part that changed. The old FxBlox apps only ran on a phone, so if you had an iPhone you had to use the iPhone app. The web app runs on any desktop or laptop, so **a computer is now the normal way to set up a Blox** — you no longer need a phone at all. (An Android phone works too, if that is what you have to hand.)
+
+Your identity comes from your password and your wallet signature, so whichever computer you use, the same password with the same wallet gives you the same identity and your existing Bloxes are recognised immediately. Nothing needs re-pairing.
 :::
 
-:::caution The iOS app is being discontinued
-[FxBlox on the App Store](https://apps.apple.com/ca/app/fxblox/id6444862171) still works and should be at **version 2.0.1 or higher**, but it will stop receiving updates. Please move to a computer with Chrome or Edge when you can.
+:::caution Don't start on the iOS app
+The Android and iOS apps are being discontinued and will stop receiving updates, so please don't set up a new Blox with them. Use a computer with Chrome or Edge.
 :::
 
 ---
 
-# Mainnet Transition on iOS
+# Mainnet Transition for iPhone owners
 
-If you are transitioning from testnet on an iPhone, the Blox itself still needs a factory reset. The device steps below are the same regardless of which app you use afterwards.
+If you are transitioning from testnet and your phone is an iPhone, the Blox itself still needs a factory reset. Do the device steps below, then finish on a computer.
 
 :::warning Critical: Save Your Account ID
 Before doing anything else, **copy and save your Blox account ID** from the app. You will need it for claiming testnet tokens at [https://claim-ui.fula.network](https://claim-ui.fula.network).
@@ -87,8 +87,7 @@ On the **5th time** you plug it back:
 
 After the Blox starts **flashing cyan**:
 
-1. Open **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** on a computer with Chrome or Edge — or on an Android phone — and follow the [FxBlox App Setup](/functionyard/fxblox-app) guide.
-   - If you are staying on the legacy iOS app, update it from the App Store to version 2.0.1 or higher first. The app is reset during the update; that is expected.
+1. On a **computer** (Windows, macOS or Linux) open **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** in Chrome or Edge and follow the [FxBlox App Setup](/functionyard/fxblox-app) guide. Your iPhone is not needed for this step.
 2. Connect the Blox to your internet/WiFi
 3. The app should now show **"Connected"**
 4. **Wait 2 hours** for the Blox to get fully updated
@@ -147,12 +146,12 @@ You have successfully transitioned to mainnet! Your rewards will now accumulate 
 ## Troubleshooting
 
 **App Issues:**
-- On the web app, reload the tab; if a "new version available" prompt appears, accept it
-- On the legacy iOS app, ensure you're using the latest version from the App Store and try force-closing and reopening it
+- Reload the tab; if a "new version available" prompt appears, accept it
+- If the app shows an "unsupported browser" page, you are on iOS — switch to a computer with Chrome or Edge
 
 **Blox Connection Issues:**
 - Verify WiFi credentials are correct
-- Ensure the Blox and the device running the app are on the same network
+- Ensure the Blox and the computer running the app are on the same network
 - Check router settings for device blocking
 
 **Reset Problems:**

@@ -34,7 +34,7 @@ At a high level, follow these steps to connect your Blox to the network:
 ![Blox Setup Flow](/img/welcome/getting-started.jpeg)
 
 :::info The FxBlox app runs in your browser
-Set your Blox up at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** using Chrome or Edge, on a computer or an Android phone — there is nothing to install. The Android and iOS apps are being discontinued. See [FxBlox App Setup](/functionyard/fxblox-app) for the full walkthrough.
+Set your Blox up at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** using Chrome or Edge on a computer (Windows, macOS or Linux), or on an Android phone — there is nothing to install. iPhone and iPad are not supported. The Android and iOS apps are being discontinued. See [FxBlox App Setup](/functionyard/fxblox-app) for the full walkthrough.
 :::
 
 :::info 

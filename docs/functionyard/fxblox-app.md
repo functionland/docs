@@ -14,10 +14,10 @@ The FxBlox app now runs **in your browser**. There is nothing to install and not
 - Setting up a Blox uses Web Bluetooth and your browser's local-network permission, which only Chromium-based browsers provide. Firefox and Safari will show an "unsupported browser" page.
 :::
 
-:::caution iPhone and iPad
-The web app **cannot run on an iPhone or iPad**. Every browser on iOS — including Chrome and Edge — is built on Apple's WebKit engine, which has no Web Bluetooth and no local-network access, so there is no way for a page to reach your Blox.
+:::caution iOS is not supported — use a computer
+The FxBlox app **does not support iPhone or iPad**. Every browser on iOS — including Chrome and Edge — is built on Apple's WebKit engine, which has no Web Bluetooth and no local-network access, so a web page on iOS has no way to reach your Blox.
 
-If you have an iPhone, set your Blox up from **a computer with Chrome or Edge**, or from an Android phone. The legacy iOS app still works for now — see [Legacy mobile apps](#legacy-mobile-apps) at the bottom of this page.
+**Set your Blox up from a computer instead** — Windows, macOS or Linux with Chrome or Edge. This is new: the old mobile apps could only run on a phone, so you had to use one. The web app runs on a desktop or laptop, so a computer is now the simplest way to set up a Blox. (An Android phone works too, if that is what you have to hand.)
 :::
 
 :::warning
@@ -157,10 +157,12 @@ The Blox reconnects to the network and saves chain history automatically.
 
 ## Troubleshooting
 
-- **The app says your browser will not work.** Use Chrome or Edge on a computer or an Android phone. iPhones and iPads cannot run it — see the note at the top of this page.
+- **The app says your browser will not work.** Use Chrome or Edge on a computer (Windows, macOS or Linux), or on an Android phone. iOS is not supported — see the note at the top of this page.
 - **"Your browser is blocking access to your network."** Chrome has not been granted local network access for this site. Allow it at `chrome://settings/content/localNetworkAccess`, then reload the page. Or use **Connect via Bluetooth**, which does not need that permission.
 - **The Blox answers but the app reports missing CORS headers.** The firmware predates the web update. Use **Connect via Bluetooth** to continue, or update the Blox from the legacy mobile app.
-- **Chrome's Bluetooth chooser is empty.** Leave it open for up to 90 seconds — the Blox advertises periodically rather than continuously. Make sure Bluetooth is on and, on Android, that the browser has location/nearby-devices permission.
+- **Chrome's Bluetooth chooser is empty.** Leave it open for up to 90 seconds — the Blox advertises periodically rather than continuously. Make sure Bluetooth is switched on, and that the browser itself is allowed to use it (see the macOS and Android notes below).
+- **On macOS**, Chrome needs two permissions from the system or it will fail quietly. Grant both under  **System Settings → Privacy & Security**: **Bluetooth** (otherwise the device chooser stays empty) and **Local Network** (otherwise the app cannot reach the Blox over Wi-Fi). Quit and reopen Chrome after changing them.
+- **On Android**, the browser needs the location / nearby-devices permission before it can scan for Bluetooth devices.
 - **The wallet does not come back after signing.** Switch back to the FxBlox tab yourself. If MetaMask is stuck on its splash screen, close it fully from recent apps and tap **Open wallet to approve** again.
 - **Connection problems at the final step.** Connect to the same Wi-Fi as the Blox, reload the page, and use **Reconnect to existing blox**. If that does not work, restart the Blox, wait for the flashing light blue, and set it up again.
 - **Starting completely over.** The browser equivalent of uninstalling and reinstalling the app is **Clear app storage** on the *Set identity* screen. It deletes everything FxBlox stored in this browser — identity, Blox list, settings and caches — and reloads the page.
@@ -183,7 +185,7 @@ The Android and iOS FxBlox apps are being discontinued and will stop receiving u
 You do not lose anything by switching: the same password and the same wallet give you the same identity, so your existing Bloxes are recognised immediately.
 :::
 
-While they last, the mobile apps are still available:
+They are listed here only for people who already have them installed. **Don't set up a new Blox with them** — use a computer with Chrome or Edge instead.
 
 - Android: [FxBlox on Google Play](https://play.google.com/store/apps/details?id=land.fx.blox) (version 2.0.1 or higher)
 - iOS: [FxBlox on the App Store](https://apps.apple.com/ca/app/fxblox/id6444862171) (version 2.0.1 or higher)

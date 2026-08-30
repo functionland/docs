@@ -23,8 +23,8 @@ This guide is for users who are setting up their Blox device for the **first tim
 The full walkthrough, with screenshots, is on the [FxBlox App Setup](/functionyard/fxblox-app) page. The setup process is guided and straightforward.
 :::
 
-:::caution iPhone and iPad
-The web app cannot run on an iPhone or iPad — every iOS browser uses Apple's WebKit engine, which has no Web Bluetooth or local-network access. Use a computer with Chrome or Edge, or an Android phone. See [iPhone & iPad](/functionyard/mainnet-transition/ios).
+:::caution iOS is not supported
+The app does not support iPhone or iPad — every iOS browser uses Apple's WebKit engine, which has no Web Bluetooth or local-network access. **Use a computer** (Windows, macOS or Linux) with Chrome or Edge. Unlike the old mobile apps, the web app runs on a desktop or laptop, so you no longer need a phone at all. See [iPhone & iPad](/functionyard/mainnet-transition/ios).
 :::
 
 ## Step 2: Skip Testnet
