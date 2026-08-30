@@ -17,7 +17,7 @@ This guide is for users whose FxBlox app shows their Blox as **connected**.
 
 ## Step 1: Open the app
 
-Open **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** in Chrome or Edge, on a computer or an Android phone. There is nothing to install and nothing to update — reload the tab and you are on the latest version.
+Open **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** in Chrome or Edge on a computer (Windows, macOS or Linux), or on an Android phone. There is nothing to install and nothing to update — reload the tab and you are on the latest version.
 
 Sign in with the same password and the same wallet you used before; your Blox is recognised immediately. If it does not appear, use **Reconnect to existing blox** and search your network.
 

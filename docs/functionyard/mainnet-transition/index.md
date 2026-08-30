@@ -11,7 +11,7 @@ Welcome to the Mainnet Transition guide! This section will help you smoothly tra
 
 The FxBlox app now runs in your browser at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** — nothing to install, and always the latest version.
 
-Open it in **Chrome or Edge**, on a computer or an Android phone. Your identity is derived from your password and your wallet signature exactly as it was on the phone, so a Blox you already set up is recognised straight away.
+Open it in **Chrome or Edge** on a computer (Windows, macOS or Linux), or on an Android phone. iPhone and iPad are not supported. Your identity is derived from your password and your wallet signature exactly as it was on the phone, so a Blox you already set up is recognised straight away.
 
 :::caution The Android and iOS apps are being discontinued
 They will stop receiving updates. See [FxBlox App Setup](/functionyard/fxblox-app) for the full walkthrough, and [iPhone & iPad](/functionyard/mainnet-transition/ios) if you use an Apple device.
@@ -33,7 +33,7 @@ Pick the guide that matches your situation:
 
 ### Using an iPhone or iPad?
 
-- **[iPhone & iPad](/functionyard/mainnet-transition/ios)** — what to do, since the web app cannot run on iOS
+- **[iPhone & iPad](/functionyard/mainnet-transition/ios)** — iOS is not supported; use a computer with Chrome or Edge
 
 ## Important Notes
 

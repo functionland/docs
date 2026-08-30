@@ -28,7 +28,7 @@ Your FxBlox app shows your Blox as disconnected, or you're having connection iss
 → **[Follow the Blox Disconnected guide](/functionyard/mainnet-transition/android-disconnected)**
 
 :::caution Using an iPhone or iPad?
-The Blox itself still needs a factory reset, but the web app cannot run on iOS. See **[iPhone & iPad](/functionyard/mainnet-transition/ios)** for what to do.
+iOS is not supported — do the transition from a **computer** with Chrome or Edge. See **[iPhone & iPad](/functionyard/mainnet-transition/ios)**.
 :::
 
 ## Pre-Transition Checklist
@@ -75,7 +75,7 @@ A: The process takes 2-3 hours total, including waiting time for device updates.
 A: The transition to mainnet is intended to be permanent. Contact support if you need to revert.
 
 **Q: I only have an iPhone. What now?**
-A: Use a computer with Chrome or Edge, or an Android phone. See [iPhone & iPad](/functionyard/mainnet-transition/ios).
+A: Use a computer — Windows, macOS or Linux with Chrome or Edge. The old apps were phone-only, but the web app runs on a desktop or laptop, so no phone is needed. See [iPhone & iPad](/functionyard/mainnet-transition/ios).
 
 ---
 
