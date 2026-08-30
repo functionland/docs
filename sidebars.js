@@ -44,6 +44,11 @@ const sidebars = {
     },
     'getting-started-testnet',
     {
+      type: 'link',
+      label: 'Open the FxBlox Web App',
+      href: 'https://docs.fx.land/fxblox-web/',
+    },
+    {
       type: 'category',
       label: 'Mainnet Transition',
       link: {

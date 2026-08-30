@@ -1,21 +1,18 @@
 ---
-title: Android - Blox Disconnected
+title: Blox Disconnected
 id: android-disconnected
 ---
 
-# Android Mainnet Transition - Blox Disconnected
+# Mainnet Transition - Blox Disconnected
 
-This guide is for Android users whose Blox app shows as **disconnected** from their Blox device.
+This guide is for users whose FxBlox app shows their Blox as **disconnected**.
 
-<div style={{backgroundColor: '#fff3cd', padding: '15px', borderRadius: '8px', margin: '20px 0'}}>
-<strong>⚠️ Prerequisites:</strong>
-<ul>
-<li>Your Blox app shows "Disconnected" status</li>
-<li>You've tried unplugging/replugging and clicking retry without success</li>
-<li>FxBlox app version 2.0.1 or higher</li>
-<li>Your Blox account ID saved for token claiming</li>
-</ul>
-</div>
+:::caution Prerequisites
+- Your app shows "Disconnected" status
+- You've tried unplugging/replugging and clicking retry without success
+- You are using the web app at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/), or the legacy mobile app at version 2.0.1 or higher
+- Your Blox account ID is saved for token claiming
+:::
 
 <img src="/img/mainnet-transition/blox_disconnected.jpg" alt="Blox Disconnected Status" style={{maxWidth: '250px'}} />
 
@@ -23,8 +20,8 @@ This guide is for Android users whose Blox app shows as **disconnected** from th
 
 First, ensure your Blox is connected to the internet:
 
-1. Go to **Settings > Blox Discovery** (ensure your mobile is on the same WiFi network as your Blox)
-2. If Blox is connected to internet, the page should show it
+1. Go to **Settings > Blox discovery** and search the network (make sure your computer or phone is on the same Wi-Fi as the Blox)
+2. If the Blox is on the network, it will be listed there
 3. You can also check from your router admin panel
 
 <img src="/img/mainnet-transition/blox_discovery.jpg" alt="Blox Discovery" style={{maxWidth: '250px'}} />
@@ -70,7 +67,7 @@ Purple and blue LEDs indicate the factory reset is in progress. Be patient durin
 
 After the Blox starts **flashing cyan**:
 
-1. Use the FxBlox app to set up your Blox
+1. Open the FxBlox web app at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** in Chrome or Edge and set your Blox up again — the full walkthrough is on the [FxBlox App Setup](/functionyard/fxblox-app) page
 2. Connect it to your internet/WiFi
 3. The app should now show **"Connected"**
 4. **Wait 2 hours** for the Blox to get fully updated
@@ -83,7 +80,7 @@ The 2-hour waiting period is crucial for the Blox to download and install all ne
 
 Once your Blox shows as connected and has been updated for 2 hours:
 
-1. Follow the instructions in the **[Android - Blox Connected](/functionyard/mainnet-transition/android-connected)** section
+1. Follow the instructions in the **[Blox Connected](/functionyard/mainnet-transition/android-connected)** section
 2. This includes chain selection, app restart, and pool joining
 
 ## LED Status Reference
@@ -93,7 +90,7 @@ Once your Blox shows as connected and has been updated for 2 hours:
 | 🟢 Green | Power on | Normal |
 | 🟡 Yellow | Booting | Wait for it to turn off |
 | 🟣 Purple + 🔵 Blue | Factory reset | Wait 10 minutes |
-| 🔵 Cyan (flashing) | Ready for setup | Use app to configure |
+| 🔵 Cyan (flashing) | Ready for setup | Use the app to configure |
 
 :::success Success Indicator
 When your app shows "Connected" status after the reset and 2-hour wait period, you're ready to proceed with the mainnet transition!
@@ -111,6 +108,6 @@ When your app shows "Connected" status after the reset and 2-hour wait period, y
 **If still showing disconnected after reset:**
 - Verify WiFi credentials are correct
 - Check router settings for device blocking
-- Ensure Blox and phone are on same network
+- Ensure the Blox and the device running the app are on the same network
 
 **Need more help?** Visit our [Support page](/functionyard/support) for additional assistance.

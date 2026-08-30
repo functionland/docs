@@ -3,114 +3,189 @@ title: FxBlox App Setup
 id: fxblox-app
 ---
 
-## Installing the FxBlox App
+## Open the FxBlox app
+
+The FxBlox app now runs **in your browser**. There is nothing to install and nothing to update — open:
+
+### [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)
+
+:::info What you need
+- **Google Chrome or Microsoft Edge**, on a computer (Windows, macOS, Linux) or an Android phone.
+- Setting up a Blox uses Web Bluetooth and your browser's local-network permission, which only Chromium-based browsers provide. Firefox and Safari will show an "unsupported browser" page.
+:::
+
+:::caution iPhone and iPad
+The web app **cannot run on an iPhone or iPad**. Every browser on iOS — including Chrome and Edge — is built on Apple's WebKit engine, which has no Web Bluetooth and no local-network access, so there is no way for a page to reach your Blox.
+
+If you have an iPhone, set your Blox up from **a computer with Chrome or Edge**, or from an Android phone. The legacy iOS app still works for now — see [Legacy mobile apps](#legacy-mobile-apps) at the bottom of this page.
+:::
 
 :::warning
-Please note there is no need for extra reboots, long waits other than what is specified or multiple retries if you exactly follow these instructions. If at any point it is not as expected, it means there is an issue and you need to contact hte support
+There is no need for extra reboots, long waits other than what is specified, or multiple retries if you follow these instructions exactly. If at any point it is not as expected, it means there is an issue and you need to [contact support](/functionyard/support).
 :::
 
-### Initial Setup
+## Before you start
 
-1. **Download the App**: 
-   - For Android: [FxBlox on Google Play (v1.6.14+)](https://play.google.com/store/apps/details?id=land.fx.blox).
-   - For iOS: [FxBlox on AppStore (v1.6.14+)](https://apps.apple.com/ca/app/fxblox/id6444862171).
-2. **Metamask Wallet**: Ensure you have a [Metamask wallet](https://play.google.com/store/apps/details?id=io.metamask) for setting up your identity.
+1. **A wallet.** MetaMask as a browser extension on desktop, or the MetaMask app on Android. It does not matter which network your wallet is on during setup.
+2. **Storage.** Either a Blox with internal storage, or at least **300 GB** of external storage attached. If your Blox has internal storage, disconnect any external disk before you begin.
+3. **A powered-on Blox** whose LED is flashing <font color="cyan">light blue</font>. If it is not, wait — after the first boot it can take 10-15 minutes to get there.
 
-### App Configuration Steps
-:::info 
-If adding more than one FxBlox to your app, get familiar with [these instructions first.](#add-multiple-fxbloxs)
+---
+
+## Set up your Blox
+
+### 1. Welcome
+
+Open [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/). Read the [Terms and Conditions](https://fx.land/terms) and, if you agree, choose **Agree & Setup my Blox**.
+
+<img src="/img/fxblox-web/01-welcome.jpg" alt="FxBlox web app welcome screen" style={{maxWidth: '250px'}} />
+
+### 2. Before you start (browser check)
+
+The app checks your browser and shows only what needs your attention — an unsupported browser, blocked local-network access, or the optional camera permission used for scanning a pairing QR code. You can always type a pairing code by hand instead of allowing the camera.
+
+<img src="/img/fxblox-web/02-requirements.jpg" alt="Browser requirements check" style={{maxWidth: '250px'}} />
+
+:::tip
+If Chrome asks to **allow this site to access devices on your local network**, choose **Allow**. Without it the app cannot reach your Blox over Wi-Fi. You can change it later at `chrome://settings/content/localNetworkAccess`.
 :::
 
-:::info 
-For a successful setup you should either have the Blox with internal storage, or attach an external storage to it.
-::: 
+### 3. Set your identity
 
-:::warning 
-Please make sure to first uninstall (not update) any previous version of FxBlox on your phone and then re-install the latest version
-::: 
+Enter a memorable **password** — this encrypts your data and is **not** your MetaMask password. Then connect your wallet and approve the signature request.
 
-1. Open Metamask Wallet. We recommend having the opening network set to "Ethereum Mainnet" for a smoother setup process.
-2. Minimize Metamask (not close) and open the FxBlox app.
-3. Read the [Terms and Condition](https://fx.land/terms) and if you agree, then select `Agree and Setup Blox` in the app.
-4. Enter a memorable password for data encryption and click `Sign` (Note: This is not your Metamask password).
-5. Complete the connection in the Metamask app, then return to the FxBlox app.
-   - You may need to click back to manually return to the app if it does not open Blox automatically after you sign in Metamask
-   - It does not matter which chain (Ethereum, Amoy, etc) you are on in your Metamask wallet.
-6. Tap `Connect to new blox`.
-7. Manually connect your phone to the "FxBlox" WiFi/Hotspot, and turn off "mobile data", then continue in the app.
-   
-:::warning 
-Everyone should format their storage in step 8. If you have Blox with internal storage, disconnect any external disk. If you have Blox with no internal storage, attach your external storage. At the "set Authorizer" page, wait for 10 seconds and a green button named "Format Disk" appears. click on it and blox turns <font color="purple"> purple</font> and reboots after a few minutes. The app goes to `Connect to blox` screen again. You should wait for the light to turn flashing <font color="cyan"> light blue</font> again and then reconnect your phone to FxBlox again to continue the process.
+Your password plus that one signature is what produces your identity. **Write the password down**: the same password with the same wallet always produces the same identity, and a different password produces a different one.
 
-If for any reason you see the capacity at 0 again after Format, you should format the external disk yourself, of if you have 1TB internal, contact support
+:::tip Wallet opened but stuck on its splash screen?
+On Android this happens occasionally. Close MetaMask completely from your recent apps, return to the FxBlox tab and tap **Open wallet to approve** again — your signature request is still waiting.
 :::
 
-8. Make sure you have attached at least 300GB of external storage to your FxBlox. Proceed by clicking `Next` once the app recognizes the storage.
-   - If the storage is not recognized ensure that is it correctly formatted by clicking on the `Format` button.
-      - The light will turn <font color="purple"> purple</font>, to indicate it is formatting. **Formatting times depend on storage medium and capacity**, so be patient during this time. Device will reboot automatically and eventually start flashing <font color="cyan"> light blue</font> again when it is ready to proceed.
-   - If you have an FxBlox version with internal storage, there is no need to attach external storage.
-9. Select your desired WiFi network for the FxBlox and enter the password.
-   - If you entered the wrong password, double check you're connected to FxBlox Wifi and just go back to the wifi selection screen to choose and re-enter your password.
-10. Finally, on the last screen reconnect your mobile device to your home WiFi and you can turn on the mobile data again if you want to. The app will confirm the successful setup. Please note the app does not continue if you do not have an active internet connection. When Blox is connected to the internet, the LEDs turn `green` for 30 seconds and then turn off.
-11. We recommend unplugging and replugging the Blox after the initial setup once for a hard reboot and ensuring that everything is set. After you re-plug the power and it boots, it may reboot automatically once as well.
+### 4. Connect to your Blox
+
+<img src="/img/fxblox-web/03-connect-blox.jpg" alt="Connect to Blox screen" style={{maxWidth: '250px'}} />
+
+There are three ways to reach the Blox. Try them in this order:
+
+1. **Connect via Bluetooth** — the most reliable, and it works whatever network you are on. Chrome opens its own device chooser; pick the entry starting with **`fulatower`** or **`fxblox`** and click **Pair**.
+   - The Blox only advertises over Bluetooth periodically. If you do not see it, wait up to 90 seconds with the chooser open and it will appear.
+2. **By its address on your network** — if your Blox is plugged into your router with a cable, or is already on your Wi-Fi. Find its address in your router's list of connected devices; it usually starts with `192.168.`.
+3. **Over the Blox's own Wi-Fi hotspot** — open your Wi-Fi settings, join the network called **"FxBlox"**, then come back and press the check button. Your internet will pause while you are connected to it.
 
 :::info
-At the end of the setup when it is completed, the chain starts syncing. It may give a popup to `Reset Chain Data`, Please ignore that and wait until the sync is completed. you can check the progress of the sync in `Settings` -> `Pools`
+The hotspot route needs recent Blox firmware. If the app reports that the Blox answered but its firmware predates the web update, use **Connect via Bluetooth** instead — that path works on every firmware version.
 :::
 
-### Troubleshoot
+### 5. Set the Blox authorizer and format the disk
 
-- **Final step connection issues**: Connect to mobile or home wifi, restart the FxBlox app, select `Connect to Existing Blox`. If that doesn't work, restart the FxBlox device. Close app and reopen to proceed with `Connect to new Blox`.
-- **If Metamask doesn't redirect after signing transaction**: Manually go back to the FxBlox app.
-- **App issues with Metamask**: On some phones, if you cannot get the "Connect" and "sign" prompts in Metamask, you may need to put both the Metamask app and Blox app in Unrestricted mode from the "Battery Optimization". Go to: `Settings` > `Apps` > `FxBlox` > `Battery` / `App Battery` > Choose `Unrestricted`. Do the same for the Metamask app. After the setup, you can return it back to the default of `Optimized`
+This screen claims the Blox for your identity.
+
+:::warning Everyone should format their storage at this step
+At the *Set authorizer* page, wait about **10 seconds** and a green **Format Disk** button appears. Click it. The Blox turns <font color="purple">purple</font> and reboots after a few minutes, and the app returns to the *Connect to Blox* screen. Wait for the LED to be flashing <font color="cyan">light blue</font> again, then reconnect and continue.
+
+If the capacity still shows 0 after formatting, format the external disk yourself — or, if you have a 1 TB internal drive, [contact support](/functionyard/support).
+:::
+
+Once the app recognises your storage, continue. Formatting time depends on the drive's speed and capacity, so be patient; the Blox reboots by itself and eventually flashes <font color="cyan">light blue</font> again when it is ready.
+
+### 6. Connect the Blox to Wi-Fi
+
+Choose the network you want the **Blox** to join and enter its password. The list shows the networks *the Blox* can see, not the ones your computer can see. Set the two-letter country code to match where you are (for example `CA`, `US`, `DE`).
+
+If you mistype the password, go back to the network list and select it again.
+
+### 7. Reconnect and finish
+
+The Blox's own "FxBlox" hotspot switches off as soon as it joins your Wi-Fi, so your computer or phone may drop off the network. Rejoin the same Wi-Fi as the Blox and press **I'm connected**.
+
+When the Blox reaches the internet, its LEDs turn <font color="green">green</font> for 30 seconds and then switch off. Keep the browser tab open while this happens.
+
+:::info
+After setup completes, the chain starts syncing. If you see a **Reset Chain Data** prompt, ignore it and wait for the sync to finish — you can watch the progress in **Settings → Pools**.
+:::
+
+We recommend unplugging and replugging the Blox once after the initial setup. It may reboot itself once more after that.
+
+---
+
+## Already set up from the phone?
+
+**You do not need to set your Blox up again.** The web app derives your identity exactly the same way the mobile app does: the same password with the same wallet produces the same identity, so a Blox that was paired from your phone recognises the browser straight away.
+
+Open the web app, enter your existing password, sign with the same wallet, then choose **Reconnect to existing blox**:
+
+<img src="/img/fxblox-web/04-connect-existing.jpg" alt="Finding Bloxes on your network" style={{maxWidth: '250px'}} />
+
+- **Search the network** finds your Blox by its name on the network you are on and reads its peer ID.
+- **Find over Bluetooth** also reaches a Blox that is already set up.
+- **Add by peer ID** works from anywhere — the Blox does not need to be on your network. In the mobile app the peer ID is on the **Users** tab under *Bloxs' PeerId*, with a copy button. It starts with `12D3KooW` and is 52 characters long.
 
 ## Add Multiple FxBloxes
 
-As of Android/iOS app version 1.6.7, there is not an easy way to add more than one blox to your account. Follow these additional steps if you would like to connect more than one blox:
+Adding more than one Blox no longer requires logging out and back in. From the web app:
 
-1. If not already done, complete setup of your first Blox.
-2. Verify Blox is listed as `Authorized` under `Settings`->`Blox Discovery`. If not, restart your Blox by unplug/plug-ing it back in.
-3. `Log Out` of your account by going to `Settings` -> `Log Out`.
-4. Proceed and complete set-up of your next FxBlox.
-5. Repeat steps 2-4 for all the FxBloxes you have, except for the last one.
+1. Complete setup of your first Blox.
+2. Go to **Settings → Blox discovery** (or open [/setup/connect-existing](https://docs.fx.land/fxblox-web/setup/connect-existing) directly).
+3. **Search the network**, or **Find over Bluetooth**, or **Add by peer ID**.
+4. Tick every Blox you want, then press **Add selected blox(s)**.
+5. Check them all under the **Blox** tab.
+
 :::info
-If you're using the default naming scheme `Blox unit #X`, then name your last Blox `Blox unit #1`. The reason for this is because the app will auto-number the rest of your Bloxes when you add them back in.
-:::
-6. When you've finally added the last FxBlox, go to `Settings` -> `Blox Discovery`.
-7. All FxBloxes should say `Authorized`, so select them and click `Add selected blox(s)`.
-8. Verify you can see all of them by going to `Blox` tab and swiping left/right between them.
-
-:::info 
-As you can see the functionality is there, but prioritization of an easier way to add them is scheduled for after testnet launch.
-
-**Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
+**Our apps are open source. If you would like to [contribute to the project](https://github.com/functionland/fxblox-web), that would be greatly appreciated!**
 :::
 
 ## Format Drive
 
-If you were eager to test out nightly releases on your own, you may have trouble joining the official launch of the testnet. This is because the blocks from the temporary chains are incompatible with the official testnet blocks. To fix this, you need to erase all previous blocks, easiest way is to format the drive.
+If you tested nightly releases before the official launch, blocks from those temporary chains are incompatible with the official network. The easiest fix is to erase them by formatting the drive.
 
-To format your drive: 
-1. Tap on the `Blox` tab to see this screen
+During setup, use the **Format Disk** button on the *Set authorizer* screen (see [step 5](#5-set-the-blox-authorizer-and-format-the-disk) above).
+
+After setup, from the **Blox** tab:
+
+1. Open the **Blox** tab.
 <center>
    <img src="/img/fxyard-network/blox-page.png" style={{width: 450}}/>
 </center>
-2. **Tap and hold** the `Hard Disk` you want to format
-3. When the pop-up shows, click the `Format` button
+2. Open the actions for the **Hard Disk** you want to format.
+3. Choose **Format** and confirm.
 <center>
    <img src="/img/fxyard-network/format-button.png" style={{width: 400}}/>
 </center>
-4. **Now wait!** The light will turn purple. This process may take more or less than 5 minutes, dependent on the speed of your drive.
-5. The FxBlox will auto-reboot, after it is done the lights will turn off.
+4. **Now wait.** The LED turns purple. This can take more or less than 5 minutes depending on the speed of your drive.
+5. The Blox reboots by itself; when it is done the lights turn off.
 
-FxBlox will automatically connect to testnet and save chain history. You should be able to join testnet now.
+The Blox reconnects to the network and saves chain history automatically.
+
+## Troubleshooting
+
+- **The app says your browser will not work.** Use Chrome or Edge on a computer or an Android phone. iPhones and iPads cannot run it — see the note at the top of this page.
+- **"Your browser is blocking access to your network."** Chrome has not been granted local network access for this site. Allow it at `chrome://settings/content/localNetworkAccess`, then reload the page. Or use **Connect via Bluetooth**, which does not need that permission.
+- **The Blox answers but the app reports missing CORS headers.** The firmware predates the web update. Use **Connect via Bluetooth** to continue, or update the Blox from the legacy mobile app.
+- **Chrome's Bluetooth chooser is empty.** Leave it open for up to 90 seconds — the Blox advertises periodically rather than continuously. Make sure Bluetooth is on and, on Android, that the browser has location/nearby-devices permission.
+- **The wallet does not come back after signing.** Switch back to the FxBlox tab yourself. If MetaMask is stuck on its splash screen, close it fully from recent apps and tap **Open wallet to approve** again.
+- **Connection problems at the final step.** Connect to the same Wi-Fi as the Blox, reload the page, and use **Reconnect to existing blox**. If that does not work, restart the Blox, wait for the flashing light blue, and set it up again.
+- **Starting completely over.** The browser equivalent of uninstalling and reinstalling the app is **Clear app storage** on the *Set identity* screen. It deletes everything FxBlox stored in this browser — identity, Blox list, settings and caches — and reloads the page.
+- **Nothing loads after a new release.** Reload the tab. If a "new version available" prompt appears, accept it.
 
 ## App features
 
-1- You can transfer your earned tokens to your wallet by holding your finger on the `Earnings` section in the Home Page and paste the address of you wallet by clicking the icon (Please note manually entering is not allowed)
+1. You can transfer your earned tokens to your wallet from the **Earnings** section on the Blox page, pasting the destination address (manual entry is not allowed).
+2. You can format storage from the **Hard Disks** section of the Blox page.
+3. You can see Blox details from the Blox icon, and account details from the profile icon in the top right.
+4. You can find Bloxes already on your network under **Settings → Blox discovery**.
 
-2- You can format the storage by holding your finger on the `Hard Disks` section of the Home Page
+---
 
-3- You can check blox details by clicking on the blox icon in Home page and some other details by clicking on the profile icon on top right
+## Legacy mobile apps
 
-4- You can see added or existing Bloxes in the network, when you are connected to the same wifi as blox and choose `Blox Discovery` from Settings tab
+:::caution Being discontinued
+The Android and iOS FxBlox apps are being discontinued and will stop receiving updates. Please move to the web app at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/).
+
+You do not lose anything by switching: the same password and the same wallet give you the same identity, so your existing Bloxes are recognised immediately.
+:::
+
+While they last, the mobile apps are still available:
+
+- Android: [FxBlox on Google Play](https://play.google.com/store/apps/details?id=land.fx.blox) (version 2.0.1 or higher)
+- iOS: [FxBlox on the App Store](https://apps.apple.com/ca/app/fxblox/id6444862171) (version 2.0.1 or higher)
+
+If you use the mobile app: check your version in **Settings → About**, and if you are reinstalling, uninstall the old version first rather than updating over it. On some Android phones you may need to set both MetaMask and FxBlox to **Unrestricted** under `Settings → Apps → FxBlox → Battery` for the connect and sign prompts to appear.

@@ -36,6 +36,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "fxblox-web-app",
+        content:
+          'FxBlox is now set up from your browser. <a target="_blank" rel="noopener" href="https://docs.fx.land/fxblox-web/">Open the web app</a> — the Android and iOS apps are being discontinued.',
+        isCloseable: true,
+      },
       navbar: {
         title: "Functionland",
         logo: {
@@ -43,6 +49,11 @@ const config = {
           src: "img/logo.webp",
         },
         items: [
+          {
+            href: "https://docs.fx.land/fxblox-web/",
+            label: "Web App",
+            position: "right",
+          },
           {
             href: "https://github.com/functionland",
             label: "GitHub",

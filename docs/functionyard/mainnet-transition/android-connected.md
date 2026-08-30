@@ -1,29 +1,31 @@
 ---
-title: Android - Blox Connected
+title: Blox Connected
 id: android-connected
 ---
 
-# Android Mainnet Transition - Blox Connected
+# Mainnet Transition - Blox Connected
 
-This guide is for Android users whose Blox app shows as **connected** to their Blox device.
+This guide is for users whose FxBlox app shows their Blox as **connected**.
 
-<div style={{backgroundColor: '#e8f5e8', padding: '15px', borderRadius: '8px', margin: '20px 0'}}>
-<strong>✅ Prerequisites:</strong>
-<ul>
-<li>Your Blox app shows "Connected" status</li>
-<li>FxBlox app version 2.0.1 or higher</li>
-<li>Your Blox account ID saved for token claiming</li>
-</ul>
-</div>
+:::info Prerequisites
+- Your app shows "Connected" status
+- You are using the web app at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/), or the legacy mobile app at version 2.0.1 or higher
+- Your Blox account ID is saved for token claiming
+:::
 
 <img src="/img/mainnet-transition/blox_connected.jpg" alt="Blox Connected Status" style={{maxWidth: '250px'}} />
 
-## Step 1: Update Your App
+## Step 1: Open the app
 
-Ensure your FxBlox app is updated to at least **version 2.0.1**.
+Open **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** in Chrome or Edge, on a computer or an Android phone. There is nothing to install and nothing to update — reload the tab and you are on the latest version.
 
-1. Check your app version in **Settings > About** (at the bottom of the screen)
-2. Update from Google Play Store if needed
+Sign in with the same password and the same wallet you used before; your Blox is recognised immediately. If it does not appear, use **Reconnect to existing blox** and search your network.
+
+You can check the version at any time in **Settings > About**.
+
+:::info Still on the mobile app?
+Make sure it is at least **version 2.0.1** — update it from your app store. The Android and iOS apps are being discontinued, so please move to the web app when you can.
+:::
 
 <img src="/img/mainnet-transition/version_check.jpg" alt="Version Check" style={{maxWidth: '250px'}} />
 
@@ -37,12 +39,12 @@ Default selection is **Skale**. If you have an authorization code, change to **B
 2. Ensure you are on the correct chain (Base/Skale)
 3. Click the **"Add and Switch to Skale/Base"** button
 4. This will open MetaMask
-5. In MetaMask, ensure you are on the same chain selected in the Blox app
+5. In MetaMask, ensure you are on the same chain selected in the FxBlox app
 
-## Step 3: Close and Restart Apps
+## Step 3: Restart
 
-1. **Close both** FxBlox app and MetaMask completely
-2. **Re-open** the FxBlox app
+1. **Close MetaMask** completely
+2. **Reload the FxBlox tab** (or, on the mobile app, close and re-open it)
 
 ## Step 4: Switch to Mainnet
 

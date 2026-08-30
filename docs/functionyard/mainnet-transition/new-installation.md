@@ -7,24 +7,24 @@ id: new-installation
 
 This guide is for users who are setting up their Blox device for the **first time** and want to start directly on mainnet (skipping testnet).
 
-<div style={{backgroundColor: '#e8f5e8', padding: '15px', borderRadius: '8px', margin: '20px 0'}}>
-<strong>✅ This guide is for you if:</strong>
-<ul>
-<li>You have a brand new Blox device</li>
-<li>You've never joined the testnet</li>
-<li>You want to start directly on mainnet</li>
-<li>Your FxBlox app is version 2.0.1 or higher</li>
-</ul>
-</div>
+:::success This guide is for you if:
+- You have a brand new Blox device
+- You've never joined the testnet
+- You want to start directly on mainnet
+:::
 
 ## Step 1: Initial Setup
 
-1. **Download** the FxBlox app from your device's app store
-2. Ensure you have version **2.0.1 or higher**
-3. **Connect** your Blox device to power and internet using the app setup wizard
+1. **Open** the FxBlox app at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** — there is nothing to install
+2. Use **Chrome or Edge**, on a computer (Windows, macOS, Linux) or an Android phone
+3. **Connect** your Blox device to power and to your network by following the setup wizard
 
 :::info Setup Process
-Follow the in-app instructions to connect your Blox to your WiFi network. The setup process is guided and straightforward.
+The full walkthrough, with screenshots, is on the [FxBlox App Setup](/functionyard/fxblox-app) page. The setup process is guided and straightforward.
+:::
+
+:::caution iPhone and iPad
+The web app cannot run on an iPhone or iPad — every iOS browser uses Apple's WebKit engine, which has no Web Bluetooth or local-network access. Use a computer with Chrome or Edge, or an Android phone. See [iPhone & iPad](/functionyard/mainnet-transition/ios).
 :::
 
 ## Step 2: Skip Testnet
@@ -45,13 +45,11 @@ After your Blox shows as **"Connected"** in the app:
 
 1. **Wait approximately 2 hours** for your Blox to download and install updates
 2. During this time, your device will automatically update to the latest firmware
-3. You can use your phone normally during this waiting period
+3. You can carry on with other things during this waiting period
 
-<div style={{backgroundColor: '#f0f8ff', padding: '15px', borderRadius: '8px', margin: '20px 0'}}>
-<strong>💡 Why the wait?</strong>
-<br />
+:::info Why the wait?
 Your Blox needs time to download the latest mainnet-compatible firmware and sync with the network. This ensures optimal performance.
-</div>
+:::
 
 ## Step 4: Configure for Mainnet
 
@@ -66,11 +64,11 @@ After the 2-hour waiting period, follow these steps:
 ### Add and Switch Chain
 1. Click the **"Add and Switch to Skale/Base"** button
 2. This will open MetaMask
-3. In MetaMask, ensure you are on the same chain selected in the Blox app
+3. In MetaMask, ensure you are on the same chain selected in the FxBlox app
 
-### Restart Apps
-1. **Close both** FxBlox app and MetaMask completely
-2. **Re-open** the FxBlox app
+### Restart
+1. **Close MetaMask** completely
+2. **Reload the FxBlox tab**
 
 ### Complete Mainnet Switch
 1. On the home screen, you'll see a **"Switch to Skale/Base"** button
@@ -96,13 +94,16 @@ You should now see:
 - A **Claim button** below the rewards when rewards become available
 - Your Blox status showing as "Connected"
 
-## Device Compatibility
+## Browser Compatibility
 
-This process works for both:
-- **Android devices** (phones and tablets)
-- **iOS devices** (iPhone and iPad)
+| Where you run it | Works? |
+|---|---|
+| Chrome or Edge on Windows / macOS / Linux | Yes — recommended |
+| Chrome or Edge on Android | Yes |
+| Firefox, Safari | No — the app shows an "unsupported browser" page |
+| Any browser on iPhone / iPad | No — see [iPhone & iPad](/functionyard/mainnet-transition/ios) |
 
-The steps are identical regardless of your mobile device platform.
+The steps are identical on every platform where the app runs.
 
 ## Timeline Summary
 
@@ -123,13 +124,13 @@ You've successfully set up your Blox device directly on mainnet! You can now sta
 
 **Setup Issues:**
 - Ensure your WiFi password is correct
-- Make sure Blox and phone are on the same network
+- Make sure the Blox and the device running the app are on the same network
 - Try restarting your router if connection fails
 
 **App Issues:**
-- Force close and reopen the FxBlox app
-- Ensure you have the latest version from the app store
-- Restart your phone if needed
+- Reload the FxBlox tab; if a "new version available" prompt appears, accept it
+- Make sure you are using Chrome or Edge
+- If the app cannot reach the Blox over Wi-Fi, allow local network access for the site, or connect via Bluetooth instead
 
 **Connection Problems:**
 - Check that your Blox device LED is showing the correct status

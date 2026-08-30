@@ -54,7 +54,7 @@ In update process the LED blinks red and green. This phase is very critical, and
 
 Please wait for `10-15 minutes` before doing anything. You may think it is done or stuck or it is turned off, but be sure that it is processing the update for `10-15 minutes` after the first boot. At the end of process the LED starts blinking light blue (cyan) consistently if an external storage is plugged to the blox or it has internal storage (XL orders). If no external storage is plugged, then you cannot see this sequence until you plug one.
 
-**Use FxBlox App**: After the lights become a flashing blue, you can start setting up the Blox with the application. Follow on-screen instructions in the app. Please make sure follow instructions as detailed in the [documentation](../fxblox-app.md)
+**Use the FxBlox App**: After the lights become a flashing blue, you can start setting up the Blox from your browser at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/) (Chrome or Edge). Follow the on-screen instructions, and make sure to follow the steps as detailed in the [documentation](../fxblox-app.md)
 
 - If at the end of setup through the FxBlox app, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
 
@@ -67,7 +67,7 @@ If this is your very first time setting up your FxBlox Lite (RPI), you will not 
 
 To automatically get that version, you need to connect the Blox to the wifi first. You can do so by following these steps:
 
-1. Download the latest iOS/Android app.
+1. Open the FxBlox app at [https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/) in Chrome or Edge (see [FxBlox App Setup](../fxblox-app.md)).
 2. Follow prompts to create password and connect Metamask.
 3. On the authorize blox screen wait for 15 seconds and a "skip" button appears in the bottom left. click that to skip the authorization and then click yes to confirm. [** * **](#troubleshoot)
 4. Connect Blox to wifi. [** * **](#troubleshoot)
