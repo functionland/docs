@@ -60,8 +60,15 @@ When you see "Return to App" in MetaMask, it means the network switching process
 
 #### Step 6: Return to FxBlox App
 1. **Click "Return to App"** in MetaMask or switch back to the FxBlox app
-2. **The "Switch to Chain" button should now disappear**
-3. **Your app should now be properly connected** to the selected network
+2. **Give the page a few seconds** — see the note below
+3. **The "Switch to Chain" button should now disappear**
+4. **Your app should now be properly connected** to the selected network
+
+:::info The page may lag a few seconds behind your wallet
+On a phone, the browser's connection to your wallet is suspended while you are away in MetaMask, and has to be re-established when you come back. So the FxBlox tab can still show **Connecting Wallet…**, or still show the old button, for a few seconds after you have already approved.
+
+**Wait rather than helping.** Tapping the button again or reloading the tab in those first seconds cancels the request you just approved and starts the hand-off over. Only if nothing has changed after roughly half a minute should you try the steps again.
+:::
 
 ## Troubleshooting Tips
 
@@ -76,6 +83,8 @@ When you see "Return to App" in MetaMask, it means the network switching process
 - **Contact support** if you believe you should have access to a specific chain
 
 ### MetaMask Connection Problems
+- **Give it a few seconds first** if the app still says "Connecting Wallet…" after you came back from MetaMask — on a phone the page catches up a little after you do, and tapping again in the meantime cancels what you just approved
+- **On Android, if MetaMask opens and sits on its splash screen**, come back to the FxBlox tab and tap the button once more; if it is still stuck, close MetaMask completely from your recent apps and tap again
 - **Refresh the MetaMask extension** if it appears unresponsive
 - **Check MetaMask permissions** for the FxBlox app
 - **Try using a different browser** if issues persist
