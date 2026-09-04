@@ -21,6 +21,10 @@ Open **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fxblox-web/)** in
 
 Sign in with the same password and the same wallet you used before; your Blox is recognised immediately. If it does not appear, use **Reconnect to existing blox** and search your network.
 
+:::info Signing on a phone? Give the page a few seconds afterwards
+When you come back from MetaMask, the FxBlox tab can still say **Connecting Wallet…** for a few seconds before it catches up — the browser's connection is suspended while you are away in another app. Wait rather than tapping again or reloading, which cancels what you just approved. Full walkthrough: [Set your identity](/functionyard/fxblox-app#3-set-your-identity).
+:::
+
 You can check the version at any time in **Settings > About**.
 
 :::info Still on the mobile app?
@@ -53,7 +57,8 @@ Default selection is **Skale**. If you have an authorization code, change to **B
 3. **Wait a few seconds** on MetaMask
 4. You'll see a "Go back to application" message
 5. Switch back to the FxBlox app
-6. The button should disappear
+6. **Wait a few more seconds there** — the page reconnects to your wallet before it can see the change, so it lags a little behind MetaMask. Tapping the button again or reloading in the meantime cancels what you just approved.
+7. The button should disappear
 
 :::tip Success Indicator
 When the "Switch to Skale/Base" button disappears from the home screen, the transition is successful!
