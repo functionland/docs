@@ -65,9 +65,11 @@ After you approve in MetaMask — or any other wallet — and return to the FxBl
 :::
 
 :::tip Wallet opened but stuck on its splash screen?
-This happens on Android, most often on the first signature right after connecting. Come back to the FxBlox tab and tap **Open wallet to approve** once more — the second attempt opens the wallet a different way and usually gets past it.
+This happens on Android, most often on the first signature right after connecting: MetaMask comes to the front and then sits on its splash screen without ever showing the prompt.
 
-If it is still stuck, close the wallet completely from your recent apps and tap **Open wallet to approve** again. Your signature request stays valid throughout, so nothing is lost and you do not need to start again.
+**Close MetaMask completely from your recent apps**, return to the FxBlox tab, and tap **Open wallet to approve**. That is the step that clears it — tapping the button again *without* closing MetaMask first will simply open it back onto the same stuck screen.
+
+Your signature request stays valid throughout, so nothing is lost and you do not need to start setup again. This is a fault inside the wallet app; a web page cannot reach into it and restart it for you.
 :::
 
 ### 4. Connect to your Blox
@@ -174,7 +176,7 @@ The Blox reconnects to the network and saves chain history automatically.
 - **On macOS**, Chrome needs two permissions from the system or it will fail quietly. Grant both under  **System Settings → Privacy & Security**: **Bluetooth** (otherwise the device chooser stays empty) and **Local Network** (otherwise the app cannot reach the Blox over Wi-Fi). Quit and reopen Chrome after changing them.
 - **On Android**, the browser needs the location / nearby-devices permission before it can scan for Bluetooth devices.
 - **The page still says "Connecting Wallet…" after you approved.** Wait a few seconds. The browser's connection is suspended while you are away in your wallet and has to be re-established on the way back, so the page notices a little after you do. Do not tap again or reload — that cancels the request you just approved.
-- **The wallet does not come back after signing.** Switch back to the FxBlox tab yourself. If MetaMask is stuck on its splash screen, tap **Open wallet to approve** once more first; if it is still stuck, close MetaMask fully from recent apps and tap it again. The signature request stays valid either way.
+- **The wallet does not come back after signing.** Switch back to the FxBlox tab yourself. If MetaMask is stuck on its splash screen, close it fully from your recent apps and then tap **Open wallet to approve** — tapping without closing it first only returns you to the same stuck screen. The signature request stays valid either way.
 - **Connection problems at the final step.** Connect to the same Wi-Fi as the Blox, reload the page, and use **Reconnect to existing blox**. If that does not work, restart the Blox, wait for the flashing light blue, and set it up again.
 - **Starting completely over.** The browser equivalent of uninstalling and reinstalling the app is **Clear app storage** on the *Set identity* screen. It deletes everything FxBlox stored in this browser — identity, Blox list, settings and caches — and reloads the page.
 - **Nothing loads after a new release.** Reload the tab. If a "new version available" prompt appears, accept it.
