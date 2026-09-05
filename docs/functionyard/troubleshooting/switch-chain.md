@@ -85,7 +85,7 @@ On a phone, the browser's connection to your wallet is suspended while you are a
 ### MetaMask Connection Problems
 - **Give it a few seconds first** if the app still says "Connecting Wallet…" after you came back from MetaMask — on a phone the page catches up a little after you do, and tapping again in the meantime cancels what you just approved
 - **On Android, if MetaMask opens and sits on its splash screen**, close it completely from your recent apps before coming back and tapping again — tapping without closing it first only returns you to the same stuck screen
-- **If that happens every time**, Android is restricting MetaMask in the background: set MetaMask and your browser to **Unrestricted** under **Settings → Apps → (app) → Battery**
+- **If that happens every time**, MetaMask is failing to resume from the background on your phone — closing it from recent apps and opening it again always clears it; check it is up to date and look at its **Auto-lock** setting
 - **Refresh the MetaMask extension** if it appears unresponsive
 - **Check MetaMask permissions** for the FxBlox app
 - **Try using a different browser** if issues persist
