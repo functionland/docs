@@ -70,9 +70,9 @@ Alternatively, you can connect keyboard, video, & mouse. Bottom port is DisplayP
 #### Written Guide
 1. Connect your drive to the FxBlox
 2. Connect to your FxBlox via `ssh` or keyboard, video, & mouse
-    - If you have FxBlox Lite (CM4):
+    - If you have FxBlox (CM4):
         - `ssh pi@fulatower`, password `raspberry`
-    - If you have FxBlox Lite Plus (RK1):
+    - If you have FxBlox Plus (RK1):
         - `ssh pi@fxblox-rk1`, password `fxblox`
     - When connecting directly, open up Terminal app with `Ctrl + Alt + T`
 3. Update current packages with `sudo apt update && sudo apt upgrade`. Enter your password.
@@ -199,7 +199,7 @@ Ext4 is a linux standard that Windows does not support without some third-party 
 - **Storage capacity not updating** This could be for a variety of issues:
     - Try reloading the app a couple of times (reload the tab in the web app), but also press the `retry` buttons a once or twice in between.
     - Restart the FxBlox by unplug-plugging it back in.
-    - The usb3 drive is connected to a usb2 port. On a **FxBlox Lite**, the top two ports are USB2.0 and the bottom is USB3.0. On a **FxBlox Lite Plus**, the top port is USB2.0 and the bottom two are USB3.0.
+    - The usb3 drive is connected to a usb2 port. On a **FxBlox**, the top two ports are USB2.0 and the bottom is USB3.0. On a **FxBlox Plus**, the top port is USB2.0 and the bottom two are USB3.0.
 - **Additional storage devices not showing up under `Device` Tab.** This is a known bug, as of app version 1.6.2. Currently, newly added storage gets added to the total instead of as a separate device.
 - **Partition Exists already (MacOS).** If a partition exists already, then you will want to delete it first, write to drive, and rerun the command:
     1. Get to step 9 in the _[Manually Partition and Format for Mac](#macos-terminal)_ instructions

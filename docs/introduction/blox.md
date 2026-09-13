@@ -8,9 +8,9 @@ Web2 companies offer you free limited-storage when you make an account with them
 
 ## Blox Hardware
 
-ARM-based single board computers (SBCs) have grown in popularity and performance. They consume a fraction of the energy that typical home NAS servers do and perform just as good. Two models are in users' hands, the **FxBlox Lite** and **FxBlox Lite Plus**.
+ARM-based single board computers (SBCs) have grown in popularity and performance. They consume a fraction of the energy that typical home NAS servers do and perform just as good. Two models are in users' hands, the **FxBlox** and **FxBlox Plus**.
 
-| FxBlox Lite | FxBlox Lite Plus  |
+| FxBlox | FxBlox Plus  |
 |     :-:     |         :-:       |
 |  Unavailable |     $400     |
 | Raspberry Pi CM4  | Rockchip RK3588 |

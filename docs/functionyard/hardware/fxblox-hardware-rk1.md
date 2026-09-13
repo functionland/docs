@@ -1,10 +1,10 @@
 ---
-title: FxBlox Lite Plus (RK1)
+title: FxBlox Plus (RK1)
 id: fxblox-hardware-rk1
 ---
 import ReactPlayer from 'react-player';
 
-## Updating Your FxBlox Lite Plus (RK1)
+## Updating Your FxBlox Plus (RK1)
 
 :::warning 
 If you were helping test nightly firmware releases **before** official testnet launch, you will be required to format drive to clear out old/incompatible chain data. **See more [details here.](../fxblox-app.md/#format-drive)**

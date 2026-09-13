@@ -18,7 +18,7 @@ If you encounter a bug, have a feature request, or come across an explicit error
 - For feature requests: `[Feature Request] - subject line`
 - For explicit errors: `[Error] - error message`
 
-Make sure to include which device you have (Lite or Lite Plus), app version number, what happened leading up to the issue, and the symptom you are experiencing. You can find logs under `Settings` -> `Blox logs`, please submit `Go-Fula` and `Node` logs if you can or applicable.
+Make sure to include which device you have (FxBlox or FxBlox Plus), app version number, what happened leading up to the issue, and the symptom you are experiencing. You can find logs under `Settings` -> `Blox logs`, please submit `Go-Fula` and `Node` logs if you can or applicable.
 
 You can also follow the templates in Github to know what information to include in your post.
 
