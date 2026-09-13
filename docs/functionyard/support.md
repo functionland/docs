@@ -5,8 +5,8 @@ id: support
 
 ## Support
 
-Functionland Inc, the company that produced the FxBlox hardware and the FxFiles
-and FxBlox applications, was dissolved on September 9, 2026.
+As of September 9, 2026, support for the FxBlox hardware and the FxFiles and
+FxBlox applications has ended.
 
 No support, warranty, repair or replacement service is provided for that
 hardware or for those applications, and no support tickets, portal or contact
