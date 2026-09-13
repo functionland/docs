@@ -33,6 +33,4 @@ Our very first mission has been to offer decentralized cloud storage for the mas
 ## Decentralized Compute
 Offering storage for the masses is achievable with the use of apps and webpages, but our FxBloxes are powerful, efficient server-ready devices. Decentralized computation goes deeper than that, offering you the ability to train LLMs on the FxBloxes neural computer units. You could operate a network of Oracles for on-chain events. Or run real-world scientific physics models with the dedicated GPU. 
 
-With FxBlox XLs, owners will not just have upgraded CPUs and I/O, but also Thunderbolt support for external graphics cards.
-
 The FxBlox will create the backbone for the Fula network where both decentralized storage and computation will be accessible to anyone who wants to join.
