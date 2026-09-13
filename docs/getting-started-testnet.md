@@ -16,7 +16,7 @@ To get started, you'll need the following equipment:
 - For RK1 bloxes: internal m.2 nvme drive, external storage as mentioned above, or [framework expansion cards](https://frame.work/marketplace/expansion-cards)
 - Optional: USB-C to ethernet adaptors and USB-C to HDMI for additional connectivity
 
-Functionland does not get any kickback or royalties from the sale of Framework expansion cards. We recommend them because we designed the FxBlox case and modularity around their small form factor standard.
+No kickback or royalties were received from the sale of Framework expansion cards. They are recommended because the FxBlox case and modularity were designed around their small form factor standard.
 
 ## 2. Identifying Your Blox
 It is important you know which FxBlox you have before you move onto the setup stage! It will determine which route you follow, how you get support, and what software is compatible with your device. Checkout the [How To Identify Your FxBlox](/functionyard/hardware/fxblox-hardware) guide to learn more!

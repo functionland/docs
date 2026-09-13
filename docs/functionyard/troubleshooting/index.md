@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This section contains solutions to common issues you might encounter while using FxBlox and the Functionland ecosystem.
+This section contains solutions to common issues you might encounter while using FxBlox and the Fula ecosystem.
 
 ## Common Issues
 

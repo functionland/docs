@@ -21,7 +21,7 @@ This may look like a lot of steps for a small issue fix, but they're all necessa
 
 The Fula net project is hosted in GitHub. There's a bunch of reasons for this, one of them being that GitHub comes with an issue tracker, which enables the core Fula team to field problems from the community. All community issues can read the docs, find issues, and raise issues in the docs repository (called a _repo_ for short).
 
-All issues involving the Fula docs themselves can be found in the [`functionland/docs` repo](https://github.com/functionland/docs) under the [**Issues** tab](https://github.com/functionland/docs/issues/). Here you can see all the issues that are currently open. We try to tag each issue with relevant descriptive tags. Tags like _difficulty_ and _size_ can give a sense of the amount of effort a task will take to complete.
+All issues involving the Fula docs themselves can be found in the [`functionland/docs` repo](https://github.com/functionland/docs) under the [**Issues** tab](https://github.com/functionland/docs/issues/). Here you can see all the issues that are currently open. Issues are tagged with relevant descriptive tags. Tags like _difficulty_ and _size_ can give a sense of the amount of effort a task will take to complete.
 
 Let's jump into finding an issue.
 
@@ -102,4 +102,4 @@ Once your pull request has been approved, it's ready to be merged into the proje
 
 ## Finishing up
 
-So there you have it! You've successfully completed your first contribution to the Fula documentation. We're always on the lookout for great writers and educators to help us improve the Fula docs and make the internet better for everyone, so keep up the good work!
+So there you have it! You've successfully completed your first contribution to the Fula documentation. Contributions from writers and educators are always welcome.

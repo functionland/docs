@@ -4,7 +4,7 @@ id: join-windows
 ---
 import ReactPlayer from 'react-player';
 
-This guide is for getting a Fula node installed on a Windows machine and adding it to testnet. To get an invite, you can ask a community memeber in Telegram or Discord. If already a Blox or NFT owner, you can join testnet with Indiegogo order or wallet address, respectively.
+This guide is for getting a Fula node installed on a Windows machine and adding it to testnet.  If already a Blox or NFT owner, you can join testnet with Indiegogo order or wallet address, respectively.
 
 ## Video Guide
 

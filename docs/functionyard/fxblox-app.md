@@ -142,7 +142,7 @@ Adding more than one Blox no longer requires logging out and back in. From the w
 5. Check them all under the **Blox** tab.
 
 :::info
-**Our apps are open source. If you would like to [contribute to the project](https://github.com/functionland/fxblox-web), that would be greatly appreciated!**
+**The apps are open source. Contributions are welcome at [fxblox-web](https://github.com/functionland/fxblox-web).**
 :::
 
 ## Format Drive

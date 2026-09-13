@@ -4,7 +4,7 @@ id: blox
 ---
 What we are missing in the web2 (and web3) space is a freemium option for consumers to compute on and store larger sets of data.
 
-Web2 companies offer you free limited-storage when you make an account with them. In our case, Bloxes will empower that decentralized storage network and offer paid services for more premium features. It is our goal to be as open and for-the-people as possible.
+Web2 companies offer you free limited-storage when you make an account with them. Bloxes support that decentralized storage network. The aim was to be as open and for-the-people as possible.
 
 ## Blox Hardware
 

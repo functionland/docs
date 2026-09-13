@@ -23,15 +23,15 @@ Which is when we realized, there was no single chain agnostic token we can use t
 
 ### Enter $FULA token
 
-**$FULA** will be the catalyst for keeping the infrastructure online at all times and getting users to store their photos and video, for as long as they want. Storage providing and compute providers are two sides of the same coin. Providers require payment for offering their service to the public. And consumers need a corresponding way to pay for said services.
+**$FULA** is intended to keep the infrastructure online and getting users to store their photos and video, for as long as they want. Storage providing and compute providers are two sides of the same coin. Providers require payment for offering their service to the public. And consumers need a corresponding way to pay for said services.
 
 ### Enter [BAS](./introduction/bas)
 
-The first uniform **Blockchain Attached Storage (BAS)** device was created. As a provider, you can use your storage device(s) to completely own your data and gain rewards for offering up your extra storage to the public. And as a consumer, can pay-as-you-go! It'll be like you have access to infinite storage and just pay for what you need to keep your data alive for as long as you like.
+The first uniform **Blockchain Attached Storage (BAS)** device was created. As a provider, you can use your storage device(s) to completely own your data and gain rewards for offering up your extra storage to the public. 
 
 ### Enter [FxBlox](./introduction/blox)
 
-FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful design, power-efficient board, and next-gen processing is not gate-kept by inflated pricing. Bloxes are competitively priced and offer the **<u>lowest</u>** barrier to entry in any decentralized storage blockchain. The network is designed to scale vertically and horizontally.
+FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful design, power-efficient board, and next-gen processing is not gate-kept by inflated pricing. Bloxes offer a low barrier to entry in decentralized storage. The network is designed to scale vertically and horizontally.
 
 ### Enter [Fula API](./api-intro)
 

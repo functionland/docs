@@ -3,11 +3,11 @@ title: How to Contribute
 id: contribute
 ---
 
-Thank you for your interest in contributing to our open source repositories on GitHub! Your contributions help us improve the services and make everyone's experience even better. Here's how you can get involved:
+Thank you for your interest in contributing to these open source repositories on GitHub. Contributions help improve the services for everyone. Here's how you can get involved:
 
 ## Hold [Discussions](./contribute/contribution-tutorial#discussing-the-issue)
 
-The [Discussion tab](https://github.com/orgs/functionland/discussions) on the Functionland GitHub page can be used for general questions, feedback, raising bugs/feature requests, or discussions related to our projects. Feel free to engage with other community members and share your ideas or suggestions.
+The [Discussion tab](https://github.com/orgs/functionland/discussions) on the GitHub page can be used for general questions, feedback, raising bugs or feature requests, or discussions related to these projects. Feel free to engage with other community members and share your ideas or suggestions.
 
 
 
@@ -41,4 +41,4 @@ Please ensure that you submit your contribution to the appropriate repository ba
 
 Technical writers of any level are greatly appreciated. If you are considering contributing to the documentation, please take a look at our [Styling](./contribute/styling) and [Writing](./contribute/writing) guides to learn more about our writing styles.
 
-Thank you for contributing to our projects and helping us build better software together!
+Thank you for contributing and helping build better software.

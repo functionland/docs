@@ -7,7 +7,7 @@ id: fula
 
 ## How does it work?
 
-To become a truly viable alternative to Big Tech cloud storage, we need to guarantee:
+To become a truly viable alternative to Big Tech cloud storage, the following are required:
 
   * reliability
 
@@ -15,7 +15,7 @@ To become a truly viable alternative to Big Tech cloud storage, we need to guara
 
   * security
 
-To guarantee reliability, availability, and security, we designed a system that utilizes an already existent decentralized web.
+For reliability, availability, and security, the system uses an already existent decentralized web.
 
 The Fula network is peer-to-peer architecture designed with open protocols and specifications such as [libp2p](https://libp2p.io/), [IPFS](https://ipfs.io/) and [decentralized identity](https://www.w3.org/TR/did-core/).
 

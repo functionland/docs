@@ -28,6 +28,6 @@ And a network explorer is made avaialbe here:
 [Network Explorer](https://functionyard.fx.land)
 
 ## Simulation
-Finally functionlard token simulations are available here: 
+Finally token simulations are available here: 
 
 [Token Simulation](https://machinations.io/community/functionland/new-fula-tokenomics-333bc093169911ee915c02f943517e50)

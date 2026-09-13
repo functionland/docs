@@ -208,5 +208,5 @@ Ext4 is a linux standard that Windows does not support without some third-party 
     4. Continue _[Manually Partition and Format for Mac](#macos-terminal)_ instructions, from step 7.
 
 :::info 
-**Our apps are open-source and built in React Native for cross-platform support. So if you would like to [contribute to the project](https://github.com/functionland/fx-components), that would be greatly appreciated!**
+**The apps are open source and built in React Native for cross-platform support. Contributions are welcome at [fx-components](https://github.com/functionland/fx-components).**
 :::
