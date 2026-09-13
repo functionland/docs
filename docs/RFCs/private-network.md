@@ -4,8 +4,8 @@
 - RFC PR: https://github.com/functionland/docs/pull/67
 - Functionland Issue: https://github.com/functionland/docs/issues/63
 - Status: Draft
-- Authors: [Farhoud](https://github.com/farhoud)
-- Reviewers: [Aaron](https://github.com/gitaaron), [Ehsan](https://github.com/ehsan6sha), [Masih](https://github.com/orgs/functionland/people/masih)
+- Authors: Fula Network contributors
+- Reviewers: Fula Network contributors
 
 
 ## Background

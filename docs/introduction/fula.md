@@ -32,11 +32,11 @@ The Fula network provides a free, open market for service providers.  Box custom
 In short, it's a positive sum protocol for everyone.
 
 ## Like what you hear?  
-Become a pioneer.  Join us on our journey to bring Web3 into the mainstream.
+
 
 You can do that by:
 
-  * joining the revolution and ordering your FxBlox on [shop.fx.land](https://shop.fx.land)
+
 
   * heading over to [Fula API](./api-intro) docs to learn how to develop your own DApps on the FxBlox
 

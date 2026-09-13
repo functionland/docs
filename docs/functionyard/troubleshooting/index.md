@@ -26,9 +26,9 @@ If you're experiencing problems with blockchain network switching:
 
 If you can't find a solution to your problem in this troubleshooting section:
 
-1. Check our [Support page](../support.md) for general support resources
+1. See the [Support page](../support.md).
 2. Visit our community channels for peer assistance
-3. Contact our support team for personalized help
+3. No support channel is monitored for this hardware.
 
 :::tip
 Before reaching out for support, try the troubleshooting steps provided here. Many common issues can be resolved quickly with these guides.

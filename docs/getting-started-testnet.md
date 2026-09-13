@@ -41,7 +41,7 @@ Set your Blox up at **[https://docs.fx.land/fxblox-web/](https://docs.fx.land/fx
 When going through the setup documentation, please read each instruction carefully! The docs are created to give you the smoothest onboarding experience as possible!
 :::
 
-Congratulations! You're now ready to explore the decentralized storage world with FxBlox. If you have any questions or need further assistance, don't hesitate to reach out through our support channels. 
+Congratulations! You're now ready to explore the decentralized storage world with FxBlox. If you have any questions or need further assistance, see the Support page. 
 
 ## Next Steps
 

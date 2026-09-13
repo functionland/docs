@@ -47,4 +47,4 @@ The web app is always up to date — just reload the tab. If you are still on th
 
 ---
 
-*Need help? Visit our [Support](/functionyard/support) page for additional assistance.*
+*See the [Support](/functionyard/support) page.*

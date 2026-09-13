@@ -93,11 +93,11 @@ Most FxBlox devices are RK1 models. If you're unsure which model you have, try t
 | Flashing cyan (after reset) | Ready for setup | Clear app storage and set up |
 | Off/No response | Possible hardware issue | Try Bluetooth method or re-imaging |
 
-## Additional Support
+## Support
 
 If you continue to experience issues after trying these troubleshooting steps:
 
-1. Check our [Support page](../support.md) for additional resources
+1. See the [Support page](../support.md).
 2. Visit our community channels for peer assistance
 3. Contact support with your specific LED pattern and model information
 

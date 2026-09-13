@@ -101,11 +101,11 @@ On a phone, the browser's connection to your wallet is suspended while you are a
 SKALE is the default network for most FxBlox operations. Base chain access requires special authorization and is not available to all users.
 :::
 
-## Additional Support
+## Support
 
 If you continue to experience chain switching issues:
 
-1. **Check our [Support page](../support.md)** for additional resources
+1. See the [Support page](../support.md).
 2. **Verify your authorization status** if trying to access restricted networks
 3. **Contact support** with details about which networks you're trying to switch between
 

@@ -13,7 +13,7 @@ id: join
   - If the `Account` and `Join` buttons are greyed out, it means the blox is still syncing the chain data. You can check the progress of sync in the `Settings -> Pools` page.
 
 :::info 
-If after the sync is over you get any errors, you can tap on the tower icon in the home page and click "Reset Chain Data"
+If after the sync is over you get any errors, you can tap on the Blox icon in the home page and click "Reset Chain Data"
 :::
 
 2. In the FxBlox app, go to `Settings > Pools`. Join a pool nearest to your city. Choose the one closest to you from the list. Please note, that if you choose a pool that is far from you, the request will automatically rejected by the system.
@@ -50,6 +50,6 @@ To add any extra Bloxes to the testnet, you need to:
 
 ### Bought Blox outside of campaign
 
-If you bought a Blox from the available units on the [shop.fx.land](https://shop.fx.land/) or a second-hand resellers site. Then you will need to send a message to sales@fx.land to have your `Blox Account ID` added to testnet backend. You `Blox Account ID` is shown under the `User` Tab after completing setup.
+If you bought a Blox second-hand, your `Blox Account ID` is shown under the `User` Tab after completing setup.
 
 After this has been completed, you will have to wait a couple hours for the testnet to sync and then you will be able to join.

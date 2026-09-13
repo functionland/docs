@@ -3,8 +3,8 @@
 - Start Date: 2022-02-01
 - RFC PR: https://github.com/functionland/docs/pull/67
 - Functionland Issue: https://github.com/functionland/docs/issues/63
-- Authors: [Farhoud](https://github.com/farhoud)
-- Reviewers: [Aaron](https://github.com/gitaaron), [Ehsan](https://github.com/ehsan6sha), [Masih](https://github.com/orgs/functionland/people/masih)
+- Authors: Fula Network contributors
+- Reviewers: Fula Network contributors
 
 # Summary
 [summary]: #summary

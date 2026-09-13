@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   deploymentBranch: "main",
-  title: "Functionland",
+  title: "Fula Network",
   tagline: "",
   url: "https://functionland.github.io",
   baseUrl: "/",
@@ -43,9 +43,9 @@ const config = {
         isCloseable: true,
       },
       navbar: {
-        title: "Functionland",
+        title: "Fula Network",
         logo: {
-          alt: "functionland logo",
+          alt: "Fula Network logo",
           src: "img/logo.webp",
         },
         items: [

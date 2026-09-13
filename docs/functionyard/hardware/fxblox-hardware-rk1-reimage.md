@@ -13,11 +13,11 @@ If for any reason the RK1 fulatower gets stuck in a blue/white light without goi
 
 ## Written Guide for Re-Imaging
 
-1. **Unplug the tower from power**
+1. **Unplug the Blox from power**
 
-   Ensure the tower is not connected to any power source before proceeding.
+   Ensure the Blox is not connected to any power source before proceeding.
 
-2. **Opening the tower**
+2. **Opening the Blox**
 
    Follow the instructions here to remove the single board computer (SBC) from the case.
 

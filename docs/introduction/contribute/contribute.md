@@ -9,7 +9,7 @@ Thank you for your interest in contributing to our open source repositories on G
 
 The [Discussion tab](https://github.com/orgs/functionland/discussions) on the Functionland GitHub page can be used for general questions, feedback, raising bugs/feature requests, or discussions related to our projects. Feel free to engage with other community members and share your ideas or suggestions.
 
-![discussions tab on github](/img/welcome/discussions.png)
+
 
 ## Submit an [issue](./contribute/contribution-tutorial/#finding-an-issue)
 
@@ -24,7 +24,7 @@ You can also follow the templates in Github to know what information to include 
 
 ## Submit a [pull request (PR)](./contribute/contribution-tutorial#create-a-pull-request)
 
-We welcome contributions from the community! If you'd like to fix a bug, add a feature, or improve documentation, please submit a pull request. Make sure to follow our contribution guidelines and include a clear description of the changes you've made.
+Contributions from the community are welcome. If you'd like to fix a bug, add a feature, or improve documentation, please submit a pull request. Make sure to follow our contribution guidelines and include a clear description of the changes you've made.
 
 You can also follow the templates in Github to know what information to include in your post.
 

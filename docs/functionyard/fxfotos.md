@@ -30,7 +30,7 @@ FxFotos is a decentralized media manager. It automatically syncs up your media f
 
 7. After a successful login, you will see relevant information about your account:
 - `Your Did`: This is your decentralized ID based on your password
-- `Your Content Root CID` (This is hidden by default): This value is needed in order to retrieve your data on another account. We are working to enhance the protocol side to make this value retrievable but right now if you lose it there is no retrieval method. This value changes after each upload (Private)
+- `Your Content Root CID` (This is hidden by default): This value is needed in order to retrieve your data on another account. Work was underway on the protocol side to make this value retrievable but right now if you lose it there is no retrieval method. This value changes after each upload (Private)
 - `Your Private Key` (This is hidden by default): This value is needed in order to retrieve your data on another account. There is no need to save this as this is automatically being created from the DID (Private)
 - `Fula Account`: This is the Fula account that the tokens/payments for backing up your data will be deducted from. For testnet initially there is no charge but also no guarantee for hte data you upload (Not private)
 - `Your PeerID`: This is the peer id that the application uses to connect to other nodes (Not private)
@@ -45,12 +45,12 @@ FxFotos is a decentralized media manager. It automatically syncs up your media f
 11. To upload/backup a media file, click on it to open, then tap one time on the screen and you see a back up icon shown at the bottom of screen.
 
 :::info 
-We have deactivated the auto-sync initially during testnet launch to give us better troubleshooting and debugging opportunity. We thank you for your patience. 
+Auto-sync was deactivated during the testnet launch to allow better troubleshooting and debugging. 
 :::
 
 ## How to see my uploaded/backed-up data?
 
-We are working on a web interface that shows you the backed up data, but for now there is an unreleased app which you can copy the "Private Key" and "root Cid" From FxFotos over to that application, and it shows you the list of uploaded files. The app does not transfer the keys outside or to any third party and is totally safe.
+A web interface showing the backed up data was in progress, but for now there is an unreleased app which you can copy the "Private Key" and "root Cid" From FxFotos over to that application, and it shows you the list of uploaded files. The app does not transfer the keys outside or to any third party and is totally safe.
 It can be downloaded from here: 
 
 
@@ -58,5 +58,5 @@ It can be downloaded from here:
 
 1. Completing the browser based application
 2. Sharing with others. You can easily share the uploaded files with others in or outside of Fula network and set expiry date, give write permission, and anything you can do on the cloud. This feature already exists in the protocol and we just need to implement the required interfaces for it.
-3. Integration with AI. We are working on integrating the application with on-device face-detection algorithms.
+3. Integration with AI. Integration with on-device face-detection algorithms was planned.
 4. Easy import from Google/Apple Photos. We implement a feature to easily migrate your files over from other applications.

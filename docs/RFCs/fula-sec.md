@@ -3,8 +3,8 @@
 - RFC PR: [functionland/docs/pull/74](https://github.com/functionland/docs/pull/74)
 - Functionland Issue: [functionland/docs/issues/65](https://github.com/functionland/docs/issues/65)
 - Status: Draft
-- Authors: [Jamshid](https://github.com/ruffiano89)
-- Reviewers: [Masih](https://github.com/orgs/functionland/people/masih), [Aaron](https://github.com/gitaaron)
+- Authors: Fula Network contributors
+- Reviewers: Fula Network contributors
 
 
 <!-- OVERVIEW -->

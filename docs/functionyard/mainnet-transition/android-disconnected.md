@@ -110,4 +110,4 @@ When your app shows "Connected" status after the reset and 2-hour wait period, y
 - Check router settings for device blocking
 - Ensure the Blox and the device running the app are on the same network
 
-**Need more help?** Visit our [Support page](/functionyard/support) for additional assistance.
+See the [Support page](/functionyard/support).

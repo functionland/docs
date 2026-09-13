@@ -7,7 +7,7 @@ id: box-admin
 
 After loading the Box Admin DApp.
 
-I am asked to enter the username and password I created during [Unboxing](./unboxing)
+I am asked to enter the username and password I created during setup
 
 After logging in.
 

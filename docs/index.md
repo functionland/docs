@@ -2,7 +2,7 @@
 title: Welcome
 id: index
 ---
-# Welcome to Functionland
+# Welcome
 
 Functionland was founded on a core set of Web3 principles. At the heart of these principles is a simple premise: **<u>We each have an inalienable right to own our own data.</u>**
 
@@ -27,15 +27,15 @@ Which is when we realized, there was no single chain agnostic token we can use t
 
 ### Enter [BAS](./introduction/bas)
 
-We created the first uniform **Blockchain Attached Storage (BAS)** device! As a provider, you can use your storage device(s) to completely own your data and gain rewards for offering up your extra storage to the public. And as a consumer, can pay-as-you-go! It'll be like you have access to infinite storage and just pay for what you need to keep your data alive for as long as you like.
+The first uniform **Blockchain Attached Storage (BAS)** device was created. As a provider, you can use your storage device(s) to completely own your data and gain rewards for offering up your extra storage to the public. And as a consumer, can pay-as-you-go! It'll be like you have access to infinite storage and just pay for what you need to keep your data alive for as long as you like.
 
 ### Enter [FxBlox](./introduction/blox)
 
-FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful design, power-efficient board, and next-gen processing is not gate-kept by inflated pricing. Bloxes are competitively priced and offer the **<u>lowest</u>** barrier to entry in any decentralized storage blockchain. Our network has the potential to vertically and horizontally scale faster than any protocol before.
+FxBlox, or Blox, is the brand-new hardware that is empowering it all. Beautiful design, power-efficient board, and next-gen processing is not gate-kept by inflated pricing. Bloxes are competitively priced and offer the **<u>lowest</u>** barrier to entry in any decentralized storage blockchain. The network is designed to scale vertically and horizontally.
 
 ### Enter [Fula API](./api-intro)
 
-To enable any developer to build apps and services on this brand new protocol, we introduce the **<u>Fula API</u>**. An open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and to get paid for their work.
+To enable developers to build apps and services on this protocol, there is the **<u>Fula API</u>**. An open, interoperable specifications that enables developers to write permissionless, decentralized apps for consumers and to get paid for their work.
 
 ## [Fula Network](./introduction/fula)
 

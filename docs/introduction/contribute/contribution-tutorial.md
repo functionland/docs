@@ -79,7 +79,7 @@ When adding a commit comment that actively fixes an issue within the project, tr
 
 ## Create a pull request
 
-Once you're done making commits and are ready to get a core team member's review of your work, it's time to create a pull request.
+Once you're done making commits and are ready to have your work reviewed, it's time to create a pull request.
 
 1. Go to the `functionland/docs` repository on [GitHub](https://github.com/functionland/docs).
 2. Select the **Pull requests** tab.

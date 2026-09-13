@@ -36,7 +36,7 @@ Make sure it is at least **version 2.0.1** — update it from your app store. Th
 ## Step 2: Configure Chain Selection
 
 :::info Chain Selection
-Default selection is **Skale**. If you have an authorization code, change to **Base** only if instructed by the team.
+Default selection is **Skale**. If you have an authorization code, change to **Base** only if you have a specific reason to.
 :::
 
 1. Go to **Settings > Chain Selection**
@@ -87,6 +87,6 @@ If you encounter issues:
 - Ensure your Blox device is powered on and connected to internet
 - Try unplugging and replugging your Blox device
 - Wait 2 hours after setup for the Blox to fully update
-- Visit our [Support page](/functionyard/support) for additional help
+- See the [Support page](/functionyard/support).
 
 **Next Steps:** Monitor your rewards on the home page and claim them when the claim button appears!

@@ -59,7 +59,7 @@ Please wait for `10-15 minutes` before doing anything. You may think it is done 
 - If at the end of setup through the FxBlox app, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.
 
 :::info 
-**Future firmware updates will be automatic, eliminating the need for manual updates.**
+This documentation is kept for reference only.
 :::
 
 ## First Time Setup

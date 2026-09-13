@@ -36,7 +36,7 @@ During the setup process:
 3. Simply complete the basic device setup and connection
 
 :::tip Important
-You do NOT need to join testnet or configure testnet-related settings. We'll configure everything for mainnet directly.
+You do NOT need to join testnet or configure testnet-related settings. Everything is configured for mainnet directly.
 :::
 
 ## Step 3: Wait for Updates
@@ -58,7 +58,7 @@ After the 2-hour waiting period, follow these steps:
 ### Chain Selection
 1. Go to **Settings > Chain Selection**
 2. Ensure you are on the correct chain (Base/Skale)
-3. Default selection is **Skale** - keep this unless instructed otherwise by the team
+3. Default selection is **Skale** - keep this unless you have a specific reason to change it
 4. If you have an authorization code, change to **Base** only if specifically instructed
 
 ### Add and Switch Chain
@@ -138,6 +138,6 @@ You've successfully set up your Blox device directly on mainnet! You can now sta
 - Try unplugging and replugging the Blox device
 
 **Still Need Help?**
-Visit our [Support page](/functionyard/support) for additional assistance or contact our support team.
+See the [Support page](/functionyard/support).
 
 **Next Steps:** Monitor your rewards on the home page and claim them when the claim button appears!

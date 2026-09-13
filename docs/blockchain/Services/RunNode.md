@@ -4,7 +4,7 @@ This docuemnt explains how to run Fula nodes
 
 - Requires a [Build](BuildNode) .
 
-At the moment two validator nodes are run and managed by Fula Governance Association and others cannot run validator nodes. You can still run non-validator nodes (instructions after the validator node)
+Validator nodes on the network are limited and cannot currently be run by others. You can still run non-validator nodes (instructions after the validator node)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 <h1>Run Validator Nodes</h1>

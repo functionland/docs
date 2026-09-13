@@ -103,7 +103,7 @@ Once your Blox shows as connected and has been updated for 2 hours, the remainin
 ### Chain Selection
 1. Go to **Settings > Chain Selection**
 2. Ensure you are on the correct chain (Base/Skale) - default is Skale
-3. If you have an authorization code, change to Base only if instructed by the team
+3. If you have an authorization code, change to Base only if you have a specific reason to
 4. Click **"Add and Switch to Skale/Base"** button (opens MetaMask)
 5. In MetaMask, ensure you're on the same chain selected in the FxBlox app
 
@@ -159,4 +159,4 @@ You have successfully transitioned to mainnet! Your rewards will now accumulate 
 - Try a different power outlet
 - Contact support if LEDs don't follow expected sequence
 
-**Need more help?** Visit our [Support page](/functionyard/support) for additional assistance.
+See the [Support page](/functionyard/support).

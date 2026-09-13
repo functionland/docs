@@ -80,13 +80,13 @@ Once the transaction is confirmed on the blockchain, your rewards will be claime
 - Make sure you're looking at the correct contract address
 - Check that your transaction was actually processed on the mainnet
 
-### Need More Help?
+### Support
 
 If you continue to experience issues with manual reward claiming, please:
 
-1. Check our [Support page](../support.md) for additional resources
+1. See the [Support page](../support.md).
 2. Join our community channels for assistance
-3. Contact our support team with your transaction details
+3. No support channel is monitored for this hardware.
 
 :::warning
 Always double-check the contract addresses and ensure you're on the correct network before executing any transactions. Never share your private keys or seed phrases with anyone.

@@ -15,17 +15,17 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 
 ## Written Steps for Re-Imaging
 
-1. **Unplug the Tower from Power**
+1. **Unplug the Blox from Power**
 
-   Ensure the tower is not connected to any power source before proceeding.
+   Ensure the Blox is not connected to any power source before proceeding.
 
-2. **Opening the Tower**
+2. **Opening the Blox**
 
-   Follow the instructions in the video linked above to open the tower safely.
+   Follow the instructions in the video linked above to open the Blox safely.
 
 3. **Connect the USB-C Port**
 
-   Connect the USB-C port on the side of the tower to your laptop or PC.
+   Connect the USB-C port on the side of the Blox to your laptop or PC.
 
    ![Placeholder for USB-C connection image](/img/fxyard-network/rpi-usbc-reimage.jpg)
 
@@ -35,9 +35,9 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 
    ![Placeholder for short circuit pins image](/img/fxyard-network/rpi-shortcircuit.jpg)
 
-5. **Power On the Tower**
+5. **Power On the Blox**
 
-   Plug the tower back into power. It should display a blue/white light and remain like that, indicating it is in image mode. You can remove the short circuit from step 4 at this stage.
+   Plug the Blox back into power. It should display a blue/white light and remain like that, indicating it is in image mode. You can remove the short circuit from step 4 at this stage.
 
 6. **Installing and Running rpiboot**
 
@@ -90,14 +90,14 @@ If for any reason the CM4 fulatower gets stuck in a blue/white light without goi
 
 13. **Final Steps**
 
-    After completion, remove the short circuit from the pins, disconnect the USB-C cable connecting the tower to the computer, and then unplug and re-plug the tower to power.
+    After completion, remove the short circuit from the pins, disconnect the USB-C cable connecting the Blox to the computer, and then unplug and re-plug the Blox to power.
 
 14. **Set Up Using FxBlox App**
 
     Now that you have the updated fulatower, use the FxBlox app to set it up. There's no need for any other manual updates.
 
-15. **Closing the Tower**
+15. **Closing the Blox**
 
-    Once you've confirmed a successful setup through the FxBlox app, close up the tower again to protect it from damage.
+    Once you've confirmed a successful setup through the FxBlox app, close up the Blox again to protect it from damage.
 
 - If at the end of setup, you see a message that the app could not connect to Blox, Close the app, unplug and re-plug the blox and wait for 1 minute and open the app.

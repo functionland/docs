@@ -85,6 +85,6 @@ If you're unsure about your connection status:
 
 1. **Open the app** and look at the main screen — it shows Connected or Disconnected
 2. **Check from your router** admin panel to see whether the Blox is on your network
-3. **Contact support**: Visit our [Support page](/functionyard/support) for assistance
+3. See the [Support page](/functionyard/support).
 
 **Ready to start?** Choose your path above and follow the detailed instructions!

@@ -21,7 +21,7 @@ jobs:
         env:
           USE_SSH: true
         run: |
-          git config --global user.email "ebaqeri@protonmail.com"
+          git config --global user.email "actions@github.com"
           git config --global user.name "gh-actions"
           yarn install --frozen-lockfile
           yarn deploy

@@ -7,7 +7,7 @@ hidden: false
 createdAt: "Fri JUN 28 2024 15:02:42 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri JUN 28 2024 18:39:16 GMT+0000 (Coordinated Universal Time)"
 ---
-<Note>Not to be confused with the Fula API, the Pinning Service API allows you to create a link between your local IPFS node and Functionland Fula Network</Note>
+<Note>Not to be confused with the Fula API, the Pinning Service API allows you to create a link between your local IPFS node and Fula Network</Note>
 
 ## IPFS Pinning Services API Spec Compatibility
 
@@ -15,13 +15,13 @@ The [IPFS Pinning Services API Spec](https://ipfs.github.io/pinning-services-api
 
 ### Introduction
 
-Functionland Fula network is the only available true decentralized network for pinning ipfs data. It currently includes 900 globally distributed nodes. These nodes are individually owned and are rewarded using Fula blockchain based on the storage they provide. Since it is an open network, anyone can join and start providing the service and earns. For more information please visit https://fx.land
+The Fula network is a decentralized network for pinning IPFS data, made up of individually owned nodes. These nodes are individually owned and are rewarded using Fula blockchain based on the storage they provide. Since it is an open network, anyone can join and start providing the service and earns. For more information please visit https://fx.land
 
 <img style={{ width: '100%', borderRadius: '0.5rem'}} src="https://fx.land/igg%20sales%20map.png" />
 
 ### Endpoints
 
-Functionland Fula users looking to utilize the IPFS Pinning Services API can do so from our dedicated API endpoint:
+Fula users looking to utilize the IPFS Pinning Services API can do so from our dedicated API endpoint:
 
 `https://api.cloud.fx.land`
 
@@ -32,7 +32,7 @@ To authenticate with Functionland through the Pinning Services API spec, you'll 
 
 If you ever revoke the API key, it will no longer be valid for authenticating to the Pinning Services API.
 
-**Configuring Functionland Fula in the IPFS Desktop App**
+**Configuring Fula in the IPFS Desktop App**
 
 If you are running the IPFS desktop app, you can configure your pinning service of choice within the user interface. To do so, open the app, go to your Preferences, then click Add Service: 
 
@@ -42,20 +42,20 @@ Select Functionland as the pinning service, and then configure with your secret 
 
 <!-- Image -->
 
-From there you can upload files and have the option to pin locally as well as remotely to Functionland Fula network! 
+From there you can upload files and have the option to pin locally as well as remotely to Fula network! 
 
 
-### Configuring Functionland Fula in the IPFS CLI
+### Configuring Fula in the IPFS CLI
 
-You can also pin to Functionland Fula directly from the IPFS CLI using the `ipfs` command.
+You can also pin to Fula directly from the IPFS CLI using the `ipfs` command.
 
-To add Functionland Fula credentials, use the following command (where YOUR\_JWT is the JWT token described in the “Authentication” section above):
+To add Fula credentials, use the following command (where YOUR\_JWT is the JWT token described in the “Authentication” section above):
 
 ```bash
 ipfs pin remote service add functionland https://api.cloud.fx.land YOUR_JWT
 ```
 
-To pin a CID to Functionland Fula under a human-readable name:
+To pin a CID to Fula under a human-readable name:
 
 ```bash
 ipfs pin remote add --service=functionland --name=war-and-peace.txt bafybeib32tuqzs2wrc52rdt56cz73sqe3qu2deqdudssspnu4gbezmhig4
@@ -87,13 +87,13 @@ The [IPFS Pinning Services API Spec](https://ipfs.github.io/pinning-services-api
 
 > Content Identifier (CID) points at the root of a DAG that is pinned recursively.
 
-So when you pin `bafybeib32…` (a file, a directory, or any IPLD/UnixFS DAG root), Functionland Fula retrieves and pins **every block reachable from that root**. A single CID is all you need to pin an arbitrarily large DAG — the commands in the previous section (`ipfs pin remote add …`) are already performing recursive DAG pins.
+So when you pin `bafybeib32…` (a file, a directory, or any IPLD/UnixFS DAG root), Fula retrieves and pins **every block reachable from that root**. A single CID is all you need to pin an arbitrarily large DAG — the commands in the previous section (`ipfs pin remote add …`) are already performing recursive DAG pins.
 
 How the service obtains the DAG (per the standard): after you submit a CID, the service finds providers for the involved CIDs across the IPFS network — optionally helped by the `origins` hints you supply — and downloads the DAG over Bitswap. This is why a pin you just created starts in `queued`/`pinning` and only becomes `pinned` once the whole DAG has been fetched.
 
 ## Standard REST API
 
-The `ipfs` CLI above is a convenience wrapper over the standard REST endpoints. You can call them directly against `https://api.cloud.fx.land` with your access token as a bearer credential. Functionland Fula implements the full IPFS Pinning Services API spec.
+The `ipfs` CLI above is a convenience wrapper over the standard REST endpoints. You can call them directly against `https://api.cloud.fx.land` with your access token as a bearer credential. Fula implements the full IPFS Pinning Services API spec.
 
 | Operation | Endpoint | Description |
 |---|---|---|
