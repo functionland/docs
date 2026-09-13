@@ -30,7 +30,4 @@ Our very first mission has been to offer decentralized cloud storage for the mas
 
 **Official testnet launch** of the Fula network is set for **first week of April 2024**. And **mainnet** is scheduled for **end of year 2024**.
 
-## Decentralized Compute
-Offering storage for the masses is achievable with the use of apps and webpages, but our FxBloxes are powerful, efficient server-ready devices. Decentralized computation goes deeper than that, offering you the ability to train LLMs on the FxBloxes neural computer units. You could operate a network of Oracles for on-chain events. Or run real-world scientific physics models with the dedicated GPU. 
-
 The FxBlox will create the backbone for the Fula network where both decentralized storage and computation will be accessible to anyone who wants to join.
